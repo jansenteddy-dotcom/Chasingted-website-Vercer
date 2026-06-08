@@ -1,7 +1,7 @@
 import './globals.css'
 
 import type {Metadata} from 'next'
-import {Inter, Playfair_Display} from 'next/font/google'
+import {Montserrat, Inter} from 'next/font/google'
 import {draftMode} from 'next/headers'
 import Script from 'next/script'
 import {VisualEditing} from 'next-sanity/visual-editing'
@@ -35,14 +35,14 @@ export async function generateMetadata(): Promise<Metadata> {
   }
 }
 
-const inter = Inter({
-  variable: '--font-inter',
+const montserrat = Montserrat({
+  variable: '--font-montserrat',
   subsets: ['latin'],
   display: 'swap',
 })
 
-const playfair = Playfair_Display({
-  variable: '--font-playfair',
+const inter = Inter({
+  variable: '--font-inter',
   subsets: ['latin'],
   display: 'swap',
 })
@@ -51,12 +51,12 @@ export default async function RootLayout({children}: {children: React.ReactNode}
   const {isEnabled: isDraftMode} = await draftMode()
 
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+    <html lang="en" className={`${montserrat.variable} ${inter.variable}`}>
       {/* GTM <head> snippet */}
       <Script id="gtm-script" strategy="afterInteractive">
         {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${GTM_ID}');`}
       </Script>
-      <body className="bg-white text-[#1a1a1a] font-sans antialiased">
+      <body className="bg-[#f5f0e4] text-[#1a1a1a] font-sans antialiased">
         {/* GTM <noscript> fallback */}
         <noscript>
           <iframe

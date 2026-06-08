@@ -3,13 +3,8 @@
 @plugin "@tailwindcss/typography";
 
 @layer base {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply font-serif font-medium tracking-tight;
+  body {
+    background-color: #f5f0e4;
   }
 }
 
@@ -28,6 +23,7 @@
   --color-gold-dark: #d9a441;
   --color-cream: #f5f0e4;
   --color-cream-dark: #e7dbbf;
+  --color-cream-tan: #d4c5a0;
   --color-black: #1a1a1a;
   --color-white: #ffffff;
   --color-gray-100: #f4f4f4;
@@ -35,9 +31,9 @@
   --color-gray-500: #6b7280;
   --color-gray-700: #374151;
 
-  /* Typography */
-  --font-serif: 'Playfair Display', Georgia, serif;
-  --font-sans: 'Inter', system-ui, sans-serif;
+  /* Typography — Montserrat is the primary display font */
+  --font-sans: var(--font-montserrat), 'Montserrat', system-ui, sans-serif;
+  --font-serif: var(--font-inter), 'Inter', system-ui, sans-serif;
 
   --default-transition-duration: 200ms;
 }
