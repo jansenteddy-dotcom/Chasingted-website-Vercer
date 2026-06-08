@@ -1,5 +1,6 @@
 import type {Metadata} from 'next'
 import Link from 'next/link'
+import GtmEvent from '@/app/components/GtmEvent'
 
 export const metadata: Metadata = {
   title: 'Application received',
@@ -8,6 +9,9 @@ export const metadata: Metadata = {
 export default function ThankYouPage() {
   return (
     <div className="pt-24 pb-20 min-h-screen flex items-center">
+      {/* Fires GTM trigger: application_submitted */}
+      <GtmEvent event="application_submitted" />
+
       <div className="container max-w-xl text-center">
         <div className="text-5xl mb-6">✅</div>
         <h1 className="font-serif text-4xl text-[#133425] mb-4">Application received!</h1>
