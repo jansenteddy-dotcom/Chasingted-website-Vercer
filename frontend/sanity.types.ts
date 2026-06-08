@@ -527,97 +527,170 @@ export type AllSanitySchemaTypes =
 
 // Source: sanity/lib/queries.ts
 // Variable: settingsQuery
-// Query: *[_type == "settings"][0]
+// Query: *[_type == "settings" && _id == "siteSettings"][0]{    heroHeading,    heroSubheading,    heroImage,    introText,    "featuredTrips": featuredTrips[]->{      _id,      title,      "slug": slug.current,      destination,      startDate,      endDate,      shortDescription,      difficultyLevel,      status,      "price": price{deposit, total, currency},      heroImage,    },    ogImage,  }
 export type SettingsQueryResult = {
-  _id: string
-  _type: 'settings'
-  _createdAt: string
-  _updatedAt: string
-  _rev: string
-  heroHeading?: string
-  heroSubheading?: string
-  heroImage?: {
+  heroHeading: string | null
+  heroSubheading: string | null
+  heroImage: {
     asset?: SanityImageAssetReference
     media?: unknown
     hotspot?: SanityImageHotspot
     crop?: SanityImageCrop
     alt?: string
     _type: 'image'
-  }
-  introText?: string
-  featuredTrips?: Array<
-    {
-      _key: string
-    } & TripReference
-  >
-  ogImage?: {
+  } | null
+  introText: string | null
+  featuredTrips: Array<{
+    _id: string
+    title: string
+    slug: string
+    destination: string
+    startDate: string
+    endDate: string
+    shortDescription: string
+    difficultyLevel: 'challenging' | 'easy' | 'expert' | 'moderate'
+    status: 'archived' | 'full' | 'open'
+    price: {
+      deposit: number
+      total: number
+      currency: 'EUR' | 'GBP' | 'USD' | null
+    } | null
+    heroImage: {
+      asset?: SanityImageAssetReference
+      media?: unknown
+      hotspot?: SanityImageHotspot
+      crop?: SanityImageCrop
+      alt?: string
+      _type: 'image'
+    } | null
+  }> | null
+  ogImage: {
     asset?: SanityImageAssetReference
     media?: unknown
     hotspot?: SanityImageHotspot
     crop?: SanityImageCrop
     alt?: string
     _type: 'image'
-  }
+  } | null
 } | null
 
 // Source: sanity/lib/queries.ts
-// Variable: getPageQuery
-// Query: *[_type == 'page' && slug.current == $slug][0]{    _id,    _type,    name,    slug,    heading,    subheading,    "pageBuilder": pageBuilder[]{      ...,      _type == "callToAction" => {        ...,        button {          ...,            link {      ...,        _type == "link" => {    "page": page->slug.current,    "post": post->slug.current  }      }        }      },      _type == "infoSection" => {        content[]{          ...,          markDefs[]{            ...,              _type == "link" => {    "page": page->slug.current,    "post": post->slug.current  }          }        }      },    },  }
-export type GetPageQueryResult = {
+// Variable: allTripsQuery
+// Query: *[_type == "trip" && status != "archived"] | order(startDate asc){    _id,    title,    "slug": slug.current,    destination,    startDate,    endDate,    shortDescription,    difficultyLevel,    status,    "price": price{deposit, total, currency},    heroImage,    maxGroupSize,  }
+export type AllTripsQueryResult = Array<{
   _id: string
-  _type: 'page'
-  name: null
-  slug: null
-  heading: null
-  subheading: null
-  pageBuilder: null
+  title: string
+  slug: string
+  destination: string
+  startDate: string
+  endDate: string
+  shortDescription: string
+  difficultyLevel: 'challenging' | 'easy' | 'expert' | 'moderate'
+  status: 'archived' | 'full' | 'open'
+  price: {
+    deposit: number
+    total: number
+    currency: 'EUR' | 'GBP' | 'USD' | null
+  } | null
+  heroImage: {
+    asset?: SanityImageAssetReference
+    media?: unknown
+    hotspot?: SanityImageHotspot
+    crop?: SanityImageCrop
+    alt?: string
+    _type: 'image'
+  } | null
+  maxGroupSize: number
+}>
+
+// Source: sanity/lib/queries.ts
+// Variable: tripBySlugQuery
+// Query: *[_type == "trip" && slug.current == $slug][0]{    _id,    title,    "slug": slug.current,    destination,    startDate,    endDate,    shortDescription,    fullDescription,    difficultyLevel,    status,    "price": price{deposit, total, currency},    maxGroupSize,    heroImage,    gallery,    itinerary,    included,    excluded,    meetingPoint,    packingList,  }
+export type TripBySlugQueryResult = {
+  _id: string
+  title: string
+  slug: string
+  destination: string
+  startDate: string
+  endDate: string
+  shortDescription: string
+  fullDescription: BlockContent | null
+  difficultyLevel: 'challenging' | 'easy' | 'expert' | 'moderate'
+  status: 'archived' | 'full' | 'open'
+  price: {
+    deposit: number
+    total: number
+    currency: 'EUR' | 'GBP' | 'USD' | null
+  } | null
+  maxGroupSize: number
+  heroImage: {
+    asset?: SanityImageAssetReference
+    media?: unknown
+    hotspot?: SanityImageHotspot
+    crop?: SanityImageCrop
+    alt?: string
+    _type: 'image'
+  } | null
+  gallery: Array<{
+    asset?: SanityImageAssetReference
+    media?: unknown
+    hotspot?: SanityImageHotspot
+    crop?: SanityImageCrop
+    alt?: string
+    _type: 'image'
+    _key: string
+  }> | null
+  itinerary: Array<
+    {
+      _key: string
+    } & ItineraryDay
+  > | null
+  included: Array<string> | null
+  excluded: Array<string> | null
+  meetingPoint: string | null
+  packingList: BlockContentTextOnly | null
+} | null
+
+// Source: sanity/lib/queries.ts
+// Variable: tripSlugsQuery
+// Query: *[_type == "trip" && defined(slug.current)]{"slug": slug.current}
+export type TripSlugsQueryResult = Array<{
+  slug: string
+}>
+
+// Source: sanity/lib/queries.ts
+// Variable: pageContentQuery
+// Query: *[_type == "page" && identifier == $identifier][0]{    _id,    identifier,    content,    faqItems,  }
+export type PageContentQueryResult = {
+  _id: string
+  identifier: 'about' | 'faq'
+  content: BlockContent | null
+  faqItems: Array<{
+    question: string
+    answer?: string
+    _type: 'faqItem'
+    _key: string
+  }> | null
 } | null
 
 // Source: sanity/lib/queries.ts
 // Variable: sitemapData
-// Query: *[_type == "page" || _type == "post" && defined(slug.current)] | order(_type asc) {    "slug": slug.current,    _type,    _updatedAt,  }
+// Query: *[_type == "trip" && defined(slug.current)]{    "slug": slug.current,    _type,    _updatedAt,  }
 export type SitemapDataResult = Array<{
-  slug: null
-  _type: 'page'
+  slug: string
+  _type: 'trip'
   _updatedAt: string
 }>
-
-// Source: sanity/lib/queries.ts
-// Variable: allPostsQuery
-// Query: *[_type == "post" && defined(slug.current)] | order(date desc, _updatedAt desc) {      _id,  "status": select(_originalId in path("drafts.**") => "draft", "published"),  "title": coalesce(title, "Untitled"),  "slug": slug.current,  excerpt,  coverImage,  "date": coalesce(date, _updatedAt),  "author": author->{firstName, lastName, picture},  }
-export type AllPostsQueryResult = Array<never>
-
-// Source: sanity/lib/queries.ts
-// Variable: morePostsQuery
-// Query: *[_type == "post" && _id != $skip && defined(slug.current)] | order(date desc, _updatedAt desc) [0...$limit] {      _id,  "status": select(_originalId in path("drafts.**") => "draft", "published"),  "title": coalesce(title, "Untitled"),  "slug": slug.current,  excerpt,  coverImage,  "date": coalesce(date, _updatedAt),  "author": author->{firstName, lastName, picture},  }
-export type MorePostsQueryResult = Array<never>
-
-// Source: sanity/lib/queries.ts
-// Variable: postQuery
-// Query: *[_type == "post" && slug.current == $slug] [0] {    content[]{    ...,    markDefs[]{      ...,        _type == "link" => {    "page": page->slug.current,    "post": post->slug.current  }    }  },      _id,  "status": select(_originalId in path("drafts.**") => "draft", "published"),  "title": coalesce(title, "Untitled"),  "slug": slug.current,  excerpt,  coverImage,  "date": coalesce(date, _updatedAt),  "author": author->{firstName, lastName, picture},  }
-export type PostQueryResult = null
-
-// Source: sanity/lib/queries.ts
-// Variable: postPagesSlugs
-// Query: *[_type == "post" && defined(slug.current)]  {"slug": slug.current}
-export type PostPagesSlugsResult = Array<never>
-
-// Source: sanity/lib/queries.ts
-// Variable: pagesSlugs
-// Query: *[_type == "page" && defined(slug.current)]  {"slug": slug.current}
-export type PagesSlugsResult = Array<never>
 
 // Query TypeMap
 import '@sanity/client'
 declare module '@sanity/client' {
   interface SanityQueries {
-    '*[_type == "settings"][0]': SettingsQueryResult
-    '\n  *[_type == \'page\' && slug.current == $slug][0]{\n    _id,\n    _type,\n    name,\n    slug,\n    heading,\n    subheading,\n    "pageBuilder": pageBuilder[]{\n      ...,\n      _type == "callToAction" => {\n        ...,\n        button {\n          ...,\n          \n  link {\n      ...,\n      \n  _type == "link" => {\n    "page": page->slug.current,\n    "post": post->slug.current\n  }\n\n      }\n\n        }\n      },\n      _type == "infoSection" => {\n        content[]{\n          ...,\n          markDefs[]{\n            ...,\n            \n  _type == "link" => {\n    "page": page->slug.current,\n    "post": post->slug.current\n  }\n\n          }\n        }\n      },\n    },\n  }\n': GetPageQueryResult
-    '\n  *[_type == "page" || _type == "post" && defined(slug.current)] | order(_type asc) {\n    "slug": slug.current,\n    _type,\n    _updatedAt,\n  }\n': SitemapDataResult
-    '\n  *[_type == "post" && defined(slug.current)] | order(date desc, _updatedAt desc) {\n    \n  _id,\n  "status": select(_originalId in path("drafts.**") => "draft", "published"),\n  "title": coalesce(title, "Untitled"),\n  "slug": slug.current,\n  excerpt,\n  coverImage,\n  "date": coalesce(date, _updatedAt),\n  "author": author->{firstName, lastName, picture},\n\n  }\n': AllPostsQueryResult
-    '\n  *[_type == "post" && _id != $skip && defined(slug.current)] | order(date desc, _updatedAt desc) [0...$limit] {\n    \n  _id,\n  "status": select(_originalId in path("drafts.**") => "draft", "published"),\n  "title": coalesce(title, "Untitled"),\n  "slug": slug.current,\n  excerpt,\n  coverImage,\n  "date": coalesce(date, _updatedAt),\n  "author": author->{firstName, lastName, picture},\n\n  }\n': MorePostsQueryResult
-    '\n  *[_type == "post" && slug.current == $slug] [0] {\n    content[]{\n    ...,\n    markDefs[]{\n      ...,\n      \n  _type == "link" => {\n    "page": page->slug.current,\n    "post": post->slug.current\n  }\n\n    }\n  },\n    \n  _id,\n  "status": select(_originalId in path("drafts.**") => "draft", "published"),\n  "title": coalesce(title, "Untitled"),\n  "slug": slug.current,\n  excerpt,\n  coverImage,\n  "date": coalesce(date, _updatedAt),\n  "author": author->{firstName, lastName, picture},\n\n  }\n': PostQueryResult
-    '\n  *[_type == "post" && defined(slug.current)]\n  {"slug": slug.current}\n': PostPagesSlugsResult
-    '\n  *[_type == "page" && defined(slug.current)]\n  {"slug": slug.current}\n': PagesSlugsResult
+    '\n  *[_type == "settings" && _id == "siteSettings"][0]{\n    heroHeading,\n    heroSubheading,\n    heroImage,\n    introText,\n    "featuredTrips": featuredTrips[]->{\n      _id,\n      title,\n      "slug": slug.current,\n      destination,\n      startDate,\n      endDate,\n      shortDescription,\n      difficultyLevel,\n      status,\n      "price": price{deposit, total, currency},\n      heroImage,\n    },\n    ogImage,\n  }\n': SettingsQueryResult
+    '\n  *[_type == "trip" && status != "archived"] | order(startDate asc){\n    _id,\n    title,\n    "slug": slug.current,\n    destination,\n    startDate,\n    endDate,\n    shortDescription,\n    difficultyLevel,\n    status,\n    "price": price{deposit, total, currency},\n    heroImage,\n    maxGroupSize,\n  }\n': AllTripsQueryResult
+    '\n  *[_type == "trip" && slug.current == $slug][0]{\n    _id,\n    title,\n    "slug": slug.current,\n    destination,\n    startDate,\n    endDate,\n    shortDescription,\n    fullDescription,\n    difficultyLevel,\n    status,\n    "price": price{deposit, total, currency},\n    maxGroupSize,\n    heroImage,\n    gallery,\n    itinerary,\n    included,\n    excluded,\n    meetingPoint,\n    packingList,\n  }\n': TripBySlugQueryResult
+    '\n  *[_type == "trip" && defined(slug.current)]{"slug": slug.current}\n': TripSlugsQueryResult
+    '\n  *[_type == "page" && identifier == $identifier][0]{\n    _id,\n    identifier,\n    content,\n    faqItems,\n  }\n': PageContentQueryResult
+    '\n  *[_type == "trip" && defined(slug.current)]{\n    "slug": slug.current,\n    _type,\n    _updatedAt,\n  }\n': SitemapDataResult
   }
 }

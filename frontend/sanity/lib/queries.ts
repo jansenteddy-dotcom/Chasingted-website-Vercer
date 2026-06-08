@@ -1,101 +1,92 @@
 import {defineQuery} from 'next-sanity'
 
-export const settingsQuery = defineQuery(`*[_type == "settings"][0]`)
-
-const postFields = /* groq */ `
-  _id,
-  "status": select(_originalId in path("drafts.**") => "draft", "published"),
-  "title": coalesce(title, "Untitled"),
-  "slug": slug.current,
-  excerpt,
-  coverImage,
-  "date": coalesce(date, _updatedAt),
-  "author": author->{firstName, lastName, picture},
-`
-
-const linkReference = /* groq */ `
-  _type == "link" => {
-    "page": page->slug.current,
-    "post": post->slug.current
-  }
-`
-
-const linkFields = /* groq */ `
-  link {
-      ...,
-      ${linkReference}
-      }
-`
-
-export const getPageQuery = defineQuery(`
-  *[_type == 'page' && slug.current == $slug][0]{
-    _id,
-    _type,
-    name,
-    slug,
-    heading,
-    subheading,
-    "pageBuilder": pageBuilder[]{
-      ...,
-      _type == "callToAction" => {
-        ...,
-        button {
-          ...,
-          ${linkFields}
-        }
-      },
-      _type == "infoSection" => {
-        content[]{
-          ...,
-          markDefs[]{
-            ...,
-            ${linkReference}
-          }
-        }
-      },
+// Site settings — homepage hero, intro text, featured trips
+export const settingsQuery = defineQuery(`
+  *[_type == "settings" && _id == "siteSettings"][0]{
+    heroHeading,
+    heroSubheading,
+    heroImage,
+    introText,
+    "featuredTrips": featuredTrips[]->{
+      _id,
+      title,
+      "slug": slug.current,
+      destination,
+      startDate,
+      endDate,
+      shortDescription,
+      difficultyLevel,
+      status,
+      "price": price{deposit, total, currency},
+      heroImage,
     },
+    ogImage,
   }
 `)
 
+// All trips for the /trips listing page
+export const allTripsQuery = defineQuery(`
+  *[_type == "trip" && status != "archived"] | order(startDate asc){
+    _id,
+    title,
+    "slug": slug.current,
+    destination,
+    startDate,
+    endDate,
+    shortDescription,
+    difficultyLevel,
+    status,
+    "price": price{deposit, total, currency},
+    heroImage,
+    maxGroupSize,
+  }
+`)
+
+// Single trip by slug for the /trips/[slug] detail page
+export const tripBySlugQuery = defineQuery(`
+  *[_type == "trip" && slug.current == $slug][0]{
+    _id,
+    title,
+    "slug": slug.current,
+    destination,
+    startDate,
+    endDate,
+    shortDescription,
+    fullDescription,
+    difficultyLevel,
+    status,
+    "price": price{deposit, total, currency},
+    maxGroupSize,
+    heroImage,
+    gallery,
+    itinerary,
+    included,
+    excluded,
+    meetingPoint,
+    packingList,
+  }
+`)
+
+// All trip slugs — used to generate all static trip pages
+export const tripSlugsQuery = defineQuery(`
+  *[_type == "trip" && defined(slug.current)]{"slug": slug.current}
+`)
+
+// Page content by identifier — used for About and FAQ pages
+export const pageContentQuery = defineQuery(`
+  *[_type == "page" && identifier == $identifier][0]{
+    _id,
+    identifier,
+    content,
+    faqItems,
+  }
+`)
+
+// Sitemap data — used by app/sitemap.ts
 export const sitemapData = defineQuery(`
-  *[_type == "page" || _type == "post" && defined(slug.current)] | order(_type asc) {
+  *[_type == "trip" && defined(slug.current)]{
     "slug": slug.current,
     _type,
     _updatedAt,
   }
-`)
-
-export const allPostsQuery = defineQuery(`
-  *[_type == "post" && defined(slug.current)] | order(date desc, _updatedAt desc) {
-    ${postFields}
-  }
-`)
-
-export const morePostsQuery = defineQuery(`
-  *[_type == "post" && _id != $skip && defined(slug.current)] | order(date desc, _updatedAt desc) [0...$limit] {
-    ${postFields}
-  }
-`)
-
-export const postQuery = defineQuery(`
-  *[_type == "post" && slug.current == $slug] [0] {
-    content[]{
-    ...,
-    markDefs[]{
-      ...,
-      ${linkReference}
-    }
-  },
-    ${postFields}
-  }
-`)
-
-export const postPagesSlugs = defineQuery(`
-  *[_type == "post" && defined(slug.current)]
-  {"slug": slug.current}
-`)
-
-export const pagesSlugs = defineQuery(`
-  *[_type == "page" && defined(slug.current)]
-  {"slug": slug.current}
 `)
