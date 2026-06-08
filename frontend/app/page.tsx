@@ -1,96 +1,110 @@
-import {Suspense} from 'react'
 import Link from 'next/link'
-import {PortableText} from '@portabletext/react'
-
-import {AllPosts} from '@/app/components/Posts'
-import GetStartedCode from '@/app/components/GetStartedCode'
-import SideBySideIcons from '@/app/components/SideBySideIcons'
-import {settingsQuery} from '@/sanity/lib/queries'
+import Image from 'next/image'
 import {sanityFetch} from '@/sanity/lib/live'
-import {dataAttr} from '@/sanity/lib/utils'
+import {settingsQuery, allTripsQuery} from '@/sanity/lib/queries'
+import {urlFor} from '@/sanity/lib/utils'
+import TripCard from '@/app/components/TripCard'
 
-export default async function Page() {
-  const {data: settings} = await sanityFetch({
-    query: settingsQuery,
-  })
+export default async function HomePage() {
+  const [{data: settings}, {data: trips}] = await Promise.all([
+    sanityFetch({query: settingsQuery}),
+    sanityFetch({query: allTripsQuery}),
+  ])
+
+  const featuredTrips = settings?.featuredTrips?.length ? settings.featuredTrips : trips?.slice(0, 3)
 
   return (
     <>
-      <div className="relative">
-        <div className="relative bg-[url(/images/tile-1-black.png)] bg-size-[5px]">
-          <div className="bg-gradient-to-b from-white w-full h-full absolute top-0"></div>
+      {/* Hero */}
+      <section className="relative h-screen flex items-center justify-center text-center overflow-hidden">
+        {settings?.heroImage?.asset && (
+          <Image
+            src={urlFor(settings.heroImage).width(1600).height(900).url()}
+            alt={(settings.heroImage as any).alt || 'Chasingted adventure'}
+            fill
+            className="object-cover"
+            priority
+          />
+        )}
+        <div className="absolute inset-0 bg-[#133425]/60" />
+        <div className="relative z-10 px-6 max-w-3xl">
+          <h1 className="font-serif text-5xl md:text-7xl text-[#F5F0E4] leading-tight mb-6">
+            {settings?.heroHeading || 'Adventure awaits.'}
+          </h1>
+          {settings?.heroSubheading && (
+            <p className="text-[#F5F0E4]/90 text-xl md:text-2xl mb-10 font-light">
+              {settings.heroSubheading}
+            </p>
+          )}
+          <Link
+            href="/trips"
+            className="inline-block bg-[#f7b500] text-[#133425] font-semibold px-8 py-4 rounded text-lg hover:bg-[#d9a441] transition-colors duration-200"
+          >
+            See all expeditions
+          </Link>
+        </div>
+      </section>
+
+      {/* Intro */}
+      {settings?.introText && (
+        <section className="bg-[#F5F0E4] py-20">
+          <div className="container max-w-2xl text-center mx-auto">
+            <p className="text-[#3a4a40] text-lg md:text-xl leading-relaxed">
+              {settings.introText}
+            </p>
+          </div>
+        </section>
+      )}
+
+      {/* Featured trips */}
+      {featuredTrips && featuredTrips.length > 0 && (
+        <section className="py-20 bg-white">
           <div className="container">
-            <div className="relative min-h-[40vh] mx-auto max-w-2xl pt-10 xl:pt-20 pb-30 space-y-6 lg:max-w-4xl lg:px-12 flex flex-col items-center justify-center">
-              <div className="flex flex-col gap-4 items-center">
-                <div className="text-md leading-6 prose uppercase py-1 px-3 bg-white font-mono italic">
-                  A starter template for
-                </div>
-                <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-black">
-                  <Link
-                    className="underline decoration-brand hover:text-brand underline-offset-8 hover:underline-offset-4 transition-all ease-out"
-                    href="https://sanity.io/"
-                  >
-                    Sanity
-                  </Link>
-                  +
-                  <Link
-                    className="underline decoration-black text-framework underline-offset-8 hover:underline-offset-4 transition-all ease-out"
-                    href="https://nextjs.org/"
-                  >
-                    Next.js
-                  </Link>
-                </h1>
-              </div>
+            <h2 className="font-serif text-3xl md:text-4xl text-[#133425] text-center mb-4">
+              Upcoming expeditions
+            </h2>
+            <p className="text-center text-[#3a4a40]/70 mb-12">
+              Small groups. Real adventures. Apply to secure your spot.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {featuredTrips.map((trip) => (
+                <TripCard key={trip._id} trip={trip as any} />
+              ))}
+            </div>
+            <div className="text-center mt-12">
+              <Link
+                href="/trips"
+                className="inline-block border-2 border-[#133425] text-[#133425] font-semibold px-8 py-3 rounded hover:bg-[#133425] hover:text-[#F5F0E4] transition-colors duration-200"
+              >
+                View all trips
+              </Link>
             </div>
           </div>
-        </div>
-        <div className=" flex flex-col items-center">
-          <SideBySideIcons />
-          <div className="container relative mx-auto max-w-2xl pb-20 pt-10 space-y-6 lg:max-w-4xl lg:px-12 flex flex-col items-center">
-            <div className="prose sm:prose-lg md:prose-xl xl:prose-2xl text-gray-700 prose-a:text-gray-700 font-light text-center">
-              {settings?.description && (
-                <div
-                  data-sanity={dataAttr({
-                    id: settings._id,
-                    type: 'settings',
-                    path: 'description',
-                  }).toString()}
-                >
-                  <PortableText value={settings.description} />
-                </div>
-              )}
-              <div className="flex items-center flex-col gap-4">
-                <GetStartedCode />
-                <Link
-                  href="https://www.sanity.io/docs"
-                  className="inline-flex text-brand text-xs md:text-sm underline hover:text-gray-900"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Sanity Documentation
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    className="w-4 h-4 ml-1 inline"
-                    fill="currentColor"
-                  >
-                    <path d="M10 6V8H5V19H16V14H18V20C18 20.5523 17.5523 21 17 21H4C3.44772 21 3 20.5523 3 20V7C3 6.44772 3.44772 6 4 6H10ZM21 3V12L17.206 8.207L11.2071 14.2071L9.79289 12.7929L15.792 6.793L12 3H21Z"></path>
-                  </svg>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="border-t border-gray-100 bg-gray-50">
+        </section>
+      )}
+
+      {/* How it works */}
+      <section className="bg-[#F5F0E4] py-20">
         <div className="container">
-          <aside className="py-12 sm:py-20">
-            <Suspense>
-              <AllPosts />
-            </Suspense>
-          </aside>
+          <h2 className="font-serif text-3xl md:text-4xl text-[#133425] text-center mb-16">
+            How it works
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+            {[
+              {step: '01', title: 'Apply', desc: 'Fill in your application for the trip you want.'},
+              {step: '02', title: 'Get approved', desc: 'Teddy reviews and confirms your spot within 3–5 days.'},
+              {step: '03', title: 'Pay deposit', desc: 'Secure your place with a bank transfer deposit.'},
+              {step: '04', title: 'Go on an adventure', desc: 'Access the traveler portal and get ready to explore.'},
+            ].map(({step, title, desc}) => (
+              <div key={step}>
+                <div className="text-[#f7b500] font-serif text-4xl mb-3">{step}</div>
+                <h3 className="font-serif text-lg text-[#133425] mb-2">{title}</h3>
+                <p className="text-[#3a4a40]/70 text-sm leading-relaxed">{desc}</p>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
+      </section>
     </>
   )
 }

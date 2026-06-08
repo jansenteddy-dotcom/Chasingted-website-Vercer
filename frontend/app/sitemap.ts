@@ -1,61 +1,27 @@
 import {MetadataRoute} from 'next'
 import {sanityFetch} from '@/sanity/lib/live'
 import {sitemapData} from '@/sanity/lib/queries'
-import {headers} from 'next/headers'
 
-/**
- * This file creates a sitemap (sitemap.xml) for the application. Learn more about sitemaps in Next.js here: https://nextjs.org/docs/app/api-reference/file-conventions/metadata/sitemap
- * Be sure to update the `changeFrequency` and `priority` values to match your application's content.
- */
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://chasingted.com'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const allPostsAndPages = await sanityFetch({
-    query: sitemapData,
-  })
-  const headersList = await headers()
-  const sitemap: MetadataRoute.Sitemap = []
-  const domain: string = headersList.get('host') as string
-  sitemap.push({
-    url: domain as string,
-    lastModified: new Date(),
-    priority: 1,
-    changeFrequency: 'monthly',
-  })
+  const {data: trips} = await sanityFetch({query: sitemapData, stega: false})
 
-  if (allPostsAndPages != null && allPostsAndPages.data.length != 0) {
-    let priority: number
-    let changeFrequency:
-      | 'monthly'
-      | 'always'
-      | 'hourly'
-      | 'daily'
-      | 'weekly'
-      | 'yearly'
-      | 'never'
-      | undefined
-    let url: string
+  const staticPages: MetadataRoute.Sitemap = [
+    {url: BASE_URL, lastModified: new Date(), priority: 1, changeFrequency: 'monthly'},
+    {url: `${BASE_URL}/trips`, lastModified: new Date(), priority: 0.9, changeFrequency: 'weekly'},
+    {url: `${BASE_URL}/about`, lastModified: new Date(), priority: 0.7, changeFrequency: 'monthly'},
+    {url: `${BASE_URL}/faq`, lastModified: new Date(), priority: 0.6, changeFrequency: 'monthly'},
+    {url: `${BASE_URL}/contact`, lastModified: new Date(), priority: 0.5, changeFrequency: 'yearly'},
+  ]
 
-    for (const p of allPostsAndPages.data) {
-      switch (p._type) {
-        case 'page':
-          priority = 0.8
-          changeFrequency = 'monthly'
-          url = `${domain}/${p.slug}`
-          break
-        case 'post':
-          priority = 0.5
-          changeFrequency = 'never'
-          url = `${domain}/posts/${p.slug}`
-          break
-      }
-      sitemap.push({
-        lastModified: p._updatedAt || new Date(),
-        priority,
-        changeFrequency,
-        url,
-      })
-    }
-  }
+  const tripPages: MetadataRoute.Sitemap =
+    trips?.map((trip) => ({
+      url: `${BASE_URL}/trips/${trip.slug}`,
+      lastModified: new Date(trip._updatedAt),
+      priority: 0.8,
+      changeFrequency: 'weekly' as const,
+    })) ?? []
 
-  return sitemap
+  return [...staticPages, ...tripPages]
 }
