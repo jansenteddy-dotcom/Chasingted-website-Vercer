@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import {notFound} from 'next/navigation'
 import {sanityFetch} from '@/sanity/lib/live'
+import {client} from '@/sanity/lib/client'
 import {tripBySlugQuery, tripSlugsQuery} from '@/sanity/lib/queries'
 import {urlFor} from '@/sanity/lib/utils'
 import {format, parseISO} from 'date-fns'
@@ -10,8 +11,8 @@ import {format, parseISO} from 'date-fns'
 type Props = {params: Promise<{slug: string}>}
 
 export async function generateStaticParams() {
-  const {data: slugs} = await sanityFetch({query: tripSlugsQuery, stega: false})
-  return slugs?.map(({slug}) => ({slug})) ?? []
+  const slugs = await client.fetch(tripSlugsQuery)
+  return slugs?.map(({slug}: {slug: string}) => ({slug})) ?? []
 }
 
 export async function generateMetadata({params}: Props): Promise<Metadata> {

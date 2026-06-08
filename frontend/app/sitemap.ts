@@ -1,11 +1,11 @@
 import {MetadataRoute} from 'next'
-import {sanityFetch} from '@/sanity/lib/live'
+import {client} from '@/sanity/lib/client'
 import {sitemapData} from '@/sanity/lib/queries'
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://chasingted.com'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const {data: trips} = await sanityFetch({query: sitemapData, stega: false})
+  const trips = await client.fetch(sitemapData)
 
   const staticPages: MetadataRoute.Sitemap = [
     {url: BASE_URL, lastModified: new Date(), priority: 1, changeFrequency: 'monthly'},
