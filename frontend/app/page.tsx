@@ -9,7 +9,6 @@ import FallingStars from '@/app/components/FallingStars'
 import Campfire from '@/app/components/Campfire'
 import SwimmingFish from '@/app/components/SwimmingFish'
 import Motorcycle from '@/app/components/Motorcycle'
-import Climber from '@/app/components/Climber'
 import MountainTruck from '@/app/components/MountainTruck'
 
 const pillars = [
@@ -194,7 +193,6 @@ export default async function HomePage() {
       {/* ── WHY CHASINGTED ── */}
       <section className="relative overflow-hidden grid grid-cols-1 md:grid-cols-2">
         <SwimmingFish count={2} offset={2} />
-        <Climber />
         {/* Left — photo */}
         <div className="relative h-80 md:h-auto min-h-[400px] bg-[#3a4a40]">
           {whyImageUrl && (
