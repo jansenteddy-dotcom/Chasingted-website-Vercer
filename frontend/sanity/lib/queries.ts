@@ -91,6 +91,7 @@ export const pageContentQuery = defineQuery(`
   *[_type == "page" && identifier == $identifier][0]{
     _id,
     identifier,
+    heroImage,
     content,
     faqItems,
   }

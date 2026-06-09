@@ -1,7 +1,9 @@
 import type {Metadata} from 'next'
+import Image from 'next/image'
 import {PortableText} from '@portabletext/react'
 import {sanityFetch} from '@/sanity/lib/live'
 import {pageContentQuery} from '@/sanity/lib/queries'
+import {urlFor} from '@/sanity/lib/utils'
 
 export const metadata: Metadata = {
   title: 'About Chasingted',
@@ -18,6 +20,19 @@ export default async function AboutPage() {
     <div className="pt-24 pb-20">
       <div className="container max-w-3xl">
         <h1 className="font-serif text-4xl md:text-5xl text-[#133425] mb-10">About Chasingted</h1>
+
+        {(page as any)?.heroImage?.asset && (
+          <div className="relative w-full aspect-[16/9] mb-10 overflow-hidden rounded">
+            <Image
+              src={urlFor((page as any).heroImage).width(1200).quality(85).url()}
+              alt={(page as any).heroImage.alt || 'About Chasingted'}
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 800px"
+            />
+          </div>
+        )}
+
         {page?.content ? (
           <div className="prose prose-lg prose-headings:font-serif prose-headings:text-[#133425] prose-p:text-[#3a4a40] prose-a:text-[#f7b500] max-w-none">
             <PortableText value={page.content} />

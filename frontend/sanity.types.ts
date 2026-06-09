@@ -85,6 +85,14 @@ export type Page = {
   _updatedAt: string
   _rev: string
   identifier: 'about' | 'faq'
+  heroImage?: {
+    asset?: SanityImageAssetReference
+    media?: unknown
+    hotspot?: SanityImageHotspot
+    crop?: SanityImageCrop
+    alt?: string
+    _type: 'image'
+  }
   content?: BlockContent
   faqItems?: Array<{
     question: string
@@ -92,6 +100,22 @@ export type Page = {
     _type: 'faqItem'
     _key: string
   }>
+}
+
+export type SanityImageCrop = {
+  _type: 'sanity.imageCrop'
+  top: number
+  bottom: number
+  left: number
+  right: number
+}
+
+export type SanityImageHotspot = {
+  _type: 'sanity.imageHotspot'
+  x: number
+  y: number
+  height: number
+  width: number
 }
 
 export type ApplicationReference = {
@@ -172,22 +196,6 @@ export type Post = {
   excerpt?: string
   body?: BlockContent
   relatedTrip?: TripReference
-}
-
-export type SanityImageCrop = {
-  _type: 'sanity.imageCrop'
-  top: number
-  bottom: number
-  left: number
-  right: number
-}
-
-export type SanityImageHotspot = {
-  _type: 'sanity.imageHotspot'
-  x: number
-  y: number
-  height: number
-  width: number
 }
 
 export type Slug = {
@@ -546,13 +554,13 @@ export type AllSanitySchemaTypes =
   | BlockContent
   | ItineraryDay
   | Page
+  | SanityImageCrop
+  | SanityImageHotspot
   | ApplicationReference
   | TripReference
   | Booking
   | Application
   | Post
-  | SanityImageCrop
-  | SanityImageHotspot
   | Slug
   | Trip
   | Settings
@@ -742,10 +750,18 @@ export type TripSlugsQueryResult = Array<{
 
 // Source: sanity/lib/queries.ts
 // Variable: pageContentQuery
-// Query: *[_type == "page" && identifier == $identifier][0]{    _id,    identifier,    content,    faqItems,  }
+// Query: *[_type == "page" && identifier == $identifier][0]{    _id,    identifier,    heroImage,    content,    faqItems,  }
 export type PageContentQueryResult = {
   _id: string
   identifier: 'about' | 'faq'
+  heroImage: {
+    asset?: SanityImageAssetReference
+    media?: unknown
+    hotspot?: SanityImageHotspot
+    crop?: SanityImageCrop
+    alt?: string
+    _type: 'image'
+  } | null
   content: BlockContent | null
   faqItems: Array<{
     question: string
@@ -828,7 +844,7 @@ declare module '@sanity/client' {
     '\n  *[_type == "trip" && status != "archived"] | order(startDate asc){\n    _id,\n    title,\n    "slug": slug.current,\n    destination,\n    startDate,\n    endDate,\n    shortDescription,\n    difficultyLevel,\n    status,\n    "price": price{deposit, total, currency},\n    heroImage,\n    maxGroupSize,\n  }\n': AllTripsQueryResult
     '\n  *[_type == "trip" && slug.current == $slug][0]{\n    _id,\n    title,\n    "slug": slug.current,\n    destination,\n    startDate,\n    endDate,\n    shortDescription,\n    fullDescription,\n    difficultyLevel,\n    status,\n    "price": price{deposit, total, currency},\n    maxGroupSize,\n    heroImage,\n    gallery,\n    itinerary,\n    included,\n    excluded,\n    meetingPoint,\n    fitnessLevel,\n    cancellationPolicy,\n    gearList,\n    packingList,\n  }\n': TripBySlugQueryResult
     '\n  *[_type == "trip" && defined(slug.current)]{"slug": slug.current}\n': TripSlugsQueryResult
-    '\n  *[_type == "page" && identifier == $identifier][0]{\n    _id,\n    identifier,\n    content,\n    faqItems,\n  }\n': PageContentQueryResult
+    '\n  *[_type == "page" && identifier == $identifier][0]{\n    _id,\n    identifier,\n    heroImage,\n    content,\n    faqItems,\n  }\n': PageContentQueryResult
     '\n  *[_type == "post"] | order(publishedAt desc){\n    _id,\n    title,\n    "slug": slug.current,\n    publishedAt,\n    category,\n    excerpt,\n    coverImage,\n  }\n': AllPostsQueryResult
     '\n  *[_type == "post" && slug.current == $slug][0]{\n    _id,\n    title,\n    "slug": slug.current,\n    publishedAt,\n    category,\n    excerpt,\n    coverImage,\n    body,\n    "relatedTrip": relatedTrip->{\n      _id,\n      title,\n      "slug": slug.current,\n      status,\n      destination,\n      startDate,\n    },\n  }\n': PostBySlugQueryResult
     '\n  *[_type == "post" && defined(slug.current)]{"slug": slug.current}\n': PostSlugsQueryResult

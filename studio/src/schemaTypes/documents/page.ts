@@ -20,6 +20,22 @@ export const page = defineType({
       validation: (rule) => rule.required(),
     }),
     defineField({
+      name: 'heroImage',
+      title: 'Page Photo',
+      description: 'Main photo shown on the About page.',
+      type: 'image',
+      options: {hotspot: true},
+      fields: [
+        defineField({
+          name: 'alt',
+          title: 'Alt Text (for SEO & accessibility)',
+          type: 'string',
+          description: 'Describe what is in the photo. Example: "Teddy Jansen leading a group through the Norwegian highlands"',
+        }),
+      ],
+      hidden: ({document}) => document?.identifier !== 'about',
+    }),
+    defineField({
       name: 'content',
       title: 'Page Content',
       description: 'Used for the About page.',
