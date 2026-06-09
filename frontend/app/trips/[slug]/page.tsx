@@ -135,13 +135,6 @@ export default async function TripDetailPage({params}: Props) {
               </p>
             )}
 
-            {/* Full description */}
-            {trip.fullDescription && (
-              <div className="prose prose-lg prose-headings:font-serif prose-headings:text-[#133425] prose-p:text-[#3a4a40] prose-a:text-[#f7b500] max-w-none mb-10">
-                <PortableText value={trip.fullDescription} />
-              </div>
-            )}
-
             {/* Photo gallery */}
             {galleryImages.length > 0 && (
               <GalleryCarousel images={galleryImages} />
@@ -199,6 +192,13 @@ export default async function TripDetailPage({params}: Props) {
                   </div>
                 )}
               </section>
+            )}
+
+            {/* Full description */}
+            {trip.fullDescription && (
+              <div className="prose prose-lg prose-headings:font-serif prose-headings:text-[#133425] prose-p:text-[#3a4a40] prose-a:text-[#f7b500] max-w-none mb-10">
+                <PortableText value={trip.fullDescription} />
+              </div>
             )}
 
             {/* Practical Info */}
