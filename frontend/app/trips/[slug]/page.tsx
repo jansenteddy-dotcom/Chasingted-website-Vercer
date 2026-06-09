@@ -94,11 +94,11 @@ export default async function TripDetailPage({params}: Props) {
               <section className="mb-10 grid grid-cols-1 sm:grid-cols-2 gap-8">
                 {trip.included && trip.included.length > 0 && (
                   <div>
-                    <h2 className="font-serif text-xl text-[#133425] mb-4">What&apos;s included</h2>
+                    <h2 className="font-bold text-sm uppercase tracking-widest text-[#133425] mb-4">What&apos;s included</h2>
                     <ul className="space-y-2">
                       {trip.included.map((item: string, i: number) => (
                         <li key={i} className="flex items-start gap-2 text-sm text-[#3a4a40]">
-                          <span className="text-[#f7b500] mt-0.5">✓</span>
+                          <span className="text-[#f7b500] mt-0.5 shrink-0">✓</span>
                           {item}
                         </li>
                       ))}
@@ -107,17 +107,57 @@ export default async function TripDetailPage({params}: Props) {
                 )}
                 {trip.excluded && trip.excluded.length > 0 && (
                   <div>
-                    <h2 className="font-serif text-xl text-[#133425] mb-4">Not included</h2>
+                    <h2 className="font-bold text-sm uppercase tracking-widest text-[#133425] mb-4">Not included</h2>
                     <ul className="space-y-2">
                       {trip.excluded.map((item: string, i: number) => (
                         <li key={i} className="flex items-start gap-2 text-sm text-[#3a4a40]/70">
-                          <span className="mt-0.5">✗</span>
+                          <span className="mt-0.5 shrink-0">✗</span>
                           {item}
                         </li>
                       ))}
                     </ul>
                   </div>
                 )}
+              </section>
+            )}
+
+            {/* Practical Info */}
+            {(trip.fitnessLevel || trip.meetingPoint || trip.cancellationPolicy || trip.gearList?.length) && (
+              <section className="mb-10">
+                <h2 className="font-bold text-xl uppercase tracking-widest text-[#133425] mb-6">Practical Info</h2>
+                <div className="space-y-4">
+                  {trip.fitnessLevel && (
+                    <div className="bg-[#f5f0e4] border border-[#e7dbbf] p-6">
+                      <h3 className="font-bold text-xs uppercase tracking-widest text-[#133425] mb-2">Fitness Level</h3>
+                      <p className="text-sm text-[#3a4a40] leading-relaxed">{trip.fitnessLevel}</p>
+                    </div>
+                  )}
+                  {trip.meetingPoint && (
+                    <div className="bg-[#f5f0e4] border border-[#e7dbbf] p-6">
+                      <h3 className="font-bold text-xs uppercase tracking-widest text-[#133425] mb-2">Meeting Point</h3>
+                      <p className="text-sm text-[#3a4a40] leading-relaxed">{trip.meetingPoint}</p>
+                    </div>
+                  )}
+                  {trip.cancellationPolicy && (
+                    <div className="bg-[#f5f0e4] border border-[#e7dbbf] p-6">
+                      <h3 className="font-bold text-xs uppercase tracking-widest text-[#133425] mb-2">Cancellation Policy</h3>
+                      <p className="text-sm text-[#3a4a40] leading-relaxed">{trip.cancellationPolicy}</p>
+                    </div>
+                  )}
+                  {trip.gearList && trip.gearList.length > 0 && (
+                    <div className="bg-[#f5f0e4] border border-[#e7dbbf] p-6">
+                      <h3 className="font-bold text-xs uppercase tracking-widest text-[#133425] mb-4">Gear List</h3>
+                      <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2">
+                        {trip.gearList.map((item: string, i: number) => (
+                          <li key={i} className="flex items-start gap-2 text-sm text-[#3a4a40]">
+                            <span className="text-[#133425] mt-0.5 shrink-0">•</span>
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
               </section>
             )}
           </div>

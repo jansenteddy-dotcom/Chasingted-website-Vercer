@@ -1296,11 +1296,10 @@
         },
         "optional": true
       },
-      "packingList": {
+      "fitnessLevel": {
         "type": "objectAttribute",
         "value": {
-          "type": "inline",
-          "name": "blockContentTextOnly"
+          "type": "string"
         },
         "optional": true
       },
@@ -1308,6 +1307,31 @@
         "type": "objectAttribute",
         "value": {
           "type": "string"
+        },
+        "optional": true
+      },
+      "cancellationPolicy": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "gearList": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "array",
+          "of": {
+            "type": "string"
+          }
+        },
+        "optional": true
+      },
+      "packingList": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "inline",
+          "name": "blockContentTextOnly"
         },
         "optional": true
       }

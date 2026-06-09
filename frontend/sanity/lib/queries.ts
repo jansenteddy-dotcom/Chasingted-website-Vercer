@@ -63,6 +63,9 @@ export const tripBySlugQuery = defineQuery(`
     included,
     excluded,
     meetingPoint,
+    fitnessLevel,
+    cancellationPolicy,
+    gearList,
     packingList,
   }
 `)
