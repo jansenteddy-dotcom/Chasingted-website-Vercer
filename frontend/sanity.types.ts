@@ -151,6 +151,51 @@ export type Application = {
   reviewNotes?: string
 }
 
+export type Post = {
+  _id: string
+  _type: 'post'
+  _createdAt: string
+  _updatedAt: string
+  _rev: string
+  title: string
+  slug: Slug
+  publishedAt: string
+  category?: 'expedition-report' | 'destination-guide' | 'gear-tips' | 'behind-the-scenes'
+  coverImage?: {
+    asset?: SanityImageAssetReference
+    media?: unknown
+    hotspot?: SanityImageHotspot
+    crop?: SanityImageCrop
+    alt: string
+    _type: 'image'
+  }
+  excerpt?: string
+  body?: BlockContent
+  relatedTrip?: TripReference
+}
+
+export type SanityImageCrop = {
+  _type: 'sanity.imageCrop'
+  top: number
+  bottom: number
+  left: number
+  right: number
+}
+
+export type SanityImageHotspot = {
+  _type: 'sanity.imageHotspot'
+  x: number
+  y: number
+  height: number
+  width: number
+}
+
+export type Slug = {
+  _type: 'slug'
+  current: string
+  source?: string
+}
+
 export type Trip = {
   _id: string
   _type: 'trip'
@@ -202,28 +247,6 @@ export type Trip = {
   cancellationPolicy?: string
   gearList?: Array<string>
   packingList?: BlockContentTextOnly
-}
-
-export type SanityImageCrop = {
-  _type: 'sanity.imageCrop'
-  top: number
-  bottom: number
-  left: number
-  right: number
-}
-
-export type SanityImageHotspot = {
-  _type: 'sanity.imageHotspot'
-  x: number
-  y: number
-  height: number
-  width: number
-}
-
-export type Slug = {
-  _type: 'slug'
-  current: string
-  source?: string
 }
 
 export type Settings = {
@@ -519,10 +542,11 @@ export type AllSanitySchemaTypes =
   | TripReference
   | Booking
   | Application
-  | Trip
+  | Post
   | SanityImageCrop
   | SanityImageHotspot
   | Slug
+  | Trip
   | Settings
   | SanityAssistInstructionTask
   | SanityAssistTaskStatus
@@ -716,6 +740,62 @@ export type PageContentQueryResult = {
 } | null
 
 // Source: sanity/lib/queries.ts
+// Variable: allPostsQuery
+// Query: *[_type == "post"] | order(publishedAt desc){    _id,    title,    "slug": slug.current,    publishedAt,    category,    excerpt,    coverImage,  }
+export type AllPostsQueryResult = Array<{
+  _id: string
+  title: string
+  slug: string
+  publishedAt: string
+  category: 'behind-the-scenes' | 'destination-guide' | 'expedition-report' | 'gear-tips' | null
+  excerpt: string | null
+  coverImage: {
+    asset?: SanityImageAssetReference
+    media?: unknown
+    hotspot?: SanityImageHotspot
+    crop?: SanityImageCrop
+    alt: string
+    _type: 'image'
+  } | null
+}>
+
+// Source: sanity/lib/queries.ts
+// Variable: postBySlugQuery
+// Query: *[_type == "post" && slug.current == $slug][0]{    _id,    title,    "slug": slug.current,    publishedAt,    category,    excerpt,    coverImage,    body,    "relatedTrip": relatedTrip->{      _id,      title,      "slug": slug.current,      status,      destination,      startDate,    },  }
+export type PostBySlugQueryResult = {
+  _id: string
+  title: string
+  slug: string
+  publishedAt: string
+  category: 'behind-the-scenes' | 'destination-guide' | 'expedition-report' | 'gear-tips' | null
+  excerpt: string | null
+  coverImage: {
+    asset?: SanityImageAssetReference
+    media?: unknown
+    hotspot?: SanityImageHotspot
+    crop?: SanityImageCrop
+    alt: string
+    _type: 'image'
+  } | null
+  body: BlockContent | null
+  relatedTrip: {
+    _id: string
+    title: string
+    slug: string
+    status: 'archived' | 'full' | 'open'
+    destination: string
+    startDate: string
+  } | null
+} | null
+
+// Source: sanity/lib/queries.ts
+// Variable: postSlugsQuery
+// Query: *[_type == "post" && defined(slug.current)]{"slug": slug.current}
+export type PostSlugsQueryResult = Array<{
+  slug: string
+}>
+
+// Source: sanity/lib/queries.ts
 // Variable: sitemapData
 // Query: *[_type == "trip" && defined(slug.current)]{    "slug": slug.current,    _type,    _updatedAt,  }
 export type SitemapDataResult = Array<{
@@ -733,6 +813,9 @@ declare module '@sanity/client' {
     '\n  *[_type == "trip" && slug.current == $slug][0]{\n    _id,\n    title,\n    "slug": slug.current,\n    destination,\n    startDate,\n    endDate,\n    shortDescription,\n    fullDescription,\n    difficultyLevel,\n    status,\n    "price": price{deposit, total, currency},\n    maxGroupSize,\n    heroImage,\n    gallery,\n    itinerary,\n    included,\n    excluded,\n    meetingPoint,\n    fitnessLevel,\n    cancellationPolicy,\n    gearList,\n    packingList,\n  }\n': TripBySlugQueryResult
     '\n  *[_type == "trip" && defined(slug.current)]{"slug": slug.current}\n': TripSlugsQueryResult
     '\n  *[_type == "page" && identifier == $identifier][0]{\n    _id,\n    identifier,\n    content,\n    faqItems,\n  }\n': PageContentQueryResult
+    '\n  *[_type == "post"] | order(publishedAt desc){\n    _id,\n    title,\n    "slug": slug.current,\n    publishedAt,\n    category,\n    excerpt,\n    coverImage,\n  }\n': AllPostsQueryResult
+    '\n  *[_type == "post" && slug.current == $slug][0]{\n    _id,\n    title,\n    "slug": slug.current,\n    publishedAt,\n    category,\n    excerpt,\n    coverImage,\n    body,\n    "relatedTrip": relatedTrip->{\n      _id,\n      title,\n      "slug": slug.current,\n      status,\n      destination,\n      startDate,\n    },\n  }\n': PostBySlugQueryResult
+    '\n  *[_type == "post" && defined(slug.current)]{"slug": slug.current}\n': PostSlugsQueryResult
     '\n  *[_type == "trip" && defined(slug.current)]{\n    "slug": slug.current,\n    _type,\n    _updatedAt,\n  }\n': SitemapDataResult
   }
 }

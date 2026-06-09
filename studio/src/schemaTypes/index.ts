@@ -1,4 +1,5 @@
 import {trip} from './documents/trip'
+import {post} from './documents/post'
 import {application} from './documents/application'
 import {booking} from './documents/booking'
 import {page} from './documents/page'
@@ -12,6 +13,7 @@ export const schemaTypes = [
   settings,
   // Documents
   trip,
+  post,
   application,
   booking,
   page,

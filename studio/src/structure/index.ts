@@ -1,4 +1,4 @@
-import {CogIcon, TiersIcon, UserIcon, CheckmarkCircleIcon, DocumentIcon} from '@sanity/icons'
+import {CogIcon, TiersIcon, UserIcon, CheckmarkCircleIcon, DocumentIcon, EditIcon} from '@sanity/icons'
 import type {StructureBuilder, StructureResolver} from 'sanity/structure'
 
 const SINGLETON_TYPES = ['settings', 'assist.instruction.context']
@@ -11,6 +11,11 @@ export const structure: StructureResolver = (S: StructureBuilder) =>
         .title('Trips')
         .icon(TiersIcon)
         .child(S.documentTypeList('trip').title('All Trips')),
+
+      S.listItem()
+        .title('Stories')
+        .icon(EditIcon)
+        .child(S.documentTypeList('post').title('Stories & Blog Posts')),
 
       S.listItem()
         .title('Applications')

@@ -95,6 +95,46 @@ export const pageContentQuery = defineQuery(`
   }
 `)
 
+// All published posts for the /stories listing page
+export const allPostsQuery = defineQuery(`
+  *[_type == "post"] | order(publishedAt desc){
+    _id,
+    title,
+    "slug": slug.current,
+    publishedAt,
+    category,
+    excerpt,
+    coverImage,
+  }
+`)
+
+// Single post by slug for the /stories/[slug] detail page
+export const postBySlugQuery = defineQuery(`
+  *[_type == "post" && slug.current == $slug][0]{
+    _id,
+    title,
+    "slug": slug.current,
+    publishedAt,
+    category,
+    excerpt,
+    coverImage,
+    body,
+    "relatedTrip": relatedTrip->{
+      _id,
+      title,
+      "slug": slug.current,
+      status,
+      destination,
+      startDate,
+    },
+  }
+`)
+
+// All post slugs — used to generate static pages
+export const postSlugsQuery = defineQuery(`
+  *[_type == "post" && defined(slug.current)]{"slug": slug.current}
+`)
+
 // Sitemap data — used by app/sitemap.ts
 export const sitemapData = defineQuery(`
   *[_type == "trip" && defined(slug.current)]{

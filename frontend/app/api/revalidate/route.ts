@@ -16,11 +16,17 @@ export async function POST(request: NextRequest) {
     // Always refresh homepage and trips list
     revalidatePath('/')
     revalidatePath('/trips')
+    revalidatePath('/stories')
 
     // If a specific trip changed, refresh that trip page too
     if (type === 'trip' && slug) {
       revalidatePath(`/trips/${slug}`)
       revalidatePath(`/trips/${slug}/apply`)
+    }
+
+    // If a post changed, refresh that story page too
+    if (type === 'post' && slug) {
+      revalidatePath(`/stories/${slug}`)
     }
 
     // If settings changed (logo, hero, contact), refresh all pages
