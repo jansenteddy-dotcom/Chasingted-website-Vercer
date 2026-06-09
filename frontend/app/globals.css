@@ -38,18 +38,24 @@
   54%, 100% { opacity: 1; }
 }
 
-/* Exhaust smoke puff — expands and fades */
-@keyframes exhaustPuff {
-  0%   { transform: scale(0.5); opacity: 0.65; }
-  100% { transform: scale(3); opacity: 0; }
+/* 4x4 truck driving across the screen — left to right */
+@keyframes truckRight {
+  0%   { transform: translateX(-260px); opacity: 0; }
+  6%   { opacity: 0.68; }
+  94%  { opacity: 0.68; }
+  100% { transform: translateX(calc(100vw + 260px)); opacity: 0; }
 }
-
-/* 4x4 truck driving up the hill */
-@keyframes driveUpHill {
-  0%   { transform: translate(0px, 0px); opacity: 0; }
-  8%   { opacity: 0.85; }
-  88%  { opacity: 0.85; }
-  100% { transform: translate(-120px, -140px); opacity: 0; }
+/* 4x4 truck driving across the screen — right to left */
+@keyframes truckLeft {
+  0%   { transform: translateX(calc(100vw + 260px)); opacity: 0; }
+  6%   { opacity: 0.55; }
+  94%  { opacity: 0.55; }
+  100% { transform: translateX(-260px); opacity: 0; }
+}
+/* Exhaust smoke — drifts backward and upward while expanding */
+@keyframes truckSmoke {
+  0%   { transform: translate(0px, 0px) scale(0.5); opacity: 0.72; }
+  100% { transform: translate(-50px, -32px) scale(4); opacity: 0; }
 }
 
 /* Climber moving up the wall */

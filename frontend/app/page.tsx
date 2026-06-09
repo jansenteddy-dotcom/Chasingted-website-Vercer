@@ -318,7 +318,7 @@ export default async function HomePage() {
       </section>
 
       {/* ── FOLLOW THE JOURNEY ── */}
-      <div className="relative">
+      <div className="relative overflow-hidden">
         <MountainTruck />
         <InstagramSection />
       </div>
