@@ -88,7 +88,7 @@ export default async function HomePage() {
   return (
     <>
       {/* ── HERO ── */}
-      <section className="relative h-screen flex items-end justify-center text-center overflow-hidden">
+      <section className="relative h-screen flex items-center md:items-end justify-center text-center overflow-hidden">
         {settings?.heroImage?.asset ? (
           <Image
             src={urlFor(settings.heroImage).width(3200).quality(90).url()}
@@ -103,7 +103,7 @@ export default async function HomePage() {
           <div className="absolute inset-0 bg-[#133425]" />
         )}
         <div className="absolute inset-0 bg-[#133425]/55" />
-        <div className="relative z-10 px-6 pb-20 w-full max-w-4xl">
+        <div className="relative z-10 px-6 pb-8 md:pb-20 w-full max-w-4xl">
           <h1 className="font-bold text-4xl md:text-7xl text-[#F5F0E4] leading-none uppercase tracking-wide mb-6">
             {settings?.heroHeading || 'From Somewhere to Somewhere.'}
           </h1>
