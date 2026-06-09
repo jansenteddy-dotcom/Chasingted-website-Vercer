@@ -92,6 +92,7 @@ export const pageContentQuery = defineQuery(`
     _id,
     identifier,
     heroImage,
+    founderImage,
     content,
     faqItems,
   }

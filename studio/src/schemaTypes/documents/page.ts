@@ -21,8 +21,8 @@ export const page = defineType({
     }),
     defineField({
       name: 'heroImage',
-      title: 'Page Photo',
-      description: 'Main photo shown on the About page.',
+      title: 'Hero Background Photo',
+      description: 'Full-width background photo at the top of the About page (the "Our Story" banner).',
       type: 'image',
       options: {hotspot: true},
       fields: [
@@ -30,7 +30,21 @@ export const page = defineType({
           name: 'alt',
           title: 'Alt Text (for SEO & accessibility)',
           type: 'string',
-          description: 'Describe what is in the photo. Example: "Teddy Jansen leading a group through the Norwegian highlands"',
+        }),
+      ],
+      hidden: ({document}) => document?.identifier !== 'about',
+    }),
+    defineField({
+      name: 'founderImage',
+      title: 'Founder Photo (Teddy)',
+      description: 'Photo used in the "The Founder" section — shown on the left next to the Teddy bio.',
+      type: 'image',
+      options: {hotspot: true},
+      fields: [
+        defineField({
+          name: 'alt',
+          title: 'Alt Text (for SEO & accessibility)',
+          type: 'string',
         }),
       ],
       hidden: ({document}) => document?.identifier !== 'about',
