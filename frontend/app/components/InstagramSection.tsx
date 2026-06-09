@@ -7,6 +7,12 @@ type BeholdPost = {
   permalink: string
   thumbnailUrl?: string
   caption?: string
+  sizes?: {
+    small?:  {mediaUrl: string}
+    medium?: {mediaUrl: string}
+    large?:  {mediaUrl: string}
+    full?:   {mediaUrl: string}
+  }
 }
 
 async function getInstagramPosts(): Promise<BeholdPost[]> {
@@ -47,7 +53,9 @@ export default async function InstagramSection() {
         <div className="grid grid-cols-3 md:grid-cols-6 gap-2 mt-10 mb-10">
           {posts.length > 0
             ? posts.map((post) => {
-                const imgUrl = post.mediaType === 'VIDEO' ? post.thumbnailUrl : post.mediaUrl
+                const imgUrl = post.mediaType === 'VIDEO'
+                  ? (post.sizes?.medium?.mediaUrl ?? post.thumbnailUrl)
+                  : (post.sizes?.medium?.mediaUrl ?? post.sizes?.large?.mediaUrl ?? post.mediaUrl)
                 return imgUrl ? (
                   <a
                     key={post.id}
