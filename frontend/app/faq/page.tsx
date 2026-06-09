@@ -3,8 +3,8 @@ import {sanityFetch} from '@/sanity/lib/live'
 import {pageContentQuery} from '@/sanity/lib/queries'
 
 export const metadata: Metadata = {
-  title: 'FAQ',
-  description: 'Answers to the most common questions about Chasingted expeditions.',
+  title: 'FAQ — Frequently Asked Questions',
+  description: 'Common questions about Chasingted expeditions — fitness requirements, what\'s included, how to apply, cancellation policy, group size and more.',
 }
 
 export default async function FaqPage() {
@@ -15,8 +15,26 @@ export default async function FaqPage() {
 
   const faqItems = page?.faqItems
 
+  const faqSchema = faqItems?.length
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: faqItems.map((item: {question?: string; answer?: string}) => ({
+          '@type': 'Question',
+          name: item.question,
+          acceptedAnswer: {'@type': 'Answer', text: item.answer},
+        })),
+      }
+    : null
+
   return (
     <div className="pt-24 pb-20">
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{__html: JSON.stringify(faqSchema)}}
+        />
+      )}
       <div className="container max-w-3xl">
         <h1 className="font-serif text-4xl md:text-5xl text-[#133425] mb-4">Frequently Asked Questions</h1>
         <p className="text-[#3a4a40]/70 mb-12">

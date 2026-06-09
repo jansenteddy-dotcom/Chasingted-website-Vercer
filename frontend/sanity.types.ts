@@ -184,6 +184,7 @@ export type Trip = {
     hotspot?: SanityImageHotspot
     crop?: SanityImageCrop
     alt?: string
+    caption?: string
     _type: 'image'
     _key: string
   }>
@@ -674,6 +675,7 @@ export type TripBySlugQueryResult = {
     hotspot?: SanityImageHotspot
     crop?: SanityImageCrop
     alt?: string
+    caption?: string
     _type: 'image'
     _key: string
   }> | null

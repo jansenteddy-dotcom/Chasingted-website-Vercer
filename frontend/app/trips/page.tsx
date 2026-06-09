@@ -4,8 +4,8 @@ import {allTripsQuery} from '@/sanity/lib/queries'
 import TripCard from '@/app/components/TripCard'
 
 export const metadata: Metadata = {
-  title: 'All Trips',
-  description: 'Browse all upcoming Chasingted expeditions and apply for your adventure.',
+  title: 'All Expeditions',
+  description: 'Upcoming small-group adventure expeditions — Kyrgyzstan, Oman, Poland and beyond. Max 10 travelers per trip. Expert-guided. Apply for your spot.',
 }
 
 export default async function TripsPage() {

@@ -133,6 +133,12 @@ export const trip = defineType({
               type: 'string',
               description: 'Describe what is in this photo. Example: "Campfire at base camp near a lake in Kyrgyzstan during Chasingted expedition"',
             },
+            {
+              name: 'caption',
+              title: 'Caption / Description',
+              type: 'string',
+              description: 'A short sentence shown under the photo and used by Google to understand your images. Example: "Riding through the Tien Shan mountains on day 4 of the Chasingted Kyrgyzstan expedition."',
+            },
           ],
         },
       ],

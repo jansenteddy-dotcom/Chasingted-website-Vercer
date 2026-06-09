@@ -2,7 +2,7 @@ import type {Metadata} from 'next'
 
 export const metadata: Metadata = {
   title: 'Contact',
-  description: 'Get in touch with Chasingted.',
+  description: 'Questions about a Chasingted expedition? Email or WhatsApp Teddy directly — he replies personally within 3–5 days. Or go ahead and apply, it\'s free.',
 }
 
 export default function ContactPage() {
@@ -29,7 +29,7 @@ export default function ContactPage() {
           </a>
 
           <a
-            href="https://wa.me/31600000000"
+            href="https://wa.me/31655825537"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex items-center gap-4 p-6 border border-[#E7DBBF] rounded-xl hover:border-[#f7b500] transition-colors"

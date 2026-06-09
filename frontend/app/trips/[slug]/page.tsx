@@ -19,9 +19,32 @@ export async function generateMetadata({params}: Props): Promise<Metadata> {
   const {slug} = await params
   const {data: trip} = await sanityFetch({query: tripBySlugQuery, params: {slug}, stega: false})
   if (!trip) return {title: 'Trip not found'}
+
+  const description =
+    trip.shortDescription ||
+    `${trip.title}${trip.destination ? ` in ${trip.destination}` : ''} — small-group adventure expedition by Chasingted. Max ${trip.maxGroupSize || 10} travelers, expert guides.`
+
+  const heroImageUrl = trip.heroImage?.asset
+    ? urlFor(trip.heroImage).width(1200).height(630).url()
+    : undefined
+
   return {
-    title: trip.title,
-    description: trip.shortDescription || undefined,
+    title: `${trip.title} — Small-Group Adventure Expedition`,
+    description,
+    openGraph: {
+      title: `${trip.title} | Chasingted`,
+      description,
+      type: 'website',
+      images: heroImageUrl
+        ? [{url: heroImageUrl, width: 1200, height: 630, alt: `${trip.title} — Chasingted expedition`}]
+        : [],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: trip.title,
+      description,
+      images: heroImageUrl ? [heroImageUrl] : [],
+    },
   }
 }
 
@@ -33,10 +56,44 @@ export default async function TripDetailPage({params}: Props) {
 
   const startDate = trip.startDate ? format(parseISO(trip.startDate), 'dd MMMM yyyy') : 'TBC'
   const endDate = trip.endDate ? format(parseISO(trip.endDate), 'dd MMMM yyyy') : 'TBC'
+
+  const touristTripSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'TouristTrip',
+    name: trip.title,
+    description: trip.shortDescription || undefined,
+    touristType: 'Adventure travelers',
+    provider: {
+      '@type': 'TravelAgency',
+      name: 'Chasingted',
+      url: 'https://chasingted.com',
+    },
+    ...(trip.startDate && {startDate: trip.startDate}),
+    ...(trip.endDate && {endDate: trip.endDate}),
+    ...(trip.heroImage?.asset && {
+      image: urlFor(trip.heroImage).width(1200).url(),
+    }),
+    ...(trip.price?.total && {
+      offers: {
+        '@type': 'Offer',
+        price: trip.price.total,
+        priceCurrency: trip.price.currency || 'EUR',
+        availability:
+          trip.status === 'open'
+            ? 'https://schema.org/InStock'
+            : 'https://schema.org/SoldOut',
+        url: `https://chasingted.com/trips/${trip.slug}/apply`,
+      },
+    }),
+  }
   const currencySymbol = trip.price?.currency === 'EUR' ? '€' : trip.price?.currency || ''
 
   return (
     <div className="pt-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{__html: JSON.stringify(touristTripSchema)}}
+      />
       {/* Hero */}
       <div className="relative h-[60vh] bg-[#3a4a40]">
         {trip.heroImage?.asset && (

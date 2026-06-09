@@ -20,18 +20,30 @@ const GTM_ID = 'GTM-P7V9CJF3'
 export async function generateMetadata(): Promise<Metadata> {
   const {data: settings} = await sanityFetch({query: settingsQuery, stega: false})
 
+  const defaultDescription =
+    'Chasingted organises small-group adventure expeditions — max 10 travelers, expert local guides, extraordinary destinations worldwide. Based in Amsterdam.'
+
   return {
     metadataBase: new URL('https://chasingted.com'),
     title: {
       template: '%s | Chasingted',
       default: 'Chasingted — Small-Group Adventure Expeditions',
     },
-    description:
-      settings?.introText ||
-      'Chasingted organises small-group adventure expeditions to extraordinary destinations worldwide.',
+    description: settings?.introText || defaultDescription,
     openGraph: {
       siteName: 'Chasingted',
+      type: 'website',
+      locale: 'en_US',
       images: settings?.ogImage?.asset ? [{url: (settings.ogImage as any).asset._ref}] : [],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      site: '@chasingted',
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {index: true, follow: true, 'max-image-preview': 'large'},
     },
   }
 }
@@ -83,6 +95,31 @@ export default async function RootLayout({children}: {children: React.ReactNode}
             style={{display: 'none', visibility: 'hidden'}}
           />
         </noscript>
+        {/* Organization structured data — tells Google who Chasingted is */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{__html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'TravelAgency',
+            name: 'Chasingted',
+            url: 'https://chasingted.com',
+            logo: 'https://chasingted.com/images/logo.png',
+            description: 'Small-group adventure expeditions to extraordinary destinations. Max 10 travelers, expert local guides, no tourist shortcuts. Based in Amsterdam.',
+            email: footerSettings.contactEmail,
+            telephone: footerSettings.contactPhone,
+            address: {
+              '@type': 'PostalAddress',
+              addressLocality: 'Amsterdam',
+              addressCountry: 'NL',
+            },
+            sameAs: [
+              footerSettings.instagramUrl,
+              footerSettings.facebookUrl,
+              footerSettings.youtubeUrl,
+              footerSettings.tiktokUrl,
+            ],
+          })}}
+        />
         <Toaster />
         {isDraftMode && (
           <>

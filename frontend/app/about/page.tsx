@@ -4,8 +4,8 @@ import {sanityFetch} from '@/sanity/lib/live'
 import {pageContentQuery} from '@/sanity/lib/queries'
 
 export const metadata: Metadata = {
-  title: 'About',
-  description: 'The story behind Chasingted and the person leading these expeditions.',
+  title: 'About Chasingted',
+  description: 'Chasingted is run by Teddy Jansen — adventure guide and expedition leader based in Amsterdam. Small groups, real wilderness, no tourist shortcuts. Find out who leads your next expedition.',
 }
 
 export default async function AboutPage() {
