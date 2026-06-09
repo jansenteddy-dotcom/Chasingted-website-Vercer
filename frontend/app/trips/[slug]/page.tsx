@@ -304,7 +304,7 @@ export default async function TripDetailPage({params}: Props) {
               )}
 
               <p className="text-xs text-center text-[#3a4a40]/50 mt-3">
-                Free to apply · Teddy reviews every application personally
+                Free to apply · Every application will be personally reviewed
               </p>
             </div>
           </div>
