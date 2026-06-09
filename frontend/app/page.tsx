@@ -91,11 +91,13 @@ export default async function HomePage() {
       <section className="relative h-screen flex items-end justify-center text-center overflow-hidden">
         {settings?.heroImage?.asset ? (
           <Image
-            src={urlFor(settings.heroImage).width(1600).height(900).url()}
+            src={urlFor(settings.heroImage).width(3200).quality(90).url()}
             alt={(settings.heroImage as any).alt || `${settings?.heroHeading || 'Chasingted'} — small-group adventure expeditions to extraordinary destinations`}
             fill
             className="object-cover"
             priority
+            sizes="100vw"
+            quality={90}
           />
         ) : (
           <div className="absolute inset-0 bg-[#133425]" />
