@@ -10,13 +10,17 @@ const supabase = createClient(
 const resend = new Resend(process.env.RESEND_API_KEY)
 
 export async function POST(req: NextRequest) {
-  const {email} = await req.json()
+  const {email, firstName, lastName} = await req.json()
 
   if (!email || !email.includes('@')) {
     return NextResponse.json({error: 'Invalid email'}, {status: 400})
   }
 
-  const {error: dbError} = await supabase.from('waitlist').insert({email})
+  const {error: dbError} = await supabase.from('waitlist').insert({
+    email,
+    first_name: firstName || null,
+    last_name: lastName || null,
+  })
 
   if (dbError) {
     // Duplicate email — silently succeed so we don't reveal who's already signed up
@@ -30,7 +34,7 @@ export async function POST(req: NextRequest) {
     from: 'onboarding@resend.dev',
     to: 'jansen.teddy@gmail.com',
     subject: '🌿 New waitlist signup — Chasingted',
-    html: `<p>Someone just joined the Chasingted waitlist:</p><p><strong>${email}</strong></p>`,
+    html: `<p>Someone just joined the Chasingted waitlist:</p><p><strong>${firstName ? `${firstName} ${lastName}` : ''}</strong><br/>${email}</p>`,
   })
 
   return NextResponse.json({success: true})
