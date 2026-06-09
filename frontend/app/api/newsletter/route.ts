@@ -26,8 +26,17 @@ export async function POST(req: NextRequest) {
     if (dbError.code === '23505') {
       return NextResponse.json({success: true})
     }
-    console.error('Supabase error:', dbError)
-    return NextResponse.json({error: dbError.message}, {status: 500})
+    console.error('Supabase insert error:', JSON.stringify(dbError))
+    // If columns don't exist yet, fall back to email-only insert
+    if (dbError.code === 'PGRST204' || dbError.message?.includes('column')) {
+      const {error: fallbackError} = await supabase.from('waitlist').insert({email})
+      if (fallbackError && fallbackError.code !== '23505') {
+        console.error('Supabase fallback error:', JSON.stringify(fallbackError))
+        return NextResponse.json({error: fallbackError.message}, {status: 500})
+      }
+    } else {
+      return NextResponse.json({error: dbError.message}, {status: 500})
+    }
   }
 
   try {
