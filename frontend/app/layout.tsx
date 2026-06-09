@@ -12,6 +12,7 @@ import Header from '@/app/components/Header'
 import Footer from '@/app/components/Footer'
 import {sanityFetch, SanityLive} from '@/sanity/lib/live'
 import {settingsQuery} from '@/sanity/lib/queries'
+import {urlFor} from '@/sanity/lib/utils'
 import {handleError} from '@/app/client-utils'
 
 const GTM_ID = 'GTM-P7V9CJF3'
@@ -49,6 +50,22 @@ const inter = Inter({
 
 export default async function RootLayout({children}: {children: React.ReactNode}) {
   const {isEnabled: isDraftMode} = await draftMode()
+  const {data: settings} = await sanityFetch({query: settingsQuery, stega: false})
+
+  const logoUrl = settings?.logo?.asset ? urlFor(settings.logo).width(200).url() : undefined
+
+  const footerSettings = {
+    logoUrl,
+    footerTagline: settings?.footerTagline ?? 'From somewhere to Somewhere.',
+    footerSubtagline: settings?.footerSubtagline ?? 'Not a holiday. An expedition.',
+    contactEmail: settings?.contactEmail ?? 'info@chasingted.com',
+    contactPhone: settings?.contactPhone ?? '+31 6 55 82 55 37',
+    contactLocation: settings?.contactLocation ?? 'Amsterdam — expeditions worldwide',
+    instagramUrl: settings?.instagramUrl ?? 'https://instagram.com/chasingted.adventures',
+    facebookUrl: settings?.facebookUrl ?? 'https://facebook.com/chasingted',
+    youtubeUrl: settings?.youtubeUrl ?? 'https://youtube.com/@chasingted',
+    tiktokUrl: settings?.tiktokUrl ?? 'https://tiktok.com/@chasingted',
+  }
 
   return (
     <html lang="en" className={`${montserrat.variable} ${inter.variable}`}>
@@ -74,9 +91,9 @@ export default async function RootLayout({children}: {children: React.ReactNode}
           </>
         )}
         <SanityLive onError={handleError} />
-        <Header />
+        <Header logoUrl={logoUrl} />
         <main className="min-h-screen">{children}</main>
-        <Footer />
+        <Footer settings={footerSettings} />
       </body>
     </html>
   )

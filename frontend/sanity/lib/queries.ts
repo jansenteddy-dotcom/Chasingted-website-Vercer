@@ -1,6 +1,6 @@
 import {defineQuery} from 'next-sanity'
 
-// Site settings — homepage hero, intro text, featured trips
+// Site settings — homepage hero, intro text, featured trips, branding, contact, social
 export const settingsQuery = defineQuery(`
   *[_type == "settings" && _id == "siteSettings"][0]{
     heroHeading,
@@ -21,6 +21,16 @@ export const settingsQuery = defineQuery(`
       heroImage,
     },
     ogImage,
+    logo,
+    footerTagline,
+    footerSubtagline,
+    contactEmail,
+    contactPhone,
+    contactLocation,
+    instagramUrl,
+    facebookUrl,
+    youtubeUrl,
+    tiktokUrl,
   }
 `)
 

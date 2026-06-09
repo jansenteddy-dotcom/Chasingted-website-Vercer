@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
 import {usePathname} from 'next/navigation'
 import {useState} from 'react'
@@ -13,7 +14,11 @@ const navLinks = [
   {label: 'JOIN US', href: '/contact'},
 ]
 
-export default function Header() {
+type Props = {
+  logoUrl?: string
+}
+
+export default function Header({logoUrl}: Props) {
   const pathname = usePathname()
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -22,15 +27,28 @@ export default function Header() {
       <div className="container flex items-center justify-between h-16 md:h-20">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
-          <svg width="40" height="36" viewBox="0 0 40 36" fill="none" className="shrink-0">
-            <path d="M20 2 L4 28 L20 22 L36 28 Z" stroke="#F5F0E4" strokeWidth="1.5" fill="none"/>
-            <path d="M20 2 L20 22" stroke="#F5F0E4" strokeWidth="1.5"/>
-            <path d="M8 32 L32 32" stroke="#F5F0E4" strokeWidth="1.5"/>
-          </svg>
-          <div>
-            <div className="text-[#F5F0E4] font-sans font-bold text-lg tracking-widest uppercase leading-none">Chasingted</div>
-            <div className="text-[#F5F0E4]/50 text-[8px] tracking-widest uppercase">What boundaries will you push?</div>
-          </div>
+          {logoUrl ? (
+            <Image
+              src={logoUrl}
+              alt="Chasingted"
+              width={140}
+              height={48}
+              className="h-10 w-auto object-contain"
+              priority
+            />
+          ) : (
+            <>
+              <svg width="40" height="36" viewBox="0 0 40 36" fill="none" className="shrink-0">
+                <path d="M20 2 L4 28 L20 22 L36 28 Z" stroke="#F5F0E4" strokeWidth="1.5" fill="none"/>
+                <path d="M20 2 L20 22" stroke="#F5F0E4" strokeWidth="1.5"/>
+                <path d="M8 32 L32 32" stroke="#F5F0E4" strokeWidth="1.5"/>
+              </svg>
+              <div>
+                <div className="text-[#F5F0E4] font-sans font-bold text-lg tracking-widest uppercase leading-none">Chasingted</div>
+                <div className="text-[#F5F0E4]/50 text-[8px] tracking-widest uppercase">What boundaries will you push?</div>
+              </div>
+            </>
+          )}
         </Link>
 
         {/* Desktop nav */}
