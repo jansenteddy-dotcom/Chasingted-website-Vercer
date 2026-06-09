@@ -13,6 +13,16 @@ const nextConfig: NextConfig = {
         hostname: '*.cdninstagram.com',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'hop.behold.pictures',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: '*.behold.pictures',
+        pathname: '/**',
+      },
     ],
   },
 }
