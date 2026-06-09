@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 type BeholdPost = {
   id: string
   mediaUrl: string
@@ -62,14 +60,13 @@ export default async function InstagramSection() {
                     href={post.permalink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="relative aspect-square block overflow-hidden group"
+                    className="aspect-square block overflow-hidden group"
                   >
-                    <Image
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
                       src={imgUrl}
                       alt={post.caption?.slice(0, 100) || 'Chasingted adventure on Instagram'}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-300"
-                      sizes="(max-width: 768px) 33vw, 16vw"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </a>
                 ) : null
