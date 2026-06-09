@@ -4,7 +4,7 @@ import {NextRequest, NextResponse} from 'next/server'
 
 const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.SUPABASE_SERVICE_KEY!,
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
 )
 
 const resend = new Resend(process.env.RESEND_API_KEY)
@@ -23,11 +23,11 @@ export async function POST(req: NextRequest) {
   })
 
   if (dbError) {
-    // Duplicate email — silently succeed so we don't reveal who's already signed up
     if (dbError.code === '23505') {
       return NextResponse.json({success: true})
     }
-    return NextResponse.json({error: 'Failed to save'}, {status: 500})
+    console.error('Supabase error:', dbError)
+    return NextResponse.json({error: dbError.message}, {status: 500})
   }
 
   await resend.emails.send({
