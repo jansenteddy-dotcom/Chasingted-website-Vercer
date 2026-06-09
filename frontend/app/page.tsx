@@ -9,6 +9,7 @@ import FallingStars from '@/app/components/FallingStars'
 import Campfire from '@/app/components/Campfire'
 import SwimmingFish from '@/app/components/SwimmingFish'
 import Motorcycle from '@/app/components/Motorcycle'
+import Climber from '@/app/components/Climber'
 
 const pillars = [
   {
@@ -106,6 +107,7 @@ export default async function HomePage() {
           <div className="absolute inset-0 bg-[#133425]" />
         )}
         <div className="absolute inset-0 bg-[#133425]/55" />
+        <Campfire className="absolute bottom-10 right-10 md:right-16 z-20 opacity-80" />
         <div className="relative z-10 px-6 pb-8 lg:pb-20 w-full max-w-4xl">
           <h1 className="font-bold text-4xl md:text-7xl text-[#F5F0E4] leading-none uppercase tracking-wide mb-6">
             {settings?.heroHeading || 'From Somewhere to Somewhere.'}
@@ -133,7 +135,6 @@ export default async function HomePage() {
       {/* ── PILLARS ── */}
       <section className="relative overflow-hidden bg-[#133425] py-16 md:py-20">
         <FallingStars count={14} />
-        <Campfire className="absolute bottom-6 right-8 md:right-16 opacity-75" />
         <div className="container text-center relative z-10">
           <h2 className="text-[#F5F0E4] font-bold text-2xl md:text-4xl uppercase tracking-widest mb-12">
             Not a Holiday. An Expedition.
@@ -192,6 +193,7 @@ export default async function HomePage() {
       {/* ── WHY CHASINGTED ── */}
       <section className="relative overflow-hidden grid grid-cols-1 md:grid-cols-2">
         <SwimmingFish count={2} offset={2} />
+        <Climber />
         {/* Left — photo */}
         <div className="relative h-80 md:h-auto min-h-[400px] bg-[#3a4a40]">
           {whyImageUrl && (
@@ -236,7 +238,7 @@ export default async function HomePage() {
       {/* ── BEFORE YOU GO ── */}
       <section className="relative overflow-hidden bg-[#f5f0e4] py-20">
         <Motorcycle />
-        <div className="container">
+        <div className="container relative z-10">
           <h2 className="font-bold text-3xl md:text-4xl text-[#133425] uppercase tracking-widest text-center mb-16">
             Before You Go
           </h2>

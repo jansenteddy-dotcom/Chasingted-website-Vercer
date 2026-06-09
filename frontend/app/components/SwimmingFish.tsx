@@ -39,11 +39,12 @@ function FishShape({size, flip}: {size: number; flip: boolean}) {
   )
 }
 
+// y positions are in the top/bottom margins of sections to avoid overlapping text
 const ALL_FISH: FishData[] = [
-  {y: 10, size: 60, duration: 24, delay: 0,  direction: 'right', opacity: 0.55},
-  {y: 52, size: 84, duration: 33, delay: 11, direction: 'left',  opacity: 0.5},
-  {y: 30, size: 48, duration: 19, delay: 17, direction: 'right', opacity: 0.48},
-  {y: 74, size: 68, duration: 28, delay: 5,  direction: 'left',  opacity: 0.52},
+  {y: 5,  size: 60, duration: 24, delay: 0,  direction: 'right', opacity: 0.55},
+  {y: 88, size: 84, duration: 33, delay: 11, direction: 'left',  opacity: 0.5},
+  {y: 93, size: 48, duration: 19, delay: 17, direction: 'right', opacity: 0.48},
+  {y: 6,  size: 68, duration: 28, delay: 5,  direction: 'left',  opacity: 0.52},
 ]
 
 export default function SwimmingFish({count = 4, offset = 0}: {count?: number; offset?: number}) {

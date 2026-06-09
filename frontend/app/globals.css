@@ -5,10 +5,22 @@
   to   { opacity: 1; }
 }
 
-/* Twinkling stars */
-@keyframes twinkleStar {
-  0%, 100% { opacity: 0.1; transform: scale(0.7); }
-  50%       { opacity: 0.65; transform: scale(1); }
+/* Falling / shooting stars (move diagonally + fade) */
+@keyframes fallingStar {
+  0%   { opacity: 0; transform: translate(0, 0); }
+  18%  { opacity: 0.75; }
+  72%  { opacity: 0.75; }
+  100% { opacity: 0; transform: translate(55px, 130px); }
+}
+
+/* Climber moving up the wall */
+@keyframes climbUp {
+  0%   { transform: translateY(600px); opacity: 0; }
+  8%   { opacity: 0; }
+  16%  { opacity: 0.8; }
+  86%  { opacity: 0.8; }
+  94%  { opacity: 0; }
+  100% { transform: translateY(-80px); opacity: 0; }
 }
 
 /* Campfire flame flicker */

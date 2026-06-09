@@ -28,16 +28,16 @@ function StarShape({size}: {size: number}) {
   )
 }
 
-export default function FallingStars({count = 14}: {count?: number}) {
+export default function FallingStars({count = 12}: {count?: number}) {
   const [stars, setStars] = useState<Star[]>([])
 
   useEffect(() => {
     setStars(
       Array.from({length: count}, () => ({
-        left: 4 + Math.random() * 92,
-        top: 4 + Math.random() * 90,
-        delay: Math.random() * 10,
-        duration: 2.5 + Math.random() * 4,
+        left: 4 + Math.random() * 86,
+        top: Math.random() * 52,   // upper portion so they have room to fall
+        delay: Math.random() * 12,
+        duration: 2.2 + Math.random() * 3,
         size: 4 + Math.random() * 5,
       })),
     )
@@ -54,7 +54,7 @@ export default function FallingStars({count = 14}: {count?: number}) {
           style={{
             left: `${star.left}%`,
             top: `${star.top}%`,
-            animation: `twinkleStar ${star.duration}s ${star.delay}s infinite ease-in-out`,
+            animation: `fallingStar ${star.duration}s ${star.delay}s infinite ease-in`,
           }}
         >
           <StarShape size={star.size} />
