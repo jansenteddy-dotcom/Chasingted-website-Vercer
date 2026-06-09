@@ -4,6 +4,7 @@ import {sanityFetch} from '@/sanity/lib/live'
 import {settingsQuery, allTripsQuery} from '@/sanity/lib/queries'
 import {urlFor} from '@/sanity/lib/utils'
 import TripCard from '@/app/components/TripCard'
+import InstagramSection from '@/app/components/InstagramSection'
 
 const pillars = [
   {
@@ -304,34 +305,7 @@ export default async function HomePage() {
       </section>
 
       {/* ── FOLLOW THE JOURNEY ── */}
-      <section className="bg-white py-20">
-        <div className="container text-center">
-          <h2 className="font-bold text-3xl md:text-4xl text-[#133425] uppercase tracking-widest mb-3">
-            Follow the Journey
-          </h2>
-          <a
-            href="https://instagram.com/chasingted.adventures"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[#4e6358] text-xs font-bold tracking-widest uppercase hover:underline"
-          >
-            @chasingted.adventures
-          </a>
-          <div className="grid grid-cols-3 md:grid-cols-6 gap-2 mt-10 mb-10">
-            {[1,2,3,4,5,6].map((i) => (
-              <div key={i} className="aspect-square bg-[#3a4a40]/20" />
-            ))}
-          </div>
-          <a
-            href="https://instagram.com/chasingted.adventures"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-[#133425] text-[#F5F0E4] font-bold text-xs tracking-widest uppercase px-10 py-4 hover:bg-[#3a4a40] transition-colors duration-200"
-          >
-            Follow on Instagram
-          </a>
-        </div>
-      </section>
+      <InstagramSection />
     </>
   )
 }
