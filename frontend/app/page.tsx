@@ -5,6 +5,9 @@ import {settingsQuery, allTripsQuery} from '@/sanity/lib/queries'
 import {urlFor} from '@/sanity/lib/utils'
 import TripCard from '@/app/components/TripCard'
 import InstagramSection from '@/app/components/InstagramSection'
+import FallingStars from '@/app/components/FallingStars'
+import Campfire from '@/app/components/Campfire'
+import SwimmingFish from '@/app/components/SwimmingFish'
 
 const pillars = [
   {
@@ -102,6 +105,7 @@ export default async function HomePage() {
           <div className="absolute inset-0 bg-[#133425]" />
         )}
         <div className="absolute inset-0 bg-[#133425]/55" />
+        <FallingStars count={8} />
         <div className="relative z-10 px-6 pb-8 lg:pb-20 w-full max-w-4xl">
           <h1 className="font-bold text-4xl md:text-7xl text-[#F5F0E4] leading-none uppercase tracking-wide mb-6">
             {settings?.heroHeading || 'From Somewhere to Somewhere.'}
@@ -127,7 +131,8 @@ export default async function HomePage() {
       </section>
 
       {/* ── PILLARS ── */}
-      <section className="bg-[#133425] py-16 md:py-20">
+      <section className="relative overflow-hidden bg-[#133425] py-16 md:py-20">
+        <Campfire className="absolute bottom-6 right-8 md:right-16 opacity-75" />
         <div className="container text-center">
           <h2 className="text-[#F5F0E4] font-bold text-2xl md:text-4xl uppercase tracking-widest mb-12">
             Not a Holiday. An Expedition.
@@ -144,7 +149,8 @@ export default async function HomePage() {
       </section>
 
       {/* ── UPCOMING EXPEDITIONS ── */}
-      <section className="bg-[#f5f0e4] py-20">
+      <section className="relative overflow-hidden bg-[#f5f0e4] py-20">
+        <SwimmingFish count={3} />
         <div className="container">
           <div className="text-center mb-12">
             <h2 className="font-bold text-3xl md:text-4xl text-[#133425] uppercase tracking-widest mb-4">
@@ -183,7 +189,8 @@ export default async function HomePage() {
       </section>
 
       {/* ── WHY CHASINGTED ── */}
-      <section className="grid grid-cols-1 md:grid-cols-2">
+      <section className="relative overflow-hidden grid grid-cols-1 md:grid-cols-2">
+        <SwimmingFish count={2} offset={2} />
         {/* Left — photo */}
         <div className="relative h-80 md:h-auto min-h-[400px] bg-[#3a4a40]">
           {whyImageUrl && (

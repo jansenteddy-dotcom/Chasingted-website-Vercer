@@ -5,6 +5,44 @@
   to   { opacity: 1; }
 }
 
+/* Shooting stars in hero */
+@keyframes shootingStar {
+  0%   { opacity: 0; transform: rotate(45deg) translateX(0); }
+  15%  { opacity: 0.8; }
+  70%  { opacity: 0.8; }
+  100% { opacity: 0; transform: rotate(45deg) translateX(250px); }
+}
+
+/* Campfire flame flicker */
+@keyframes flicker1 {
+  from { transform: scaleX(1) scaleY(1); }
+  to   { transform: scaleX(0.88) scaleY(1.11) translateY(-3px); }
+}
+@keyframes flicker2 {
+  from { transform: scaleX(1) scaleY(1); }
+  to   { transform: scaleX(1.09) scaleY(1.15) translateY(-4px); }
+}
+@keyframes flicker3 {
+  from { transform: scaleX(1) scaleY(1); }
+  to   { transform: scaleX(0.92) scaleY(1.19) translateY(-5px); }
+}
+
+/* Swimming fish */
+@keyframes swimRight {
+  0%   { transform: translateX(-130px) translateY(0px); }
+  25%  { transform: translateX(25vw) translateY(-10px); }
+  50%  { transform: translateX(50vw) translateY(0px); }
+  75%  { transform: translateX(75vw) translateY(10px); }
+  100% { transform: translateX(calc(100vw + 130px)) translateY(0px); }
+}
+@keyframes swimLeft {
+  0%   { transform: translateX(calc(100vw + 130px)) translateY(0px); }
+  25%  { transform: translateX(75vw) translateY(10px); }
+  50%  { transform: translateX(50vw) translateY(0px); }
+  75%  { transform: translateX(25vw) translateY(-10px); }
+  100% { transform: translateX(-130px) translateY(0px); }
+}
+
 @plugin "@tailwindcss/typography";
 
 @layer base {
