@@ -30,12 +30,16 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({error: dbError.message}, {status: 500})
   }
 
-  await resend.emails.send({
-    from: 'onboarding@resend.dev',
-    to: 'jansen.teddy@gmail.com',
-    subject: '🌿 New waitlist signup — Chasingted',
-    html: `<p>Someone just joined the Chasingted waitlist:</p><p><strong>${firstName ? `${firstName} ${lastName}` : ''}</strong><br/>${email}</p>`,
-  })
+  try {
+    await resend.emails.send({
+      from: 'onboarding@resend.dev',
+      to: 'jansen.teddy@gmail.com',
+      subject: '🌿 New waitlist signup — Chasingted',
+      html: `<p>Someone just joined the Chasingted waitlist:</p><p><strong>${firstName ? `${firstName} ${lastName}` : ''}</strong><br/>${email}</p>`,
+    })
+  } catch (e) {
+    console.error('Resend error:', e)
+  }
 
   return NextResponse.json({success: true})
 }
