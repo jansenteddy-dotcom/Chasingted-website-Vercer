@@ -18,28 +18,32 @@ function FishShape({size, flip}: {size: number; flip: boolean}) {
       width={size}
       height={Math.round(size * 0.46)}
       xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      stroke="#133425"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       style={flip ? {transform: 'scaleX(-1)'} : undefined}
     >
       {/* Tail */}
-      <path d="M15 19 L0 6 L0 32 Z" fill="#133425" />
+      <path d="M15 19 L0 6 L0 32 Z" />
       {/* Body */}
-      <ellipse cx="47" cy="19" rx="29" ry="14" fill="#133425" />
+      <ellipse cx="47" cy="19" rx="29" ry="14" />
       {/* Dorsal fin */}
-      <path d="M37 6 Q44 0 51 6" fill="#133425" opacity="0.7" />
+      <path d="M37 6 Q44 0 51 6" />
       {/* Pectoral fin */}
-      <path d="M46 24 Q50 31 40 30" fill="#3a4a40" opacity="0.55" />
+      <path d="M46 24 Q50 31 40 30" />
       {/* Eye */}
-      <circle cx="66" cy="15" r="3.2" fill="rgba(245,240,228,0.9)" />
-      <circle cx="67" cy="15" r="1.6" fill="#0a1c10" />
+      <circle cx="66" cy="15" r="3" />
     </svg>
   )
 }
 
 const ALL_FISH: FishData[] = [
-  {y: 10, size: 58,  duration: 24, delay: 0,  direction: 'right', opacity: 0.42},
-  {y: 52, size: 82,  duration: 33, delay: 11, direction: 'left',  opacity: 0.38},
-  {y: 30, size: 46,  duration: 19, delay: 17, direction: 'right', opacity: 0.32},
-  {y: 74, size: 66,  duration: 28, delay: 5,  direction: 'left',  opacity: 0.36},
+  {y: 10, size: 60, duration: 24, delay: 0,  direction: 'right', opacity: 0.55},
+  {y: 52, size: 84, duration: 33, delay: 11, direction: 'left',  opacity: 0.5},
+  {y: 30, size: 48, duration: 19, delay: 17, direction: 'right', opacity: 0.48},
+  {y: 74, size: 68, duration: 28, delay: 5,  direction: 'left',  opacity: 0.52},
 ]
 
 export default function SwimmingFish({count = 4, offset = 0}: {count?: number; offset?: number}) {

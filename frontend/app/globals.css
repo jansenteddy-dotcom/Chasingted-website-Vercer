@@ -5,12 +5,10 @@
   to   { opacity: 1; }
 }
 
-/* Shooting stars in hero */
-@keyframes shootingStar {
-  0%   { opacity: 0; transform: rotate(45deg) translateX(0); }
-  15%  { opacity: 0.8; }
-  70%  { opacity: 0.8; }
-  100% { opacity: 0; transform: rotate(45deg) translateX(250px); }
+/* Twinkling stars */
+@keyframes twinkleStar {
+  0%, 100% { opacity: 0.1; transform: scale(0.7); }
+  50%       { opacity: 0.65; transform: scale(1); }
 }
 
 /* Campfire flame flicker */
@@ -41,6 +39,34 @@
   50%  { transform: translateX(50vw) translateY(0px); }
   75%  { transform: translateX(25vw) translateY(-10px); }
   100% { transform: translateX(-130px) translateY(0px); }
+}
+
+/* Motorcycle ride — with road-bump bounce built in */
+@keyframes rideRight {
+  0%   { transform: translateX(-160px) translateY(0px); }
+  10%  { transform: translateX(10vw) translateY(-3px); }
+  20%  { transform: translateX(20vw) translateY(0px); }
+  30%  { transform: translateX(30vw) translateY(-3px); }
+  40%  { transform: translateX(40vw) translateY(0px); }
+  50%  { transform: translateX(50vw) translateY(-3px); }
+  60%  { transform: translateX(60vw) translateY(0px); }
+  70%  { transform: translateX(70vw) translateY(-3px); }
+  80%  { transform: translateX(80vw) translateY(0px); }
+  90%  { transform: translateX(90vw) translateY(-3px); }
+  100% { transform: translateX(calc(100vw + 160px)) translateY(0px); }
+}
+@keyframes rideLeft {
+  0%   { transform: translateX(calc(100vw + 160px)) translateY(0px); }
+  10%  { transform: translateX(90vw) translateY(-3px); }
+  20%  { transform: translateX(80vw) translateY(0px); }
+  30%  { transform: translateX(70vw) translateY(-3px); }
+  40%  { transform: translateX(60vw) translateY(0px); }
+  50%  { transform: translateX(50vw) translateY(-3px); }
+  60%  { transform: translateX(40vw) translateY(0px); }
+  70%  { transform: translateX(30vw) translateY(-3px); }
+  80%  { transform: translateX(20vw) translateY(0px); }
+  90%  { transform: translateX(10vw) translateY(-3px); }
+  100% { transform: translateX(-160px) translateY(0px); }
 }
 
 @plugin "@tailwindcss/typography";

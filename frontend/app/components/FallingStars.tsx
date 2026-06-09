@@ -7,20 +7,38 @@ type Star = {
   top: number
   delay: number
   duration: number
-  width: number
+  size: number
 }
 
-export default function FallingStars({count = 7}: {count?: number}) {
+function StarShape({size}: {size: number}) {
+  const R = size
+  const r = Math.round(size * 0.38)
+  const d = `M0,${-R} L${r},${-r} L${R},0 L${r},${r} L0,${R} L${-r},${r} L${-R},0 L${-r},${-r} Z`
+  const box = R + 2
+  return (
+    <svg
+      viewBox={`${-box} ${-box} ${box * 2} ${box * 2}`}
+      width={box * 2}
+      height={box * 2}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+    >
+      <path d={d} stroke="#f5f0e4" strokeWidth="1.2" strokeLinejoin="round" />
+    </svg>
+  )
+}
+
+export default function FallingStars({count = 14}: {count?: number}) {
   const [stars, setStars] = useState<Star[]>([])
 
   useEffect(() => {
     setStars(
       Array.from({length: count}, () => ({
-        left: Math.random() * 88,
-        top: Math.random() * 55,
-        delay: Math.random() * 14,
-        duration: 1.8 + Math.random() * 2.4,
-        width: 65 + Math.random() * 90,
+        left: 4 + Math.random() * 92,
+        top: 4 + Math.random() * 90,
+        delay: Math.random() * 10,
+        duration: 2.5 + Math.random() * 4,
+        size: 4 + Math.random() * 5,
       })),
     )
   }, [count])
@@ -36,14 +54,11 @@ export default function FallingStars({count = 7}: {count?: number}) {
           style={{
             left: `${star.left}%`,
             top: `${star.top}%`,
-            width: `${star.width}px`,
-            height: '1.5px',
-            background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.85))',
-            transformOrigin: 'right center',
-            opacity: 0,
-            animation: `shootingStar ${star.duration}s ${star.delay}s infinite ease-in`,
+            animation: `twinkleStar ${star.duration}s ${star.delay}s infinite ease-in-out`,
           }}
-        />
+        >
+          <StarShape size={star.size} />
+        </div>
       ))}
     </div>
   )
