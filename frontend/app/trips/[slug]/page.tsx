@@ -59,11 +59,14 @@ export default async function TripDetailPage({params}: Props) {
   const startDate = trip.startDate ? format(parseISO(trip.startDate), 'dd MMMM yyyy') : 'TBC'
   const endDate = trip.endDate ? format(parseISO(trip.endDate), 'dd MMMM yyyy') : 'TBC'
 
-  const galleryImages = (trip.gallery ?? []).map((img: any) => ({
-    url: urlFor(img).width(1200).height(900).url(),
-    alt: img.alt || `${trip.title} expedition photo`,
-    caption: img.caption || undefined,
-  }))
+  const heroAssetRef = (trip.heroImage as any)?.asset?._ref
+  const galleryImages = (trip.gallery ?? [])
+    .filter((img: any) => img.asset?._ref !== heroAssetRef)
+    .map((img: any) => ({
+      url: urlFor(img).width(1200).height(900).url(),
+      alt: img.alt || `${trip.title} expedition photo`,
+      caption: img.caption || undefined,
+    }))
 
   const touristTripSchema = {
     '@context': 'https://schema.org',
