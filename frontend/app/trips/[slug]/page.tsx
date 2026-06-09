@@ -196,9 +196,12 @@ export default async function TripDetailPage({params}: Props) {
 
             {/* Full description */}
             {trip.fullDescription && (
-              <div className="prose prose-lg prose-headings:font-serif prose-headings:text-[#133425] prose-p:text-[#3a4a40] prose-a:text-[#f7b500] max-w-none mb-10">
-                <PortableText value={trip.fullDescription} />
-              </div>
+              <section className="mb-10">
+                <h2 className="font-serif text-2xl text-[#133425] mb-6">What to expect</h2>
+                <div className="prose prose-lg prose-headings:font-serif prose-headings:text-[#133425] prose-p:text-[#3a4a40] prose-a:text-[#f7b500] max-w-none">
+                  <PortableText value={trip.fullDescription} />
+                </div>
+              </section>
             )}
 
             {/* Practical Info */}
