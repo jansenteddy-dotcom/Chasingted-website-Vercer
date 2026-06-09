@@ -112,7 +112,7 @@ export default async function HomePage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/trips"
-              className="inline-block bg-[#3a4a40] text-[#F5F0E4] font-bold text-xs tracking-widest uppercase px-10 py-4 hover:bg-[#133425] transition-colors duration-200"
+              className="inline-block bg-[#133425] text-[#F5F0E4] font-bold text-xs tracking-widest uppercase px-10 py-4 hover:bg-[#0d2319] transition-colors duration-200"
             >
               See Our Trips
             </Link>
