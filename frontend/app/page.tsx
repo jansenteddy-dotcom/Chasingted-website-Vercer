@@ -81,9 +81,8 @@ export default async function HomePage() {
   ])
 
   const featuredTrips = settings?.featuredTrips?.length ? settings.featuredTrips : trips?.slice(0, 3)
-  const whyImageUrl = settings?.heroImage?.asset
-    ? urlFor(settings.heroImage).width(800).height(600).url()
-    : null
+  const whyImageSource = (settings as any)?.whyImage?.asset ? (settings as any).whyImage : settings?.heroImage
+  const whyImageUrl = whyImageSource?.asset ? urlFor(whyImageSource).width(1600).quality(85).url() : null
 
   return (
     <>

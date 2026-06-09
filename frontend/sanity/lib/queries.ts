@@ -21,6 +21,7 @@ export const settingsQuery = defineQuery(`
       heroImage,
     },
     ogImage,
+    whyImage,
     logo,
     footerTagline,
     footerSubtagline,

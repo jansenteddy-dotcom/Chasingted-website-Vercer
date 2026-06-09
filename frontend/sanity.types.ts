@@ -279,6 +279,14 @@ export type Settings = {
     alt?: string
     _type: 'image'
   }
+  whyImage?: {
+    asset?: SanityImageAssetReference
+    media?: unknown
+    hotspot?: SanityImageHotspot
+    crop?: SanityImageCrop
+    alt?: string
+    _type: 'image'
+  }
   logo?: {
     asset?: SanityImageAssetReference
     media?: unknown
@@ -572,7 +580,7 @@ export type AllSanitySchemaTypes =
 
 // Source: sanity/lib/queries.ts
 // Variable: settingsQuery
-// Query: *[_type == "settings" && _id == "siteSettings"][0]{    heroHeading,    heroSubheading,    heroImage,    introText,    "featuredTrips": featuredTrips[]->{      _id,      title,      "slug": slug.current,      destination,      startDate,      endDate,      shortDescription,      difficultyLevel,      status,      "price": price{deposit, total, currency},      heroImage,    },    ogImage,    logo,    footerTagline,    footerSubtagline,    contactEmail,    contactPhone,    contactLocation,    instagramUrl,    facebookUrl,    youtubeUrl,    tiktokUrl,  }
+// Query: *[_type == "settings" && _id == "siteSettings"][0]{    heroHeading,    heroSubheading,    heroImage,    introText,    "featuredTrips": featuredTrips[]->{      _id,      title,      "slug": slug.current,      destination,      startDate,      endDate,      shortDescription,      difficultyLevel,      status,      "price": price{deposit, total, currency},      heroImage,    },    ogImage,    whyImage,    logo,    footerTagline,    footerSubtagline,    contactEmail,    contactPhone,    contactLocation,    instagramUrl,    facebookUrl,    youtubeUrl,    tiktokUrl,  }
 export type SettingsQueryResult = {
   heroHeading: string | null
   heroSubheading: string | null
@@ -610,6 +618,14 @@ export type SettingsQueryResult = {
     } | null
   }> | null
   ogImage: {
+    asset?: SanityImageAssetReference
+    media?: unknown
+    hotspot?: SanityImageHotspot
+    crop?: SanityImageCrop
+    alt?: string
+    _type: 'image'
+  } | null
+  whyImage: {
     asset?: SanityImageAssetReference
     media?: unknown
     hotspot?: SanityImageHotspot
@@ -808,7 +824,7 @@ export type SitemapDataResult = Array<{
 import '@sanity/client'
 declare module '@sanity/client' {
   interface SanityQueries {
-    '\n  *[_type == "settings" && _id == "siteSettings"][0]{\n    heroHeading,\n    heroSubheading,\n    heroImage,\n    introText,\n    "featuredTrips": featuredTrips[]->{\n      _id,\n      title,\n      "slug": slug.current,\n      destination,\n      startDate,\n      endDate,\n      shortDescription,\n      difficultyLevel,\n      status,\n      "price": price{deposit, total, currency},\n      heroImage,\n    },\n    ogImage,\n    logo,\n    footerTagline,\n    footerSubtagline,\n    contactEmail,\n    contactPhone,\n    contactLocation,\n    instagramUrl,\n    facebookUrl,\n    youtubeUrl,\n    tiktokUrl,\n  }\n': SettingsQueryResult
+    '\n  *[_type == "settings" && _id == "siteSettings"][0]{\n    heroHeading,\n    heroSubheading,\n    heroImage,\n    introText,\n    "featuredTrips": featuredTrips[]->{\n      _id,\n      title,\n      "slug": slug.current,\n      destination,\n      startDate,\n      endDate,\n      shortDescription,\n      difficultyLevel,\n      status,\n      "price": price{deposit, total, currency},\n      heroImage,\n    },\n    ogImage,\n    whyImage,\n    logo,\n    footerTagline,\n    footerSubtagline,\n    contactEmail,\n    contactPhone,\n    contactLocation,\n    instagramUrl,\n    facebookUrl,\n    youtubeUrl,\n    tiktokUrl,\n  }\n': SettingsQueryResult
     '\n  *[_type == "trip" && status != "archived"] | order(startDate asc){\n    _id,\n    title,\n    "slug": slug.current,\n    destination,\n    startDate,\n    endDate,\n    shortDescription,\n    difficultyLevel,\n    status,\n    "price": price{deposit, total, currency},\n    heroImage,\n    maxGroupSize,\n  }\n': AllTripsQueryResult
     '\n  *[_type == "trip" && slug.current == $slug][0]{\n    _id,\n    title,\n    "slug": slug.current,\n    destination,\n    startDate,\n    endDate,\n    shortDescription,\n    fullDescription,\n    difficultyLevel,\n    status,\n    "price": price{deposit, total, currency},\n    maxGroupSize,\n    heroImage,\n    gallery,\n    itinerary,\n    included,\n    excluded,\n    meetingPoint,\n    fitnessLevel,\n    cancellationPolicy,\n    gearList,\n    packingList,\n  }\n': TripBySlugQueryResult
     '\n  *[_type == "trip" && defined(slug.current)]{"slug": slug.current}\n': TripSlugsQueryResult

@@ -65,6 +65,22 @@ export const settings = defineType({
       ],
     }),
 
+    defineField({
+      name: 'whyImage',
+      title: '"Why Chasingted" Section Image',
+      description: 'The photo shown in the "Small Groups. Real Wilderness." section on the homepage. Upload something different from the hero image.',
+      type: 'image',
+      options: {hotspot: true},
+      fields: [
+        defineField({
+          name: 'alt',
+          title: 'Alt Text (for SEO & accessibility)',
+          type: 'string',
+          description: 'Describe what is in the photo. Example: "Lone hiker on a mountain ridge during a Chasingted small-group expedition"',
+        }),
+      ],
+    }),
+
     // ── Branding ──────────────────────────────────────────────────────
     defineField({
       name: 'logo',
