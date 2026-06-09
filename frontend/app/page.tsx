@@ -10,6 +10,7 @@ import Campfire from '@/app/components/Campfire'
 import SwimmingFish from '@/app/components/SwimmingFish'
 import Motorcycle from '@/app/components/Motorcycle'
 import Climber from '@/app/components/Climber'
+import MountainTruck from '@/app/components/MountainTruck'
 
 const pillars = [
   {
@@ -317,7 +318,10 @@ export default async function HomePage() {
       </section>
 
       {/* ── FOLLOW THE JOURNEY ── */}
-      <InstagramSection />
+      <div className="relative">
+        <MountainTruck />
+        <InstagramSection />
+      </div>
     </>
   )
 }

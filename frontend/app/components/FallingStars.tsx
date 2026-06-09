@@ -7,25 +7,7 @@ type Star = {
   top: number
   delay: number
   duration: number
-  size: number
-}
-
-function StarShape({size}: {size: number}) {
-  const R = size
-  const r = Math.round(size * 0.38)
-  const d = `M0,${-R} L${r},${-r} L${R},0 L${r},${r} L0,${R} L${-r},${r} L${-R},0 L${-r},${-r} Z`
-  const box = R + 2
-  return (
-    <svg
-      viewBox={`${-box} ${-box} ${box * 2} ${box * 2}`}
-      width={box * 2}
-      height={box * 2}
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-    >
-      <path d={d} stroke="#f5f0e4" strokeWidth="1.2" strokeLinejoin="round" />
-    </svg>
-  )
+  width: number
 }
 
 export default function FallingStars({count = 12}: {count?: number}) {
@@ -34,11 +16,11 @@ export default function FallingStars({count = 12}: {count?: number}) {
   useEffect(() => {
     setStars(
       Array.from({length: count}, () => ({
-        left: 4 + Math.random() * 86,
-        top: Math.random() * 52,   // upper portion so they have room to fall
-        delay: Math.random() * 12,
-        duration: 2.2 + Math.random() * 3,
-        size: 4 + Math.random() * 5,
+        left: 2 + Math.random() * 82,
+        top: Math.random() * 55,
+        delay: Math.random() * 14,
+        duration: 1.8 + Math.random() * 2.4,
+        width: 65 + Math.random() * 95,
       })),
     )
   }, [count])
@@ -54,11 +36,14 @@ export default function FallingStars({count = 12}: {count?: number}) {
           style={{
             left: `${star.left}%`,
             top: `${star.top}%`,
-            animation: `fallingStar ${star.duration}s ${star.delay}s infinite ease-in`,
+            width: `${star.width}px`,
+            height: '1.5px',
+            background: 'linear-gradient(90deg, transparent, rgba(245, 240, 228, 0.85))',
+            transformOrigin: 'left center',
+            opacity: 0,
+            animation: `shootingStar ${star.duration}s ${star.delay}s infinite ease-in`,
           }}
-        >
-          <StarShape size={star.size} />
-        </div>
+        />
       ))}
     </div>
   )

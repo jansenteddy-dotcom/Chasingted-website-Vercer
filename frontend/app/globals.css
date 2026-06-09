@@ -5,12 +5,51 @@
   to   { opacity: 1; }
 }
 
-/* Falling / shooting stars (move diagonally + fade) */
-@keyframes fallingStar {
-  0%   { opacity: 0; transform: translate(0, 0); }
-  18%  { opacity: 0.75; }
-  72%  { opacity: 0.75; }
-  100% { opacity: 0; transform: translate(55px, 130px); }
+/* Shooting star stripes — thin diagonal line moves diagonally and fades */
+@keyframes shootingStar {
+  0%   { opacity: 0; transform: rotate(45deg) translateX(0); }
+  15%  { opacity: 0.8; }
+  70%  { opacity: 0.8; }
+  100% { opacity: 0; transform: rotate(45deg) translateX(260px); }
+}
+
+/* Fish body wave — subtle undulation while swimming */
+@keyframes fishBodyWave {
+  0%, 100% { transform: rotate(-1.5deg) translateY(0px); }
+  50%       { transform: rotate(1.5deg) translateY(-3px); }
+}
+
+/* Fish tail wag — applied to tail path, pivots at tail-body join */
+@keyframes tailWag {
+  0%, 100% { transform: rotate(0deg); }
+  25%       { transform: rotate(16deg); }
+  75%       { transform: rotate(-16deg); }
+}
+
+/* Climber pose A — right side up (starts visible) */
+@keyframes climbPoseA {
+  0%, 44%   { opacity: 1; }
+  54%, 100% { opacity: 0; }
+}
+
+/* Climber pose B — left side up (starts hidden) */
+@keyframes climbPoseB {
+  0%, 44%   { opacity: 0; }
+  54%, 100% { opacity: 1; }
+}
+
+/* Exhaust smoke puff — expands and fades */
+@keyframes exhaustPuff {
+  0%   { transform: scale(0.5); opacity: 0.65; }
+  100% { transform: scale(3); opacity: 0; }
+}
+
+/* 4x4 truck driving up the hill */
+@keyframes driveUpHill {
+  0%   { transform: translate(0px, 0px); opacity: 0; }
+  8%   { opacity: 0.85; }
+  88%  { opacity: 0.85; }
+  100% { transform: translate(-120px, -140px); opacity: 0; }
 }
 
 /* Climber moving up the wall */

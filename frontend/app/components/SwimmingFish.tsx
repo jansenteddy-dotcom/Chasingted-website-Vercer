@@ -25,8 +25,11 @@ function FishShape({size, flip}: {size: number; flip: boolean}) {
       strokeLinejoin="round"
       style={flip ? {transform: 'scaleX(-1)'} : undefined}
     >
-      {/* Tail */}
-      <path d="M15 19 L0 6 L0 32 Z" />
+      {/* Tail — wags around the tail-body connection point */}
+      <path
+        d="M15 19 L0 6 L0 32 Z"
+        style={{transformOrigin: '15px 19px', animation: 'tailWag 0.5s ease-in-out infinite'}}
+      />
       {/* Body */}
       <ellipse cx="47" cy="19" rx="29" ry="14" />
       {/* Dorsal fin */}
@@ -69,7 +72,10 @@ export default function SwimmingFish({count = 4, offset = 0}: {count?: number; o
             animation: `${f.direction === 'right' ? 'swimRight' : 'swimLeft'} ${f.duration}s ${f.delay}s linear infinite`,
           }}
         >
-          <FishShape size={f.size} flip={f.direction === 'left'} />
+          {/* Body wave wrapper — gentle undulation as fish swims */}
+          <div style={{animation: 'fishBodyWave 0.7s ease-in-out infinite'}}>
+            <FishShape size={f.size} flip={f.direction === 'left'} />
+          </div>
         </div>
       ))}
     </div>
