@@ -42,7 +42,7 @@ export default async function TripDetailPage({params}: Props) {
         {trip.heroImage?.asset && (
           <Image
             src={urlFor(trip.heroImage).width(1400).height(700).url()}
-            alt={(trip.heroImage as any).alt || trip.title}
+            alt={(trip.heroImage as any).alt || `${trip.title}${trip.destination ? ` in ${trip.destination}` : ''} — Chasingted small-group adventure expedition`}
             fill
             className="object-cover"
             priority

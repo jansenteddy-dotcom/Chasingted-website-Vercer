@@ -91,7 +91,7 @@ export default async function HomePage() {
         {settings?.heroImage?.asset ? (
           <Image
             src={urlFor(settings.heroImage).width(1600).height(900).url()}
-            alt="Chasingted adventure"
+            alt={(settings.heroImage as any).alt || `${settings?.heroHeading || 'Chasingted'} — small-group adventure expeditions to extraordinary destinations`}
             fill
             className="object-cover"
             priority
@@ -185,7 +185,12 @@ export default async function HomePage() {
         {/* Left — photo */}
         <div className="relative h-80 md:h-auto min-h-[400px] bg-[#3a4a40]">
           {whyImageUrl && (
-            <Image src={whyImageUrl} alt="Why Chasingted" fill className="object-cover" />
+            <Image
+              src={whyImageUrl}
+              alt="Chasingted small-group adventure expedition — intimate wilderness travel with max 10 people, expert guides and no shortcuts"
+              fill
+              className="object-cover"
+            />
           )}
         </div>
         {/* Right — content */}

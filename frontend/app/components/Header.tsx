@@ -29,7 +29,7 @@ export default function Header({logoUrl}: Props) {
         <Link href="/" className="flex items-center">
           <Image
             src={logoUrl ?? '/images/logo.png'}
-            alt="Chasingted"
+            alt="Chasingted — Small-Group Adventure Expeditions"
             width={180}
             height={60}
             className="h-10 w-auto object-contain"

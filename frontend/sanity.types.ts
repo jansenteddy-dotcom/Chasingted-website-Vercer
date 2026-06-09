@@ -175,7 +175,7 @@ export type Trip = {
     media?: unknown
     hotspot?: SanityImageHotspot
     crop?: SanityImageCrop
-    alt?: string
+    alt: string
     _type: 'image'
   }
   gallery?: Array<{
@@ -580,7 +580,7 @@ export type SettingsQueryResult = {
       media?: unknown
       hotspot?: SanityImageHotspot
       crop?: SanityImageCrop
-      alt?: string
+      alt: string
       _type: 'image'
     } | null
   }> | null
@@ -634,7 +634,7 @@ export type AllTripsQueryResult = Array<{
     media?: unknown
     hotspot?: SanityImageHotspot
     crop?: SanityImageCrop
-    alt?: string
+    alt: string
     _type: 'image'
   } | null
   maxGroupSize: number
@@ -665,7 +665,7 @@ export type TripBySlugQueryResult = {
     media?: unknown
     hotspot?: SanityImageHotspot
     crop?: SanityImageCrop
-    alt?: string
+    alt: string
     _type: 'image'
   } | null
   gallery: Array<{

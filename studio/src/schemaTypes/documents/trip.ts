@@ -1,6 +1,7 @@
 import {defineField, defineType} from 'sanity'
 import {TiersIcon} from '@sanity/icons'
 import {format, parseISO} from 'date-fns'
+import {MultiImageUpload} from '../../components/MultiImageUpload'
 
 export const trip = defineType({
   name: 'trip',
@@ -110,9 +111,10 @@ export const trip = defineType({
       fields: [
         defineField({
           name: 'alt',
-          title: 'Alt Text',
+          title: 'Alt Text (for SEO & accessibility)',
           type: 'string',
-          description: 'Describe the image for screen readers and SEO.',
+          description: 'Describe what is happening in the photo. Include the activity and destination. Example: "Motorcyclists crossing a high mountain pass in Kyrgyzstan — Chasingted adventure expedition"',
+          validation: (rule) => rule.required().warning('Add alt text to help Google understand this image and improve your search rankings.'),
         }),
       ],
     }),
@@ -125,10 +127,16 @@ export const trip = defineType({
           type: 'image',
           options: {hotspot: true},
           fields: [
-            {name: 'alt', title: 'Alt Text', type: 'string'},
+            {
+              name: 'alt',
+              title: 'Alt Text (for SEO & accessibility)',
+              type: 'string',
+              description: 'Describe what is in this photo. Example: "Campfire at base camp near a lake in Kyrgyzstan during Chasingted expedition"',
+            },
           ],
         },
       ],
+      components: {input: MultiImageUpload},
     }),
     defineField({
       name: 'shortDescription',
@@ -164,17 +172,38 @@ export const trip = defineType({
       of: [{type: 'string'}],
     }),
     defineField({
-      name: 'packingList',
-      title: 'Packing List',
-      description: 'Shown to booked travelers in the customer portal.',
-      type: 'blockContentTextOnly',
+      name: 'fitnessLevel',
+      title: 'Fitness Level',
+      description: 'What physical condition travelers need to be in.',
+      type: 'text',
+      rows: 2,
     }),
     defineField({
       name: 'meetingPoint',
       title: 'Meeting Point',
-      description: 'Shown to booked travelers in the customer portal.',
       type: 'text',
       rows: 2,
+    }),
+    defineField({
+      name: 'cancellationPolicy',
+      title: 'Cancellation Policy',
+      type: 'text',
+      rows: 3,
+      initialValue:
+        'Full refund up to 60 days before departure. 50% refund 30–59 days. No refund within 30 days. Travel insurance strongly recommended.',
+    }),
+    defineField({
+      name: 'gearList',
+      title: 'Gear List',
+      description: 'Items travelers need to bring. Each item on a separate line.',
+      type: 'array',
+      of: [{type: 'string'}],
+    }),
+    defineField({
+      name: 'packingList',
+      title: 'Detailed Packing List',
+      description: 'Shown to booked travelers in the customer portal.',
+      type: 'blockContentTextOnly',
     }),
   ],
   preview: {

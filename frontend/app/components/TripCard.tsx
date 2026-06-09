@@ -22,7 +22,7 @@ export default function TripCard({trip}: {trip: TripCardType}) {
         {trip.heroImage?.asset && (
           <Image
             src={urlFor(trip.heroImage).width(600).height(400).url()}
-            alt={trip.heroImage.alt || trip.title}
+            alt={trip.heroImage.alt || `${trip.title}${trip.destination ? ` — ${trip.destination}` : ''} — Chasingted small-group adventure expedition`}
             fill
             className="object-cover group-hover:scale-105 transition-transform duration-500"
           />

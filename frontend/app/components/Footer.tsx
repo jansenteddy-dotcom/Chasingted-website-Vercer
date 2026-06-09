@@ -56,12 +56,12 @@ export default function Footer({settings}: Props) {
             <div className="md:col-span-1">
               <div className="flex items-center gap-3 mb-5">
                 <Image
-                src={logoUrl ?? '/images/logo.png'}
-                alt="Chasingted"
-                width={180}
-                height={60}
-                className="h-10 w-auto object-contain"
-              />
+                  src={logoUrl ?? '/images/logo.png'}
+                  alt="Chasingted — Small-Group Adventure Expeditions"
+                  width={180}
+                  height={60}
+                  className="h-10 w-auto object-contain"
+                />
               </div>
               <p className="text-[#F5F0E4]/70 text-sm mb-2">&ldquo;{footerTagline}&rdquo;</p>
               <p className="text-[#F5F0E4]/50 text-xs tracking-wide">{footerSubtagline}</p>

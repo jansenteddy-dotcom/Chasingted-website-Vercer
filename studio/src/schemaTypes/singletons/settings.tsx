@@ -26,7 +26,12 @@ export const settings = defineType({
       type: 'image',
       options: {hotspot: true},
       fields: [
-        defineField({name: 'alt', title: 'Alt Text', type: 'string'}),
+        defineField({
+          name: 'alt',
+          title: 'Alt Text (for SEO & accessibility)',
+          type: 'string',
+          description: 'Describe what is happening in the photo. Include the activity and destination. Example: "Group of adventurers crossing a mountain pass in Kyrgyzstan on a Chasingted expedition"',
+        }),
       ],
     }),
     defineField({
@@ -51,7 +56,12 @@ export const settings = defineType({
       type: 'image',
       options: {hotspot: true},
       fields: [
-        defineField({name: 'alt', title: 'Alt Text', type: 'string'}),
+        defineField({
+          name: 'alt',
+          title: 'Alt Text (for SEO & accessibility)',
+          type: 'string',
+          description: 'Describe what is shown. Example: "Chasingted expedition group in the Oman desert at sunset — adventure travel"',
+        }),
       ],
     }),
 
@@ -63,7 +73,13 @@ export const settings = defineType({
       type: 'image',
       options: {hotspot: true},
       fields: [
-        defineField({name: 'alt', title: 'Alt Text', type: 'string', initialValue: 'Chasingted'}),
+        defineField({
+          name: 'alt',
+          title: 'Alt Text (for SEO & accessibility)',
+          type: 'string',
+          initialValue: 'Chasingted — Small-Group Adventure Expeditions',
+          description: 'Describes the logo for Google and screen readers. The default is fine — only change it if you upload a different version.',
+        }),
       ],
     }),
 
