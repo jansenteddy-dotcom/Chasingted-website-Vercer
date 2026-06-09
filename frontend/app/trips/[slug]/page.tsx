@@ -2,11 +2,13 @@ import type {Metadata} from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import {notFound} from 'next/navigation'
+import {PortableText} from '@portabletext/react'
 import {sanityFetch} from '@/sanity/lib/live'
 import {client} from '@/sanity/lib/client'
 import {tripBySlugQuery, tripSlugsQuery} from '@/sanity/lib/queries'
 import {urlFor} from '@/sanity/lib/utils'
 import {format, parseISO} from 'date-fns'
+import GalleryCarousel from '@/app/components/GalleryCarousel'
 
 type Props = {params: Promise<{slug: string}>}
 
@@ -56,6 +58,12 @@ export default async function TripDetailPage({params}: Props) {
 
   const startDate = trip.startDate ? format(parseISO(trip.startDate), 'dd MMMM yyyy') : 'TBC'
   const endDate = trip.endDate ? format(parseISO(trip.endDate), 'dd MMMM yyyy') : 'TBC'
+
+  const galleryImages = (trip.gallery ?? []).map((img: any) => ({
+    url: urlFor(img).width(1200).height(900).url(),
+    alt: img.alt || `${trip.title} expedition photo`,
+    caption: img.caption || undefined,
+  }))
 
   const touristTripSchema = {
     '@context': 'https://schema.org',
@@ -122,6 +130,18 @@ export default async function TripDetailPage({params}: Props) {
               <p className="text-[#3a4a40] text-lg leading-relaxed mb-8 font-light">
                 {trip.shortDescription}
               </p>
+            )}
+
+            {/* Full description */}
+            {trip.fullDescription && (
+              <div className="prose prose-lg prose-headings:font-serif prose-headings:text-[#133425] prose-p:text-[#3a4a40] prose-a:text-[#f7b500] max-w-none mb-10">
+                <PortableText value={trip.fullDescription} />
+              </div>
+            )}
+
+            {/* Photo gallery */}
+            {galleryImages.length > 0 && (
+              <GalleryCarousel images={galleryImages} />
             )}
 
             {/* Itinerary */}
@@ -246,16 +266,21 @@ export default async function TripDetailPage({params}: Props) {
               </div>
 
               {trip.price && (
-                <div className="border-t border-[#E7DBBF] pt-4 mb-6">
-                  <div className="flex justify-between items-baseline mb-1">
+                <div className="border-t border-[#E7DBBF] pt-4 mb-6 space-y-3">
+                  <div className="flex justify-between items-baseline">
                     <span className="text-[#3a4a40]/60 text-sm">Total price</span>
                     <span className="font-serif text-2xl text-[#133425]">
                       {currencySymbol}{trip.price.total?.toLocaleString()}
                     </span>
                   </div>
-                  <p className="text-xs text-[#3a4a40]/50">
-                    Deposit: {currencySymbol}{trip.price.deposit?.toLocaleString()} to secure your spot
-                  </p>
+                  {trip.price.deposit && (
+                    <div className="flex justify-between items-baseline bg-[#133425]/5 rounded px-3 py-2">
+                      <span className="text-[#3a4a40] text-sm font-medium">Deposit to reserve</span>
+                      <span className="font-serif text-lg text-[#133425] font-semibold">
+                        {currencySymbol}{trip.price.deposit?.toLocaleString()}
+                      </span>
+                    </div>
+                  )}
                 </div>
               )}
 
