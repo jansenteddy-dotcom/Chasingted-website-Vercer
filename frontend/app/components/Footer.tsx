@@ -55,24 +55,13 @@ export default function Footer({settings}: Props) {
             {/* Brand */}
             <div className="md:col-span-1">
               <div className="flex items-center gap-3 mb-5">
-                {logoUrl ? (
-                  <Image
-                    src={logoUrl}
-                    alt="Chasingted"
-                    width={140}
-                    height={48}
-                    className="h-10 w-auto object-contain"
-                  />
-                ) : (
-                  <>
-                    <svg width="36" height="32" viewBox="0 0 40 36" fill="none" className="shrink-0">
-                      <path d="M20 2 L4 28 L20 22 L36 28 Z" stroke="#F5F0E4" strokeWidth="1.5" fill="none"/>
-                      <path d="M20 2 L20 22" stroke="#F5F0E4" strokeWidth="1.5"/>
-                      <path d="M8 32 L32 32" stroke="#F5F0E4" strokeWidth="1.5"/>
-                    </svg>
-                    <div className="font-bold text-base tracking-widest uppercase">Chasingted</div>
-                  </>
-                )}
+                <Image
+                src={logoUrl ?? '/images/logo.png'}
+                alt="Chasingted"
+                width={180}
+                height={60}
+                className="h-10 w-auto object-contain"
+              />
               </div>
               <p className="text-[#F5F0E4]/70 text-sm mb-2">&ldquo;{footerTagline}&rdquo;</p>
               <p className="text-[#F5F0E4]/50 text-xs tracking-wide">{footerSubtagline}</p>
