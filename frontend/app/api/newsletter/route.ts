@@ -1,5 +1,4 @@
 import {createClient} from '@supabase/supabase-js'
-import {Resend} from 'resend'
 import {NextRequest, NextResponse} from 'next/server'
 
 const supabase = createClient(
@@ -7,7 +6,6 @@ const supabase = createClient(
   process.env.SUPABASE_SERVICE_KEY!,
 )
 
-const resend = new Resend(process.env.RESEND_API_KEY)
 
 export async function POST(req: NextRequest) {
   const {email, firstName, lastName} = await req.json()
@@ -40,6 +38,8 @@ export async function POST(req: NextRequest) {
   }
 
   try {
+    const { Resend } = await import('resend')
+    const resend = new Resend(process.env.RESEND_API_KEY)
     await resend.emails.send({
       from: 'onboarding@resend.dev',
       to: 'jansen.teddy@gmail.com',
