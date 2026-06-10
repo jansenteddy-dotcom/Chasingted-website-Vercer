@@ -1,0 +1,376 @@
+- generic [ref=e1]:
+  - link [ref=e2] [cursor=pointer]: Skip to main content
+  - link [ref=e3] [cursor=pointer]:
+    - /url: https://support.google.com/websearch/answer/181196?hl=en-NL
+    - text: Accessibility help
+  - dialog "Before you continue to Google Search" [active]:
+    - generic [ref=e10]:
+      - generic [ref=e12]:
+        - img "Google" [ref=e13]
+        - generic [ref=e14]:
+          - 'button "Language: ‪English‬" [ref=e16] [cursor=pointer]':
+            - generic [ref=e17]:
+              - img
+              - generic [ref=e18]: en
+          - link "Sign in" [ref=e19] [cursor=pointer]
+      - generic [ref=e20]:
+        - heading "Before you continue to Google" [level=1] [ref=e21]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - text: We use
+            - link "cookies" [ref=e24] [cursor=pointer]:
+              - /url: https://policies.google.com/technologies/cookies?utm_source=ucbs&hl=en-NL
+            - text: and data to
+            - list [ref=e25]:
+              - listitem [ref=e26]: Deliver and maintain Google services
+              - listitem [ref=e27]: Track outages and protect against spam, fraud and abuse
+              - listitem [ref=e28]: Measure audience engagement and site statistics to understand how our services are used and enhance the quality of those services
+          - generic [ref=e29]:
+            - text: If you choose to 'Accept all', we will also use cookies and data to
+            - list [ref=e30]:
+              - listitem [ref=e31]: Develop and improve new services
+              - listitem [ref=e32]: Deliver and measure the effectiveness of ads
+              - listitem [ref=e33]: Show personalised content, depending on your settings
+              - listitem [ref=e34]: Show personalised ads, depending on your settings
+            - generic [ref=e35]: If you choose to 'Reject all', we will not use cookies for these additional purposes.
+          - generic [ref=e36]: Non-personalised content is influenced by things like the content that you’re currently viewing, activity in your active Search session, and your location. Non-personalised ads are influenced by the content that you’re currently viewing and your general location. Personalised content and ads can also include more relevant results, recommendations and tailored ads based on past activity from this browser, like previous Google searches. We also use cookies and data to tailor the experience to be age-appropriate, if relevant.
+          - generic [ref=e37]: Select 'More options' to see additional information, including details about managing your privacy settings. You can also visit g.co/privacytools at any time.
+      - generic [ref=e38]:
+        - generic [ref=e39]:
+          - button "Reject all" [ref=e40] [cursor=pointer]
+          - button "Accept all" [ref=e41] [cursor=pointer]
+        - link "More options for personalisation settings and cookies" [ref=e43] [cursor=pointer]:
+          - generic "More options for personalisation settings and cookies" [ref=e44]: More options
+      - generic [ref=e45]:
+        - link "Privacy" [ref=e46] [cursor=pointer]:
+          - /url: https://policies.google.com/privacy?hl=en-NL&fg=1&utm_source=ucbs
+        - generic [ref=e47]: ·
+        - link "Terms" [ref=e48] [cursor=pointer]:
+          - /url: https://policies.google.com/terms?hl=en-NL&fg=1&utm_source=ucbs
+  - generic [ref=e53]:
+    - search [ref=e54]:
+      - generic [ref=e56]:
+        - link [ref=e58] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwj2s6ygxPyUAxUg2QIHHaYJKH4QPAhp
+          - img [ref=e59]
+        - generic [ref=e66]:
+          - generic [ref=e67]:
+            - combobox [ref=e70]: weather Mazury Poland next 14 days weather Mazury Poland next 14 days
+            - generic [ref=e71]:
+              - button [ref=e73] [cursor=pointer]:
+                - img [ref=e75]
+              - generic [ref=e78]:
+                - button [ref=e79] [cursor=pointer]:
+                  - img [ref=e80]
+                - button [ref=e82] [cursor=pointer]:
+                  - img [ref=e83]
+          - button [ref=e85] [cursor=pointer]:
+            - img [ref=e88]
+    - generic [ref=e90]:
+      - button [ref=e92] [cursor=pointer]
+      - generic [ref=e93]:
+        - button [ref=e95] [cursor=pointer]:
+          - img [ref=e96]
+        - link [ref=e100] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/search%3Fq%3Dweather%2BMazury%2BPoland%2Bnext%2B14%2Bdays%26sei%3Dt0UpaseRFIS1i-gPpqnfiAg&ec=futura_srp_og_si_72236_p
+          - text: Sign in
+  - generic [ref=e102]:
+    - navigation [ref=e108]:
+      - list [ref=e111]:
+        - listitem [ref=e112]:
+          - link [ref=e115] [cursor=pointer]:
+            - /url: /search?q=weather+Mazury+Poland+next+14+days&sca_esv=18809f7635659a0e&udm=50&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKp0UJuhqwKhR0QUhF54-6jIc82917L_jAJqeHsSI12L44CHVWsZPWpIP6gS0jU9p3BNkMSadXrbh_XPlIH-eJY9r-7UusaFVjmbHk5qo2BwcRN1F8fuSsNima0oQnLhTm4E9xxnpRstW4_s3NMp0VxBR9Mr9dWu177tZHH4QwnHkVIjT4_&aep=1&ntc=1&sa=X&ved=2ahUKEwj2s6ygxPyUAxUg2QIHHaYJKH4Q2J8OegQIDRAD
+            - generic [ref=e118]: AI Mode
+        - listitem [ref=e119]:
+          - link [disabled] [ref=e120]:
+            - generic [ref=e122]: All
+        - listitem [ref=e123]:
+          - link [ref=e124] [cursor=pointer]:
+            - /url: /search?sca_esv=18809f7635659a0e&q=weather+Mazury+Poland+next+14+days&tbm=nws&source=lnms&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKp0UJuhqwKhR0QUhF54-6jIc82917L_jAJqeHsSI12L44CHVWsZPWpIP6gS0jU9p3BNkMSadXrbh_XPlIH-eJY9r-7UusaFVjmbHk5qo2BwcRN1F8fuSsNima0oQnLhTm4E9xxnpRstW4_s3NMp0VxBR9Mr9dWu177tZHH4QwnHkVIjT4_&sa=X&ved=2ahUKEwj2s6ygxPyUAxUg2QIHHaYJKH4Q0pQJegQIGRAB
+            - generic [ref=e126]: News
+        - listitem [ref=e127]:
+          - link [ref=e128] [cursor=pointer]:
+            - /url: /search?sca_esv=18809f7635659a0e&udm=forums&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKp0UJuhqwKhR0QUhF54-6jIc82917L_jAJqeHsSI12L44CHVWsZPWpIP6gS0jU9p3BNkMSadXrbh_XPlIH-eJY9r-7UusaFVjmbHk5qo2BwcRN1F8fuSsNima0oQnLhTm4E9xxnpRstW4_s3NMp0VxBR9Mr9dWu177tZHH4QwnHkVIjT4_&q=weather+Mazury+Poland+next+14+days&sa=X&ved=2ahUKEwj2s6ygxPyUAxUg2QIHHaYJKH4Qs6gLegQIGhAB
+            - generic [ref=e130]: Forums
+        - listitem [ref=e131]:
+          - link [ref=e132] [cursor=pointer]:
+            - /url: /search?sca_esv=18809f7635659a0e&udm=2&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKp0UJuhqwKhR0QUhF54-6jIc82917L_jAJqeHsSI12L44CHVWsZPWpIP6gS0jU9p3BNkMSadXrbh_XPlIH-eJY9r-7UusaFVjmbHk5qo2BwcRN1F8fuSsNima0oQnLhTm4E9xxnpRstW4_s3NMp0VxBR9Mr9dWu177tZHH4QwnHkVIjT4_&q=weather+Mazury+Poland+next+14+days&sa=X&ved=2ahUKEwj2s6ygxPyUAxUg2QIHHaYJKH4QtKgLegQIGBAB
+            - generic [ref=e134]: Images
+        - listitem [ref=e135]:
+          - link [ref=e136] [cursor=pointer]:
+            - /url: /search?sca_esv=18809f7635659a0e&udm=7&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKp0UJuhqwKhR0QUhF54-6jIc82917L_jAJqeHsSI12L44CHVWsZPWpIP6gS0jU9p3BNkMSadXrbh_XPlIH-eJY9r-7UusaFVjmbHk5qo2BwcRN1F8fuSsNima0oQnLhTm4E9xxnpRstW4_s3NMp0VxBR9Mr9dWu177tZHH4QwnHkVIjT4_&q=weather+Mazury+Poland+next+14+days&sa=X&ved=2ahUKEwj2s6ygxPyUAxUg2QIHHaYJKH4QtKgLegQIERAB
+            - generic [ref=e138]: Videos
+        - listitem [ref=e139]:
+          - link [ref=e140] [cursor=pointer]:
+            - /url: /search?sca_esv=18809f7635659a0e&udm=39&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKp0UJuhqwKhR0QUhF54-6jIc82917L_jAJqeHsSI12L44CHVWsZPWpIP6gS0jU9p3BNkMSadXrbh_XPlIH-eJY9r-7UusaFVjmbHk5qo2BwcRN1F8fuSsNima0oQnLhTm4E9xxnpRstW4_s3NMp0VxBR9Mr9dWu177tZHH4QwnHkVIjT4_&q=weather+Mazury+Poland+next+14+days&sa=X&ved=2ahUKEwj2s6ygxPyUAxUg2QIHHaYJKH4Qs6gLegQIEhAB
+            - generic [ref=e142]: Short videos
+        - listitem [ref=e143]:
+          - button [ref=e144] [cursor=pointer]:
+            - generic [ref=e146]:
+              - generic [ref=e147]: More
+              - img [ref=e149]
+    - navigation [ref=e152]:
+      - navigation [ref=e155]:
+        - list [ref=e162]:
+          - listitem [ref=e163]:
+            - link [ref=e164] [cursor=pointer]:
+              - /url: /search?sca_esv=18809f7635659a0e&q=Weather+mazury+poland+next+14+days+hourly&uds=ALYpb_ncDc7jTlmw6Mmq7NjuX5c-SglP8pw2s0P9GfaNee51Lj-D7bvyMiwz5mvbRg8OJ2Ji67L-Ww8QHijufebZCD3kAy0xzTn6GDb6D6G2bAXV5Lfs6LFEFlZHyinu-BxNEmYkgB5DUv5zoVqinM5S_m-XirBaGe3LEurakOlEse3d_XfzLIGYzpA2f3h0LeHQ9A47FHiHW4LGuULz863vh3WMoh_vRUP49PN8voRoOUeglAVzv_Nx-f4oSgTSUm1l59s-LCkQ&sa=X&ved=2ahUKEwj2s6ygxPyUAxUg2QIHHaYJKH4QxKsJKAB6BAgTEAE&ictx=0
+              - generic [ref=e166]: Hourly
+          - listitem [ref=e167]:
+            - link [ref=e168] [cursor=pointer]:
+              - /url: /search?sca_esv=18809f7635659a0e&q=Weather+mazury+poland+next+14+days+celsius&uds=ALYpb_ncDc7jTlmw6Mmq7NjuX5c-5h4c-LJJbleaRn8yQ0c3DZ2UgSwAtLKGvjFhDnGdsU_mID_idu-1TBW-JcEiuXWLHWzxhsMFOXguLQ2sCqadaYv1NSpDRWfDoTpVPqo-okRvZPhVv_Zs_rUOXv10AH01YdDCj5cPMBScdFaDDwPFpXyhymAUlwWTtYKrJtJGGW9C5Gsf_Ye1aHP7dejeS7cZMFPnRFnS8VjqeZiYwIQU2PNTvLTpUoDjsjTVKQHMIh9_8iCI&sa=X&ved=2ahUKEwj2s6ygxPyUAxUg2QIHHaYJKH4QxKsJKAF6BAgUEAE&ictx=0
+              - generic [ref=e170]: Celsius
+          - listitem [ref=e171]:
+            - link [ref=e172] [cursor=pointer]:
+              - /url: /search?sca_esv=18809f7635659a0e&q=Weather+mazury+poland+next+14+days+bbc&uds=ALYpb_ncDc7jTlmw6Mmq7NjuX5c-Uy1yO4MtdEOyw56oQr4pD1CTyz8CUdsIcMmiIFeKcVHewIZ8WJNhbbsujM6aklJv0Q19m9nKnU7F3MAi3_c7gPp6NrYhWo8584JQIv6X1TidPOxRztTfIZ3bFpwedZL-Gf5d38hJFHK308KbUfJBv7G0gvMnzxfYGt7RsiGCzI-3idUHP7rp0Y73y3YtsiBzXX5b340IBvGbW4yHhzYpy9hH0rnDJPprBZzGNHIKCj2iAusf&sa=X&ved=2ahUKEwj2s6ygxPyUAxUg2QIHHaYJKH4QxKsJKAJ6BAgWEAE&ictx=0
+              - generic [ref=e174]: Bbc
+    - heading [level=1] [ref=e175]: Search Results
+    - generic [ref=e180]:
+      - generic [ref=e181]:
+        - generic [ref=e188]:
+          - heading [level=2] [ref=e189]:
+            - img [ref=e192]:
+              - img [ref=e193]
+            - generic [ref=e196]: Mazury, Poland
+          - generic [ref=e198]:
+            - text: ∙
+            - button [ref=e199] [cursor=pointer]: Choose area
+          - button [ref=e202] [cursor=pointer]:
+            - img [ref=e204]
+        - generic [ref=e220]:
+          - heading [level=2] [ref=e224]:
+            - generic [ref=e225]: Thinking
+          - progressbar [ref=e226]
+      - main [ref=e228]:
+        - generic [ref=e232]:
+          - generic [ref=e235]:
+            - heading [level=2] [ref=e236]: Web results
+            - generic [ref=e237]:
+              - generic [ref=e240]:
+                - link [ref=e242] [cursor=pointer]:
+                  - /url: https://meteofor.com/weather-mazury-276506/2-weeks/
+                  - heading [level=3] [ref=e243]: Mazury 14-Day Weather Forecast - meteofor
+                  - generic [ref=e248]:
+                    - generic [ref=e250]: meteofor.com
+                    - generic [ref=e252]: https://meteofor.com › 2-weeks
+                - button [ref=e253] [cursor=pointer]:
+                  - img [ref=e256]
+              - generic [ref=e260]:
+                - text: Weather in Mazury for two weeks,
+                - emphasis [ref=e261]: 14 day weather forecast
+                - text: for Mazury, Wysokie Mazowieckie County, Podlaskie voivodeship, Poland.
+          - generic [ref=e265]:
+            - generic [ref=e268]:
+              - link [ref=e270] [cursor=pointer]:
+                - /url: https://www.meteoblue.com/en/weather/14-days/mazury_poland_3092152
+                - heading [level=3] [ref=e271]: 10-Day Weather Mazury
+                - generic [ref=e276]:
+                  - generic [ref=e278]: meteoblue
+                  - generic [ref=e280]: https://www.meteoblue.com › mazury_poland_3092152
+              - button [ref=e281] [cursor=pointer]:
+                - img [ref=e284]
+            - generic [ref=e287]:
+              - generic [ref=e288]:
+                - text: This chart shows the
+                - emphasis [ref=e289]: 14 day weather trend for Mazury
+                - text: (Łódź Voivodeship, Poland) with daily weather symbols, minimum and maximum temperatures, precipitation ...
+              - link [ref=e290] [cursor=pointer]:
+                - /url: https://www.meteoblue.com/en/weather/14-days/mazury_poland_3092152#:~:text=This%20chart%20shows%20the%2014,temperatures%2C%20precipitation%20amount%20and%20probability.
+                - text: Read more
+          - generic [ref=e294]:
+            - generic [ref=e297]:
+              - link [ref=e299] [cursor=pointer]:
+                - /url: https://weawow.com/c9526489
+                - heading [level=3] [ref=e300]: Mazury Poland, 14 days Weather forecast, Radar & Photos
+                - generic [ref=e305]:
+                  - generic [ref=e307]: Weawow
+                  - generic [ref=e309]: https://weawow.com › ... › Warmia-Masuria weather
+              - button [ref=e310] [cursor=pointer]:
+                - img [ref=e313]
+            - generic [ref=e317]:
+              - text: "Mazury Poland: Current, Hourly,"
+              - emphasis [ref=e318]: 14 days Weather forecast
+              - text: ", Radar, Precipitation, UV index, Wind, Air Quality, Weather photos by photographers."
+          - generic [ref=e322]:
+            - generic [ref=e325]:
+              - link [ref=e327] [cursor=pointer]:
+                - /url: https://www.yourweather.co.uk/weather_Mazury-Europe-Poland-Warmian+Masurian--1-292384.html
+                - heading [level=3] [ref=e328]: Weather Mazury. 14 day Forecast - Meteored UK
+                - generic [ref=e333]:
+                  - generic [ref=e335]: yourweather.co.uk
+                  - generic [ref=e337]: https://www.yourweather.co.uk › ... › Warmian-Masurian
+              - button [ref=e338] [cursor=pointer]:
+                - img [ref=e341]
+            - generic [ref=e344]:
+              - generic [ref=e345]:
+                - emphasis [ref=e346]: Weather Mazury
+                - text: · Today 9 June. Mist More information · Tomorrow 10 June. Partly cloudy · Thursday 11 June. Light rain with partly cloudy skies · Friday 12 June.
+              - link [ref=e347] [cursor=pointer]:
+                - /url: https://www.yourweather.co.uk/weather_Mazury-Europe-Poland-Warmian+Masurian--1-292384.html#:~:text=Weather%20Mazury&text=Today%209%20June&text=Tomorrow%2010%20June&text=Thursday%2011%20June&text=Friday%2012%20June
+                - text: Read more
+          - generic [ref=e351]:
+            - generic [ref=e354]:
+              - link [ref=e356] [cursor=pointer]:
+                - /url: https://weather.interia.com/long-term-forecast-mazury-kolonia,cId,14963
+                - heading [level=3] [ref=e357]: Mazury-Kolonia long-term weather for 16, 25 and 45 days
+                - generic [ref=e362]:
+                  - generic [ref=e364]: Interia
+                  - generic [ref=e366]: https://weather.interia.com › Poland
+              - button [ref=e367] [cursor=pointer]:
+                - img [ref=e370]
+            - generic [ref=e373]:
+              - generic [ref=e374]:
+                - text: Day. Forecast ·
+                - emphasis [ref=e375]: Saturday 09.05. 14°C 2°C 57°F 36°F Showers
+                - text: · Sunday 10.05. 20°C 8°C 68°F 46°F Mostly sunny · Monday 11.05. 18°C 7°C 64°F 45°F Cloudy · Tuesday 12.05.
+              - link [ref=e376] [cursor=pointer]:
+                - /url: https://weather.interia.com/long-term-forecast-mazury-kolonia,cId,14963#:~:text=Saturday%2009.05&text=Saturday%2009.05,2%C2%B0C%2057%C2%B0F%2036%C2%B0F&text=Sunday%2010.05,8%C2%B0C%2068%C2%B0F%2046%C2%B0F&text=Monday%2011.05,7%C2%B0C%2064%C2%B0F%2045%C2%B0F&text=Tuesday%2012.05
+                - text: Read more
+          - generic [ref=e380]:
+            - generic [ref=e383]:
+              - link [ref=e385] [cursor=pointer]:
+                - /url: https://www.theweather.com/mazury-l292384.htm
+                - heading [level=3] [ref=e386]: Mazury Weather 14 days - Meteored US
+                - generic [ref=e391]:
+                  - generic [ref=e393]: Weather 14 days - Meteored US
+                  - generic [ref=e395]: https://www.theweather.com › ... › Warmian-Masurian
+              - button [ref=e396] [cursor=pointer]:
+                - img [ref=e399]
+            - generic [ref=e403]:
+              - emphasis [ref=e404]: Overcast 45° Feels like 39°
+              - text: Moderate southwest wind Southwest 19. Light rain in the next few hours. Scattered clouds 31°. Midday 12:34 PM Last light 7:49 PM
+          - generic [ref=e408]:
+            - generic [ref=e411]:
+              - link [ref=e413] [cursor=pointer]:
+                - /url: https://www.accuweather.com/en/pl/mazury/2679411/august-weather/2679411
+                - heading [level=3] [ref=e414]: Mazury, Lesser Poland, Poland Monthly Weather
+                - generic [ref=e419]:
+                  - generic [ref=e421]: AccuWeather
+                  - generic [ref=e423]: https://www.accuweather.com › mazury › august-weather
+              - button [ref=e424] [cursor=pointer]:
+                - img [ref=e427]
+            - generic [ref=e431]:
+              - text: forecast shows
+              - emphasis [ref=e432]: daily high temperatures ranging from 63° to 75°
+              - text: ", with overnight lows between 45° and 57°. The average high for August is 70° with an average low ..."
+          - generic [ref=e436]:
+            - generic [ref=e439]:
+              - link [ref=e441] [cursor=pointer]:
+                - /url: https://www.yr.no/en/forecast/daily-table/2-3092151/Poland/Greater%20Poland%20Voivodeship/Ostr%C3%B3w%20County/Mazury
+                - heading [level=3] [ref=e442]: Mazury - Long term forecast
+                - generic [ref=e447]:
+                  - generic [ref=e449]: Yr
+                  - generic [ref=e451]: https://www.yr.no › Greater Poland Voivodeship › Maz...
+              - button [ref=e452] [cursor=pointer]:
+                - img [ref=e455]
+            - generic [ref=e458]:
+              - generic [ref=e459]:
+                - emphasis [ref=e460]: Weather forecast for the next 9 days
+                - text: "; Today 5 June · Morning: heavy rain · Evening: clear sky ; Saturday 6 June · Morning: clear sky · Evening: cloudy ; Sunday 7 June."
+              - link [ref=e461] [cursor=pointer]:
+                - /url: https://www.yr.no/en/forecast/daily-table/2-3092151/Poland/Greater%20Poland%20Voivodeship/Ostr%C3%B3w%20County/Mazury#:~:text=Night&text=Today%205%20June&text=16%C2%B0%2F12%C2%B0&text=16%C2%B0%2F12%C2%B0&text=Saturday%206%20June&text=22%C2%B0%2F10%C2%B0&text=22%C2%B0%2F10%C2%B0&text=Sunday%207%20June
+                - text: Read more
+          - generic [ref=e466]:
+            - heading [level=2] [ref=e468]: People also ask
+            - generic [ref=e469]:
+              - button [ref=e475] [cursor=pointer]:
+                - generic [ref=e477]: What is the weather in Poland for the next 2 weeks?
+                - img [ref=e480]
+              - button [ref=e489] [cursor=pointer]:
+                - generic [ref=e491]: What is the weather in Krakow for the next 14 days?
+                - img [ref=e494]
+              - button [ref=e503] [cursor=pointer]:
+                - generic [ref=e505]: Is it cold now in Poland?
+                - img [ref=e508]
+              - button [ref=e517] [cursor=pointer]:
+                - generic [ref=e519]: Is it warm in Poland in October?
+                - img [ref=e522]
+          - generic [ref=e527]:
+            - heading [level=2] [ref=e528]: Web results
+            - generic [ref=e529]:
+              - generic [ref=e532]:
+                - link [ref=e534] [cursor=pointer]:
+                  - /url: https://xk.freemeteo.com/weather/mazury/15-days/list/?gid=3092151&language=english&country=poland
+                  - heading [level=3] [ref=e535]: Weather Mazury – 15 day weather forecast
+                  - generic [ref=e540]:
+                    - generic [ref=e542]: i-weather.com
+                    - generic [ref=e544]: https://xk.freemeteo.com › mazury › 15-days › list › co...
+                - button [ref=e545] [cursor=pointer]:
+                  - img [ref=e548]
+              - generic [ref=e552]:
+                - text: Weather Mazury,
+                - emphasis [ref=e553]: 15 day weather forecast
+                - text: . Mazury, the weather next week. Detailed weather forecast. Severe weather warnings. xk.freemeteo.com.
+          - generic [ref=e557]:
+            - generic [ref=e560]:
+              - link [ref=e562] [cursor=pointer]:
+                - /url: https://www.bbc.com/weather/4975603
+                - heading [level=3] [ref=e563]: Poland - BBC Weather
+                - generic [ref=e568]:
+                  - generic [ref=e570]: BBC
+                  - generic [ref=e572]: https://www.bbc.com › weather
+              - button [ref=e573] [cursor=pointer]:
+                - img [ref=e576]
+            - generic [ref=e579]:
+              - generic [ref=e580]:
+                - emphasis [ref=e581]: Day by day forecast
+                - text: ; Today · Thundery showers and a moderate breeze · 22° ; Monday 8th JuneMon 8th · Sunny and light winds · 26° ; Tuesday 9th JuneTue 9th · Sunny and ...
+              - link [ref=e582] [cursor=pointer]:
+                - /url: https://www.bbc.com/weather/4975603#:~:text=Today&text=Today&text=22%C2%B0&text=22%C2%B0&text=Mon%208th&text=26%C2%B0&text=26%C2%B0&text=Tue%209th&text=29%C2%B0
+                - text: Read more
+        - generic [ref=e584]:
+          - generic [ref=e589]:
+            - heading [level=2] [ref=e591]: People also search for
+            - generic [ref=e593]:
+              - generic [ref=e594]:
+                - link [ref=e598] [cursor=pointer]:
+                  - /url: /search?sca_esv=18809f7635659a0e&q=Weather+mazury+poland+next+14+days+hourly&sa=X&ved=2ahUKEwj2s6ygxPyUAxUg2QIHHaYJKH4Q1QJ6BAg1EAE
+                  - generic [ref=e599]:
+                    - generic [ref=e604]: Weather mazury poland next 14 days hourly
+                    - img [ref=e608]
+                - link [ref=e613] [cursor=pointer]:
+                  - /url: /search?sca_esv=18809f7635659a0e&q=Weather+mazury+poland+next+14+days+celsius&sa=X&ved=2ahUKEwj2s6ygxPyUAxUg2QIHHaYJKH4Q1QJ6BAg2EAE
+                  - generic [ref=e614]:
+                    - generic [ref=e619]: Weather mazury poland next 14 days celsius
+                    - img [ref=e623]
+              - link [ref=e629] [cursor=pointer]:
+                - /url: /search?sca_esv=18809f7635659a0e&q=Weather+mazury+poland+next+14+days+bbc&sa=X&ved=2ahUKEwj2s6ygxPyUAxUg2QIHHaYJKH4Q1QJ6BAg6EAE
+                - generic [ref=e630]:
+                  - generic [ref=e635]: Weather mazury poland next 14 days bbc
+                  - img [ref=e639]
+          - navigation [ref=e641]:
+            - heading [level=1] [ref=e642]: Page navigation
+            - text: "1"
+            - link [ref=e645] [cursor=pointer]:
+              - /url: /search?q=weather+Mazury+Poland+next+14+days&sca_esv=18809f7635659a0e&ei=t0Uparb8HaCyi-gPppOg8Qc&start=10&sa=N&sstk=AU9db-D71h5wVYpsCJqrFj4KZK7YBijF6AVByIJuT5GzDhtfDne_t0rV-iVS_f95Ogm6HZ4lSz0QU-3QpuZ-Kiz6sh_wM2VoFJ7MYQ&ved=2ahUKEwj2s6ygxPyUAxUg2QIHHaYJKH4Q8tMDegQIMBAE
+              - text: "2"
+            - link [ref=e647] [cursor=pointer]:
+              - /url: /search?q=weather+Mazury+Poland+next+14+days&sca_esv=18809f7635659a0e&ei=t0Uparb8HaCyi-gPppOg8Qc&start=20&sa=N&sstk=AU9db-D71h5wVYpsCJqrFj4KZK7YBijF6AVByIJuT5GzDhtfDne_t0rV-iVS_f95Ogm6HZ4lSz0QU-3QpuZ-Kiz6sh_wM2VoFJ7MYQ&ved=2ahUKEwj2s6ygxPyUAxUg2QIHHaYJKH4Q8tMDegQIMBAG
+              - text: "3"
+            - link [ref=e649] [cursor=pointer]:
+              - /url: /search?q=weather+Mazury+Poland+next+14+days&sca_esv=18809f7635659a0e&ei=t0Uparb8HaCyi-gPppOg8Qc&start=30&sa=N&sstk=AU9db-D71h5wVYpsCJqrFj4KZK7YBijF6AVByIJuT5GzDhtfDne_t0rV-iVS_f95Ogm6HZ4lSz0QU-3QpuZ-Kiz6sh_wM2VoFJ7MYQ&ved=2ahUKEwj2s6ygxPyUAxUg2QIHHaYJKH4Q8tMDegQIMBAI
+              - text: "4"
+            - link [ref=e651] [cursor=pointer]:
+              - /url: /search?q=weather+Mazury+Poland+next+14+days&sca_esv=18809f7635659a0e&ei=t0Uparb8HaCyi-gPppOg8Qc&start=40&sa=N&sstk=AU9db-D71h5wVYpsCJqrFj4KZK7YBijF6AVByIJuT5GzDhtfDne_t0rV-iVS_f95Ogm6HZ4lSz0QU-3QpuZ-Kiz6sh_wM2VoFJ7MYQ&ved=2ahUKEwj2s6ygxPyUAxUg2QIHHaYJKH4Q8tMDegQIMBAK
+              - text: "5"
+            - link [ref=e653] [cursor=pointer]:
+              - /url: /search?q=weather+Mazury+Poland+next+14+days&sca_esv=18809f7635659a0e&ei=t0Uparb8HaCyi-gPppOg8Qc&start=50&sa=N&sstk=AU9db-D71h5wVYpsCJqrFj4KZK7YBijF6AVByIJuT5GzDhtfDne_t0rV-iVS_f95Ogm6HZ4lSz0QU-3QpuZ-Kiz6sh_wM2VoFJ7MYQ&ved=2ahUKEwj2s6ygxPyUAxUg2QIHHaYJKH4Q8tMDegQIMBAM
+              - text: "6"
+            - link [ref=e655] [cursor=pointer]:
+              - /url: /search?q=weather+Mazury+Poland+next+14+days&sca_esv=18809f7635659a0e&ei=t0Uparb8HaCyi-gPppOg8Qc&start=60&sa=N&sstk=AU9db-D71h5wVYpsCJqrFj4KZK7YBijF6AVByIJuT5GzDhtfDne_t0rV-iVS_f95Ogm6HZ4lSz0QU-3QpuZ-Kiz6sh_wM2VoFJ7MYQ&ved=2ahUKEwj2s6ygxPyUAxUg2QIHHaYJKH4Q8tMDegQIMBAO
+              - text: "7"
+            - link [ref=e657] [cursor=pointer]:
+              - /url: /search?q=weather+Mazury+Poland+next+14+days&sca_esv=18809f7635659a0e&ei=t0Uparb8HaCyi-gPppOg8Qc&start=70&sa=N&sstk=AU9db-D71h5wVYpsCJqrFj4KZK7YBijF6AVByIJuT5GzDhtfDne_t0rV-iVS_f95Ogm6HZ4lSz0QU-3QpuZ-Kiz6sh_wM2VoFJ7MYQ&ved=2ahUKEwj2s6ygxPyUAxUg2QIHHaYJKH4Q8tMDegQIMBAQ
+              - text: "8"
+            - link [ref=e659] [cursor=pointer]:
+              - /url: /search?q=weather+Mazury+Poland+next+14+days&sca_esv=18809f7635659a0e&ei=t0Uparb8HaCyi-gPppOg8Qc&start=80&sa=N&sstk=AU9db-D71h5wVYpsCJqrFj4KZK7YBijF6AVByIJuT5GzDhtfDne_t0rV-iVS_f95Ogm6HZ4lSz0QU-3QpuZ-Kiz6sh_wM2VoFJ7MYQ&ved=2ahUKEwj2s6ygxPyUAxUg2QIHHaYJKH4Q8tMDegQIMBAS
+              - text: "9"
+            - link [ref=e661] [cursor=pointer]:
+              - /url: /search?q=weather+Mazury+Poland+next+14+days&sca_esv=18809f7635659a0e&ei=t0Uparb8HaCyi-gPppOg8Qc&start=90&sa=N&sstk=AU9db-D71h5wVYpsCJqrFj4KZK7YBijF6AVByIJuT5GzDhtfDne_t0rV-iVS_f95Ogm6HZ4lSz0QU-3QpuZ-Kiz6sh_wM2VoFJ7MYQ&ved=2ahUKEwj2s6ygxPyUAxUg2QIHHaYJKH4Q8tMDegQIMBAU
+              - text: "10"
+            - heading [level=2] [ref=e663]:
+              - link [ref=e664] [cursor=pointer]:
+                - /url: /search?q=weather+Mazury+Poland+next+14+days&sca_esv=18809f7635659a0e&ei=t0Uparb8HaCyi-gPppOg8Qc&start=10&sa=N&sstk=AU9db-D71h5wVYpsCJqrFj4KZK7YBijF6AVByIJuT5GzDhtfDne_t0rV-iVS_f95Ogm6HZ4lSz0QU-3QpuZ-Kiz6sh_wM2VoFJ7MYQ&ved=2ahUKEwj2s6ygxPyUAxUg2QIHHaYJKH4Q8NMDegQIMBAW
+                - generic [ref=e666]: Next
+    - contentinfo [ref=e667]:
+      - heading [level=1] [ref=e668]: Footer links

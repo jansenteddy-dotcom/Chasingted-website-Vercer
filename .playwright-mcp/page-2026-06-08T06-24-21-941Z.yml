@@ -1,0 +1,738 @@
+- generic [ref=e1]:
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e9]:
+        - generic [ref=e10]:
+          - button "Terug naar homepage" [ref=e11] [cursor=pointer]:
+            - img: arrow_back
+          - button "Terug naar homepage" [ref=e12] [cursor=pointer]:
+            - img "Tag Manager"
+        - generic [ref=e13]:
+          - generic [ref=e15]:
+            - generic: Tag Manager
+          - button "Open de universele kiezer." [ref=e48] [cursor=pointer]:
+            - generic:
+              - generic:
+                - generic: Alle accounts
+                - img: chevron_right
+                - generic: Chasingted
+              - generic:
+                - generic:
+                  - generic: chasingted.com
+                - img: arrow_drop_down
+          - search [ref=e50]:
+            - img [ref=e51]: search
+            - textbox "Zoeken" [ref=e53]:
+              - /placeholder: Zoek in de werkruimte
+          - button "Schakelen tussen producten" [ref=e18] [cursor=pointer]:
+            - img
+          - generic [ref=e21]:
+            - button "Help" [ref=e22] [cursor=pointer]:
+              - img: help
+            - button "Overloopmenu openen" [ref=e24] [cursor=pointer]:
+              - img: more_vert
+          - button "Het deelvenster voor schakelen tussen gebruikersaccounts openen." [ref=e26] [cursor=pointer]:
+            - 'img "Google-account: Teddy Jansen (jansen.teddy@gmail.com)"'
+      - navigation [ref=e30]:
+        - tablist "Navigatie op hoofdniveau" [ref=e31]:
+          - tab "Werkruimte" [selected] [ref=e32] [cursor=pointer]
+          - tab "Versies" [ref=e33] [cursor=pointer]:
+            - generic [ref=e34]: Versies
+          - tab "Beheer" [ref=e35] [cursor=pointer]
+    - generic [ref=e57]:
+      - banner:
+        - generic [ref=e58]:
+          - link "GTM-P7V9CJF3" [ref=e60] [cursor=pointer]:
+            - /url: ""
+          - generic [ref=e61]: "Wijzigingen in werkruimte: 25"
+          - generic [ref=e64]:
+            - button "Voorbeeld" [ref=e66] [cursor=pointer]
+            - button "Verzenden" [ref=e67] [cursor=pointer]
+      - generic [ref=e68]:
+        - generic [ref=e71]:
+          - generic [ref=e72]:
+            - generic [ref=e73]: Huidige Workspace
+            - generic [ref=e74] [cursor=pointer]: Default Workspace
+          - generic [ref=e75]:
+            - link "Overzicht" [ref=e76] [cursor=pointer]:
+              - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2"
+              - text: Overzicht
+            - link "Tags" [ref=e78] [cursor=pointer]:
+              - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/tags"
+              - text: Tags
+            - link "Triggers" [ref=e80] [cursor=pointer]:
+              - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/triggers"
+              - text: Triggers
+            - link "Variabelen" [ref=e82] [cursor=pointer]:
+              - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/variables"
+              - text: Variabelen
+            - link "Mappen" [ref=e84] [cursor=pointer]:
+              - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/folders"
+              - text: Mappen
+            - link "Templates" [ref=e86] [cursor=pointer]:
+              - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/templates"
+              - text: Templates
+        - generic [ref=e89]:
+          - generic [ref=e94]:
+            - generic [ref=e95]:
+              - generic [ref=e96]: "Kwaliteit van Container: Uitstekend"
+              - generic [ref=e105]: Container stuurt gegevens. Er zijn geen problemen gevonden.
+            - button "Informatie tonen" [ref=e107] [cursor=pointer]
+          - generic [ref=e109]:
+            - generic [ref=e110]:
+              - button "Nieuwe tag Kies uit meer dan 50 tagtypen Een nieuwe tag toevoegen" [ref=e111]:
+                - generic [ref=e112]:
+                  - generic [ref=e113]:
+                    - link "Nieuwe tag" [ref=e115] [cursor=pointer]:
+                      - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/tags/create"
+                    - generic [ref=e117]: Kies uit meer dan 50 tagtypen
+                  - link [ref=e119] [cursor=pointer]:
+                    - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/tags/create"
+                - link "Een nieuwe tag toevoegen" [ref=e121] [cursor=pointer]:
+                  - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/tags/create"
+              - button "Beschrijving Beschrijving bewerken" [ref=e122]:
+                - generic [ref=e124]: Beschrijving
+                - generic [ref=e126] [cursor=pointer]: Beschrijving bewerken
+            - generic [ref=e127]:
+              - button "Wordt nu bewerkt Default Workspace" [ref=e128] [cursor=pointer]:
+                - generic [ref=e129]:
+                  - generic "Wordt nu bewerkt" [ref=e130]
+                  - button [ref=e131]:
+                    - button [ref=e132]
+                  - generic [ref=e133]: Default Workspace
+              - generic [ref=e135]:
+                - generic "Wijzigingen die niet zijn gepubliceerd" [ref=e136]: Wijzigingen in werkruimte
+                - generic [ref=e137]:
+                  - generic [ref=e138]:
+                    - generic "0" [ref=e139]
+                    - generic [ref=e140]: Aangepast
+                  - generic [ref=e141]:
+                    - generic "25" [ref=e142]
+                    - generic [ref=e143]: Toegevoegd
+                  - generic [ref=e144]:
+                    - generic "0" [ref=e145]
+                    - generic "Undefined or invalid parameter - NUM" [ref=e146]: Verwijderd
+              - generic [ref=e148] [cursor=pointer]: Werkruimten beheren
+            - button "Wijzigingen niet gepubliceerd Tags toevoegen en publiceren om uw wijzigingen door te voeren." [ref=e149] [cursor=pointer]:
+              - generic [ref=e152]: Wijzigingen niet gepubliceerd
+              - generic [ref=e155]: Tags toevoegen en publiceren om uw wijzigingen door te voeren.
+          - generic [ref=e157]:
+            - generic [ref=e158]:
+              - generic [ref=e159]: Wijzigingen in werkruimte
+              - table [ref=e161]:
+                - rowgroup [ref=e169]:
+                  - row "Kolom Naam sorteren Gesorteerd in ascending volgorde Kolom Type sorteren Kolom Wijziging sorteren Kolom Laatst bewerkt sorteren Kolom Gebruiker sorteren" [ref=e170]:
+                    - columnheader "Kolom Naam sorteren Gesorteerd in ascending volgorde" [ref=e171]:
+                      - button "Kolom Naam sorteren Gesorteerd in ascending volgorde" [ref=e172] [cursor=pointer]: Naam
+                    - columnheader "Kolom Type sorteren" [ref=e173]:
+                      - button "Kolom Type sorteren" [ref=e174] [cursor=pointer]: Type
+                    - columnheader "Kolom Wijziging sorteren" [ref=e175]:
+                      - button "Kolom Wijziging sorteren" [ref=e176] [cursor=pointer]: Wijziging
+                    - columnheader "Kolom Laatst bewerkt sorteren" [ref=e177]:
+                      - button "Kolom Laatst bewerkt sorteren" [ref=e178] [cursor=pointer]: Laatst bewerkt
+                    - columnheader "Kolom Gebruiker sorteren" [ref=e179]:
+                      - button "Kolom Gebruiker sorteren" [ref=e180] [cursor=pointer]: Gebruiker
+                  - row "All Pages Trigger Toegevoegd 17 uur geleden teddy@wespikegrowth.io" [ref=e181]:
+                    - cell "All Pages" [ref=e182]:
+                      - link "All Pages" [ref=e183] [cursor=pointer]:
+                        - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/triggers/3"
+                    - cell "Trigger" [ref=e184]
+                    - button "Toegevoegd"
+                    - cell "17 uur geleden" [ref=e185]:
+                      - generic "7 jun 2026, 15:33:55" [ref=e186]: 17 uur geleden
+                    - cell "teddy@wespikegrowth.io" [ref=e187]
+                    - cell [ref=e188]:
+                      - button [ref=e189]
+                  - row "Click - Apply Now Trigger Toegevoegd één minuut geleden teddy@wespikegrowth.io" [ref=e191]:
+                    - cell "Click - Apply Now" [ref=e192]:
+                      - link "Click - Apply Now" [ref=e193] [cursor=pointer]:
+                        - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/triggers/5"
+                    - cell "Trigger" [ref=e194]
+                    - button "Toegevoegd"
+                    - cell "één minuut geleden" [ref=e195]:
+                      - generic "8 jun 2026, 8:22:46" [ref=e196]: één minuut geleden
+                    - cell "teddy@wespikegrowth.io" [ref=e197]
+                    - cell [ref=e198]:
+                      - button [ref=e199]
+                  - row "Click - Email Trigger Toegevoegd 17 uur geleden teddy@wespikegrowth.io" [ref=e201]:
+                    - cell "Click - Email" [ref=e202]:
+                      - link "Click - Email" [ref=e203] [cursor=pointer]:
+                        - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/triggers/7"
+                    - cell "Trigger" [ref=e204]
+                    - button "Toegevoegd"
+                    - cell "17 uur geleden" [ref=e205]:
+                      - generic "7 jun 2026, 15:33:58" [ref=e206]: 17 uur geleden
+                    - cell "teddy@wespikegrowth.io" [ref=e207]
+                    - cell [ref=e208]:
+                      - button [ref=e209]
+                  - row "Click - WhatsApp Trigger Toegevoegd 17 uur geleden teddy@wespikegrowth.io" [ref=e211]:
+                    - cell "Click - WhatsApp" [ref=e212]:
+                      - link "Click - WhatsApp" [ref=e213] [cursor=pointer]:
+                        - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/triggers/6"
+                    - cell "Trigger" [ref=e214]
+                    - button "Toegevoegd"
+                    - cell "17 uur geleden" [ref=e215]:
+                      - generic "7 jun 2026, 15:33:57" [ref=e216]: 17 uur geleden
+                    - cell "teddy@wespikegrowth.io" [ref=e217]
+                    - cell [ref=e218]:
+                      - button [ref=e219]
+                  - row "Click Classes Ingebouwde variabele Aangezet 17 uur geleden teddy@wespikegrowth.io" [ref=e221]:
+                    - cell "Click Classes" [ref=e222]:
+                      - link "Click Classes" [ref=e223] [cursor=pointer]:
+                        - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/variables/2147481608"
+                    - cell "Ingebouwde variabele" [ref=e224]
+                    - button "Aangezet"
+                    - cell "17 uur geleden" [ref=e225]:
+                      - generic "7 jun 2026, 15:33:54" [ref=e226]: 17 uur geleden
+                    - cell "teddy@wespikegrowth.io" [ref=e227]
+                    - cell [ref=e228]:
+                      - button [ref=e229]
+                  - row "Click Element Ingebouwde variabele Aangezet 17 uur geleden teddy@wespikegrowth.io" [ref=e231]:
+                    - cell "Click Element" [ref=e232]:
+                      - link "Click Element" [ref=e233] [cursor=pointer]:
+                        - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/variables/2147481607"
+                    - cell "Ingebouwde variabele" [ref=e234]
+                    - button "Aangezet"
+                    - cell "17 uur geleden" [ref=e235]:
+                      - generic "7 jun 2026, 15:33:54" [ref=e236]: 17 uur geleden
+                    - cell "teddy@wespikegrowth.io" [ref=e237]
+                    - cell [ref=e238]:
+                      - button [ref=e239]
+                  - row "Click ID Ingebouwde variabele Aangezet 17 uur geleden teddy@wespikegrowth.io" [ref=e241]:
+                    - cell "Click ID" [ref=e242]:
+                      - link "Click ID" [ref=e243] [cursor=pointer]:
+                        - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/variables/2147481609"
+                    - cell "Ingebouwde variabele" [ref=e244]
+                    - button "Aangezet"
+                    - cell "17 uur geleden" [ref=e245]:
+                      - generic "7 jun 2026, 15:33:54" [ref=e246]: 17 uur geleden
+                    - cell "teddy@wespikegrowth.io" [ref=e247]
+                    - cell [ref=e248]:
+                      - button [ref=e249]
+                  - row "Click Target Ingebouwde variabele Aangezet 17 uur geleden teddy@wespikegrowth.io" [ref=e251]:
+                    - cell "Click Target" [ref=e252]:
+                      - link "Click Target" [ref=e253] [cursor=pointer]:
+                        - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/variables/2147481610"
+                    - cell "Ingebouwde variabele" [ref=e254]
+                    - button "Aangezet"
+                    - cell "17 uur geleden" [ref=e255]:
+                      - generic "7 jun 2026, 15:33:54" [ref=e256]: 17 uur geleden
+                    - cell "teddy@wespikegrowth.io" [ref=e257]
+                    - cell [ref=e258]:
+                      - button [ref=e259]
+                  - row "Click Text Ingebouwde variabele Aangezet 17 uur geleden teddy@wespikegrowth.io" [ref=e261]:
+                    - cell "Click Text" [ref=e262]:
+                      - link "Click Text" [ref=e263] [cursor=pointer]:
+                        - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/variables/2147481612"
+                    - cell "Ingebouwde variabele" [ref=e264]
+                    - button "Aangezet"
+                    - cell "17 uur geleden" [ref=e265]:
+                      - generic "7 jun 2026, 15:33:54" [ref=e266]: 17 uur geleden
+                    - cell "teddy@wespikegrowth.io" [ref=e267]
+                    - cell [ref=e268]:
+                      - button [ref=e269]
+                  - row "Click URL Ingebouwde variabele Aangezet 17 uur geleden teddy@wespikegrowth.io" [ref=e271]:
+                    - cell "Click URL" [ref=e272]:
+                      - link "Click URL" [ref=e273] [cursor=pointer]:
+                        - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/variables/2147481611"
+                    - cell "Ingebouwde variabele" [ref=e274]
+                    - button "Aangezet"
+                    - cell "17 uur geleden" [ref=e275]:
+                      - generic "7 jun 2026, 15:33:54" [ref=e276]: 17 uur geleden
+                    - cell "teddy@wespikegrowth.io" [ref=e277]
+                    - cell [ref=e278]:
+                      - button [ref=e279]
+                  - row "Form Element Ingebouwde variabele Aangezet 17 uur geleden teddy@wespikegrowth.io" [ref=e281]:
+                    - cell "Form Element" [ref=e282]:
+                      - link "Form Element" [ref=e283] [cursor=pointer]:
+                        - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/variables/2147481613"
+                    - cell "Ingebouwde variabele" [ref=e284]
+                    - button "Aangezet"
+                    - cell "17 uur geleden" [ref=e285]:
+                      - generic "7 jun 2026, 15:33:54" [ref=e286]: 17 uur geleden
+                    - cell "teddy@wespikegrowth.io" [ref=e287]
+                    - cell [ref=e288]:
+                      - button [ref=e289]
+                  - row "Form Submit - Application Trigger Toegevoegd één minuut geleden teddy@wespikegrowth.io" [ref=e291]:
+                    - cell "Form Submit - Application" [ref=e292]:
+                      - link "Form Submit - Application" [ref=e293] [cursor=pointer]:
+                        - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/triggers/8"
+                    - cell "Trigger" [ref=e294]
+                    - button "Toegevoegd"
+                    - cell "één minuut geleden" [ref=e295]:
+                      - generic "8 jun 2026, 8:22:47" [ref=e296]: één minuut geleden
+                    - cell "teddy@wespikegrowth.io" [ref=e297]
+                    - cell [ref=e298]:
+                      - button [ref=e299]
+                  - row "Form Submit - Contact Trigger Toegevoegd één minuut geleden teddy@wespikegrowth.io" [ref=e301]:
+                    - cell "Form Submit - Contact" [ref=e302]:
+                      - link "Form Submit - Contact" [ref=e303] [cursor=pointer]:
+                        - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/triggers/9"
+                    - cell "Trigger" [ref=e304]
+                    - button "Toegevoegd"
+                    - cell "één minuut geleden" [ref=e305]:
+                      - generic "8 jun 2026, 8:22:48" [ref=e306]: één minuut geleden
+                    - cell "teddy@wespikegrowth.io" [ref=e307]
+                    - cell [ref=e308]:
+                      - button [ref=e309]
+                  - row "Form Submit - Newsletter Trigger Toegevoegd één minuut geleden teddy@wespikegrowth.io" [ref=e311]:
+                    - cell "Form Submit - Newsletter" [ref=e312]:
+                      - link "Form Submit - Newsletter" [ref=e313] [cursor=pointer]:
+                        - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/triggers/10"
+                    - cell "Trigger" [ref=e314]
+                    - button "Toegevoegd"
+                    - cell "één minuut geleden" [ref=e315]:
+                      - generic "8 jun 2026, 8:22:49" [ref=e316]: één minuut geleden
+                    - cell "teddy@wespikegrowth.io" [ref=e317]
+                    - cell [ref=e318]:
+                      - button [ref=e319]
+                  - row "Form Target Ingebouwde variabele Aangezet 17 uur geleden teddy@wespikegrowth.io" [ref=e321]:
+                    - cell "Form Target" [ref=e322]:
+                      - link "Form Target" [ref=e323] [cursor=pointer]:
+                        - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/variables/2147481616"
+                    - cell "Ingebouwde variabele" [ref=e324]
+                    - button "Aangezet"
+                    - cell "17 uur geleden" [ref=e325]:
+                      - generic "7 jun 2026, 15:33:54" [ref=e326]: 17 uur geleden
+                    - cell "teddy@wespikegrowth.io" [ref=e327]
+                    - cell [ref=e328]:
+                      - button [ref=e329]
+                  - row "Form URL Ingebouwde variabele Aangezet 17 uur geleden teddy@wespikegrowth.io" [ref=e331]:
+                    - cell "Form URL" [ref=e332]:
+                      - link "Form URL" [ref=e333] [cursor=pointer]:
+                        - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/variables/2147481617"
+                    - cell "Ingebouwde variabele" [ref=e334]
+                    - button "Aangezet"
+                    - cell "17 uur geleden" [ref=e335]:
+                      - generic "7 jun 2026, 15:33:54" [ref=e336]: 17 uur geleden
+                    - cell "teddy@wespikegrowth.io" [ref=e337]
+                    - cell [ref=e338]:
+                      - button [ref=e339]
+                  - row "GA4 - application_submitted Tag Toegevoegd 17 uur geleden teddy@wespikegrowth.io" [ref=e341]:
+                    - cell "GA4 - application_submitted" [ref=e342]:
+                      - link "GA4 - application_submitted" [ref=e343] [cursor=pointer]:
+                        - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/tags/15"
+                    - cell "Tag" [ref=e344]
+                    - button "Toegevoegd"
+                    - cell "17 uur geleden" [ref=e345]:
+                      - generic "7 jun 2026, 15:35:57" [ref=e346]: 17 uur geleden
+                    - cell "teddy@wespikegrowth.io" [ref=e347]
+                    - cell [ref=e348]:
+                      - button [ref=e349]
+                  - row "GA4 - apply_now_clicked Tag Toegevoegd 17 uur geleden teddy@wespikegrowth.io" [ref=e351]:
+                    - cell "GA4 - apply_now_clicked" [ref=e352]:
+                      - link "GA4 - apply_now_clicked" [ref=e353] [cursor=pointer]:
+                        - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/tags/12"
+                    - cell "Tag" [ref=e354]
+                    - button "Toegevoegd"
+                    - cell "17 uur geleden" [ref=e355]:
+                      - generic "7 jun 2026, 15:35:55" [ref=e356]: 17 uur geleden
+                    - cell "teddy@wespikegrowth.io" [ref=e357]
+                    - cell [ref=e358]:
+                      - button [ref=e359]
+                  - row "GA4 - contact_form_submitted Tag Toegevoegd 17 uur geleden teddy@wespikegrowth.io" [ref=e361]:
+                    - cell "GA4 - contact_form_submitted" [ref=e362]:
+                      - link "GA4 - contact_form_submitted" [ref=e363] [cursor=pointer]:
+                        - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/tags/16"
+                    - cell "Tag" [ref=e364]
+                    - button "Toegevoegd"
+                    - cell "17 uur geleden" [ref=e365]:
+                      - generic "7 jun 2026, 15:35:58" [ref=e366]: 17 uur geleden
+                    - cell "teddy@wespikegrowth.io" [ref=e367]
+                    - cell [ref=e368]:
+                      - button [ref=e369]
+                  - row "GA4 - email_link_clicked Tag Toegevoegd 17 uur geleden teddy@wespikegrowth.io" [ref=e371]:
+                    - cell "GA4 - email_link_clicked" [ref=e372]:
+                      - link "GA4 - email_link_clicked" [ref=e373] [cursor=pointer]:
+                        - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/tags/14"
+                    - cell "Tag" [ref=e374]
+                    - button "Toegevoegd"
+                    - cell "17 uur geleden" [ref=e375]:
+                      - generic "7 jun 2026, 15:35:56" [ref=e376]: 17 uur geleden
+                    - cell "teddy@wespikegrowth.io" [ref=e377]
+                    - cell [ref=e378]:
+                      - button [ref=e379]
+                  - row "GA4 - newsletter_signup Tag Toegevoegd 17 uur geleden teddy@wespikegrowth.io" [ref=e381]:
+                    - cell "GA4 - newsletter_signup" [ref=e382]:
+                      - link "GA4 - newsletter_signup" [ref=e383] [cursor=pointer]:
+                        - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/tags/17"
+                    - cell "Tag" [ref=e384]
+                    - button "Toegevoegd"
+                    - cell "17 uur geleden" [ref=e385]:
+                      - generic "7 jun 2026, 15:35:59" [ref=e386]: 17 uur geleden
+                    - cell "teddy@wespikegrowth.io" [ref=e387]
+                    - cell [ref=e388]:
+                      - button [ref=e389]
+                  - row "GA4 - trip_page_viewed Tag Toegevoegd 17 uur geleden teddy@wespikegrowth.io" [ref=e391]:
+                    - cell "GA4 - trip_page_viewed" [ref=e392]:
+                      - link "GA4 - trip_page_viewed" [ref=e393] [cursor=pointer]:
+                        - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/tags/18"
+                    - cell "Tag" [ref=e394]
+                    - button "Toegevoegd"
+                    - cell "17 uur geleden" [ref=e395]:
+                      - generic "7 jun 2026, 15:36:00" [ref=e396]: 17 uur geleden
+                    - cell "teddy@wespikegrowth.io" [ref=e397]
+                    - cell [ref=e398]:
+                      - button [ref=e399]
+                  - row "GA4 - whatsapp_clicked Tag Toegevoegd 17 uur geleden teddy@wespikegrowth.io" [ref=e401]:
+                    - cell "GA4 - whatsapp_clicked" [ref=e402]:
+                      - link "GA4 - whatsapp_clicked" [ref=e403] [cursor=pointer]:
+                        - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/tags/13"
+                    - cell "Tag" [ref=e404]
+                    - button "Toegevoegd"
+                    - cell "17 uur geleden" [ref=e405]:
+                      - generic "7 jun 2026, 15:35:55" [ref=e406]: 17 uur geleden
+                    - cell "teddy@wespikegrowth.io" [ref=e407]
+                    - cell [ref=e408]:
+                      - button [ref=e409]
+                  - row "Google Tag - G-2DEC87PY9P Tag Toegevoegd 17 uur geleden teddy@wespikegrowth.io" [ref=e411]:
+                    - cell "Google Tag - G-2DEC87PY9P" [ref=e412]:
+                      - link "Google Tag - G-2DEC87PY9P" [ref=e413] [cursor=pointer]:
+                        - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/tags/4"
+                    - cell "Tag" [ref=e414]
+                    - button "Toegevoegd"
+                    - cell "17 uur geleden" [ref=e415]:
+                      - generic "7 jun 2026, 15:33:56" [ref=e416]: 17 uur geleden
+                    - cell "teddy@wespikegrowth.io" [ref=e417]
+                    - cell [ref=e418]:
+                      - button [ref=e419]
+                  - row "Page View - Trip Pages Trigger Toegevoegd 17 uur geleden teddy@wespikegrowth.io" [ref=e421]:
+                    - cell "Page View - Trip Pages" [ref=e422]:
+                      - link "Page View - Trip Pages" [ref=e423] [cursor=pointer]:
+                        - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/triggers/11"
+                    - cell "Trigger" [ref=e424]
+                    - button "Toegevoegd"
+                    - cell "17 uur geleden" [ref=e425]:
+                      - generic "7 jun 2026, 15:34:02" [ref=e426]: 17 uur geleden
+                    - cell "teddy@wespikegrowth.io" [ref=e427]
+                    - cell [ref=e428]:
+                      - button [ref=e429]
+            - button "Activiteitsgeschiedenis" [ref=e431] [cursor=pointer]
+    - generic [ref=e44]:
+      - link "Servicevoorwaarden" [ref=e45] [cursor=pointer]:
+        - /url: https://support.google.com/tagmanager/answer/7157428?hl=nl
+      - text: •
+      - link "Privacybeleid" [ref=e46] [cursor=pointer]:
+        - /url: https://www.google.com/intl/nl/policies/privacy/
+  - generic [ref=e434]:
+    - generic [ref=e435]:
+      - button "Scherm sluiten" [ref=e436] [cursor=pointer]
+      - heading "Wijzigingen verzenden" [level=1] [ref=e438]
+      - button "Publiceren" [ref=e439]:
+        - button "Publiceren" [ref=e440] [cursor=pointer]
+    - generic [ref=e442]:
+      - generic [ref=e443]:
+        - generic [ref=e444]: Inzending configureren
+        - generic [ref=e445] [cursor=pointer]:
+          - button " Versie publiceren en maken Wijzigingen implementeren in uw sites" [ref=e446]:
+            - generic [ref=e447]: 
+            - generic [ref=e448]:
+              - generic [ref=e449]: Versie publiceren en maken
+              - generic [ref=e450]: Wijzigingen implementeren in uw sites
+          - button "Versie maken Wijzigingen opslaan en een nieuwe versie maken" [ref=e451]:
+            - generic [ref=e453]:
+              - generic [ref=e454]: Versie maken
+              - generic [ref=e455]: Wijzigingen opslaan en een nieuwe versie maken
+        - generic [ref=e456]:
+          - generic [ref=e457]:
+            - generic [ref=e458]: Versienaam
+            - textbox "Een beschrijvende naam toevoegen" [ref=e459]
+          - generic [ref=e461]:
+            - generic [ref=e462]: Versiebeschrijving
+            - textbox "Een gedetailleerde beschrijving van de wijzigingen toevoegen" [ref=e463]
+          - generic [ref=e465]:
+            - generic [ref=e466]: Publiceren naar omgeving
+            - button "Live" [ref=e467] [cursor=pointer]:
+              - generic [ref=e470]: Live
+      - generic [ref=e473]:
+        - generic [ref=e474]:
+          - generic [ref=e475]: Wijzigingen in werkruimte
+          - table [ref=e477]:
+            - rowgroup [ref=e485]:
+              - row "Kolom Naam sorteren Gesorteerd in ascending volgorde Kolom Type sorteren Kolom Wijziging sorteren Kolom Laatst bewerkt sorteren Kolom Gebruiker sorteren" [ref=e486]:
+                - columnheader "Kolom Naam sorteren Gesorteerd in ascending volgorde" [ref=e487]:
+                  - button "Kolom Naam sorteren Gesorteerd in ascending volgorde" [ref=e488] [cursor=pointer]: Naam
+                - columnheader "Kolom Type sorteren" [ref=e489]:
+                  - button "Kolom Type sorteren" [ref=e490] [cursor=pointer]: Type
+                - columnheader "Kolom Wijziging sorteren" [ref=e491]:
+                  - button "Kolom Wijziging sorteren" [ref=e492] [cursor=pointer]: Wijziging
+                - columnheader "Kolom Laatst bewerkt sorteren" [ref=e493]:
+                  - button "Kolom Laatst bewerkt sorteren" [ref=e494] [cursor=pointer]: Laatst bewerkt
+                - columnheader "Kolom Gebruiker sorteren" [ref=e495]:
+                  - button "Kolom Gebruiker sorteren" [ref=e496] [cursor=pointer]: Gebruiker
+              - row "All Pages Trigger Toegevoegd 17 uur geleden teddy@wespikegrowth.io" [ref=e497]:
+                - cell "All Pages" [ref=e498]:
+                  - link "All Pages" [ref=e499] [cursor=pointer]:
+                    - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/triggers/3"
+                - cell "Trigger" [ref=e500]
+                - button "Toegevoegd"
+                - cell "17 uur geleden" [ref=e501]:
+                  - generic "7 jun 2026, 15:33:55" [ref=e502]: 17 uur geleden
+                - cell "teddy@wespikegrowth.io" [ref=e503]
+                - cell [ref=e504]:
+                  - button [ref=e505]
+              - row "Click - Apply Now Trigger Toegevoegd 2 minuten geleden teddy@wespikegrowth.io" [ref=e507]:
+                - cell "Click - Apply Now" [ref=e508]:
+                  - link "Click - Apply Now" [ref=e509] [cursor=pointer]:
+                    - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/triggers/5"
+                - cell "Trigger" [ref=e510]
+                - button "Toegevoegd"
+                - cell "2 minuten geleden" [ref=e511]:
+                  - generic "8 jun 2026, 8:22:46" [ref=e512]: 2 minuten geleden
+                - cell "teddy@wespikegrowth.io" [ref=e513]
+                - cell [ref=e514]:
+                  - button [ref=e515]
+              - row "Click - Email Trigger Toegevoegd 17 uur geleden teddy@wespikegrowth.io" [ref=e517]:
+                - cell "Click - Email" [ref=e518]:
+                  - link "Click - Email" [ref=e519] [cursor=pointer]:
+                    - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/triggers/7"
+                - cell "Trigger" [ref=e520]
+                - button "Toegevoegd"
+                - cell "17 uur geleden" [ref=e521]:
+                  - generic "7 jun 2026, 15:33:58" [ref=e522]: 17 uur geleden
+                - cell "teddy@wespikegrowth.io" [ref=e523]
+                - cell [ref=e524]:
+                  - button [ref=e525]
+              - row "Click - WhatsApp Trigger Toegevoegd 17 uur geleden teddy@wespikegrowth.io" [ref=e527]:
+                - cell "Click - WhatsApp" [ref=e528]:
+                  - link "Click - WhatsApp" [ref=e529] [cursor=pointer]:
+                    - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/triggers/6"
+                - cell "Trigger" [ref=e530]
+                - button "Toegevoegd"
+                - cell "17 uur geleden" [ref=e531]:
+                  - generic "7 jun 2026, 15:33:57" [ref=e532]: 17 uur geleden
+                - cell "teddy@wespikegrowth.io" [ref=e533]
+                - cell [ref=e534]:
+                  - button [ref=e535]
+              - row "Click Classes Ingebouwde variabele Aangezet 17 uur geleden teddy@wespikegrowth.io" [ref=e537]:
+                - cell "Click Classes" [ref=e538]:
+                  - link "Click Classes" [ref=e539] [cursor=pointer]:
+                    - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/variables/2147481608"
+                - cell "Ingebouwde variabele" [ref=e540]
+                - button "Aangezet"
+                - cell "17 uur geleden" [ref=e541]:
+                  - generic "7 jun 2026, 15:33:54" [ref=e542]: 17 uur geleden
+                - cell "teddy@wespikegrowth.io" [ref=e543]
+                - cell [ref=e544]:
+                  - button [ref=e545]
+              - row "Click Element Ingebouwde variabele Aangezet 17 uur geleden teddy@wespikegrowth.io" [ref=e547]:
+                - cell "Click Element" [ref=e548]:
+                  - link "Click Element" [ref=e549] [cursor=pointer]:
+                    - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/variables/2147481607"
+                - cell "Ingebouwde variabele" [ref=e550]
+                - button "Aangezet"
+                - cell "17 uur geleden" [ref=e551]:
+                  - generic "7 jun 2026, 15:33:54" [ref=e552]: 17 uur geleden
+                - cell "teddy@wespikegrowth.io" [ref=e553]
+                - cell [ref=e554]:
+                  - button [ref=e555]
+              - row "Click ID Ingebouwde variabele Aangezet 17 uur geleden teddy@wespikegrowth.io" [ref=e557]:
+                - cell "Click ID" [ref=e558]:
+                  - link "Click ID" [ref=e559] [cursor=pointer]:
+                    - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/variables/2147481609"
+                - cell "Ingebouwde variabele" [ref=e560]
+                - button "Aangezet"
+                - cell "17 uur geleden" [ref=e561]:
+                  - generic "7 jun 2026, 15:33:54" [ref=e562]: 17 uur geleden
+                - cell "teddy@wespikegrowth.io" [ref=e563]
+                - cell [ref=e564]:
+                  - button [ref=e565]
+              - row "Click Target Ingebouwde variabele Aangezet 17 uur geleden teddy@wespikegrowth.io" [ref=e567]:
+                - cell "Click Target" [ref=e568]:
+                  - link "Click Target" [ref=e569] [cursor=pointer]:
+                    - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/variables/2147481610"
+                - cell "Ingebouwde variabele" [ref=e570]
+                - button "Aangezet"
+                - cell "17 uur geleden" [ref=e571]:
+                  - generic "7 jun 2026, 15:33:54" [ref=e572]: 17 uur geleden
+                - cell "teddy@wespikegrowth.io" [ref=e573]
+                - cell [ref=e574]:
+                  - button [ref=e575]
+              - row "Click Text Ingebouwde variabele Aangezet 17 uur geleden teddy@wespikegrowth.io" [ref=e577]:
+                - cell "Click Text" [ref=e578]:
+                  - link "Click Text" [ref=e579] [cursor=pointer]:
+                    - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/variables/2147481612"
+                - cell "Ingebouwde variabele" [ref=e580]
+                - button "Aangezet"
+                - cell "17 uur geleden" [ref=e581]:
+                  - generic "7 jun 2026, 15:33:54" [ref=e582]: 17 uur geleden
+                - cell "teddy@wespikegrowth.io" [ref=e583]
+                - cell [ref=e584]:
+                  - button [ref=e585]
+              - row "Click URL Ingebouwde variabele Aangezet 17 uur geleden teddy@wespikegrowth.io" [ref=e587]:
+                - cell "Click URL" [ref=e588]:
+                  - link "Click URL" [ref=e589] [cursor=pointer]:
+                    - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/variables/2147481611"
+                - cell "Ingebouwde variabele" [ref=e590]
+                - button "Aangezet"
+                - cell "17 uur geleden" [ref=e591]:
+                  - generic "7 jun 2026, 15:33:54" [ref=e592]: 17 uur geleden
+                - cell "teddy@wespikegrowth.io" [ref=e593]
+                - cell [ref=e594]:
+                  - button [ref=e595]
+              - row "Form Element Ingebouwde variabele Aangezet 17 uur geleden teddy@wespikegrowth.io" [ref=e597]:
+                - cell "Form Element" [ref=e598]:
+                  - link "Form Element" [ref=e599] [cursor=pointer]:
+                    - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/variables/2147481613"
+                - cell "Ingebouwde variabele" [ref=e600]
+                - button "Aangezet"
+                - cell "17 uur geleden" [ref=e601]:
+                  - generic "7 jun 2026, 15:33:54" [ref=e602]: 17 uur geleden
+                - cell "teddy@wespikegrowth.io" [ref=e603]
+                - cell [ref=e604]:
+                  - button [ref=e605]
+              - row "Form Submit - Application Trigger Toegevoegd 2 minuten geleden teddy@wespikegrowth.io" [ref=e607]:
+                - cell "Form Submit - Application" [ref=e608]:
+                  - link "Form Submit - Application" [ref=e609] [cursor=pointer]:
+                    - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/triggers/8"
+                - cell "Trigger" [ref=e610]
+                - button "Toegevoegd"
+                - cell "2 minuten geleden" [ref=e611]:
+                  - generic "8 jun 2026, 8:22:47" [ref=e612]: 2 minuten geleden
+                - cell "teddy@wespikegrowth.io" [ref=e613]
+                - cell [ref=e614]:
+                  - button [ref=e615]
+              - row "Form Submit - Contact Trigger Toegevoegd 2 minuten geleden teddy@wespikegrowth.io" [ref=e617]:
+                - cell "Form Submit - Contact" [ref=e618]:
+                  - link "Form Submit - Contact" [ref=e619] [cursor=pointer]:
+                    - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/triggers/9"
+                - cell "Trigger" [ref=e620]
+                - button "Toegevoegd"
+                - cell "2 minuten geleden" [ref=e621]:
+                  - generic "8 jun 2026, 8:22:48" [ref=e622]: 2 minuten geleden
+                - cell "teddy@wespikegrowth.io" [ref=e623]
+                - cell [ref=e624]:
+                  - button [ref=e625]
+              - row "Form Submit - Newsletter Trigger Toegevoegd 2 minuten geleden teddy@wespikegrowth.io" [ref=e627]:
+                - cell "Form Submit - Newsletter" [ref=e628]:
+                  - link "Form Submit - Newsletter" [ref=e629] [cursor=pointer]:
+                    - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/triggers/10"
+                - cell "Trigger" [ref=e630]
+                - button "Toegevoegd"
+                - cell "2 minuten geleden" [ref=e631]:
+                  - generic "8 jun 2026, 8:22:49" [ref=e632]: 2 minuten geleden
+                - cell "teddy@wespikegrowth.io" [ref=e633]
+                - cell [ref=e634]:
+                  - button [ref=e635]
+              - row "Form Target Ingebouwde variabele Aangezet 17 uur geleden teddy@wespikegrowth.io" [ref=e637]:
+                - cell "Form Target" [ref=e638]:
+                  - link "Form Target" [ref=e639] [cursor=pointer]:
+                    - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/variables/2147481616"
+                - cell "Ingebouwde variabele" [ref=e640]
+                - button "Aangezet"
+                - cell "17 uur geleden" [ref=e641]:
+                  - generic "7 jun 2026, 15:33:54" [ref=e642]: 17 uur geleden
+                - cell "teddy@wespikegrowth.io" [ref=e643]
+                - cell [ref=e644]:
+                  - button [ref=e645]
+              - row "Form URL Ingebouwde variabele Aangezet 17 uur geleden teddy@wespikegrowth.io" [ref=e647]:
+                - cell "Form URL" [ref=e648]:
+                  - link "Form URL" [ref=e649] [cursor=pointer]:
+                    - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/variables/2147481617"
+                - cell "Ingebouwde variabele" [ref=e650]
+                - button "Aangezet"
+                - cell "17 uur geleden" [ref=e651]:
+                  - generic "7 jun 2026, 15:33:54" [ref=e652]: 17 uur geleden
+                - cell "teddy@wespikegrowth.io" [ref=e653]
+                - cell [ref=e654]:
+                  - button [ref=e655]
+              - row "GA4 - application_submitted Tag Toegevoegd 17 uur geleden teddy@wespikegrowth.io" [ref=e657]:
+                - cell "GA4 - application_submitted" [ref=e658]:
+                  - link "GA4 - application_submitted" [ref=e659] [cursor=pointer]:
+                    - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/tags/15"
+                - cell "Tag" [ref=e660]
+                - button "Toegevoegd"
+                - cell "17 uur geleden" [ref=e661]:
+                  - generic "7 jun 2026, 15:35:57" [ref=e662]: 17 uur geleden
+                - cell "teddy@wespikegrowth.io" [ref=e663]
+                - cell [ref=e664]:
+                  - button [ref=e665]
+              - row "GA4 - apply_now_clicked Tag Toegevoegd 17 uur geleden teddy@wespikegrowth.io" [ref=e667]:
+                - cell "GA4 - apply_now_clicked" [ref=e668]:
+                  - link "GA4 - apply_now_clicked" [ref=e669] [cursor=pointer]:
+                    - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/tags/12"
+                - cell "Tag" [ref=e670]
+                - button "Toegevoegd"
+                - cell "17 uur geleden" [ref=e671]:
+                  - generic "7 jun 2026, 15:35:55" [ref=e672]: 17 uur geleden
+                - cell "teddy@wespikegrowth.io" [ref=e673]
+                - cell [ref=e674]:
+                  - button [ref=e675]
+              - row "GA4 - contact_form_submitted Tag Toegevoegd 17 uur geleden teddy@wespikegrowth.io" [ref=e677]:
+                - cell "GA4 - contact_form_submitted" [ref=e678]:
+                  - link "GA4 - contact_form_submitted" [ref=e679] [cursor=pointer]:
+                    - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/tags/16"
+                - cell "Tag" [ref=e680]
+                - button "Toegevoegd"
+                - cell "17 uur geleden" [ref=e681]:
+                  - generic "7 jun 2026, 15:35:58" [ref=e682]: 17 uur geleden
+                - cell "teddy@wespikegrowth.io" [ref=e683]
+                - cell [ref=e684]:
+                  - button [ref=e685]
+              - row "GA4 - email_link_clicked Tag Toegevoegd 17 uur geleden teddy@wespikegrowth.io" [ref=e687]:
+                - cell "GA4 - email_link_clicked" [ref=e688]:
+                  - link "GA4 - email_link_clicked" [ref=e689] [cursor=pointer]:
+                    - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/tags/14"
+                - cell "Tag" [ref=e690]
+                - button "Toegevoegd"
+                - cell "17 uur geleden" [ref=e691]:
+                  - generic "7 jun 2026, 15:35:56" [ref=e692]: 17 uur geleden
+                - cell "teddy@wespikegrowth.io" [ref=e693]
+                - cell [ref=e694]:
+                  - button [ref=e695]
+              - row "GA4 - newsletter_signup Tag Toegevoegd 17 uur geleden teddy@wespikegrowth.io" [ref=e697]:
+                - cell "GA4 - newsletter_signup" [ref=e698]:
+                  - link "GA4 - newsletter_signup" [ref=e699] [cursor=pointer]:
+                    - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/tags/17"
+                - cell "Tag" [ref=e700]
+                - button "Toegevoegd"
+                - cell "17 uur geleden" [ref=e701]:
+                  - generic "7 jun 2026, 15:35:59" [ref=e702]: 17 uur geleden
+                - cell "teddy@wespikegrowth.io" [ref=e703]
+                - cell [ref=e704]:
+                  - button [ref=e705]
+              - row "GA4 - trip_page_viewed Tag Toegevoegd 17 uur geleden teddy@wespikegrowth.io" [ref=e707]:
+                - cell "GA4 - trip_page_viewed" [ref=e708]:
+                  - link "GA4 - trip_page_viewed" [ref=e709] [cursor=pointer]:
+                    - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/tags/18"
+                - cell "Tag" [ref=e710]
+                - button "Toegevoegd"
+                - cell "17 uur geleden" [ref=e711]:
+                  - generic "7 jun 2026, 15:36:00" [ref=e712]: 17 uur geleden
+                - cell "teddy@wespikegrowth.io" [ref=e713]
+                - cell [ref=e714]:
+                  - button [ref=e715]
+              - row "GA4 - whatsapp_clicked Tag Toegevoegd 17 uur geleden teddy@wespikegrowth.io" [ref=e717]:
+                - cell "GA4 - whatsapp_clicked" [ref=e718]:
+                  - link "GA4 - whatsapp_clicked" [ref=e719] [cursor=pointer]:
+                    - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/tags/13"
+                - cell "Tag" [ref=e720]
+                - button "Toegevoegd"
+                - cell "17 uur geleden" [ref=e721]:
+                  - generic "7 jun 2026, 15:35:55" [ref=e722]: 17 uur geleden
+                - cell "teddy@wespikegrowth.io" [ref=e723]
+                - cell [ref=e724]:
+                  - button [ref=e725]
+              - row "Google Tag - G-2DEC87PY9P Tag Toegevoegd 17 uur geleden teddy@wespikegrowth.io" [ref=e727]:
+                - cell "Google Tag - G-2DEC87PY9P" [ref=e728]:
+                  - link "Google Tag - G-2DEC87PY9P" [ref=e729] [cursor=pointer]:
+                    - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/tags/4"
+                - cell "Tag" [ref=e730]
+                - button "Toegevoegd"
+                - cell "17 uur geleden" [ref=e731]:
+                  - generic "7 jun 2026, 15:33:56" [ref=e732]: 17 uur geleden
+                - cell "teddy@wespikegrowth.io" [ref=e733]
+                - cell [ref=e734]:
+                  - button [ref=e735]
+              - row "Page View - Trip Pages Trigger Toegevoegd 17 uur geleden teddy@wespikegrowth.io" [ref=e737]:
+                - cell "Page View - Trip Pages" [ref=e738]:
+                  - link "Page View - Trip Pages" [ref=e739] [cursor=pointer]:
+                    - /url: "#/container/accounts/6359578232/containers/254774171/workspaces/2/triggers/11"
+                - cell "Trigger" [ref=e740]
+                - button "Toegevoegd"
+                - cell "17 uur geleden" [ref=e741]:
+                  - generic "7 jun 2026, 15:34:02" [ref=e742]: 17 uur geleden
+                - cell "teddy@wespikegrowth.io" [ref=e743]
+                - cell [ref=e744]:
+                  - button [ref=e745]
+        - button "Activiteitsgeschiedenis" [ref=e747] [cursor=pointer]

@@ -1,0 +1,862 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - navigation "Site Navigation Links" [ref=e4]:
+      - button "Hamburger" [ref=e6] [cursor=pointer]:
+        - img "Hamburger" [ref=e8]
+      - list [ref=e12]:
+        - listitem [ref=e13]:
+          - link "Home" [ref=e14] [cursor=pointer]:
+            - /url: /
+            - img "Home" [ref=e16]
+          - generic [ref=e21]: Home
+        - listitem [ref=e22]:
+          - link "Today" [ref=e23] [cursor=pointer]:
+            - /url: /weather/today/l/2d5881ed31eb80dccf147703c98561b9444390f4573e91ce0ccabc3ec42377ac
+            - img "Today" [ref=e25]
+          - generic [ref=e28]: Today
+        - listitem [ref=e29]:
+          - link "Hourly" [ref=e30] [cursor=pointer]:
+            - /url: /weather/hourbyhour/l/2d5881ed31eb80dccf147703c98561b9444390f4573e91ce0ccabc3ec42377ac
+            - img "Hourly" [ref=e32]
+          - generic [ref=e36]: Hourly
+        - listitem [ref=e37]:
+          - link "Daily":
+            - /url: /weather/tenday/l/2d5881ed31eb80dccf147703c98561b9444390f4573e91ce0ccabc3ec42377ac
+            - generic:
+              - img "Daily"
+          - generic [ref=e39]: 10 Day
+        - listitem [ref=e40]:
+          - link "Monthly" [ref=e41] [cursor=pointer]:
+            - /url: /weather/monthly/l/2d5881ed31eb80dccf147703c98561b9444390f4573e91ce0ccabc3ec42377ac
+            - img "Monthly" [ref=e43]
+          - generic [ref=e58]: Monthly
+        - listitem [ref=e59]:
+          - link "Radar" [ref=e60] [cursor=pointer]:
+            - /url: /weather/radar/interactive/l/2d5881ed31eb80dccf147703c98561b9444390f4573e91ce0ccabc3ec42377ac
+            - img "Radar" [ref=e62]
+          - generic [ref=e65]: Radar
+        - listitem [ref=e66]:
+          - link "Video" [ref=e67] [cursor=pointer]:
+            - /url: /safety/hurricane/video/hurricane-season-preparation-tropical-terminology
+            - img "Video" [ref=e69]
+          - generic [ref=e73]: Video
+        - listitem [ref=e74]:
+          - link [ref=e75] [cursor=pointer]:
+            - /url: /explore
+            - img [ref=e77]
+          - generic [ref=e81]: Explore
+    - generic:
+      - generic:
+        - navigation:
+          - generic:
+            - button:
+              - generic:
+                - img
+            - link:
+              - /url: /
+              - generic:
+                - img
+          - list:
+            - listitem:
+              - link:
+                - /url: /
+                - generic:
+                  - img
+                - generic: Home
+            - listitem:
+              - link:
+                - /url: /weather/today/l/2d5881ed31eb80dccf147703c98561b9444390f4573e91ce0ccabc3ec42377ac
+                - generic:
+                  - img
+                - generic: Today
+            - listitem:
+              - link:
+                - /url: /weather/hourbyhour/l/2d5881ed31eb80dccf147703c98561b9444390f4573e91ce0ccabc3ec42377ac
+                - generic:
+                  - img
+                - generic: Hourly
+            - listitem:
+              - link:
+                - /url: /weather/tenday/l/2d5881ed31eb80dccf147703c98561b9444390f4573e91ce0ccabc3ec42377ac
+                - generic:
+                  - img
+                - generic: 10 Day
+            - listitem:
+              - link:
+                - /url: /weather/monthly/l/2d5881ed31eb80dccf147703c98561b9444390f4573e91ce0ccabc3ec42377ac
+                - generic:
+                  - img
+                - generic: Monthly
+            - listitem:
+              - link:
+                - /url: /weather/radar/interactive/l/2d5881ed31eb80dccf147703c98561b9444390f4573e91ce0ccabc3ec42377ac
+                - generic:
+                  - img
+                - generic: Radar
+            - listitem:
+              - link:
+                - /url: /safety/hurricane/video/hurricane-season-preparation-tropical-terminology
+                - generic:
+                  - img
+                - generic: Video
+            - listitem:
+              - link:
+                - /url: /explore
+                - generic:
+                  - img
+                - generic: Explore
+            - listitem
+            - listitem:
+              - button:
+                - generic: Severe Weather
+                - generic:
+                  - img
+              - list:
+                - listitem:
+                  - menuitem:
+                    - generic:
+                      - img
+                    - generic: Hurricane Central
+                - listitem:
+                  - menuitem:
+                    - generic:
+                      - img
+                    - generic: Tornado Central
+                - listitem:
+                  - menuitem:
+                    - generic:
+                      - img
+                    - generic: Safety & Prep
+            - listitem
+            - listitem:
+              - button:
+                - generic: Health & Wellness
+                - generic:
+                  - img
+              - list:
+                - listitem:
+                  - menuitem:
+                    - generic:
+                      - img
+                    - generic: Allergy Tracker
+                - listitem:
+                  - menuitem:
+                    - generic:
+                      - img
+                    - generic: Air Quality Index
+                - listitem:
+                  - menuitem:
+                    - generic:
+                      - img
+                    - generic: Cold & Flu Tracker
+                - listitem:
+                  - menuitem:
+                    - generic:
+                      - img
+                    - generic: Skin
+            - listitem
+            - listitem:
+              - button:
+                - generic: Lifestyle
+                - generic:
+                  - img
+              - list:
+                - listitem:
+                  - menuitem:
+                    - generic:
+                      - img
+                    - generic: Home & Garden
+                - listitem:
+                  - menuitem:
+                    - generic:
+                      - img
+                    - generic: Pets & Animals
+                - listitem:
+                  - menuitem:
+                    - generic:
+                      - img
+                    - generic: Recipes
+                - listitem:
+                  - menuitem:
+                    - generic:
+                      - img
+                    - generic: Space & Skywatching
+                - listitem:
+                  - menuitem:
+                    - generic:
+                      - img
+                    - generic: Travel & Outdoors
+                - listitem:
+                  - menuitem:
+                    - generic:
+                      - img
+                    - generic: Product Reviews & Deals
+                - listitem:
+                  - menuitem:
+                    - generic:
+                      - img
+                    - generic: Shop
+  - generic [ref=e82]:
+    - banner "Menu" [ref=e87]:
+      - generic [ref=e88]:
+        - generic [ref=e89]:
+          - link "Skip to Main Content" [ref=e90] [cursor=pointer]:
+            - /url: "#MainContent"
+          - link "Accessibility Help" [ref=e91] [cursor=pointer]:
+            - /url: https://www.essentialaccessibility.com/the-weather-channel?utm_source=theweatherchannelhomepage&utm_medium=iconlarge&utm_term=eachannelpage&utm_content=header&utm_campaign=theweatherchannel
+          - link "The Weather Company - Home" [ref=e92] [cursor=pointer]:
+            - /url: /
+            - generic "The Weather Company - Home" [ref=e93]:
+              - img "The Weather Company - Home" [ref=e94]
+        - generic [ref=e97]:
+          - search [ref=e98]:
+            - generic [ref=e101]:
+              - group "Type at least three characters to start auto complete. Recently searched locations will be displayed if there is no search query. The first option will be automatically selected. Use up and down arrows to change selection. Use escape to clear." [ref=e102]:
+                - generic [ref=e103]: Type at least three characters to start auto complete. Recently searched locations will be displayed if there is no search query. The first option will be automatically selected. Use up and down arrows to change selection. Use escape to clear.
+                - generic [ref=e104]: Search City or Zip Code
+                - combobox "Search City or Zip Code" [disabled] [ref=e105]
+              - img "Search" [ref=e107]
+          - button "[object Object]" [ref=e110] [cursor=pointer]:
+            - generic [ref=e111]:
+              - img "Globe" [ref=e113]
+              - generic [ref=e115]: US
+              - generic [ref=e116]: °F
+              - generic "chevron down" [ref=e117]:
+                - img "chevron down" [ref=e118]
+    - generic [ref=e121]: Advertisement
+    - main [ref=e123]:
+      - generic [ref=e124]:
+        - main "Main Content" [ref=e125]:
+          - region "10 Day Weather" [ref=e128]:
+            - heading "10 Day Weather-" [level=1] [ref=e130]:
+              - strong [ref=e131]: 10 Day Weather
+              - generic [ref=e132]: "-"
+            - generic [ref=e133]:
+              - generic [ref=e134]: As of 1:08 pm CEST
+              - generic [ref=e135]:
+                - group [ref=e136]:
+                  - generic "Today Subtract" [ref=e137] [cursor=pointer]:
+                    - generic [ref=e138]:
+                      - heading "Today" [level=2] [ref=e140]
+                      - img "Subtract" [ref=e142]
+                  - generic [ref=e144]:
+                    - generic [ref=e145]:
+                      - heading "Day" [level=2] [ref=e146]
+                      - generic [ref=e147]:
+                        - generic [ref=e149]: 67°
+                        - img "Cloudy" [ref=e152]
+                        - generic [ref=e155]:
+                          - generic [ref=e156]:
+                            - generic "Chance of Rain" [ref=e158]:
+                              - img "Chance of Rain" [ref=e159]
+                            - generic [ref=e161]: 15%
+                          - generic [ref=e162]:
+                            - generic "Wind" [ref=e163]:
+                              - img "Wind" [ref=e164]
+                            - generic [ref=e166]: SSE 4 mph
+                      - paragraph [ref=e167]: Overcast. High 67F. Winds light and variable.
+                    - list [ref=e169]:
+                      - listitem [ref=e170]:
+                        - img "Humidity" [ref=e172]
+                        - generic [ref=e174]:
+                          - generic [ref=e175]: Humidity
+                          - generic [ref=e176]: 54%
+                      - listitem [ref=e177]:
+                        - img "UV index" [ref=e179]
+                        - generic [ref=e181]:
+                          - generic [ref=e182]: UV Index
+                          - generic [ref=e183]: 5 of 11
+                      - listitem [ref=e184]:
+                        - img "Sunrise" [ref=e186]
+                        - generic [ref=e188]:
+                          - generic [ref=e189]: Sunrise
+                          - generic [ref=e190]: 4:17 am
+                      - listitem [ref=e191]:
+                        - img "Sunset" [ref=e193]
+                        - generic [ref=e195]:
+                          - generic [ref=e196]: Sunset
+                          - generic [ref=e197]: 9:08 pm
+                    - generic [ref=e198]:
+                      - heading "Night" [level=2] [ref=e199]
+                      - generic [ref=e200]:
+                        - generic [ref=e202]: 51°
+                        - img "Rain" [ref=e205]
+                        - generic [ref=e210]:
+                          - generic [ref=e211]:
+                            - generic "Chance of Rain" [ref=e213]:
+                              - img "Chance of Rain" [ref=e214]
+                            - generic [ref=e216]: 100%
+                          - generic [ref=e217]:
+                            - generic "Wind" [ref=e218]:
+                              - img "Wind" [ref=e219]
+                            - generic [ref=e221]: NNE 9 mph
+                      - paragraph [ref=e222]: Cloudy skies with periods of rain late. Low 51F. Winds NNE at 5 to 10 mph. Chance of rain 100%. Rainfall near a half an inch. Locally heavy rainfall possible.
+                    - list [ref=e224]:
+                      - listitem [ref=e225]:
+                        - img "Humidity" [ref=e227]
+                        - generic [ref=e229]:
+                          - generic [ref=e230]: Humidity
+                          - generic [ref=e231]: 84%
+                      - listitem [ref=e232]:
+                        - img "UV index" [ref=e234]
+                        - generic [ref=e236]:
+                          - generic [ref=e237]: UV Index
+                          - generic [ref=e238]: 0 of 11
+                      - listitem [ref=e239]:
+                        - img "Moonrise" [ref=e241]
+                        - generic [ref=e243]:
+                          - generic [ref=e244]: Moonrise
+                          - generic [ref=e245]: 1:25 am
+                      - listitem [ref=e246]:
+                        - img "Moonset" [ref=e248]
+                        - generic [ref=e250]:
+                          - generic [ref=e251]: Moonset
+                          - generic [ref=e252]: 3:14 pm
+                      - listitem [ref=e253]:
+                        - generic [ref=e255]:
+                          - img "Moon Phase - Day 24" [ref=e257]
+                          - generic [ref=e259]: Waning Crescent
+                - group [ref=e260]:
+                  - generic "Thu 11 Rain Rain 57° /46° Chance of Rain 98% Add" [ref=e261] [cursor=pointer]:
+                    - generic [ref=e262]:
+                      - generic [ref=e263]:
+                        - heading "Thu 11" [level=2] [ref=e264]
+                        - generic [ref=e265]:
+                          - img "Rain" [ref=e267]
+                          - generic [ref=e274]: Rain
+                        - generic [ref=e275]:
+                          - generic [ref=e276]: 57°
+                          - generic [ref=e277]:
+                            - text: /
+                            - generic [ref=e278]: 46°
+                        - generic [ref=e279]:
+                          - generic "Chance of Rain" [ref=e280]:
+                            - img "Chance of Rain" [ref=e281]
+                          - generic [ref=e283]: 98%
+                      - img "Add" [ref=e285]
+                  - text: NW 11 mph W 6 mph
+                - group [ref=e287]:
+                  - generic "Fri 12 Mostly Cloudy Day Mostly Cloudy 65° /52° Chance of Rain 22% Add" [ref=e288] [cursor=pointer]:
+                    - generic [ref=e289]:
+                      - generic [ref=e290]:
+                        - heading "Fri 12" [level=2] [ref=e291]
+                        - generic [ref=e292]:
+                          - img "Mostly Cloudy Day" [ref=e294]
+                          - generic [ref=e300]: Mostly Cloudy
+                        - generic [ref=e301]:
+                          - generic [ref=e302]: 65°
+                          - generic [ref=e303]:
+                            - text: /
+                            - generic [ref=e304]: 52°
+                        - generic [ref=e305]:
+                          - generic "Chance of Rain" [ref=e306]:
+                            - img "Chance of Rain" [ref=e307]
+                          - generic [ref=e309]: 22%
+                      - img "Add" [ref=e311]
+                  - text: SW 9 mph SSW 8 mph
+                - group [ref=e313]:
+                  - generic "Sat 13 Showers Showers 63° /50° Chance of Rain 51% Add" [ref=e314] [cursor=pointer]:
+                    - generic [ref=e315]:
+                      - generic [ref=e316]:
+                        - heading "Sat 13" [level=2] [ref=e317]
+                        - generic [ref=e318]:
+                          - img "Showers" [ref=e320]
+                          - generic [ref=e326]: Showers
+                        - generic [ref=e327]:
+                          - generic [ref=e328]: 63°
+                          - generic [ref=e329]:
+                            - text: /
+                            - generic [ref=e330]: 50°
+                        - generic [ref=e331]:
+                          - generic "Chance of Rain" [ref=e332]:
+                            - img "Chance of Rain" [ref=e333]
+                          - generic [ref=e335]: 51%
+                      - img "Add" [ref=e337]
+                  - text: W 12 mph WSW 10 mph
+                - group [ref=e339]:
+                  - generic "Sun 14 Showers Showers 58° /50° Chance of Rain 66% Add" [ref=e340] [cursor=pointer]:
+                    - generic [ref=e341]:
+                      - generic [ref=e342]:
+                        - heading "Sun 14" [level=2] [ref=e343]
+                        - generic [ref=e344]:
+                          - img "Showers" [ref=e346]
+                          - generic [ref=e352]: Showers
+                        - generic [ref=e353]:
+                          - generic [ref=e354]: 58°
+                          - generic [ref=e355]:
+                            - text: /
+                            - generic [ref=e356]: 50°
+                        - generic [ref=e357]:
+                          - generic "Chance of Rain" [ref=e358]:
+                            - img "Chance of Rain" [ref=e359]
+                          - generic [ref=e361]: 66%
+                      - img "Add" [ref=e363]
+                  - text: W 14 mph WSW 10 mph
+                - group [ref=e365]:
+                  - generic "Mon 15 Thunderstorms Thunderstorms 60° /49° Chance of Rain 76% Add" [ref=e366] [cursor=pointer]:
+                    - generic [ref=e367]:
+                      - generic [ref=e368]:
+                        - heading "Mon 15" [level=2] [ref=e369]
+                        - generic [ref=e370]:
+                          - img "Thunderstorms" [ref=e372]
+                          - generic [ref=e377]: Thunderstorms
+                        - generic [ref=e378]:
+                          - generic [ref=e379]: 60°
+                          - generic [ref=e380]:
+                            - text: /
+                            - generic [ref=e381]: 49°
+                        - generic [ref=e382]:
+                          - generic "Chance of Rain" [ref=e383]:
+                            - img "Chance of Rain" [ref=e384]
+                          - generic [ref=e386]: 76%
+                      - img "Add" [ref=e388]
+                  - text: WNW 13 mph W 10 mph
+                - group [ref=e390]:
+                  - generic "Tue 16 Partly Cloudy Day Partly Cloudy 66° /49° Chance of Rain 24% Add" [ref=e391] [cursor=pointer]:
+                    - generic [ref=e392]:
+                      - generic [ref=e393]:
+                        - heading "Tue 16" [level=2] [ref=e394]
+                        - generic [ref=e395]:
+                          - img "Partly Cloudy Day" [ref=e397]
+                          - generic [ref=e403]: Partly Cloudy
+                        - generic [ref=e404]:
+                          - generic [ref=e405]: 66°
+                          - generic [ref=e406]:
+                            - text: /
+                            - generic [ref=e407]: 49°
+                        - generic [ref=e408]:
+                          - generic "Chance of Rain" [ref=e409]:
+                            - img "Chance of Rain" [ref=e410]
+                          - generic [ref=e412]: 24%
+                      - img "Add" [ref=e414]
+                  - text: W 11 mph WSW 7 mph
+                - group [ref=e416]:
+                  - generic "Wed 17 Partly Cloudy Day Partly Cloudy 72° /55° Chance of Rain 20% Add" [ref=e417] [cursor=pointer]:
+                    - generic [ref=e418]:
+                      - generic [ref=e419]:
+                        - heading "Wed 17" [level=2] [ref=e420]
+                        - generic [ref=e421]:
+                          - img "Partly Cloudy Day" [ref=e423]
+                          - generic [ref=e429]: Partly Cloudy
+                        - generic [ref=e430]:
+                          - generic [ref=e431]: 72°
+                          - generic [ref=e432]:
+                            - text: /
+                            - generic [ref=e433]: 55°
+                        - generic [ref=e434]:
+                          - generic "Chance of Rain" [ref=e435]:
+                            - img "Chance of Rain" [ref=e436]
+                          - generic [ref=e438]: 20%
+                      - img "Add" [ref=e440]
+                  - text: WSW 9 mph WSW 6 mph
+                - group [ref=e442]:
+                  - generic "Thu 18 Partly Cloudy Day Partly Cloudy 74° /56° Chance of Rain 13% Add" [ref=e443] [cursor=pointer]:
+                    - generic [ref=e444]:
+                      - generic [ref=e445]:
+                        - heading "Thu 18" [level=2] [ref=e446]
+                        - generic [ref=e447]:
+                          - img "Partly Cloudy Day" [ref=e449]
+                          - generic [ref=e455]: Partly Cloudy
+                        - generic [ref=e456]:
+                          - generic [ref=e457]: 74°
+                          - generic [ref=e458]:
+                            - text: /
+                            - generic [ref=e459]: 56°
+                        - generic [ref=e460]:
+                          - generic "Chance of Rain" [ref=e461]:
+                            - img "Chance of Rain" [ref=e462]
+                          - generic [ref=e464]: 13%
+                      - img "Add" [ref=e466]
+                  - text: W 9 mph WSW 5 mph
+                - group [ref=e468]:
+                  - generic "Fri 19 Partly Cloudy Day Partly Cloudy 78° /58° Chance of Rain 13% Add" [ref=e469] [cursor=pointer]:
+                    - generic [ref=e470]:
+                      - generic [ref=e471]:
+                        - heading "Fri 19" [level=2] [ref=e472]
+                        - generic [ref=e473]:
+                          - img "Partly Cloudy Day" [ref=e475]
+                          - generic [ref=e481]: Partly Cloudy
+                        - generic [ref=e482]:
+                          - generic [ref=e483]: 78°
+                          - generic [ref=e484]:
+                            - text: /
+                            - generic [ref=e485]: 58°
+                        - generic [ref=e486]:
+                          - generic "Chance of Rain" [ref=e487]:
+                            - img "Chance of Rain" [ref=e488]
+                          - generic [ref=e490]: 13%
+                      - img "Add" [ref=e492]
+                  - text: WSW 8 mph W 5 mph
+                - group [ref=e494]:
+                  - generic "Sat 20 Partly Cloudy Day Partly Cloudy 79° /58° Chance of Rain 15% Add" [ref=e495] [cursor=pointer]:
+                    - generic [ref=e496]:
+                      - generic [ref=e497]:
+                        - heading "Sat 20" [level=2] [ref=e498]
+                        - generic [ref=e499]:
+                          - img "Partly Cloudy Day" [ref=e501]
+                          - generic [ref=e507]: Partly Cloudy
+                        - generic [ref=e508]:
+                          - generic [ref=e509]: 79°
+                          - generic [ref=e510]:
+                            - text: /
+                            - generic [ref=e511]: 58°
+                        - generic [ref=e512]:
+                          - generic "Chance of Rain" [ref=e513]:
+                            - img "Chance of Rain" [ref=e514]
+                          - generic [ref=e516]: 15%
+                      - img "Add" [ref=e518]
+                  - text: W 7 mph NNW 6 mph
+                - group [ref=e520]:
+                  - generic "Sun 21 Partly Cloudy Day Partly Cloudy 77° /56° Chance of Rain 11% Add" [ref=e521] [cursor=pointer]:
+                    - generic [ref=e522]:
+                      - generic [ref=e523]:
+                        - heading "Sun 21" [level=2] [ref=e524]
+                        - generic [ref=e525]:
+                          - img "Partly Cloudy Day" [ref=e527]
+                          - generic [ref=e533]: Partly Cloudy
+                        - generic [ref=e534]:
+                          - generic [ref=e535]: 77°
+                          - generic [ref=e536]:
+                            - text: /
+                            - generic [ref=e537]: 56°
+                        - generic [ref=e538]:
+                          - generic "Chance of Rain" [ref=e539]:
+                            - img "Chance of Rain" [ref=e540]
+                          - generic [ref=e542]: 11%
+                      - img "Add" [ref=e544]
+                  - text: NW 7 mph NW 6 mph
+                - group [ref=e546]:
+                  - generic "Mon 22 Partly Cloudy Day Partly Cloudy 76° /57° Chance of Rain 24% Add" [ref=e547] [cursor=pointer]:
+                    - generic [ref=e548]:
+                      - generic [ref=e549]:
+                        - heading "Mon 22" [level=2] [ref=e550]
+                        - generic [ref=e551]:
+                          - img "Partly Cloudy Day" [ref=e553]
+                          - generic [ref=e559]: Partly Cloudy
+                        - generic [ref=e560]:
+                          - generic [ref=e561]: 76°
+                          - generic [ref=e562]:
+                            - text: /
+                            - generic [ref=e563]: 57°
+                        - generic [ref=e564]:
+                          - generic "Chance of Rain" [ref=e565]:
+                            - img "Chance of Rain" [ref=e566]
+                          - generic [ref=e568]: 24%
+                      - img "Add" [ref=e570]
+                  - text: WNW 9 mph NE 7 mph
+                - group [ref=e572]:
+                  - generic "Tue 23 Partly Cloudy Day Partly Cloudy 76° /56° Chance of Rain 24% Add" [ref=e573] [cursor=pointer]:
+                    - generic [ref=e574]:
+                      - generic [ref=e575]:
+                        - heading "Tue 23" [level=2] [ref=e576]
+                        - generic [ref=e577]:
+                          - img "Partly Cloudy Day" [ref=e579]
+                          - generic [ref=e585]: Partly Cloudy
+                        - generic [ref=e586]:
+                          - generic [ref=e587]: 76°
+                          - generic [ref=e588]:
+                            - text: /
+                            - generic [ref=e589]: 56°
+                        - generic [ref=e590]:
+                          - generic "Chance of Rain" [ref=e591]:
+                            - img "Chance of Rain" [ref=e592]
+                          - generic [ref=e594]: 24%
+                      - img "Add" [ref=e596]
+                  - text: NW 8 mph NNW 7 mph
+                - group [ref=e598]:
+                  - generic "Wed 24 Partly Cloudy Day Partly Cloudy 75° /56° Chance of Rain 21% Add" [ref=e599] [cursor=pointer]:
+                    - generic [ref=e600]:
+                      - generic [ref=e601]:
+                        - heading "Wed 24" [level=2] [ref=e602]
+                        - generic [ref=e603]:
+                          - img "Partly Cloudy Day" [ref=e605]
+                          - generic [ref=e611]: Partly Cloudy
+                        - generic [ref=e612]:
+                          - generic [ref=e613]: 75°
+                          - generic [ref=e614]:
+                            - text: /
+                            - generic [ref=e615]: 56°
+                        - generic [ref=e616]:
+                          - generic "Chance of Rain" [ref=e617]:
+                            - img "Chance of Rain" [ref=e618]
+                          - generic [ref=e620]: 21%
+                      - img "Add" [ref=e622]
+                  - text: NW 9 mph NW 7 mph
+          - region "Don't Miss" [ref=e626]:
+            - link "Don't Miss" [ref=e628] [cursor=pointer]:
+              - /url: /news
+              - generic [ref=e629]:
+                - heading "Don't Miss" [level=2] [ref=e630]
+                - img [ref=e632]
+            - generic [ref=e636]:
+              - link "Record heat for East Coast, Northeast, Pacific Northwest" [ref=e638] [cursor=pointer]:
+                - /url: /2026/06/06/forecast/national/heat-safety-central-plains-eastern-northeast
+                - generic [ref=e645]: Record heat for East Coast, Northeast, Pacific Northwest
+              - link "Tropical Storm Cristina is flood danger for Central America" [ref=e647] [cursor=pointer]:
+                - /url: /2026/06/04/storms/hurricane/tropical-storm-boris-cristina-flood-threat-mexico-central-america
+                - generic [ref=e654]: Tropical Storm Cristina is flood danger for Central America
+              - link "World Cup heat could be most dangerous in these cities" [ref=e656] [cursor=pointer]:
+                - /url: /2026/06/02/sports-recreation/heres-where-world-cup-heat-could-be-the-biggest-concern
+                - generic [ref=e663]: World Cup heat could be most dangerous in these cities
+              - link "Heat Wave Sets New Records" [ref=e665] [cursor=pointer]:
+                - /url: /forecast/regional/news/2026-05-18-northeast-heat-wave-records-nyc-philly-dc
+                - generic [ref=e672]: Heat Wave Sets New Records
+          - region "Radar" [ref=e675]:
+            - heading "Radar" [level=2] [ref=e678]
+            - generic [ref=e680]:
+              - link "Radar - Slight chance of rain over the next 6 hours." [ref=e681] [cursor=pointer]:
+                - /url: /weather/radar/interactive/l/2d5881ed31eb80dccf147703c98561b9444390f4573e91ce0ccabc3ec42377ac
+                - generic [ref=e687]: Now
+              - button "Map Attribution" [ref=e690] [cursor=pointer]:
+                - img "Mapbox Logo" [ref=e692]
+          - region "Lonely Planet" [ref=e699]:
+            - link "Lonely Planet" [ref=e701] [cursor=pointer]:
+              - /url: /travel
+              - generic [ref=e702]:
+                - heading "Lonely Planet" [level=2] [ref=e703]
+                - img [ref=e705]
+            - generic [ref=e709]:
+              - link "Traveling soon? Here are the maps you need" [ref=e711] [cursor=pointer]:
+                - /url: /2026/05/21/travel/traveling-plans-maps-forecast-weather
+                - generic [ref=e718]: Traveling soon? Here are the maps you need
+              - link "Best road trip countries — and when the weather's ideal" [ref=e720] [cursor=pointer]:
+                - /url: /2026/06/04/travel/best-countries-to-drive-as-a-tourist-and-when-weathers-perfect
+                - generic [ref=e727]: Best road trip countries — and when the weather's ideal
+              - link "Where in the world is ... the 'Cave of Melody'?" [ref=e729] [cursor=pointer]:
+                - /url: /2026/06/02/travel/where-in-the-world-is-the-cave-of-melody
+                - generic [ref=e736]: Where in the world is ... the 'Cave of Melody'?
+              - 'link "Hantavirus: what is it and can it affect you?" [ref=e738] [cursor=pointer]':
+                - /url: /2026/05/14/health/hantavirus-what-is-it-and-can-it-affect-you
+                - generic [ref=e745]: "Hantavirus: what is it and can it affect you?"
+          - region "Home, Garage & Garden" [ref=e748]:
+            - link "Home, Garage & Garden" [ref=e750] [cursor=pointer]:
+              - /url: /home-garden
+              - generic [ref=e751]:
+                - heading "Home, Garage & Garden" [level=2] [ref=e752]
+                - img [ref=e754]
+            - generic [ref=e758]:
+              - link "Gardens endure hot, dry summers better if you choose these plants" [ref=e760] [cursor=pointer]:
+                - /url: /2026/06/05/home-garden/gardens-endure-hot-dry-summers-better-if-you-choose-these-plants
+                - generic [ref=e767]: Gardens endure hot, dry summers better if you choose these plants
+              - link "Extreme weather helped push tomato prices just to record high" [ref=e769] [cursor=pointer]:
+                - /url: /2026/06/04/home-garden/food/extreme-weather-helped-push-tomato-prices-just-to-record-high
+                - generic [ref=e776]: Extreme weather helped push tomato prices just to record high
+              - link "Homeowner's Guide To Termite Season" [ref=e778] [cursor=pointer]:
+                - /url: /2026/05/15/home-garden/from-the-expert-homeowners-guide-to-termite-season
+                - generic [ref=e785]: Homeowner's Guide To Termite Season
+              - link "Video Entire North Carolina home moved away from oceanfront" [ref=e787] [cursor=pointer]:
+                - /url: /2026/06/02/news/weather/video/entire-home-moved-to-be-saved-from-coastal-damage
+                - img "Video" [ref=e794]
+                - generic [ref=e798]: Entire North Carolina home moved away from oceanfront
+          - region "Travel" [ref=e801]:
+            - link "Travel" [ref=e803] [cursor=pointer]:
+              - /url: /travel
+              - generic [ref=e804]:
+                - heading "Travel" [level=2] [ref=e805]
+                - img [ref=e807]
+            - generic [ref=e811]:
+              - link "Traveling soon? Here are the maps you need" [ref=e813] [cursor=pointer]:
+                - /url: /2026/05/21/travel/traveling-plans-maps-forecast-weather
+                - generic [ref=e820]: Traveling soon? Here are the maps you need
+              - link "Best road trip countries — and when the weather's ideal" [ref=e822] [cursor=pointer]:
+                - /url: /2026/06/04/travel/best-countries-to-drive-as-a-tourist-and-when-weathers-perfect
+                - generic [ref=e829]: Best road trip countries — and when the weather's ideal
+              - link "Where in the world is ... the 'Cave of Melody'?" [ref=e831] [cursor=pointer]:
+                - /url: /2026/06/02/travel/where-in-the-world-is-the-cave-of-melody
+                - generic [ref=e838]: Where in the world is ... the 'Cave of Melody'?
+              - 'link "Hantavirus: what is it and can it affect you?" [ref=e840] [cursor=pointer]':
+                - /url: /2026/05/14/health/hantavirus-what-is-it-and-can-it-affect-you
+                - generic [ref=e847]: "Hantavirus: what is it and can it affect you?"
+          - region "Seasonal Hub" [ref=e850]:
+            - link "Seasonal Hub" [ref=e852] [cursor=pointer]:
+              - /url: /home-garden/
+              - generic [ref=e853]:
+                - heading "Seasonal Hub" [level=2] [ref=e854]
+                - img [ref=e856]
+            - generic [ref=e860]:
+              - link "3 Things You Need To Know About 2026 Hurricane Season" [ref=e862] [cursor=pointer]:
+                - /url: /2026/06/01/storms/hurricane/three-things-to-know-this-hurricane-season
+                - generic [ref=e868]: 3 Things You Need To Know About 2026 Hurricane Season
+              - link "June Hurricanes, Tropical Storms" [ref=e870] [cursor=pointer]:
+                - /url: /2026/06/01/science/weather-explainers/june-atlantic-hurricane-season-gulf-caribbean-storms
+                - generic [ref=e876]: June Hurricanes, Tropical Storms
+              - link "America's Weather Changes Typical In June" [ref=e878] [cursor=pointer]:
+                - /url: /2026/05/27/storms/hurricane/june-weather-typical-impacts-hurricane-season-severe
+                - generic [ref=e884]: America's Weather Changes Typical In June
+              - link "Video Where tornadoes spin up in June" [ref=e886] [cursor=pointer]:
+                - /url: /2026/06/08/science/weather-explainers/video/june-tornadoes-severe-storms
+                - img "Video" [ref=e892]
+                - generic [ref=e896]: Where tornadoes spin up in June
+        - complementary "Sidebar" [ref=e897]:
+          - region "Editor's Pick" [ref=e900]:
+            - heading "Editor's Pick" [level=2] [ref=e903]
+            - link "Will 2026 be the hottest year on record?" [ref=e908] [cursor=pointer]:
+              - /url: /2026/06/10/news/climate/will-2026-be-the-hottest-year-on-record
+              - generic [ref=e914]: Will 2026 be the hottest year on record?
+          - region "Sun & Moon" [ref=e917]:
+            - link "Sun & Moon" [ref=e919] [cursor=pointer]:
+              - /url: /news
+              - generic [ref=e920]:
+                - heading "Sun & Moon" [level=2] [ref=e921]
+                - img [ref=e923]
+            - generic [ref=e927]:
+              - link "Video NASA announces Artemis III astronauts" [ref=e929] [cursor=pointer]:
+                - /url: /2026/06/09/science/space/video/artemis-iii-astronauts-crew-nasa
+                - img "Video" [ref=e935]
+                - generic [ref=e939]: NASA announces Artemis III astronauts
+              - link "Video Northern lights may reach farther south" [ref=e941] [cursor=pointer]:
+                - /url: /2026/06/04/vertical/video/northern-lights-may-reach-farther-south
+                - img "Video" [ref=e947]
+                - generic [ref=e951]: Northern lights may reach farther south
+              - link "Video Blue Origin rocket explosion" [ref=e953] [cursor=pointer]:
+                - /url: /2026/05/29/vertical/video/blue-origin-rocket-explosion
+                - img "Video" [ref=e959]
+                - generic [ref=e963]: Blue Origin rocket explosion
+              - link "Video Meteor explosion shakes New England" [ref=e965] [cursor=pointer]:
+                - /url: /2026/05/31/vertical/video/meteor-explosion-shakes-new-england
+                - img "Video" [ref=e971]
+                - generic [ref=e975]: Meteor explosion shakes New England
+          - region "Seasonal Tips" [ref=e978]:
+            - heading "Seasonal Tips" [level=2] [ref=e981]
+            - link "Gardens endure hot, dry summers better if you choose these plants" [ref=e986] [cursor=pointer]:
+              - /url: /2026/06/05/home-garden/gardens-endure-hot-dry-summers-better-if-you-choose-these-plants
+              - generic [ref=e992]: Gardens endure hot, dry summers better if you choose these plants
+          - region "Product Reviews & Deals" [ref=e995]:
+            - link "Product Reviews & Deals" [ref=e997] [cursor=pointer]:
+              - /url: https://weather.com/atmosphere
+              - generic [ref=e998]:
+                - heading "Product Reviews & Deals" [level=2] [ref=e999]
+                - img [ref=e1001]
+            - generic [ref=e1004]:
+              - 'link "Best sunscreen of 2026: Our top 10 picks" [ref=e1005] [cursor=pointer]':
+                - /url: /atmosphere/reviews/best-sunscreen
+                - paragraph [ref=e1009]: "Best sunscreen of 2026: Our top 10 picks"
+              - link "17 popular sun shirts for the whole family" [ref=e1010] [cursor=pointer]:
+                - /url: /atmosphere/reviews/long-sleeve-sun-shirts-men-and-women
+                - paragraph [ref=e1014]: 17 popular sun shirts for the whole family
+              - 'link "Fight the frizz: Best hair oils of 2026" [ref=e1015] [cursor=pointer]':
+                - /url: /atmosphere/reviews/best-hair-oils-for-every-type-of-hair
+                - paragraph [ref=e1019]: "Fight the frizz: Best hair oils of 2026"
+              - 'link "Best pollen air purifiers: Help control your allergies" [ref=e1020] [cursor=pointer]':
+                - /url: /atmosphere/reviews/best-air-purifiers-for-allergies
+                - paragraph [ref=e1024]: "Best pollen air purifiers: Help control your allergies"
+              - link "Why you need a silk pillowcase (and our top picks)" [ref=e1025] [cursor=pointer]:
+                - /url: /atmosphere/reviews/best-silk-pillowcases
+                - paragraph [ref=e1029]: Why you need a silk pillowcase (and our top picks)
+              - link "Best Mother’s Day Flower Delivery Services" [ref=e1030] [cursor=pointer]:
+                - /url: /atmosphere/reviews/best-mothers-day-flower-delivery-services
+                - paragraph [ref=e1034]: Best Mother’s Day Flower Delivery Services
+          - region "Stay Safe" [ref=e1037]:
+            - heading "Stay Safe" [level=2] [ref=e1040]
+            - link [ref=e1045] [cursor=pointer]:
+              - /url: /safety
+          - region "Air Quality Index" [ref=e1051]:
+            - heading "Air Quality Index" [level=2] [ref=e1054]
+            - generic [ref=e1055]:
+              - generic [ref=e1057]:
+                - img [ref=e1059]:
+                  - generic [ref=e1062]: "34"
+                - generic [ref=e1064]:
+                  - generic [ref=e1065]: Good
+                  - paragraph [ref=e1066]: Air quality is considered satisfactory, and air pollution poses little or no risk.
+              - link "Air Quality Card" [ref=e1068] [cursor=pointer]:
+                - /url: /forecast/air-quality/l/2d5881ed31eb80dccf147703c98561b9444390f4573e91ce0ccabc3ec42377ac
+                - text: See Details
+            - button "Info" [ref=e1070] [cursor=pointer]:
+              - img "Info" [ref=e1072]
+          - region "Health & Activities" [ref=e1077]:
+            - heading "Health & Activities" [level=2] [ref=e1080]
+            - link "Seasonal Allergies and Pollen Count Forecast Grass pollen is high in your area chevron right" [ref=e1083] [cursor=pointer]:
+              - /url: /forecast/allergy/l/2d5881ed31eb80dccf147703c98561b9444390f4573e91ce0ccabc3ec42377ac
+              - img [ref=e1084]:
+                - img "Grass" [ref=e1088]
+              - generic [ref=e1090]:
+                - heading "Seasonal Allergies and Pollen Count Forecast" [level=3] [ref=e1091]
+                - paragraph [ref=e1092]: Grass pollen is high in your area
+              - generic "chevron right" [ref=e1093]:
+                - img "chevron right" [ref=e1094]
+    - contentinfo [ref=e1096]:
+      - generic [ref=e1100]:
+        - generic [ref=e1102]:
+          - link "The Weather Company" [ref=e1103] [cursor=pointer]:
+            - /url: https://www.weathercompany.com
+            - img "The Weather Company" [ref=e1104]
+          - link "The Weather Channel" [ref=e1105] [cursor=pointer]:
+            - /url: https://weather.com
+            - img "The Weather Channel" [ref=e1106]
+          - link "Weather Underground" [ref=e1107] [cursor=pointer]:
+            - /url: https://www.wunderground.com
+            - img "Weather Underground" [ref=e1108]
+          - link "The Weather Company" [ref=e1109] [cursor=pointer]:
+            - /url: https://weather.com/storm-radar
+            - img "Storm Radar" [ref=e1110]
+        - list [ref=e1111]:
+          - listitem [ref=e1112]:
+            - link "Feedback, opens in new window" [ref=e1113] [cursor=pointer]:
+              - /url: //support.weather.com
+              - text: Feedback
+          - listitem [ref=e1114]:
+            - link "Mission, opens in new window" [ref=e1115] [cursor=pointer]:
+              - /url: /mission
+              - text: Mission
+          - listitem [ref=e1116]:
+            - link "Careers, opens in new window" [ref=e1117] [cursor=pointer]:
+              - /url: https://www.weathercompany.com/careers
+              - text: Careers
+          - listitem [ref=e1118]:
+            - link "News Room, opens in new window" [ref=e1119] [cursor=pointer]:
+              - /url: https://www.weathercompany.com/newsroom
+              - text: News Room
+          - listitem [ref=e1120]:
+            - link "Advertise With Us, opens in new window" [ref=e1121] [cursor=pointer]:
+              - /url: https://www.weathercompany.com/advertising/
+              - text: Advertise With Us
+          - listitem [ref=e1122]:
+            - link "TV, opens in new window" [ref=e1123] [cursor=pointer]:
+              - /url: https://www.weathergroup.com/brands/the-weather-channel/
+              - text: TV
+          - listitem [ref=e1124]:
+            - link "Weather Data APIs, opens in new window" [ref=e1125] [cursor=pointer]:
+              - /url: https://www.weathercompany.com/weather-data-apis/
+              - text: Weather Data APIs
+        - list [ref=e1126]:
+          - listitem [ref=e1127]:
+            - link "Terms of Use" [ref=e1128] [cursor=pointer]:
+              - /url: /legal
+          - listitem [ref=e1129]:
+            - link "Privacy Policy" [ref=e1130] [cursor=pointer]:
+              - /url: /en-US/twc/privacy-policy
+          - listitem [ref=e1131]:
+            - link "AdChoices" [ref=e1132] [cursor=pointer]:
+              - /url: /services/ad-choices
+              - generic [ref=e1133]:
+                - generic [ref=e1134]: AdChoices
+                - img "Ad Choices" [ref=e1137]
+          - listitem [ref=e1139]:
+            - link "Accessibility Statement" [ref=e1140] [cursor=pointer]:
+              - /url: /accessibility-statement
+          - listitem [ref=e1141]:
+            - link "Data Vendors" [ref=e1142] [cursor=pointer]:
+              - /url: /data-vendors
+        - generic [ref=e1143]:
+          - link "Georgia Org" [ref=e1144] [cursor=pointer]:
+            - /url: http://www.exploregeorgia.org/weather-and-travel-tips
+            - img "Georgia Org" [ref=e1145]
+          - link "Link to eSSENTIAL Accessibility assistive technology" [ref=e1146] [cursor=pointer]:
+            - /url: https://www.essentialaccessibility.com/the-weather-channel?utm_source=theweatherchannelhomepage&utm_medium=iconlarge&utm_term=eachannelpage&utm_content=header&utm_campaign=theweatherchannel
+            - img "Link to eSSENTIAL Accessibility assistive technology" [ref=e1147]
+        - generic [ref=e1148]:
+          - paragraph [ref=e1149]: We recognize our responsibility to use data and technology for good. We may use or share your data with our data vendors. Take control of your data.
+          - list [ref=e1150]:
+            - listitem [ref=e1151]:
+              - generic [ref=e1152]: Cookie Settings
+            - listitem [ref=e1153]:
+              - link "Data Rights" [ref=e1154] [cursor=pointer]:
+                - /url: /data-rights
+        - paragraph [ref=e1155]:
+          - text: The Weather Channel is the world's most accurate forecaster according to ForecastWatch,
+          - link "Global and Regional Weather Forecast Accuracy Overview" [ref=e1156] [cursor=pointer]:
+            - /url: https://forecastwatch.com/AccuracyOverview2021-2024
+          - text: ", 2021-2024, commissioned by The Weather Company."
+        - paragraph [ref=e1157]: Weather Channel
+        - paragraph [ref=e1159]: © The Weather Company, LLC 2026

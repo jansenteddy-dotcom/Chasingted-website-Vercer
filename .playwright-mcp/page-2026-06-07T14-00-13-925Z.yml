@@ -1,0 +1,10 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - heading "Checking your browser" [level=1] [ref=e3]
+    - generic [ref=e5]: This will only take a few seconds...
+  - generic [ref=e7]:
+    - text: Secured by
+    - link "WordPress.com logo wp.com" [ref=e8] [cursor=pointer]:
+      - /url: https://wordpress.com
+      - img "WordPress.com logo" [ref=e9]
+      - text: wp.com

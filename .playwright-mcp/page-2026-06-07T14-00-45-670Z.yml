@@ -1,0 +1,60 @@
+- generic [ref=e3]:
+  - generic [ref=e6]:
+    - generic [ref=e8]:
+      - img [ref=e10]
+      - navigation [ref=e26]:
+        - link "Create an account" [ref=e27] [cursor=pointer]:
+          - /url: /start/account?redirect_to=https%3A%2F%2Fwordpress.com%2Fwp-login.php%3Faction%3Djetpack-sso%26site_id%3D255089544%26sso_nonce%3Darkkmfy1s172fyw64vq3
+    - generic [ref=e30]:
+      - generic [ref=e31]:
+        - heading "Log in to WordPress.com" [level=1] [ref=e33]:
+          - generic [ref=e34]: Log in to WordPress.com
+        - heading "By continuing with any of the options below, you agree to our Terms of Service and have read our Privacy Policy." [level=2] [ref=e36]:
+          - generic [ref=e37]:
+            - text: By continuing with any of the options below, you agree to our
+            - link "Terms of Service" [ref=e38] [cursor=pointer]:
+              - /url: https://wordpress.com/tos/
+            - text: and have read our
+            - link "Privacy Policy" [ref=e39] [cursor=pointer]:
+              - /url: https://automattic.com/privacy/
+            - text: .
+      - main [ref=e40]:
+        - generic [ref=e42]:
+          - generic [ref=e43]:
+            - generic [ref=e44]:
+              - generic [ref=e45]:
+                - generic [ref=e46]:
+                  - generic [ref=e47]: WordPress.com email address or username
+                  - text: Email address or username
+                - textbox "WordPress.com email address or username" [ref=e48]
+                - textbox [ref=e49]
+                - button [ref=e50] [cursor=pointer]:
+                  - img [ref=e51]
+              - button "Continue" [ref=e54] [cursor=pointer]
+            - generic [ref=e56]: or
+            - generic [ref=e59]:
+              - button "Continue with Google" [active] [ref=e60] [cursor=pointer]:
+                - img [ref=e61]
+                - generic [ref=e67]: Continue with Google
+              - button "Continue with Apple" [ref=e68] [cursor=pointer]:
+                - img [ref=e69]
+                - generic [ref=e71]: Continue with Apple
+              - button "Continue with GitHub" [ref=e72] [cursor=pointer]:
+                - img [ref=e73]
+                - generic [ref=e76]: Continue with GitHub
+              - link "Email me a login link" [ref=e77] [cursor=pointer]:
+                - /url: https://wordpress.com/wp-login.php?action=jetpack-sso&site_id=255089544&sso_nonce=arkkmfy1s172fyw64vq3
+                - img [ref=e78]
+                - generic [ref=e82]: Email me a login link
+              - link "Log in via Jetpack app" [ref=e83] [cursor=pointer]:
+                - /url: https://wordpress.com/wp-login.php?action=jetpack-sso&site_id=255089544&sso_nonce=arkkmfy1s172fyw64vq3
+                - img [ref=e84]
+                - generic [ref=e88]: Log in via Jetpack app
+          - link "Lost your password?" [ref=e91] [cursor=pointer]:
+            - /url: /
+  - generic [ref=e93]:
+    - paragraph [ref=e94]: "As an open source company, we take your privacy seriously and want to be as transparent as possible. So: We use cookies to collect some personal data from you (like your browsing data, IP addresses, and other unique identifiers). Some of these cookies we absolutely need in order to make things work, and others you can choose in order to optimize your experience while using our site and services."
+    - generic [ref=e95]:
+      - button "Customize" [ref=e96] [cursor=pointer]
+      - button "Decline non-essential cookies" [ref=e97] [cursor=pointer]
+      - button "Accept all" [ref=e98] [cursor=pointer]

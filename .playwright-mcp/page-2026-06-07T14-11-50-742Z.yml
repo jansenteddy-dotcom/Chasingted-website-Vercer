@@ -1,0 +1,338 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation "Toolbar":
+      - menu:
+        - group [ref=e3]:
+          - menuitem "WordPress.com" [ref=e4] [cursor=pointer]:
+            - generic [ref=e6]: WordPress.com
+        - group [ref=e7]:
+          - menuitem " Chasingted" [ref=e8] [cursor=pointer]
+        - group [ref=e9]:
+          - menuitem "Customize" [ref=e10] [cursor=pointer]
+        - group [ref=e11]:
+          - menuitem "3 updates available" [ref=e12] [cursor=pointer]:
+            - generic [ref=e14]: "3"
+            - generic [ref=e15]: 3 updates available
+        - group [ref=e16]:
+          - menuitem "0 Comments in moderation" [ref=e17] [cursor=pointer]:
+            - generic [ref=e19]: "0"
+            - generic [ref=e20]: 0 Comments in moderation
+        - group [ref=e21]:
+          - menuitem "New" [ref=e22] [cursor=pointer]:
+            - generic [ref=e24]: New
+        - group [ref=e25]:
+          - menuitem "Edit Page" [ref=e26] [cursor=pointer]
+        - listitem [ref=e27]:
+          - link " Edit with Elementor" [ref=e28] [cursor=pointer]:
+            - /url: https://chasingted.com/wp-admin/post.php?post=34&action=elementor
+        - group [ref=e29]:
+          - menuitem "SEO" [ref=e30] [cursor=pointer]:
+            - generic [ref=e32]: SEO
+            - generic [ref=e34]: Focus keyphrase not set
+        - group [ref=e35]:
+          - menuitem "Site Kit" [ref=e36] [cursor=pointer]: Site Kit
+        - group [ref=e38]:
+          - menuitem "Stats" [ref=e39] [cursor=pointer]:
+            - img "Stats" [ref=e41]
+        - group [ref=e42]:
+          - menuitem " Notes" [ref=e43] [cursor=pointer]
+        - group [ref=e44]:
+          - menuitem "WP Travel Engine" [ref=e45] [cursor=pointer]:
+            - img [ref=e47]
+            - text: WP Travel Engine
+        - group [ref=e53]:
+          - menuitem "Novamira ON" [ref=e54] [cursor=pointer]
+      - menu [ref=e55]:
+        - group [ref=e56]:
+          - menuitem "Reader" [ref=e57] [cursor=pointer]:
+            - generic [ref=e59]: Reader
+        - group [ref=e60]:
+          - menuitem [ref=e61] [cursor=pointer]:
+            - generic "Help Center":
+              - img [ref=e62]
+        - group [ref=e64]:
+          - menuitem "Notifications" [ref=e65] [cursor=pointer]:
+            - generic [ref=e66]: Notifications
+        - group [ref=e67]:
+          - menuitem "Howdy, Teddy JansenTeddy Jansen's avatar" [ref=e68] [cursor=pointer]:
+            - text: Howdy, Teddy Jansen
+            - img "Teddy Jansen's avatar" [ref=e69]
+        - group [ref=e70]:
+          - menuitem "Search" [ref=e71]:
+            - generic [ref=e72]:
+              - textbox "Search" [ref=e73] [cursor=pointer]
+              - generic [ref=e74]: Search
+  - link "Skip to content" [ref=e75] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=e76]:
+    - generic [ref=e78]:
+      - link "Chasingted adventure travel" [ref=e82] [cursor=pointer]:
+        - /url: https://chasingted.com/
+        - img "Chasingted adventure travel" [ref=e83]
+      - navigation "Menu" [ref=e87]:
+        - list [ref=e88]:
+          - listitem [ref=e89]:
+            - link "Home" [ref=e90] [cursor=pointer]:
+              - /url: https://chasingted.com/
+          - listitem [ref=e91]:
+            - link "Trips" [ref=e92] [cursor=pointer]:
+              - /url: https://chasingted.com/trips/
+          - listitem [ref=e93]:
+            - link "About" [ref=e94] [cursor=pointer]:
+              - /url: https://chasingted.com/about-us/
+          - listitem [ref=e95]:
+            - link "Stories" [ref=e96] [cursor=pointer]:
+              - /url: https://chasingted.com/blog/
+          - listitem [ref=e97]:
+            - link "FAQ" [ref=e98] [cursor=pointer]:
+              - /url: https://chasingted.com/faq/
+          - listitem [ref=e99]:
+            - link "Join Us" [ref=e100] [cursor=pointer]:
+              - /url: https://chasingted.com/join-us/
+      - link "Apply Now" [ref=e104] [cursor=pointer]:
+        - /url: https://chasingted.com/trips/
+        - generic [ref=e106]: Apply Now
+  - generic [ref=e107]:
+    - generic [ref=e112]:
+      - heading "From somewhere to Somewhere." [level=1] [ref=e114]
+      - paragraph [ref=e116]: Curated expeditions for those who want more than just another trip.
+      - generic [ref=e118]:
+        - link "See Our Trips" [ref=e122] [cursor=pointer]:
+          - /url: /trips/
+          - generic [ref=e124]: See Our Trips
+        - link "Our Story" [ref=e128] [cursor=pointer]:
+          - /url: /about-us/
+          - generic [ref=e130]: Our Story
+    - generic [ref=e134]:
+      - paragraph [ref=e136]: Not a holiday. An expedition.
+      - generic [ref=e140]:
+        - generic [ref=e141]:
+          - img [ref=e142]
+          - generic [ref=e145]: Nature
+        - generic [ref=e146]:
+          - img [ref=e147]
+          - generic [ref=e149]: Connection
+        - generic [ref=e150]:
+          - img [ref=e151]
+          - generic [ref=e153]: Challenge
+        - generic [ref=e154]:
+          - img [ref=e155]
+          - generic [ref=e157]: Simplicity
+        - generic [ref=e158]:
+          - img [ref=e159]
+          - generic [ref=e162]: Story
+    - generic [ref=e166]:
+      - heading "Upcoming Expeditions" [level=2] [ref=e168]
+      - paragraph [ref=e170]: Small, intimate groups. Real wilderness. A handful of departures each season.
+      - generic [ref=e173]:
+        - generic [ref=e174]:
+          - link "Tien Shan, Kyrgyzstan 4 spots left Tien Shan, Kyrgyzstan 10 Days · Motorcycle From €4000 View Trip" [ref=e175] [cursor=pointer]:
+            - /url: https://chasingted.com/trip/kyrgyzstan-motorcycle-expedition/
+            - generic [ref=e176]:
+              - img "Tien Shan, Kyrgyzstan" [ref=e177]
+              - generic [ref=e178]: 4 spots left
+            - generic [ref=e179]:
+              - heading "Tien Shan, Kyrgyzstan" [level=3] [ref=e180]
+              - generic [ref=e181]: 10 Days · Motorcycle
+              - generic [ref=e182]: From €4000
+              - generic [ref=e183]: View Trip
+          - link "Empty Quarter, Oman 6 spots left Empty Quarter, Oman 8 Days · 4×4 Overland From €2000 View Trip" [ref=e184] [cursor=pointer]:
+            - /url: https://chasingted.com/trip/oman-4x4-desert-expedition/
+            - generic [ref=e185]:
+              - img "Empty Quarter, Oman" [ref=e186]
+              - generic [ref=e187]: 6 spots left
+            - generic [ref=e188]:
+              - heading "Empty Quarter, Oman" [level=3] [ref=e189]
+              - generic [ref=e190]: 8 Days · 4×4 Overland
+              - generic [ref=e191]: From €2000
+              - generic [ref=e192]: View Trip
+          - link "Mazury, Poland 8 spots left Mazury, Poland 8 Days · Kayaking From €1.300 View Trip" [ref=e193] [cursor=pointer]:
+            - /url: https://chasingted.com/trip/mazury/
+            - generic [ref=e194]:
+              - img "Mazury, Poland" [ref=e195]
+              - generic [ref=e196]: 8 spots left
+            - generic [ref=e197]:
+              - heading "Mazury, Poland" [level=3] [ref=e198]
+              - generic [ref=e199]: 8 Days · Kayaking
+              - generic [ref=e200]: From €1.300
+              - generic [ref=e201]: View Trip
+        - link "See All Expeditions →" [ref=e203] [cursor=pointer]:
+          - /url: https://chasingted.com/trips/
+    - generic [ref=e212]:
+      - paragraph [ref=e213]: Why Chasingted
+      - heading "Small groups. Real wilderness. No shortcuts." [level=2] [ref=e214]
+      - list [ref=e215]:
+        - listitem [ref=e216]:
+          - img [ref=e217]
+          - generic [ref=e221]: Max 10 travelers per expedition
+        - listitem [ref=e222]:
+          - img [ref=e223]
+          - generic [ref=e226]: Expert local guides
+        - listitem [ref=e227]:
+          - img [ref=e228]
+          - generic [ref=e231]: Off-the-beaten-path destinations
+        - listitem [ref=e232]:
+          - img [ref=e233]
+          - generic [ref=e236]: All logistics handled — you just show up
+      - link "Learn More About Us" [ref=e238] [cursor=pointer]:
+        - /url: https://chasingted.com/about-us/
+    - generic [ref=e242]:
+      - heading "Before You Go" [level=2] [ref=e244]
+      - generic [ref=e247]:
+        - generic [ref=e248]:
+          - generic [ref=e249]:
+            - img [ref=e250]
+            - heading "What’s Included" [level=3] [ref=e253]
+            - paragraph [ref=e254]: Accommodation, all meals, expert guides and ground transport — from the first handshake to the final summit.
+          - generic [ref=e255]:
+            - img [ref=e256]
+            - heading "How to Apply" [level=3] [ref=e258]
+            - paragraph [ref=e259]: Tell us about yourself, choose your expedition and apply. We review every application and reach out personally.
+          - generic [ref=e260]:
+            - img [ref=e261]
+            - heading "What to Expect" [level=3] [ref=e263]
+            - paragraph [ref=e264]: A real fitness challenge, small groups of like-minded people, and the gear list to get you ready.
+        - link "View Full FAQ →" [ref=e266] [cursor=pointer]:
+          - /url: https://chasingted.com/faq/
+    - generic [ref=e270]:
+      - heading "What Our Travelers Say" [level=2] [ref=e272]
+      - generic [ref=e275]:
+        - generic [ref=e276]:
+          - generic [ref=e277]:
+            - generic [ref=e278]: ★★★★★
+            - paragraph [ref=e279]: “Ten days that rearranged what I thought I could handle. I came home different.”
+            - generic [ref=e280]: Sofia M.
+            - generic [ref=e281]: Patagonia Traverse
+          - generic [ref=e282]:
+            - generic [ref=e283]: ★★★★★
+            - paragraph [ref=e284]: “No fluff, no tourist traps. Just real places and a guide who knew every ridge by name.”
+            - generic [ref=e285]: Daniel K.
+            - generic [ref=e286]: Iceland Highlands
+          - generic [ref=e287]:
+            - generic [ref=e288]: ★★★★★
+            - paragraph [ref=e289]: “The small group made it. By day three these strangers were the people I trusted most.”
+            - generic [ref=e290]: Aisha R.
+            - generic [ref=e291]: Atlas Mountains Crossing
+          - generic [ref=e292]:
+            - generic [ref=e293]: ★★★★★
+            - paragraph [ref=e294]: “Everything was handled. All I had to do was walk, breathe and pay attention.”
+            - generic [ref=e295]: Marco V.
+            - generic [ref=e296]: Patagonia Traverse
+          - generic [ref=e297]:
+            - generic [ref=e298]: ★★★★★
+            - paragraph [ref=e299]: “I have travelled a lot. This is the first time a trip felt like an actual expedition.”
+            - generic [ref=e300]: Lena F.
+            - generic [ref=e301]: Iceland Highlands
+        - link "Read More Reviews →" [ref=e303] [cursor=pointer]:
+          - /url: https://chasingted.com/about-us/
+    - generic [ref=e307]:
+      - heading "Follow the Journey" [level=2] [ref=e309]
+      - paragraph [ref=e311]: "@Chasingted.adventures"
+      - generic [ref=e314]:
+        - generic [ref=e315]:
+          - link "Chasingted Instagram" [ref=e316] [cursor=pointer]:
+            - /url: https://instagram.com/Chasingted.adventures
+            - img "Chasingted Instagram"
+          - link "Chasingted Instagram" [ref=e317] [cursor=pointer]:
+            - /url: https://instagram.com/Chasingted.adventures
+            - img "Chasingted Instagram"
+          - link "Chasingted Instagram" [ref=e318] [cursor=pointer]:
+            - /url: https://instagram.com/Chasingted.adventures
+            - img "Chasingted Instagram"
+          - link "Chasingted Instagram" [ref=e319] [cursor=pointer]:
+            - /url: https://instagram.com/Chasingted.adventures
+            - img "Chasingted Instagram"
+          - link "Chasingted Instagram" [ref=e320] [cursor=pointer]:
+            - /url: https://instagram.com/Chasingted.adventures
+            - img "Chasingted Instagram"
+          - link "Chasingted Instagram" [ref=e321] [cursor=pointer]:
+            - /url: https://instagram.com/Chasingted.adventures
+            - img "Chasingted Instagram"
+        - link "Follow on Instagram" [ref=e323] [cursor=pointer]:
+          - /url: https://instagram.com/Chasingted.adventures
+    - generic [ref=e327]:
+      - heading "Get First Access to New Expeditions" [level=2] [ref=e329]
+      - paragraph [ref=e331]: No spam. Just wild places.
+      - generic [ref=e336]:
+        - textbox "Your email address" [ref=e337]
+        - button "Join the List" [ref=e338] [cursor=pointer]
+  - contentinfo [ref=e339]:
+    - generic [ref=e341]:
+      - generic [ref=e343]:
+        - img "Chasingted adventure travel" [ref=e345]
+        - paragraph [ref=e347]: “From somewhere to Somewhere.”
+        - paragraph [ref=e349]: Not a holiday. An expedition.
+      - generic [ref=e351]:
+        - heading "Explore" [level=4] [ref=e353]
+        - navigation "Menu" [ref=e355]:
+          - list [ref=e356]:
+            - listitem [ref=e357]:
+              - link "Home" [ref=e358] [cursor=pointer]:
+                - /url: https://chasingted.com/
+            - listitem [ref=e359]:
+              - link "Trips" [ref=e360] [cursor=pointer]:
+                - /url: https://chasingted.com/trips/
+            - listitem [ref=e361]:
+              - link "About" [ref=e362] [cursor=pointer]:
+                - /url: https://chasingted.com/about-us/
+            - listitem [ref=e363]:
+              - link "Stories" [ref=e364] [cursor=pointer]:
+                - /url: https://chasingted.com/blog/
+            - listitem [ref=e365]:
+              - link "FAQ" [ref=e366] [cursor=pointer]:
+                - /url: https://chasingted.com/faq/
+            - listitem [ref=e367]:
+              - link "Join Us" [ref=e368] [cursor=pointer]:
+                - /url: https://chasingted.com/join-us/
+            - listitem [ref=e369]:
+              - link "Contact" [ref=e370] [cursor=pointer]:
+                - /url: https://chasingted.com/contact/
+      - generic [ref=e372]:
+        - heading "Get in touch" [level=4] [ref=e374]
+        - list [ref=e376]:
+          - listitem [ref=e377]:
+            - link "info@chasingted.com" [ref=e378] [cursor=pointer]:
+              - /url: mailto:info@chasingted.com
+              - generic [ref=e379]: info@chasingted.com
+          - listitem [ref=e380]:
+            - link "+31 6 55 82 55 37" [ref=e381] [cursor=pointer]:
+              - /url: https://wa.me/31655825537
+              - generic [ref=e382]: +31 6 55 82 55 37
+          - listitem [ref=e383]:
+            - generic [ref=e384]: Amsterdam — expeditions worldwide
+      - generic [ref=e386]:
+        - heading "Follow the journey" [level=4] [ref=e388]
+        - list [ref=e390]:
+          - listitem [ref=e391]:
+            - link "Instagram" [ref=e392] [cursor=pointer]:
+              - /url: https://instagram.com/Chasingted.adventures
+              - generic [ref=e393]: Instagram
+              - img [ref=e394]
+          - listitem [ref=e396]:
+            - link "Facebook-f" [ref=e397] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e398]: Facebook-f
+              - img [ref=e399]
+          - listitem [ref=e401]:
+            - link "Youtube" [ref=e402] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e403]: Youtube
+              - img [ref=e404]
+          - listitem [ref=e406]:
+            - link "Tiktok" [ref=e407] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e408]: Tiktok
+              - img [ref=e409]
+        - paragraph [ref=e412]: "@Chasingted.adventures"
+    - paragraph [ref=e418]:
+      - text: © 2026 Chasingted Adventure Travel · chasingted.com ·
+      - link "Privacy Policy" [ref=e419] [cursor=pointer]:
+        - /url: "#"
+      - text: ·
+      - link "Terms" [ref=e420] [cursor=pointer]:
+        - /url: "#"
+  - generic [ref=e421]: desktop
+  - link "Chat on WhatsApp" [ref=e422] [cursor=pointer]:
+    - /url: https://wa.me/31655825537?text=Hey%20Chasingted%21%20I%20have%20a%20question%20about%20your%20expeditions.
+    - img [ref=e423]
+  - status [ref=e425]

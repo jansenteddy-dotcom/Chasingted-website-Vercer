@@ -157,7 +157,7 @@ export default function ApplyForm({tripId, tripSlug, tripTitle}: Props) {
         <h2 className="font-serif text-xl text-[#133425] mb-4">Health & medical</h2>
         <div>
           <label className={labelClass}>
-            Anything Teddy should know?
+            Anything we should know?
             <span className="font-normal text-[#3a4a40]/60 ml-1">(allergies, medications, conditions)</span>
           </label>
           <textarea

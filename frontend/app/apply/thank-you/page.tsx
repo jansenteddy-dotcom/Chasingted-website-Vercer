@@ -16,7 +16,7 @@ export default function ThankYouPage() {
         <div className="text-5xl mb-6">✅</div>
         <h1 className="font-serif text-4xl text-[#133425] mb-4">Application received!</h1>
         <p className="text-[#3a4a40] text-lg mb-4 leading-relaxed">
-          Thanks for applying. Teddy reviews every application personally and will get back to you within{' '}
+          Thanks for applying. ChasingTed reviews every application personally and will get back to you within{' '}
           <strong>3–5 days</strong>.
         </p>
         <p className="text-[#3a4a40]/60 text-sm mb-10">

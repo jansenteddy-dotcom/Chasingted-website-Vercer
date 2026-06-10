@@ -45,7 +45,7 @@ export default function MessagesClient({
                 ? 'bg-[#133425] text-[#F5F0E4]'
                 : 'bg-[#d4c5a0] text-[#133425]'
             }`}>
-              {m.is_from_admin && <p className="text-xs font-bold uppercase tracking-widest opacity-70 mb-1">Teddy</p>}
+              {m.is_from_admin && <p className="text-xs font-bold uppercase tracking-widest opacity-70 mb-1">ChasingTed</p>}
               <p>{m.content}</p>
               <p className={`text-xs mt-1 ${m.is_from_admin ? 'opacity-50' : 'text-[#3a4a40]/50'}`}>
                 {new Date(m.created_at).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' })}

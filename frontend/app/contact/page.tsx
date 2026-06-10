@@ -2,7 +2,7 @@ import type {Metadata} from 'next'
 
 export const metadata: Metadata = {
   title: 'Contact',
-  description: 'Questions about a Chasingted expedition? Email or WhatsApp Teddy directly — he replies personally within 3–5 days. Or go ahead and apply, it\'s free.',
+  description: 'Questions about a Chasingted expedition? Email or WhatsApp us directly — we reply personally within 3–5 days. Or go ahead and apply, it\'s free.',
 }
 
 export default function ContactPage() {
@@ -38,7 +38,7 @@ export default function ContactPage() {
             <div>
               <p className="font-semibold text-[#133425]">WhatsApp</p>
               <p className="text-sm text-[#3a4a40]/70 group-hover:text-[#f7b500] transition-colors">
-                Message Teddy directly
+                Message us directly
               </p>
             </div>
           </a>
@@ -48,7 +48,7 @@ export default function ContactPage() {
           <h2 className="font-serif text-2xl text-[#133425] mb-3">Ready to apply?</h2>
           <p className="text-[#3a4a40]/70 mb-6 text-sm">
             If you have a specific trip in mind, go ahead and apply — it&apos;s free and takes 5 minutes.
-            Teddy will review it and reply within 3–5 days.
+            We'll review it and reply within 3–5 days.
           </p>
           <a
             href="/trips"

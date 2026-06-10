@@ -25,7 +25,7 @@ export default function GearClient({
   if (categories.length === 0) return (
     <div className="bg-white border border-[#d4c5a0] p-10 text-center">
       <p className="text-sm text-[#3a4a40]">No gear list yet.</p>
-      <p className="text-xs text-[#3a4a40]/60 mt-1">Teddy will add the gear list closer to departure.</p>
+      <p className="text-xs text-[#3a4a40]/60 mt-1">ChasingTed will add the gear list closer to departure.</p>
     </div>
   )
 

@@ -1,0 +1,106 @@
+<h2>How Everything Connects</h2>
+<p class="subtitle">A plain-English map of how all the tools work together on your new site.</p>
+
+<div style="display:grid;gap:1.5em;margin-top:1em">
+
+  <!-- Row 1: You and your visitors -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:1em">
+
+    <div class="mockup">
+      <div class="mockup-header">👤 You (Teddy) — Admin</div>
+      <div class="mockup-body" style="font-size:0.9em;line-height:1.8">
+        You log into <strong>Sanity Studio</strong> at<br>
+        <code>chasingted.com/studio</code><br><br>
+        From here you:<br>
+        • Add &amp; edit trips<br>
+        • Review applications<br>
+        • Approve bookings<br>
+        • Mark payments received<br>
+        • Edit any page text
+      </div>
+    </div>
+
+    <div class="mockup">
+      <div class="mockup-header">🌍 Your Visitors — Public Site</div>
+      <div class="mockup-body" style="font-size:0.9em;line-height:1.8">
+        They visit <strong>chasingted.com</strong><br>
+        served by <strong>Vercel</strong><br><br>
+        They can:<br>
+        • Browse trips<br>
+        • Submit an application<br>
+        • Log into their portal<br>
+        • See their trip &amp; fellow travelers
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Arrow down -->
+  <div style="text-align:center;font-size:1.5em;color:#888">↕ ↕</div>
+
+  <!-- Row 2: The three engines -->
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1em">
+
+    <div class="mockup">
+      <div class="mockup-header" style="background:#f97316;color:white">🟠 Sanity.io</div>
+      <div class="mockup-body" style="font-size:0.85em;line-height:1.8">
+        <strong>Your content brain</strong><br><br>
+        Stores:<br>
+        • All trip info<br>
+        • Page text &amp; images<br>
+        • Applications received<br>
+        • Booking status<br><br>
+        <em>Free plan</em>
+      </div>
+    </div>
+
+    <div class="mockup">
+      <div class="mockup-header" style="background:#3ecf8e;color:white">🟢 Supabase</div>
+      <div class="mockup-body" style="font-size:0.85em;line-height:1.8">
+        <strong>Your user database</strong><br><br>
+        Stores:<br>
+        • Customer accounts<br>
+        • Login credentials<br>
+        • Traveler profiles<br>
+        • Which trip they're on<br><br>
+        <em>Free plan</em>
+      </div>
+    </div>
+
+    <div class="mockup">
+      <div class="mockup-header" style="background:#000;color:white">⚫ Vercel</div>
+      <div class="mockup-body" style="font-size:0.85em;line-height:1.8">
+        <strong>Your hosting</strong><br><br>
+        • Serves the website<br>
+        • Auto-deploys when you<br>&nbsp;&nbsp;push to GitHub<br>
+        • Connects to Sanity<br>&nbsp;&nbsp;and Supabase<br><br>
+        <em>Pro plan — $20/mo</em>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Arrow down -->
+  <div style="text-align:center;font-size:1.5em;color:#888">↕</div>
+
+  <!-- Row 3: GitHub -->
+  <div class="mockup" style="max-width:400px;margin:0 auto">
+    <div class="mockup-header" style="background:#24292e;color:white">🐙 GitHub</div>
+    <div class="mockup-body" style="font-size:0.9em;line-height:1.8;text-align:center">
+      <strong>Your code safe</strong><br><br>
+      Every change Claude Code makes gets saved here.<br>
+      Vercel watches GitHub and automatically<br>
+      updates your live website when something changes.<br><br>
+      <em>Already set up ✅</em>
+    </div>
+  </div>
+
+  <!-- GTM note -->
+  <div style="background:#fff8e1;border:1px solid #ffe082;border-radius:8px;padding:1em;font-size:0.9em;line-height:1.7">
+    <strong>📊 Google Tag Manager</strong> (GTM-P7V9CJF3 — already built)<br>
+    Gets installed directly into the Next.js site. Tracks conversions for your Google Ads campaigns: application submissions, WhatsApp clicks, contact form submits. This is already configured — we just need to add the snippet to the new site.
+  </div>
+
+</div>
+
+<p style="margin-top:1.5em;color:#888;font-size:0.9em">Does this make sense? Let me know in the chat — then we'll move to the booking flow.</p>

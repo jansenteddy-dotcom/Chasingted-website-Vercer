@@ -28,7 +28,7 @@ export default async function ApplyPage({params}: Props) {
           </p>
           <h1 className="font-serif text-4xl text-[#133425] mb-3">Apply for {trip.title}</h1>
           <p className="text-[#3a4a40]/70">
-            Tell us a bit about yourself. Teddy reviews every application personally and will reply within 3–5 days.
+            Tell us a bit about yourself. ChasingTed reviews every application personally and will reply within 3–5 days.
           </p>
         </div>
         <ApplyForm tripId={trip._id} tripSlug={slug} tripTitle={trip.title} />

@@ -1,0 +1,1046 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation "Main menu":
+      - link "Skip to main content" [ref=e798] [cursor=pointer]:
+        - /url: "#wpbody-content"
+      - link "Skip to toolbar" [ref=e799] [cursor=pointer]:
+        - /url: "#wp-toolbar"
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "Dashboard" [ref=e800] [cursor=pointer]:
+            - /url: index.php
+            - generic [ref=e10]: 
+            - generic [ref=e11]: Dashboard
+          - list [ref=e12]:
+            - listitem [ref=e13]:
+              - link "Home" [ref=e801] [cursor=pointer]:
+                - /url: index.php
+            - listitem [ref=e15]:
+              - link "Updates 3" [ref=e802] [cursor=pointer]:
+                - /url: update-core.php
+                - text: Updates
+                - generic [ref=e17]: "3"
+            - listitem [ref=e18]:
+              - link "Getting Started" [ref=e803] [cursor=pointer]:
+                - /url: index.php?page=class-wte-getting-started.php
+        - listitem [ref=e20]:
+          - link "Site Kit" [ref=e804] [cursor=pointer]:
+            - /url: admin.php?page=googlesitekit-dashboard
+            - generic [ref=e23]: Site Kit
+          - list [ref=e24]:
+            - listitem [ref=e25]:
+              - link "Dashboard" [ref=e805] [cursor=pointer]:
+                - /url: admin.php?page=googlesitekit-dashboard
+            - listitem [ref=e27]:
+              - link "Settings" [ref=e806] [cursor=pointer]:
+                - /url: admin.php?page=googlesitekit-settings
+        - listitem [ref=e29]:
+          - link "My Home" [ref=e807] [cursor=pointer]:
+            - /url: https://wordpress.com/home/chasingted.com
+            - generic [ref=e31]: 
+            - generic [ref=e32]: My Home
+        - listitem [ref=e33]:
+          - link "Stats" [ref=e808] [cursor=pointer]:
+            - /url: admin.php?page=stats
+            - generic [ref=e35]: 
+            - generic [ref=e36]: Stats
+        - listitem [ref=e37]:
+          - link "Hosting " [ref=e809] [cursor=pointer]:
+            - /url: https://wordpress.com/overview/chasingted.com
+            - generic [ref=e39]: 
+            - generic [ref=e40]:
+              - text: Hosting
+              - generic [ref=e41]: 
+        - listitem [ref=e42]:
+          - link "Upgrades Business" [ref=e810] [cursor=pointer]:
+            - /url: https://wordpress.com/plans/chasingted.com
+            - generic [ref=e44]: 
+            - generic [ref=e45]:
+              - text: Upgrades
+              - generic [ref=e46]: Business
+          - list [ref=e47]:
+            - listitem [ref=e48]:
+              - link "Plans" [ref=e811] [cursor=pointer]:
+                - /url: https://wordpress.com/plans/chasingted.com
+            - listitem [ref=e50]:
+              - link "Add-ons" [ref=e812] [cursor=pointer]:
+                - /url: https://wordpress.com/add-ons/chasingted.com
+            - listitem [ref=e52]:
+              - link "Domains" [ref=e813] [cursor=pointer]:
+                - /url: https://wordpress.com/domains/manage/chasingted.com
+            - listitem [ref=e54]:
+              - link "Emails" [ref=e814] [cursor=pointer]:
+                - /url: https://wordpress.com/email/chasingted.com
+            - listitem [ref=e56]:
+              - link "Purchases" [ref=e815] [cursor=pointer]:
+                - /url: https://wordpress.com/purchases/subscriptions/chasingted.com
+        - listitem [ref=e58]:
+          - link "Elementor" [ref=e816] [cursor=pointer]:
+            - /url: admin.php?page=elementor-home
+            - generic [ref=e61]: Elementor
+          - list [ref=e62]:
+            - listitem [ref=e63]:
+              - link "Home" [ref=e817] [cursor=pointer]:
+                - /url: admin.php?page=elementor-home
+            - listitem [ref=e65]:
+              - link "Editor" [ref=e818] [cursor=pointer]:
+                - /url: admin.php?page=elementor
+            - listitem [ref=e67]:
+              - link "Image Optimization" [ref=e819] [cursor=pointer]:
+                - /url: admin.php?page=image-optimization-settings
+            - listitem [ref=e69]:
+              - link "Theme Builder" [ref=e820] [cursor=pointer]:
+                - /url: https://chasingted.com/wp-admin/admin.php?page=elementor-app&ver=4.0.9&return_to=/wp-admin/theme-editor.php?file=functions.php#/site-editor
+            - listitem [ref=e71]:
+              - link "Submissions" [ref=e821] [cursor=pointer]:
+                - /url: admin.php?page=e-form-submissions
+        - listitem [ref=e73]:
+          - link "Novamira" [ref=e822] [cursor=pointer]:
+            - /url: admin.php?page=novamira-connect
+            - generic [ref=e76]: Novamira
+          - list [ref=e77]:
+            - listitem [ref=e78]:
+              - link "Configuration" [ref=e823] [cursor=pointer]:
+                - /url: admin.php?page=novamira-connect
+            - listitem [ref=e80]:
+              - link "Abilities Hub" [ref=e824] [cursor=pointer]:
+                - /url: admin.php?page=novamira-abilities
+            - listitem [ref=e82]:
+              - link "Skills" [ref=e825] [cursor=pointer]:
+                - /url: admin.php?page=novamira-skills
+            - listitem [ref=e84]:
+              - link "Sandbox" [ref=e826] [cursor=pointer]:
+                - /url: admin.php?page=novamira-sandbox
+            - listitem [ref=e86]:
+              - link "Block Editor Queue" [ref=e827] [cursor=pointer]:
+                - /url: admin.php?page=novamira-gutenberg-finalize
+            - listitem [ref=e88]:
+              - link "Get Pro" [ref=e828] [cursor=pointer]:
+                - /url: https://www.novamira.ai/pro/?utm_source=plugin&utm_medium=submenu
+        - listitem [ref=e90]:
+          - link "Jetpack" [ref=e829] [cursor=pointer]:
+            - /url: admin.php?page=jetpack-social
+            - generic [ref=e93]: Jetpack
+          - list [ref=e94]:
+            - listitem [ref=e95]:
+              - link "Social" [ref=e830] [cursor=pointer]:
+                - /url: admin.php?page=jetpack-social
+            - listitem [ref=e97]:
+              - link "Akismet Anti-spam" [ref=e831] [cursor=pointer]:
+                - /url: admin.php?page=akismet-key-config
+            - listitem [ref=e99]:
+              - link "Activity Log" [ref=e832] [cursor=pointer]:
+                - /url: https://wordpress.com/activity-log/chasingted.com
+            - listitem [ref=e101]:
+              - link "Scan" [ref=e833] [cursor=pointer]:
+                - /url: https://wordpress.com/scan/chasingted.com
+            - listitem [ref=e103]:
+              - link "Backup" [ref=e834] [cursor=pointer]:
+                - /url: https://wordpress.com/backup/chasingted.com
+            - listitem [ref=e105]:
+              - link "Forms" [ref=e835] [cursor=pointer]:
+                - /url: admin.php?page=jetpack-forms-responses-wp-admin
+            - listitem [ref=e107]:
+              - link "Monetize" [ref=e836] [cursor=pointer]:
+                - /url: https://wordpress.com/earn/chasingted.com
+            - listitem [ref=e109]:
+              - link "Search" [ref=e837] [cursor=pointer]:
+                - /url: admin.php?page=jetpack-search
+            - listitem [ref=e111]:
+              - link "Subscribers" [ref=e838] [cursor=pointer]:
+                - /url: https://wordpress.com/subscribers/chasingted.com
+            - listitem [ref=e113]:
+              - link "Newsletter" [ref=e839] [cursor=pointer]:
+                - /url: admin.php?page=jetpack-newsletter
+            - listitem [ref=e115]:
+              - link "Podcast" [ref=e840] [cursor=pointer]:
+                - /url: admin.php?page=jetpack-podcast
+            - listitem [ref=e117]:
+              - link "Settings" [ref=e841] [cursor=pointer]:
+                - /url: https://chasingted.com/wp-admin/admin.php?page=jetpack#/settings
+            - listitem [ref=e119]:
+              - link "AI" [ref=e842] [cursor=pointer]:
+                - /url: admin.php?page=jetpack-ai
+        - listitem [ref=e121]
+        - listitem [ref=e123]:
+          - link "Posts" [ref=e843] [cursor=pointer]:
+            - /url: edit.php
+            - generic [ref=e125]: 
+            - generic [ref=e126]: Posts
+          - list [ref=e127]:
+            - listitem [ref=e128]:
+              - link "All Posts" [ref=e844] [cursor=pointer]:
+                - /url: edit.php
+            - listitem [ref=e130]:
+              - link "Add Post" [ref=e845] [cursor=pointer]:
+                - /url: post-new.php
+            - listitem [ref=e132]:
+              - link "Categories" [ref=e846] [cursor=pointer]:
+                - /url: edit-tags.php?taxonomy=category
+            - listitem [ref=e134]:
+              - link "Tags" [ref=e847] [cursor=pointer]:
+                - /url: edit-tags.php?taxonomy=post_tag
+        - listitem [ref=e136]:
+          - link "Media" [ref=e848] [cursor=pointer]:
+            - /url: upload.php
+            - generic [ref=e138]: 
+            - generic [ref=e139]: Media
+          - list [ref=e140]:
+            - listitem [ref=e141]:
+              - link "Library" [ref=e849] [cursor=pointer]:
+                - /url: upload.php
+            - listitem [ref=e143]:
+              - link "Add Media File" [ref=e850] [cursor=pointer]:
+                - /url: media-new.php
+            - listitem [ref=e145]:
+              - link "Create AI Podcast" [ref=e851] [cursor=pointer]:
+                - /url: upload.php?page=create-ai-podcast
+            - listitem [ref=e147]:
+              - link "Import Media" [ref=e852] [cursor=pointer]:
+                - /url: upload.php?page=jetpack_external_media_import_page
+        - listitem [ref=e149]:
+          - link "Pages" [ref=e853] [cursor=pointer]:
+            - /url: edit.php?post_type=page
+            - generic [ref=e151]: 
+            - generic [ref=e152]: Pages
+          - list [ref=e153]:
+            - listitem [ref=e154]:
+              - link "All Pages" [ref=e854] [cursor=pointer]:
+                - /url: edit.php?post_type=page
+            - listitem [ref=e156]:
+              - link "Add Page" [ref=e855] [cursor=pointer]:
+                - /url: post-new.php?post_type=page
+        - listitem [ref=e158]:
+          - link "Comments" [ref=e856] [cursor=pointer]:
+            - /url: edit-comments.php
+            - generic [ref=e160]: 
+            - generic [ref=e161]: Comments
+        - text: 
+        - listitem [ref=e162]:
+          - link "Applications" [ref=e857] [cursor=pointer]:
+            - /url: edit.php?post_type=trip_application
+            - generic [ref=e164]: 
+            - generic [ref=e165]: Applications
+          - list [ref=e166]:
+            - listitem [ref=e167]:
+              - link "All Applications" [ref=e858] [cursor=pointer]:
+                - /url: edit.php?post_type=trip_application
+            - listitem [ref=e169]:
+              - link "Add Post" [ref=e859] [cursor=pointer]:
+                - /url: post-new.php?post_type=trip_application
+        - listitem [ref=e171]:
+          - link "Messages" [ref=e860] [cursor=pointer]:
+            - /url: edit.php?post_type=ct_message
+            - generic [ref=e173]: 
+            - generic [ref=e174]: Messages
+          - list [ref=e175]:
+            - listitem [ref=e176]:
+              - link "Messages" [ref=e861] [cursor=pointer]:
+                - /url: edit.php?post_type=ct_message
+            - listitem [ref=e178]:
+              - link "Add Post" [ref=e862] [cursor=pointer]:
+                - /url: post-new.php?post_type=ct_message
+        - listitem [ref=e180]:
+          - link "MailPoet" [ref=e863] [cursor=pointer]:
+            - /url: admin.php?page=mailpoet-homepage
+            - generic [ref=e183]: MailPoet
+          - list [ref=e184]:
+            - listitem [ref=e185]:
+              - link "Home" [ref=e864] [cursor=pointer]:
+                - /url: admin.php?page=mailpoet-homepage
+            - listitem [ref=e187]:
+              - link "Emails" [ref=e865] [cursor=pointer]:
+                - /url: admin.php?page=mailpoet-newsletters
+            - listitem [ref=e189]:
+              - link "Automations" [ref=e866] [cursor=pointer]:
+                - /url: admin.php?page=mailpoet-automation
+            - listitem [ref=e191]:
+              - link "Forms" [ref=e867] [cursor=pointer]:
+                - /url: admin.php?page=mailpoet-forms
+            - listitem [ref=e193]:
+              - link "Subscribers" [ref=e868] [cursor=pointer]:
+                - /url: admin.php?page=mailpoet-subscribers
+            - listitem [ref=e195]:
+              - link "Lists" [ref=e869] [cursor=pointer]:
+                - /url: admin.php?page=mailpoet-lists
+            - listitem [ref=e197]:
+              - link "Segments" [ref=e870] [cursor=pointer]:
+                - /url: admin.php?page=mailpoet-segments
+            - listitem [ref=e199]:
+              - link "Settings" [ref=e871] [cursor=pointer]:
+                - /url: admin.php?page=mailpoet-settings
+            - listitem [ref=e201]:
+              - link "Help" [ref=e872] [cursor=pointer]:
+                - /url: admin.php?page=mailpoet-help
+            - listitem [ref=e203]:
+              - link "Upgrade" [ref=e873] [cursor=pointer]:
+                - /url: admin.php?page=mailpoet-upgrade
+        - listitem [ref=e205]
+        - listitem [ref=e207]:
+          - link "WP Travel Engine" [ref=e874] [cursor=pointer]:
+            - /url: admin.php?page=wptravelengine-admin-page
+            - generic [ref=e210]: WP Travel Engine
+          - list [ref=e211]:
+            - listitem [ref=e212]:
+              - link "Home" [ref=e875] [cursor=pointer]:
+                - /url: edit.php?post_type=booking&page=wptravelengine-admin-page
+            - listitem [ref=e214]:
+              - link "Upcoming Tours" [ref=e876] [cursor=pointer]:
+                - /url: edit.php?post_type=booking&page=wptravelengine-upcoming-tours
+            - listitem [ref=e216]:
+              - link "Bookings" [ref=e877] [cursor=pointer]:
+                - /url: edit.php?post_type=booking
+            - listitem [ref=e218]:
+              - link "Enquiries" [ref=e878] [cursor=pointer]:
+                - /url: edit.php?post_type=enquiry
+            - listitem [ref=e220]:
+              - link "Customers" [ref=e879] [cursor=pointer]:
+                - /url: edit.php?post_type=customer
+            - listitem [ref=e222]:
+              - link "Coupons" [ref=e880] [cursor=pointer]:
+                - /url: edit.php?post_type=wte-coupon
+            - listitem [ref=e224]:
+              - link "Analytics" [ref=e881] [cursor=pointer]:
+                - /url: edit.php?post_type=booking&page=wptravelengine-analytics
+            - listitem [ref=e226]:
+              - link "Plugin License" [ref=e882] [cursor=pointer]:
+                - /url: edit.php?post_type=booking&page=wp_travel_engine_license_page
+            - listitem [ref=e228]:
+              - link "Settings" [ref=e883] [cursor=pointer]:
+                - /url: edit.php?post_type=booking&page=class-wp-travel-engine-admin.php
+            - listitem [ref=e230]:
+              - link "Extensions" [ref=e884] [cursor=pointer]:
+                - /url: edit.php?post_type=booking&page=extensions
+            - listitem [ref=e232]:
+              - link "Themes" [ref=e885] [cursor=pointer]:
+                - /url: edit.php?post_type=booking&page=themes
+        - listitem [ref=e234]:
+          - link "Trips" [ref=e886] [cursor=pointer]:
+            - /url: edit.php?post_type=trip
+            - generic [ref=e237]: Trips
+          - list [ref=e238]:
+            - listitem [ref=e239]:
+              - link "Trips" [ref=e887] [cursor=pointer]:
+                - /url: edit.php?post_type=trip
+            - listitem [ref=e241]:
+              - link "Add New Trip" [ref=e888] [cursor=pointer]:
+                - /url: post-new.php?post_type=trip
+            - listitem [ref=e243]:
+              - link "Pricing Categories" [ref=e889] [cursor=pointer]:
+                - /url: edit-tags.php?taxonomy=trip-packages-categories&post_type=trip
+            - listitem [ref=e245]:
+              - link "Destinations" [ref=e890] [cursor=pointer]:
+                - /url: edit-tags.php?taxonomy=destination&post_type=trip
+            - listitem [ref=e247]:
+              - link "Activities" [ref=e891] [cursor=pointer]:
+                - /url: edit-tags.php?taxonomy=activities&post_type=trip
+            - listitem [ref=e249]:
+              - link "Trip Type" [ref=e892] [cursor=pointer]:
+                - /url: edit-tags.php?taxonomy=trip_types&post_type=trip
+            - listitem [ref=e251]:
+              - link "Difficulty" [ref=e893] [cursor=pointer]:
+                - /url: edit-tags.php?taxonomy=difficulty&post_type=trip
+            - listitem [ref=e253]:
+              - link "Tag" [ref=e894] [cursor=pointer]:
+                - /url: edit-tags.php?taxonomy=trip_tag&post_type=trip
+            - listitem [ref=e255]:
+              - link "Custom Filters" [ref=e895] [cursor=pointer]:
+                - /url: edit.php?post_type=trip&page=custom-filters
+        - listitem [ref=e257]:
+          - link "Feedback" [ref=e896] [cursor=pointer]:
+            - /url: admin.php?page=polls
+            - generic [ref=e259]: 
+            - generic [ref=e260]: Feedback
+          - list [ref=e261]:
+            - listitem [ref=e262]:
+              - link "Crowdsignal" [ref=e897] [cursor=pointer]:
+                - /url: admin.php?page=polls
+            - listitem [ref=e264]:
+              - link "Ratings" [ref=e898] [cursor=pointer]:
+                - /url: admin.php?page=ratings
+        - listitem [ref=e266]
+        - listitem [ref=e268]:
+          - link "WooCommerce" [ref=e899] [cursor=pointer]:
+            - /url: admin.php?page=wc-admin
+            - generic [ref=e271]: WooCommerce
+          - list [ref=e272]:
+            - listitem [ref=e273]:
+              - link "Home 5" [ref=e900] [cursor=pointer]:
+                - /url: admin.php?page=wc-admin
+                - text: Home
+                - generic [ref=e275]: "5"
+            - listitem [ref=e276]:
+              - link "Orders" [ref=e901] [cursor=pointer]:
+                - /url: admin.php?page=wc-orders
+            - listitem [ref=e278]:
+              - link "Customers" [ref=e902] [cursor=pointer]:
+                - /url: admin.php?page=wc-admin&path=/customers
+            - listitem [ref=e280]:
+              - link "Coupons" [ref=e903] [cursor=pointer]:
+                - /url: admin.php?page=coupons-moved
+            - listitem [ref=e282]:
+              - link "Reports" [ref=e904] [cursor=pointer]:
+                - /url: admin.php?page=wc-reports
+            - listitem [ref=e284]:
+              - link "Settings" [ref=e905] [cursor=pointer]:
+                - /url: admin.php?page=wc-settings
+            - listitem [ref=e286]:
+              - link "Status" [ref=e906] [cursor=pointer]:
+                - /url: admin.php?page=wc-status
+            - listitem [ref=e288]:
+              - link "Extensions" [ref=e907] [cursor=pointer]:
+                - /url: admin.php?page=wc-admin&path=/extensions
+        - listitem [ref=e290]:
+          - link "Products" [ref=e908] [cursor=pointer]:
+            - /url: edit.php?post_type=product
+            - generic [ref=e292]: 
+            - generic [ref=e293]: Products
+          - list [ref=e294]:
+            - listitem [ref=e295]:
+              - link "All Products" [ref=e909] [cursor=pointer]:
+                - /url: edit.php?post_type=product
+            - listitem [ref=e297]:
+              - link "Add new product" [ref=e910] [cursor=pointer]:
+                - /url: post-new.php?post_type=product
+            - listitem [ref=e299]:
+              - link "Brands" [ref=e911] [cursor=pointer]:
+                - /url: edit-tags.php?taxonomy=product_brand&post_type=product
+            - listitem [ref=e301]:
+              - link "Categories" [ref=e912] [cursor=pointer]:
+                - /url: edit-tags.php?taxonomy=product_cat&post_type=product
+            - listitem [ref=e303]:
+              - link "Tags" [ref=e913] [cursor=pointer]:
+                - /url: edit-tags.php?taxonomy=product_tag&post_type=product
+            - listitem [ref=e305]:
+              - link "Attributes" [ref=e914] [cursor=pointer]:
+                - /url: edit.php?post_type=product&page=product_attributes
+            - listitem [ref=e307]:
+              - link "Reviews" [ref=e915] [cursor=pointer]:
+                - /url: edit.php?post_type=product&page=product-reviews
+        - listitem [ref=e309]:
+          - link "Payments 1" [ref=e916] [cursor=pointer]:
+            - /url: admin.php?page=wc-settings&tab=checkout&from=PAYMENTS_MENU_ITEM
+            - generic [ref=e312]:
+              - text: Payments
+              - generic [ref=e313]: "1"
+        - listitem [ref=e314]:
+          - link "Analytics" [ref=e917] [cursor=pointer]:
+            - /url: admin.php?page=wc-admin&path=/analytics/overview
+            - generic [ref=e316]: 
+            - generic [ref=e317]: Analytics
+          - list [ref=e318]:
+            - listitem [ref=e319]:
+              - link "Overview" [ref=e918] [cursor=pointer]:
+                - /url: admin.php?page=wc-admin&path=/analytics/overview
+            - listitem [ref=e321]:
+              - link "Products" [ref=e919] [cursor=pointer]:
+                - /url: admin.php?page=wc-admin&path=/analytics/products
+            - listitem [ref=e323]:
+              - link "Revenue" [ref=e920] [cursor=pointer]:
+                - /url: admin.php?page=wc-admin&path=/analytics/revenue
+            - listitem [ref=e325]:
+              - link "Orders" [ref=e921] [cursor=pointer]:
+                - /url: admin.php?page=wc-admin&path=/analytics/orders
+            - listitem [ref=e327]:
+              - link "Variations" [ref=e922] [cursor=pointer]:
+                - /url: admin.php?page=wc-admin&path=/analytics/variations
+            - listitem [ref=e329]:
+              - link "Categories" [ref=e923] [cursor=pointer]:
+                - /url: admin.php?page=wc-admin&path=/analytics/categories
+            - listitem [ref=e331]:
+              - link "Coupons" [ref=e924] [cursor=pointer]:
+                - /url: admin.php?page=wc-admin&path=/analytics/coupons
+            - listitem [ref=e333]:
+              - link "Taxes" [ref=e925] [cursor=pointer]:
+                - /url: admin.php?page=wc-admin&path=/analytics/taxes
+            - listitem [ref=e335]:
+              - link "Downloads" [ref=e926] [cursor=pointer]:
+                - /url: admin.php?page=wc-admin&path=/analytics/downloads
+            - listitem [ref=e337]:
+              - link "Stock" [ref=e927] [cursor=pointer]:
+                - /url: admin.php?page=wc-admin&path=/analytics/stock
+            - listitem [ref=e339]:
+              - link "Settings" [ref=e928] [cursor=pointer]:
+                - /url: admin.php?page=wc-admin&path=/analytics/settings
+        - listitem [ref=e341]:
+          - link "Marketing" [ref=e929] [cursor=pointer]:
+            - /url: admin.php?page=wc-admin&path=/marketing
+            - generic [ref=e343]: 
+            - generic [ref=e344]: Marketing
+          - list [ref=e345]:
+            - listitem [ref=e346]:
+              - link "Overview" [ref=e930] [cursor=pointer]:
+                - /url: admin.php?page=wc-admin&path=/marketing
+            - listitem [ref=e348]:
+              - link "Coupons" [ref=e931] [cursor=pointer]:
+                - /url: edit.php?post_type=shop_coupon
+        - text: 
+        - listitem [ref=e350]
+        - listitem [ref=e352]:
+          - link "Hello" [ref=e932] [cursor=pointer]:
+            - /url: admin.php?page=hello-elementor
+            - generic [ref=e354]: 
+            - generic [ref=e355]: Hello
+          - list [ref=e356]:
+            - listitem [ref=e357]:
+              - link "Home" [ref=e933] [cursor=pointer]:
+                - /url: admin.php?page=hello-elementor
+            - listitem [ref=e359]:
+              - link "Settings" [ref=e934] [cursor=pointer]:
+                - /url: admin.php?page=hello-elementor-settings
+            - listitem [ref=e361]:
+              - link "Theme Builder" [ref=e935] [cursor=pointer]:
+                - /url: admin.php?page=elementor-app&ver=4.0.9#site-editor
+            - listitem [ref=e363]:
+              - link "AI Site Planner" [ref=e936] [cursor=pointer]:
+                - /url: admin.php?page=hello-elementor-ai-site-planner
+        - listitem [ref=e365]:
+          - link "Appearance" [ref=e937] [cursor=pointer]:
+            - /url: https://wordpress.com/themes/chasingted.com
+            - generic [ref=e367]: 
+            - generic [ref=e368]: Appearance
+          - list [ref=e369]:
+            - listitem [ref=e370]:
+              - link "Themes" [ref=e938] [cursor=pointer]:
+                - /url: https://wordpress.com/themes/chasingted.com
+            - listitem [ref=e372]:
+              - link "Design" [ref=e939] [cursor=pointer]:
+                - /url: site-editor.php
+            - listitem [ref=e374]:
+              - link "Customize" [ref=e940] [cursor=pointer]:
+                - /url: customize.php?return=%2Fwp-admin%2Ftheme-editor.php%3Ffile%3Dfunctions.php
+            - listitem [ref=e376]:
+              - link "Widgets" [ref=e941] [cursor=pointer]:
+                - /url: widgets.php
+            - listitem [ref=e378]:
+              - link "Menus" [ref=e942] [cursor=pointer]:
+                - /url: nav-menus.php
+            - listitem [ref=e380]:
+              - link "Fonts" [ref=e943] [cursor=pointer]:
+                - /url: themes.php?page=font-library-wp-admin
+            - listitem [ref=e382]:
+              - link "Theme File Editor" [ref=e944] [cursor=pointer]:
+                - /url: theme-editor.php
+            - listitem [ref=e384]:
+              - link "Additional CSS" [ref=e945] [cursor=pointer]:
+                - /url: customize.php?return=%2Fwp-admin%2Ftheme-editor.php%3Ffile%3Dfunctions.php&autofocus%5Bsection%5D=custom_css
+        - listitem [ref=e386]:
+          - link "Plugins 3" [ref=e946] [cursor=pointer]:
+            - /url: https://wordpress.com/plugins/chasingted.com
+            - generic [ref=e388]: 
+            - generic [ref=e389]:
+              - text: Plugins
+              - generic [ref=e390]: "3"
+          - list [ref=e391]:
+            - listitem [ref=e392]:
+              - link "Add Plugin" [ref=e947] [cursor=pointer]:
+                - /url: https://wordpress.com/plugins/chasingted.com
+            - listitem [ref=e394]:
+              - link "Installed Plugins" [ref=e948] [cursor=pointer]:
+                - /url: plugins.php
+            - listitem [ref=e396]:
+              - link "Plugin File Editor" [ref=e949] [cursor=pointer]:
+                - /url: plugin-editor.php
+            - listitem [ref=e398]:
+              - link "Scheduled Updates" [ref=e950] [cursor=pointer]:
+                - /url: https://wordpress.com/plugins/scheduled-updates/chasingted.com
+        - listitem [ref=e400]:
+          - link "Users" [ref=e951] [cursor=pointer]:
+            - /url: https://wordpress.com/people/team/chasingted.com
+            - generic [ref=e402]: 
+            - generic [ref=e403]: Users
+          - list [ref=e404]:
+            - listitem [ref=e405]:
+              - link "All Users" [ref=e952] [cursor=pointer]:
+                - /url: https://wordpress.com/people/team/chasingted.com
+            - listitem [ref=e407]:
+              - link "Add User" [ref=e953] [cursor=pointer]:
+                - /url: user-new.php
+            - listitem [ref=e409]:
+              - link "Profile" [ref=e954] [cursor=pointer]:
+                - /url: profile.php
+        - listitem [ref=e411]:
+          - link "Tools" [ref=e955] [cursor=pointer]:
+            - /url: tools.php
+            - generic [ref=e413]: 
+            - generic [ref=e414]: Tools
+          - list [ref=e415]:
+            - listitem [ref=e416]:
+              - link "Available Tools" [ref=e956] [cursor=pointer]:
+                - /url: tools.php
+            - listitem [ref=e418]:
+              - link "Advertising" [ref=e957] [cursor=pointer]:
+                - /url: tools.php?page=advertising
+            - listitem [ref=e420]:
+              - link "Marketing" [ref=e958] [cursor=pointer]:
+                - /url: tools.php?page=wpcom-marketing-tools
+            - listitem [ref=e422]:
+              - link "Import" [ref=e959] [cursor=pointer]:
+                - /url: import.php
+            - listitem [ref=e424]:
+              - link "Export" [ref=e960] [cursor=pointer]:
+                - /url: export.php
+            - listitem [ref=e426]:
+              - link "Export Media Files" [ref=e961] [cursor=pointer]:
+                - /url: tools.php?page=export-media-files
+            - listitem [ref=e428]:
+              - link "Site Health" [ref=e962] [cursor=pointer]:
+                - /url: site-health.php
+            - listitem [ref=e430]:
+              - link "Export Personal Data" [ref=e963] [cursor=pointer]:
+                - /url: export-personal-data.php
+            - listitem [ref=e432]:
+              - link "Erase Personal Data" [ref=e964] [cursor=pointer]:
+                - /url: erase-personal-data.php
+            - listitem [ref=e434]:
+              - link "Scheduled Actions" [ref=e965] [cursor=pointer]:
+                - /url: tools.php?page=action-scheduler
+            - listitem [ref=e436]:
+              - link "Yoast Redirects" [ref=e966] [cursor=pointer]:
+                - /url: tools.php?page=wpseo_redirects_tools
+            - listitem [ref=e438]:
+              - link "WTE Logs" [ref=e967] [cursor=pointer]:
+                - /url: tools.php?page=wptravelengine-logs
+        - listitem [ref=e440]:
+          - link "Settings" [ref=e968] [cursor=pointer]:
+            - /url: options-general.php
+            - generic [ref=e442]: 
+            - generic [ref=e443]: Settings
+          - list [ref=e444]:
+            - listitem [ref=e445]:
+              - link "General" [ref=e969] [cursor=pointer]:
+                - /url: options-general.php
+            - listitem [ref=e447]:
+              - link "Writing" [ref=e970] [cursor=pointer]:
+                - /url: options-writing.php
+            - listitem [ref=e449]:
+              - link "Reading" [ref=e971] [cursor=pointer]:
+                - /url: options-reading.php
+            - listitem [ref=e451]:
+              - link "Discussion" [ref=e972] [cursor=pointer]:
+                - /url: options-discussion.php
+            - listitem [ref=e453]:
+              - link "Media" [ref=e973] [cursor=pointer]:
+                - /url: options-media.php
+            - listitem [ref=e455]:
+              - link "Permalinks" [ref=e974] [cursor=pointer]:
+                - /url: options-permalink.php
+            - listitem [ref=e457]:
+              - link "Privacy" [ref=e975] [cursor=pointer]:
+                - /url: options-privacy.php
+            - listitem [ref=e459]:
+              - link "Sharing" [ref=e976] [cursor=pointer]:
+                - /url: options-general.php?page=sharing
+            - listitem [ref=e461]:
+              - link "Performance" [ref=e977] [cursor=pointer]:
+                - /url: options-general.php?page=page-optimize
+            - listitem [ref=e463]:
+              - link "Crowdsignal" [ref=e978] [cursor=pointer]:
+                - /url: options-general.php?page=crowdsignal-settings
+            - listitem [ref=e465]:
+              - link "Ratings" [ref=e979] [cursor=pointer]:
+                - /url: options-general.php?page=ratingsettings
+            - listitem [ref=e467]:
+              - link "Connectors" [ref=e980] [cursor=pointer]:
+                - /url: options-general.php?page=options-connectors-wp-admin
+            - listitem [ref=e469]:
+              - link "Cloudflare" [ref=e981] [cursor=pointer]:
+                - /url: options-general.php?page=cloudflare
+            - listitem [ref=e471]:
+              - link "Guidelines" [ref=e982] [cursor=pointer]:
+                - /url: options-general.php?page=guidelines-wp-admin
+        - listitem [ref=e473]
+        - listitem [ref=e475]:
+          - link "Tidio Chat" [ref=e983] [cursor=pointer]:
+            - /url: admin.php?page=tidio-live-chat
+            - generic [ref=e478]: Tidio Chat
+        - listitem [ref=e479]:
+          - link "Yoast SEO 1 notification" [ref=e984] [cursor=pointer]:
+            - /url: admin.php?page=wpseo_dashboard
+            - generic [ref=e482]:
+              - text: Yoast SEO
+              - generic [ref=e483]:
+                - text: "1"
+                - generic [ref=e484]: 1 notification
+          - list [ref=e485]:
+            - listitem [ref=e486]:
+              - link "General" [ref=e985] [cursor=pointer]:
+                - /url: admin.php?page=wpseo_dashboard
+            - listitem [ref=e488]:
+              - link "Settings" [ref=e986] [cursor=pointer]:
+                - /url: admin.php?page=wpseo_page_settings
+            - listitem [ref=e490]:
+              - link "Integrations" [ref=e987] [cursor=pointer]:
+                - /url: admin.php?page=wpseo_integrations
+            - listitem [ref=e492]:
+              - link "Tools" [ref=e988] [cursor=pointer]:
+                - /url: admin.php?page=wpseo_tools
+            - listitem [ref=e494]:
+              - link "Academy" [ref=e989] [cursor=pointer]:
+                - /url: admin.php?page=wpseo_page_academy
+            - listitem [ref=e496]:
+              - link "Plans" [ref=e990] [cursor=pointer]:
+                - /url: admin.php?page=wpseo_licenses
+            - listitem [ref=e498]:
+              - link "Workouts Premium" [ref=e991] [cursor=pointer]:
+                - /url: admin.php?page=wpseo_workouts
+                - text: Workouts
+                - generic [ref=e500]: Premium
+            - listitem [ref=e501]:
+              - link "Redirects Premium" [ref=e992] [cursor=pointer]:
+                - /url: admin.php?page=wpseo_redirects
+                - text: Redirects
+                - generic [ref=e503]: Premium
+            - listitem [ref=e504]:
+              - link "Support" [ref=e993] [cursor=pointer]:
+                - /url: admin.php?page=wpseo_page_support
+            - listitem [ref=e506]:
+              - link "Upgrade" [ref=e994] [cursor=pointer]:
+                - /url: admin.php?page=wpseo_upgrade_sidebar
+                - generic [ref=e509]: Upgrade
+            - listitem [ref=e510]:
+              - link "AI Brand Insights" [ref=e995] [cursor=pointer]:
+                - /url: admin.php?page=wpseo_brand_insights
+                - generic [ref=e513]: AI Brand Insights
+        - listitem [ref=e515]:
+          - link "MC4WP" [ref=e996] [cursor=pointer]:
+            - /url: admin.php?page=mailchimp-for-wp
+            - generic [ref=e518]: MC4WP
+          - list [ref=e519]:
+            - listitem [ref=e520]:
+              - link "Mailchimp" [ref=e997] [cursor=pointer]:
+                - /url: admin.php?page=mailchimp-for-wp
+            - listitem [ref=e522]:
+              - link "Form" [ref=e998] [cursor=pointer]:
+                - /url: admin.php?page=mailchimp-for-wp-forms
+            - listitem [ref=e524]:
+              - link "Integrations" [ref=e999] [cursor=pointer]:
+                - /url: admin.php?page=mailchimp-for-wp-integrations
+            - listitem [ref=e526]:
+              - link "Other" [ref=e1000] [cursor=pointer]:
+                - /url: admin.php?page=mailchimp-for-wp-other
+            - listitem [ref=e528]:
+              - link "Add-ons" [ref=e1001] [cursor=pointer]:
+                - /url: admin.php?page=mailchimp-for-wp-extensions
+        - listitem [ref=e530]:
+          - link "Instagram Feed 1" [ref=e1002] [cursor=pointer]:
+            - /url: admin.php?page=sbi-setup
+            - generic [ref=e532]: 
+            - generic [ref=e533]:
+              - text: Instagram Feed
+              - generic [ref=e534]: "1"
+          - list [ref=e535]:
+            - listitem [ref=e536]:
+              - link "Setup" [ref=e1003] [cursor=pointer]:
+                - /url: admin.php?page=sbi-setup
+            - listitem [ref=e538]:
+              - link "All Feeds" [ref=e1004] [cursor=pointer]:
+                - /url: admin.php?page=sbi-feed-builder
+            - listitem [ref=e540]:
+              - link "Settings" [ref=e1005] [cursor=pointer]:
+                - /url: admin.php?page=sbi-settings
+            - listitem
+            - listitem [ref=e542]:
+              - link "oEmbeds" [ref=e1006] [cursor=pointer]:
+                - /url: admin.php?page=sbi-oembeds-manager
+            - listitem [ref=e544]:
+              - link "About Us" [ref=e1007] [cursor=pointer]:
+                - /url: admin.php?page=sbi-about-us
+            - listitem
+            - listitem [ref=e546]:
+              - link "Upgrade to Pro" [ref=e1008] [cursor=pointer]:
+                - /url: https://smashballoon.com/instagram-feed/instagram-lite-upgrade/?utm_campaign=instagram-free&utm_source=menu-link&utm_medium=upgrade-link&utm_content=UpgradeToPro
+            - listitem [ref=e548]:
+              - link "TikTok Feeds New!" [ref=e1009] [cursor=pointer]:
+                - /url: admin.php?page=sbtt
+                - text: TikTok Feeds
+                - generic [ref=e550]: New!
+            - listitem [ref=e551]:
+              - link "Reviews Feed" [ref=e1010] [cursor=pointer]:
+                - /url: admin.php?page=sbr
+            - listitem [ref=e553]:
+              - link "Facebook Feed" [ref=e1011] [cursor=pointer]:
+                - /url: admin.php?page=cff-builder
+            - listitem [ref=e555]:
+              - link "Twitter Feed" [ref=e1012] [cursor=pointer]:
+                - /url: admin.php?page=sb-instagram-feed&tab=more
+            - listitem [ref=e557]:
+              - link "YouTube Feed" [ref=e1013] [cursor=pointer]:
+                - /url: admin.php?page=sb-instagram-feed&tab=more
+        - listitem [ref=e559]:
+          - button "Collapse Main menu" [expanded] [ref=e1014] [cursor=pointer]:
+            - generic [ref=e562]: Collapse Menu
+    - generic [ref=e563]:
+      - generic [ref=e564]:
+        - navigation "Toolbar":
+          - menu:
+            - group [ref=e565]:
+              - menuitem "WordPress.com" [ref=e1015] [cursor=pointer]:
+                - generic [ref=e568]: WordPress.com
+            - group [ref=e569]:
+              - menuitem " Chasingted" [ref=e1016] [cursor=pointer]
+            - group [ref=e571]:
+              - menuitem "3 updates available" [ref=e1017] [cursor=pointer]:
+                - generic [ref=e574]: "3"
+                - generic [ref=e575]: 3 updates available
+            - group [ref=e576]:
+              - menuitem "⌘K Open command palette" [ref=e1018] [cursor=pointer]:
+                - generic [ref=e578]:
+                  - text: ⌘K
+                  - generic [ref=e579]: Open command palette
+            - group [ref=e580]:
+              - menuitem "0 Comments in moderation" [ref=e1019] [cursor=pointer]:
+                - generic [ref=e583]: "0"
+                - generic [ref=e584]: 0 Comments in moderation
+            - group [ref=e585]:
+              - menuitem "New" [ref=e1020] [cursor=pointer]:
+                - generic [ref=e588]: New
+            - group [ref=e589]:
+              - menuitem "SEO 1 notification" [ref=e1021] [cursor=pointer]:
+                - generic [ref=e592]: SEO
+                - generic [ref=e593]:
+                  - text: "1"
+                  - generic [ref=e594]: 1 notification
+              - text: Premium Premium
+            - group [ref=e595]:
+              - menuitem "Stats" [ref=e1022] [cursor=pointer]:
+                - img "Stats" [ref=e1023]
+            - group [ref=e599]:
+              - menuitem "WP Travel Engine" [ref=e1024] [cursor=pointer]:
+                - img [ref=e602]
+                - text: WP Travel Engine
+            - group [ref=e608]:
+              - menuitem "Tidio Chat" [ref=e1025] [cursor=pointer]:
+                - generic [ref=e611]: Tidio Chat
+            - group [ref=e612]:
+              - menuitem "Novamira ON" [ref=e1026] [cursor=pointer]
+          - menu [ref=e614]:
+            - group [ref=e615]:
+              - menuitem "Reader" [ref=e1027] [cursor=pointer]:
+                - generic [ref=e618]: Reader
+            - group [ref=e619]:
+              - menuitem [ref=e620]:
+                - generic "Help Center":
+                  - img [ref=e621]
+            - group [ref=e623]:
+              - menuitem "Notifications" [ref=e1028] [cursor=pointer]:
+                - generic [ref=e796]: 
+                - generic [ref=e625]: Notifications
+            - group [ref=e626]:
+              - menuitem "Howdy, Teddy JansenTeddy Jansen's avatar" [ref=e1029] [cursor=pointer]:
+                - text: Howdy, Teddy Jansen
+                - img "Teddy Jansen's avatar" [ref=e1030]
+      - main [ref=e629]:
+        - generic [ref=e631]:
+          - heading "Edit Themes" [level=1] [ref=e1031]
+          - generic [ref=e633]:
+            - generic [ref=e634]:
+              - heading "Editing Hello Elementor (active)" [level=2] [ref=e1032]:
+                - text: Editing
+                - strong [ref=e636]: Hello Elementor
+                - text: (active)
+              - strong [ref=e638]: "File: functions.php"
+            - generic [ref=e640]:
+              - text: "Select theme to edit:"
+              - combobox "Select theme to edit:" [ref=e1033] [cursor=pointer]:
+                - option "Assembler"
+                - option "Hello Elementor" [selected]
+                - option "Storefront"
+                - option "Twenty Twenty-Two"
+              - button "Select" [ref=e1034] [cursor=pointer]
+          - generic [ref=e643]:
+            - heading "Theme Files" [level=2] [ref=e1035]
+            - tree "Theme Files" [ref=e1036]:
+              - treeitem [expanded] [level=1] [ref=e646]:
+                - group [ref=e647]:
+                  - treeitem "style.css" [level=2] [ref=e1037] [cursor=pointer]
+                  - treeitem "functions.php" [level=2] [ref=e1038] [cursor=pointer]:
+                    - generic [ref=e650]: functions.php
+                  - treeitem "assets folder" [level=2] [ref=e1039]:
+                    - generic [ref=e652] [cursor=pointer]:
+                      - text: assets
+                      - generic [ref=e653]: folder
+                  - treeitem "theme.json" [level=2] [ref=e1040] [cursor=pointer]
+                  - treeitem "comments.php" [level=2] [ref=e1041] [cursor=pointer]
+                  - treeitem "footer.php" [level=2] [ref=e1042] [cursor=pointer]
+                  - treeitem "header.php" [level=2] [ref=e1043] [cursor=pointer]
+                  - treeitem "includes folder" [level=2] [ref=e1044]:
+                    - generic [ref=e659] [cursor=pointer]:
+                      - text: includes
+                      - generic [ref=e660]: folder
+                  - treeitem "index.php" [level=2] [ref=e1045] [cursor=pointer]
+                  - treeitem "modules folder" [level=2] [ref=e1046]:
+                    - generic [ref=e663] [cursor=pointer]:
+                      - text: modules
+                      - generic [ref=e664]: folder
+                  - treeitem "sidebar.php" [level=2] [ref=e1047] [cursor=pointer]
+                  - treeitem "template-parts folder" [level=2] [ref=e1048]:
+                    - generic [ref=e667] [cursor=pointer]:
+                      - text: template-parts
+                      - generic [ref=e668]: folder
+                  - treeitem "theme.php" [level=2] [ref=e1049] [cursor=pointer]
+                  - treeitem "readme.txt" [level=2] [ref=e1050] [cursor=pointer]
+          - generic [ref=e671]:
+            - generic [ref=e672]:
+              - generic [ref=e673]: "Selected file content:"
+              - textbox "Selected file content:" [ref=e1051]:
+                - generic [ref=e679]:
+                  - generic [ref=e682]: "1"
+                  - text: <?php
+                - generic [ref=e683]:
+                  - generic [ref=e684]: "2"
+                  - text: /**
+                - generic [ref=e685]:
+                  - generic [ref=e686]: "3"
+                  - text: "* Theme functions and definitions"
+                - generic [ref=e687]:
+                  - generic [ref=e688]: "4"
+                  - text: "*"
+                - generic [ref=e689]:
+                  - generic [ref=e690]: "5"
+                  - text: "* @package HelloElementor"
+                - generic [ref=e691]:
+                  - generic [ref=e692]: "6"
+                  - text: "*/"
+                - generic [ref=e694]: "7"
+                - generic [ref=e695]:
+                  - generic [ref=e696]: "8"
+                  - text: "if ( ! defined( 'ABSPATH' ) ) {"
+                - generic [ref=e697]:
+                  - generic [ref=e698]: "9"
+                  - text: exit; // Exit if accessed directly.
+                - generic [ref=e699]:
+                  - generic [ref=e700]: "10"
+                  - text: "}"
+                - generic [ref=e702]: "11"
+                - generic [ref=e703]:
+                  - generic [ref=e704]: "12"
+                  - text: define( 'HELLO_ELEMENTOR_VERSION', '3.4.9' );
+                - generic [ref=e705]:
+                  - generic [ref=e706]: "13"
+                  - text: define( 'EHP_THEME_SLUG', 'hello-elementor' );
+                - generic [ref=e708]: "14"
+                - generic [ref=e709]:
+                  - generic [ref=e710]: "15"
+                  - text: define( 'HELLO_THEME_PATH', get_template_directory() );
+                - generic [ref=e711]:
+                  - generic [ref=e712]: "16"
+                  - text: define( 'HELLO_THEME_URL', get_template_directory_uri() );
+                - generic [ref=e713]:
+                  - generic [ref=e714]: "17"
+                  - text: define( 'HELLO_THEME_ASSETS_PATH', HELLO_THEME_PATH . '/assets/' );
+                - generic [ref=e715]:
+                  - generic [ref=e716]: "18"
+                  - text: define( 'HELLO_THEME_ASSETS_URL', HELLO_THEME_URL . '/assets/' );
+                - generic [ref=e717]:
+                  - generic [ref=e718]: "19"
+                  - text: define( 'HELLO_THEME_SCRIPTS_PATH', HELLO_THEME_ASSETS_PATH . 'js/' );
+                - generic [ref=e719]:
+                  - generic [ref=e720]: "20"
+                  - text: define( 'HELLO_THEME_SCRIPTS_URL', HELLO_THEME_ASSETS_URL . 'js/' );
+                - generic [ref=e721]:
+                  - generic [ref=e722]: "21"
+                  - text: define( 'HELLO_THEME_STYLE_PATH', HELLO_THEME_ASSETS_PATH . 'css/' );
+                - generic [ref=e723]:
+                  - generic [ref=e724]: "22"
+                  - text: define( 'HELLO_THEME_STYLE_URL', HELLO_THEME_ASSETS_URL . 'css/' );
+                - generic [ref=e725]:
+                  - generic [ref=e726]: "23"
+                  - text: define( 'HELLO_THEME_IMAGES_PATH', HELLO_THEME_ASSETS_PATH . 'images/' );
+                - generic [ref=e727]:
+                  - generic [ref=e728]: "24"
+                  - text: define( 'HELLO_THEME_IMAGES_URL', HELLO_THEME_ASSETS_URL . 'images/' );
+                - generic [ref=e730]: "25"
+                - generic [ref=e731]:
+                  - generic [ref=e732]: "26"
+                  - text: "if ( ! isset( $content_width ) ) {"
+                - generic [ref=e733]:
+                  - generic [ref=e734]: "27"
+                  - text: $content_width = 800; // Pixels.
+                - generic [ref=e735]:
+                  - generic [ref=e736]: "28"
+                  - text: "}"
+                - generic [ref=e738]: "29"
+                - generic [ref=e739]:
+                  - generic [ref=e740]: "30"
+                  - text: "if ( ! function_exists( 'hello_elementor_setup' ) ) {"
+                - generic [ref=e741]:
+                  - generic [ref=e742]: "31"
+                  - text: /**
+                - generic [ref=e743]:
+                  - generic [ref=e744]: "32"
+                  - text: "* Set up theme support."
+                - generic [ref=e745]:
+                  - generic [ref=e746]: "33"
+                  - text: "*"
+                - generic [ref=e747]:
+                  - generic [ref=e748]: "34"
+                  - text: "* @return void"
+                - generic [ref=e749]:
+                  - generic [ref=e750]: "35"
+                  - text: "*/"
+                - generic [ref=e751]:
+                  - generic [ref=e752]: "36"
+                  - text: "function hello_elementor_setup() {"
+                - generic [ref=e753]:
+                  - generic [ref=e754]: "37"
+                  - text: "if ( is_admin() ) {"
+                - generic [ref=e755]:
+                  - generic [ref=e756]: "38"
+                  - text: hello_maybe_update_theme_version_in_db();
+                - generic [ref=e757]:
+                  - generic [ref=e758]: "39"
+                  - text: "}"
+                - generic [ref=e760]: "40"
+                - generic [ref=e761]:
+                  - generic [ref=e762]: "41"
+                  - text: "if ( apply_filters( 'hello_elementor_register_menus', true ) ) {"
+                - generic [ref=e763]:
+                  - generic [ref=e764]: "42"
+                  - text: register_nav_menus( [ 'menu-1' => esc_html__( 'Header', 'hello-elementor' ) ] );
+                - generic [ref=e765]:
+                  - generic [ref=e766]: "43"
+                  - text: register_nav_menus( [ 'menu-2' => esc_html__( 'Footer', 'hello-elementor' ) ] );
+                - generic [ref=e767]:
+                  - generic [ref=e768]: "44"
+                  - text: "}"
+                - generic [ref=e770]: "45"
+            - generic [ref=e774]:
+              - text: "Documentation:"
+              - combobox "Documentation:" [ref=e1052] [cursor=pointer]:
+                - option "Function Name…" [selected]
+                - option "add_action()"
+                - option "add_editor_style()"
+                - option "add_filter()"
+                - option "add_post_type_support()"
+                - option "add_theme_support()"
+                - option "apply_filters()"
+                - option "define()"
+                - option "defined()"
+                - option "esc_attr()"
+                - option "esc_html__()"
+                - option "function_exists()"
+                - option "get_option()"
+                - option "get_queried_object()"
+                - option "get_template_directory()"
+                - option "get_template_directory_uri()"
+                - option "get_the_ID()"
+                - option "instance()"
+                - option "is_admin()"
+                - option "is_customize_preview()"
+                - option "is_singular()"
+                - option "register_nav_menus()"
+                - option "update_option()"
+                - option "version_compare()"
+                - option "wp_body_open()"
+                - option "wp_enqueue_style()"
+                - option "wp_strip_all_tags()"
+              - button "Look Up" [disabled] [ref=e1053]
+            - paragraph [ref=e778]:
+              - button "Update File" [ref=e1054] [cursor=pointer]
+    - contentinfo [ref=e780]:
+      - paragraph
+      - paragraph [ref=e781]: Version 7.0
+  - paragraph [ref=e797]: Notifications
+  - generic [ref=e782]: Heads up! You appear to be making direct edits to your theme in the WordPress dashboard. It is not recommended! Editing your theme directly could break your site and your changes may be lost in future updates. If you need to tweak more than your theme’s CSS, you might want to try making a child theme. If you decide to go ahead with direct edits anyway, use a file manager to create a copy with a new name and hang on to the original. That way, you can re-enable a functional version if something goes wrong.
+  - dialog

@@ -1,0 +1,32 @@
+- generic [ref=e5]:
+  - generic [ref=e6]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - button "Terug naar homepage" [ref=e11] [cursor=pointer]:
+          - img: arrow_back
+        - button "Terug naar homepage" [ref=e12] [cursor=pointer]
+      - generic [ref=e13]:
+        - generic [ref=e15]:
+          - generic: Tag Manager
+        - button "Schakelen tussen producten" [ref=e18] [cursor=pointer]:
+          - img
+        - generic [ref=e21]:
+          - button "Help" [ref=e22] [cursor=pointer]:
+            - img: help
+          - button "Overloopmenu openen" [ref=e24] [cursor=pointer]:
+            - img: more_vert
+        - button "Het deelvenster voor schakelen tussen gebruikersaccounts openen." [ref=e26] [cursor=pointer]:
+          - 'img "Google-account: Teddy Jansen (jansen.teddy@gmail.com)"'
+    - navigation [ref=e30]:
+      - tablist "Navigatie op hoofdniveau" [ref=e31]:
+        - tab "Werkruimte" [ref=e32] [cursor=pointer]
+        - tab "Versies" [ref=e33] [cursor=pointer]:
+          - generic [ref=e34]: Versies
+        - tab "Beheer" [ref=e35] [cursor=pointer]
+  - alert [ref=e41]: Laden...
+  - generic [ref=e44]:
+    - link "Servicevoorwaarden" [ref=e45] [cursor=pointer]:
+      - /url: https://support.google.com/tagmanager/answer/7157428?hl=nl
+    - text: •
+    - link "Privacybeleid" [ref=e46] [cursor=pointer]:
+      - /url: https://www.google.com/intl/nl/policies/privacy/

@@ -41,11 +41,11 @@ const quickLinks = [
     icon: <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path strokeLinecap="round" strokeLinejoin="round" d="M20 7H4a2 2 0 00-2 2v10a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2zm-8-4a2 2 0 012 2v2H10V5a2 2 0 012-2z" /></svg>,
   },
   {
-    href: '/portal/trip/updates', label: 'Updates', desc: 'News from Teddy',
+    href: '/portal/trip/updates', label: 'Updates', desc: 'News from ChasingTed',
     icon: <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path strokeLinecap="round" strokeLinejoin="round" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" /></svg>,
   },
   {
-    href: '/portal/trip/messages', label: 'Messages', desc: 'Ask Teddy anything',
+    href: '/portal/trip/messages', label: 'Messages', desc: 'Ask us anything',
     icon: <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path strokeLinecap="round" strokeLinejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>,
   },
   {
@@ -162,11 +162,11 @@ export default async function DashboardPage() {
             <div className="w-16 h-px bg-[#d4c5a0] mx-auto mb-6" />
             <p className="font-bold text-sm uppercase tracking-widest text-[#133425] mb-2">No Expedition Yet</p>
             <p className="text-sm text-[#3a4a40]/70 mb-4">
-              Your trip will appear here once Teddy confirms your booking.
+              Your trip will appear here once ChasingTed confirms your booking.
             </p>
             <a href="mailto:info@chasingted.com"
               className="inline-block bg-[#133425] text-[#F5F0E4] font-bold text-xs tracking-widest uppercase px-8 py-3 hover:bg-[#3a4a40] transition-colors">
-              Contact Teddy
+              Contact ChasingTed
             </a>
           </div>
         )}

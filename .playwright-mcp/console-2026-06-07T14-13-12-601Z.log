@@ -1,0 +1,5 @@
+[     877ms] [LOG] JQMIGRATE: Migrate is installed, version 3.4.1 @ https://chasingted.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1:1
+[ 2386937ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://chasingted.com/wp-admin/admin-ajax.php:0
+[48299824ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://chasingted.com/wp-admin/admin-ajax.php:0
+[48923837ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://chasingted.com/wp-admin/admin-ajax.php:0
+[54265600ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://chasingted.com/wp-admin/admin-ajax.php:0

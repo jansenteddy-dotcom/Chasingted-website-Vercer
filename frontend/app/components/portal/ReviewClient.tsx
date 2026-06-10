@@ -101,7 +101,7 @@ export default function ReviewClient({ booking, existing, userId }: { booking: B
               {new Date(booking.trip_end_date).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
             </p>
             <div className="border-t border-[#d4c5a0] pt-8">
-              <p className="text-sm text-[#3a4a40]/60">Teddy Jansen · Chasingted.com</p>
+              <p className="text-sm text-[#3a4a40]/60">ChasingTed · Chasingted.com</p>
             </div>
           </div>
         </div>

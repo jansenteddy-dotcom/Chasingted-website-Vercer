@@ -1,0 +1,1671 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - navigation "Main menu":
+      - link "Skip to main content" [ref=e3] [cursor=pointer]:
+        - /url: "#wpbody-content"
+      - link "Skip to toolbar" [ref=e4] [cursor=pointer]:
+        - /url: "#wp-toolbar"
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "Dashboard" [ref=e9] [cursor=pointer]:
+            - /url: index.php
+            - generic [ref=e10]: 
+            - generic [ref=e11]: Dashboard
+          - list [ref=e12]:
+            - listitem [ref=e13]:
+              - link "Home" [ref=e14] [cursor=pointer]:
+                - /url: index.php
+            - listitem [ref=e15]:
+              - link "Updates 3" [ref=e16] [cursor=pointer]:
+                - /url: update-core.php
+                - text: Updates
+                - generic [ref=e17]: "3"
+            - listitem [ref=e18]:
+              - link "Getting Started" [ref=e19] [cursor=pointer]:
+                - /url: index.php?page=class-wte-getting-started.php
+        - listitem [ref=e20]:
+          - link "Site Kit" [ref=e21] [cursor=pointer]:
+            - /url: admin.php?page=googlesitekit-dashboard
+            - generic [ref=e23]: Site Kit
+          - list [ref=e24]:
+            - listitem [ref=e25]:
+              - link "Dashboard" [ref=e26] [cursor=pointer]:
+                - /url: admin.php?page=googlesitekit-dashboard
+            - listitem [ref=e27]:
+              - link "Settings" [ref=e28] [cursor=pointer]:
+                - /url: admin.php?page=googlesitekit-settings
+        - listitem [ref=e29]:
+          - link "My Home" [ref=e30] [cursor=pointer]:
+            - /url: https://wordpress.com/home/chasingted.com
+            - generic [ref=e31]: 
+            - generic [ref=e32]: My Home
+        - listitem [ref=e33]:
+          - link "Stats" [ref=e34] [cursor=pointer]:
+            - /url: admin.php?page=stats
+            - generic [ref=e35]: 
+            - generic [ref=e36]: Stats
+        - listitem [ref=e37]:
+          - link "Hosting " [ref=e38] [cursor=pointer]:
+            - /url: https://wordpress.com/overview/chasingted.com
+            - generic [ref=e39]: 
+            - generic [ref=e40]:
+              - text: Hosting
+              - generic [ref=e41]: 
+        - listitem [ref=e42]:
+          - link "Upgrades Business" [ref=e43] [cursor=pointer]:
+            - /url: https://wordpress.com/plans/chasingted.com
+            - generic [ref=e44]: 
+            - generic [ref=e45]:
+              - text: Upgrades
+              - generic [ref=e46]: Business
+          - list [ref=e47]:
+            - listitem [ref=e48]:
+              - link "Plans" [ref=e49] [cursor=pointer]:
+                - /url: https://wordpress.com/plans/chasingted.com
+            - listitem [ref=e50]:
+              - link "Add-ons" [ref=e51] [cursor=pointer]:
+                - /url: https://wordpress.com/add-ons/chasingted.com
+            - listitem [ref=e52]:
+              - link "Domains" [ref=e53] [cursor=pointer]:
+                - /url: https://wordpress.com/domains/manage/chasingted.com
+            - listitem [ref=e54]:
+              - link "Emails" [ref=e55] [cursor=pointer]:
+                - /url: https://wordpress.com/email/chasingted.com
+            - listitem [ref=e56]:
+              - link "Purchases" [ref=e57] [cursor=pointer]:
+                - /url: https://wordpress.com/purchases/subscriptions/chasingted.com
+        - listitem [ref=e58]:
+          - link "Elementor" [ref=e59] [cursor=pointer]:
+            - /url: admin.php?page=elementor-home
+            - generic [ref=e61]: Elementor
+          - list [ref=e62]:
+            - listitem [ref=e63]:
+              - link "Home" [ref=e64] [cursor=pointer]:
+                - /url: admin.php?page=elementor-home
+            - listitem [ref=e65]:
+              - link "Editor" [ref=e66] [cursor=pointer]:
+                - /url: admin.php?page=elementor
+            - listitem [ref=e67]:
+              - link "Image Optimization" [ref=e68] [cursor=pointer]:
+                - /url: admin.php?page=image-optimization-settings
+            - listitem [ref=e69]:
+              - link "Theme Builder" [ref=e70] [cursor=pointer]:
+                - /url: https://chasingted.com/wp-admin/admin.php?page=elementor-app&ver=4.0.9&return_to=/wp-admin/plugins.php#/site-editor
+            - listitem [ref=e71]:
+              - link "Submissions" [ref=e72] [cursor=pointer]:
+                - /url: admin.php?page=e-form-submissions
+        - listitem [ref=e73]:
+          - link "Novamira" [ref=e74] [cursor=pointer]:
+            - /url: admin.php?page=novamira-connect
+            - generic [ref=e76]: Novamira
+          - list [ref=e77]:
+            - listitem [ref=e78]:
+              - link "Configuration" [ref=e79] [cursor=pointer]:
+                - /url: admin.php?page=novamira-connect
+            - listitem [ref=e80]:
+              - link "Abilities Hub" [ref=e81] [cursor=pointer]:
+                - /url: admin.php?page=novamira-abilities
+            - listitem [ref=e82]:
+              - link "Skills" [ref=e83] [cursor=pointer]:
+                - /url: admin.php?page=novamira-skills
+            - listitem [ref=e84]:
+              - link "Sandbox" [ref=e85] [cursor=pointer]:
+                - /url: admin.php?page=novamira-sandbox
+            - listitem [ref=e86]:
+              - link "Block Editor Queue" [ref=e87] [cursor=pointer]:
+                - /url: admin.php?page=novamira-gutenberg-finalize
+            - listitem [ref=e88]:
+              - link "Get Pro" [ref=e89] [cursor=pointer]:
+                - /url: https://www.novamira.ai/pro/?utm_source=plugin&utm_medium=submenu
+        - listitem [ref=e90]:
+          - link "Jetpack" [ref=e91] [cursor=pointer]:
+            - /url: admin.php?page=jetpack-social
+            - generic [ref=e93]: Jetpack
+          - list [ref=e94]:
+            - listitem [ref=e95]:
+              - link "Social" [ref=e96] [cursor=pointer]:
+                - /url: admin.php?page=jetpack-social
+            - listitem [ref=e97]:
+              - link "Akismet Anti-spam" [ref=e98] [cursor=pointer]:
+                - /url: admin.php?page=akismet-key-config
+            - listitem [ref=e99]:
+              - link "Activity Log" [ref=e100] [cursor=pointer]:
+                - /url: https://wordpress.com/activity-log/chasingted.com
+            - listitem [ref=e101]:
+              - link "Scan" [ref=e102] [cursor=pointer]:
+                - /url: https://wordpress.com/scan/chasingted.com
+            - listitem [ref=e103]:
+              - link "Backup" [ref=e104] [cursor=pointer]:
+                - /url: https://wordpress.com/backup/chasingted.com
+            - listitem [ref=e105]:
+              - link "Forms" [ref=e106] [cursor=pointer]:
+                - /url: admin.php?page=jetpack-forms-responses-wp-admin
+            - listitem [ref=e107]:
+              - link "Monetize" [ref=e108] [cursor=pointer]:
+                - /url: https://wordpress.com/earn/chasingted.com
+            - listitem [ref=e109]:
+              - link "Search" [ref=e110] [cursor=pointer]:
+                - /url: admin.php?page=jetpack-search
+            - listitem [ref=e111]:
+              - link "Subscribers" [ref=e112] [cursor=pointer]:
+                - /url: https://wordpress.com/subscribers/chasingted.com
+            - listitem [ref=e113]:
+              - link "Newsletter" [ref=e114] [cursor=pointer]:
+                - /url: admin.php?page=jetpack-newsletter
+            - listitem [ref=e115]:
+              - link "Podcast" [ref=e116] [cursor=pointer]:
+                - /url: admin.php?page=jetpack-podcast
+            - listitem [ref=e117]:
+              - link "Settings" [ref=e118] [cursor=pointer]:
+                - /url: https://chasingted.com/wp-admin/admin.php?page=jetpack#/settings
+            - listitem [ref=e119]:
+              - link "AI" [ref=e120] [cursor=pointer]:
+                - /url: admin.php?page=jetpack-ai
+        - listitem [ref=e121]
+        - listitem [ref=e123]:
+          - link "Posts" [ref=e124] [cursor=pointer]:
+            - /url: edit.php
+            - generic [ref=e125]: 
+            - generic [ref=e126]: Posts
+          - list [ref=e127]:
+            - listitem [ref=e128]:
+              - link "All Posts" [ref=e129] [cursor=pointer]:
+                - /url: edit.php
+            - listitem [ref=e130]:
+              - link "Add Post" [ref=e131] [cursor=pointer]:
+                - /url: post-new.php
+            - listitem [ref=e132]:
+              - link "Categories" [ref=e133] [cursor=pointer]:
+                - /url: edit-tags.php?taxonomy=category
+            - listitem [ref=e134]:
+              - link "Tags" [ref=e135] [cursor=pointer]:
+                - /url: edit-tags.php?taxonomy=post_tag
+        - listitem [ref=e136]:
+          - link "Media" [ref=e137] [cursor=pointer]:
+            - /url: upload.php
+            - generic [ref=e138]: 
+            - generic [ref=e139]: Media
+          - list [ref=e140]:
+            - listitem [ref=e141]:
+              - link "Library" [ref=e142] [cursor=pointer]:
+                - /url: upload.php
+            - listitem [ref=e143]:
+              - link "Add Media File" [ref=e144] [cursor=pointer]:
+                - /url: media-new.php
+            - listitem [ref=e145]:
+              - link "Create AI Podcast" [ref=e146] [cursor=pointer]:
+                - /url: upload.php?page=create-ai-podcast
+            - listitem [ref=e147]:
+              - link "Import Media" [ref=e148] [cursor=pointer]:
+                - /url: upload.php?page=jetpack_external_media_import_page
+        - listitem [ref=e149]:
+          - link "Pages" [ref=e150] [cursor=pointer]:
+            - /url: edit.php?post_type=page
+            - generic [ref=e151]: 
+            - generic [ref=e152]: Pages
+          - list [ref=e153]:
+            - listitem [ref=e154]:
+              - link "All Pages" [ref=e155] [cursor=pointer]:
+                - /url: edit.php?post_type=page
+            - listitem [ref=e156]:
+              - link "Add Page" [ref=e157] [cursor=pointer]:
+                - /url: post-new.php?post_type=page
+        - listitem [ref=e158]:
+          - link "Comments" [ref=e159] [cursor=pointer]:
+            - /url: edit-comments.php
+            - generic [ref=e160]: 
+            - generic [ref=e161]: Comments
+        - text: 
+        - listitem [ref=e162]:
+          - link "Applications" [ref=e163] [cursor=pointer]:
+            - /url: edit.php?post_type=trip_application
+            - generic [ref=e164]: 
+            - generic [ref=e165]: Applications
+          - list [ref=e166]:
+            - listitem [ref=e167]:
+              - link "All Applications" [ref=e168] [cursor=pointer]:
+                - /url: edit.php?post_type=trip_application
+            - listitem [ref=e169]:
+              - link "Add Post" [ref=e170] [cursor=pointer]:
+                - /url: post-new.php?post_type=trip_application
+        - listitem [ref=e171]:
+          - link "Messages" [ref=e172] [cursor=pointer]:
+            - /url: edit.php?post_type=ct_message
+            - generic [ref=e173]: 
+            - generic [ref=e174]: Messages
+          - list [ref=e175]:
+            - listitem [ref=e176]:
+              - link "Messages" [ref=e177] [cursor=pointer]:
+                - /url: edit.php?post_type=ct_message
+            - listitem [ref=e178]:
+              - link "Add Post" [ref=e179] [cursor=pointer]:
+                - /url: post-new.php?post_type=ct_message
+        - listitem [ref=e180]:
+          - link "MailPoet" [ref=e181] [cursor=pointer]:
+            - /url: admin.php?page=mailpoet-homepage
+            - generic [ref=e183]: MailPoet
+          - list [ref=e184]:
+            - listitem [ref=e185]:
+              - link "Home" [ref=e186] [cursor=pointer]:
+                - /url: admin.php?page=mailpoet-homepage
+            - listitem [ref=e187]:
+              - link "Emails" [ref=e188] [cursor=pointer]:
+                - /url: admin.php?page=mailpoet-newsletters
+            - listitem [ref=e189]:
+              - link "Automations" [ref=e190] [cursor=pointer]:
+                - /url: admin.php?page=mailpoet-automation
+            - listitem [ref=e191]:
+              - link "Forms" [ref=e192] [cursor=pointer]:
+                - /url: admin.php?page=mailpoet-forms
+            - listitem [ref=e193]:
+              - link "Subscribers" [ref=e194] [cursor=pointer]:
+                - /url: admin.php?page=mailpoet-subscribers
+            - listitem [ref=e195]:
+              - link "Lists" [ref=e196] [cursor=pointer]:
+                - /url: admin.php?page=mailpoet-lists
+            - listitem [ref=e197]:
+              - link "Segments" [ref=e198] [cursor=pointer]:
+                - /url: admin.php?page=mailpoet-segments
+            - listitem [ref=e199]:
+              - link "Settings" [ref=e200] [cursor=pointer]:
+                - /url: admin.php?page=mailpoet-settings
+            - listitem [ref=e201]:
+              - link "Help" [ref=e202] [cursor=pointer]:
+                - /url: admin.php?page=mailpoet-help
+            - listitem [ref=e203]:
+              - link "Upgrade" [ref=e204] [cursor=pointer]:
+                - /url: admin.php?page=mailpoet-upgrade
+        - listitem [ref=e205]
+        - listitem [ref=e207]:
+          - link "WP Travel Engine" [ref=e208] [cursor=pointer]:
+            - /url: admin.php?page=wptravelengine-admin-page
+            - generic [ref=e210]: WP Travel Engine
+          - list [ref=e211]:
+            - listitem [ref=e212]:
+              - link "Home" [ref=e213] [cursor=pointer]:
+                - /url: edit.php?post_type=booking&page=wptravelengine-admin-page
+            - listitem [ref=e214]:
+              - link "Upcoming Tours" [ref=e215] [cursor=pointer]:
+                - /url: edit.php?post_type=booking&page=wptravelengine-upcoming-tours
+            - listitem [ref=e216]:
+              - link "Bookings" [ref=e217] [cursor=pointer]:
+                - /url: edit.php?post_type=booking
+            - listitem [ref=e218]:
+              - link "Enquiries" [ref=e219] [cursor=pointer]:
+                - /url: edit.php?post_type=enquiry
+            - listitem [ref=e220]:
+              - link "Customers" [ref=e221] [cursor=pointer]:
+                - /url: edit.php?post_type=customer
+            - listitem [ref=e222]:
+              - link "Coupons" [ref=e223] [cursor=pointer]:
+                - /url: edit.php?post_type=wte-coupon
+            - listitem [ref=e224]:
+              - link "Analytics" [ref=e225] [cursor=pointer]:
+                - /url: edit.php?post_type=booking&page=wptravelengine-analytics
+            - listitem [ref=e226]:
+              - link "Plugin License" [ref=e227] [cursor=pointer]:
+                - /url: edit.php?post_type=booking&page=wp_travel_engine_license_page
+            - listitem [ref=e228]:
+              - link "Settings" [ref=e229] [cursor=pointer]:
+                - /url: edit.php?post_type=booking&page=class-wp-travel-engine-admin.php
+            - listitem [ref=e230]:
+              - link "Extensions" [ref=e231] [cursor=pointer]:
+                - /url: edit.php?post_type=booking&page=extensions
+            - listitem [ref=e232]:
+              - link "Themes" [ref=e233] [cursor=pointer]:
+                - /url: edit.php?post_type=booking&page=themes
+        - listitem [ref=e234]:
+          - link "Trips" [ref=e235] [cursor=pointer]:
+            - /url: edit.php?post_type=trip
+            - generic [ref=e237]: Trips
+          - list [ref=e238]:
+            - listitem [ref=e239]:
+              - link "Trips" [ref=e240] [cursor=pointer]:
+                - /url: edit.php?post_type=trip
+            - listitem [ref=e241]:
+              - link "Add New Trip" [ref=e242] [cursor=pointer]:
+                - /url: post-new.php?post_type=trip
+            - listitem [ref=e243]:
+              - link "Pricing Categories" [ref=e244] [cursor=pointer]:
+                - /url: edit-tags.php?taxonomy=trip-packages-categories&post_type=trip
+            - listitem [ref=e245]:
+              - link "Destinations" [ref=e246] [cursor=pointer]:
+                - /url: edit-tags.php?taxonomy=destination&post_type=trip
+            - listitem [ref=e247]:
+              - link "Activities" [ref=e248] [cursor=pointer]:
+                - /url: edit-tags.php?taxonomy=activities&post_type=trip
+            - listitem [ref=e249]:
+              - link "Trip Type" [ref=e250] [cursor=pointer]:
+                - /url: edit-tags.php?taxonomy=trip_types&post_type=trip
+            - listitem [ref=e251]:
+              - link "Difficulty" [ref=e252] [cursor=pointer]:
+                - /url: edit-tags.php?taxonomy=difficulty&post_type=trip
+            - listitem [ref=e253]:
+              - link "Tag" [ref=e254] [cursor=pointer]:
+                - /url: edit-tags.php?taxonomy=trip_tag&post_type=trip
+            - listitem [ref=e255]:
+              - link "Custom Filters" [ref=e256] [cursor=pointer]:
+                - /url: edit.php?post_type=trip&page=custom-filters
+        - listitem [ref=e257]:
+          - link "Feedback" [ref=e258] [cursor=pointer]:
+            - /url: admin.php?page=polls
+            - generic [ref=e259]: 
+            - generic [ref=e260]: Feedback
+          - list [ref=e261]:
+            - listitem [ref=e262]:
+              - link "Crowdsignal" [ref=e263] [cursor=pointer]:
+                - /url: admin.php?page=polls
+            - listitem [ref=e264]:
+              - link "Ratings" [ref=e265] [cursor=pointer]:
+                - /url: admin.php?page=ratings
+        - listitem [ref=e266]
+        - listitem [ref=e268]:
+          - link "WooCommerce" [ref=e269] [cursor=pointer]:
+            - /url: admin.php?page=wc-admin
+            - generic [ref=e271]: WooCommerce
+          - list [ref=e272]:
+            - listitem [ref=e273]:
+              - link "Home 5" [ref=e274] [cursor=pointer]:
+                - /url: admin.php?page=wc-admin
+                - text: Home
+                - generic [ref=e275]: "5"
+            - listitem [ref=e276]:
+              - link "Orders" [ref=e277] [cursor=pointer]:
+                - /url: admin.php?page=wc-orders
+            - listitem [ref=e278]:
+              - link "Customers" [ref=e279] [cursor=pointer]:
+                - /url: admin.php?page=wc-admin&path=/customers
+            - listitem [ref=e280]:
+              - link "Coupons" [ref=e281] [cursor=pointer]:
+                - /url: admin.php?page=coupons-moved
+            - listitem [ref=e282]:
+              - link "Reports" [ref=e283] [cursor=pointer]:
+                - /url: admin.php?page=wc-reports
+            - listitem [ref=e284]:
+              - link "Settings" [ref=e285] [cursor=pointer]:
+                - /url: admin.php?page=wc-settings
+            - listitem [ref=e286]:
+              - link "Status" [ref=e287] [cursor=pointer]:
+                - /url: admin.php?page=wc-status
+            - listitem [ref=e288]:
+              - link "Extensions" [ref=e289] [cursor=pointer]:
+                - /url: admin.php?page=wc-admin&path=/extensions
+        - listitem [ref=e290]:
+          - link "Products" [ref=e291] [cursor=pointer]:
+            - /url: edit.php?post_type=product
+            - generic [ref=e292]: 
+            - generic [ref=e293]: Products
+          - list [ref=e294]:
+            - listitem [ref=e295]:
+              - link "All Products" [ref=e296] [cursor=pointer]:
+                - /url: edit.php?post_type=product
+            - listitem [ref=e297]:
+              - link "Add new product" [ref=e298] [cursor=pointer]:
+                - /url: post-new.php?post_type=product
+            - listitem [ref=e299]:
+              - link "Brands" [ref=e300] [cursor=pointer]:
+                - /url: edit-tags.php?taxonomy=product_brand&post_type=product
+            - listitem [ref=e301]:
+              - link "Categories" [ref=e302] [cursor=pointer]:
+                - /url: edit-tags.php?taxonomy=product_cat&post_type=product
+            - listitem [ref=e303]:
+              - link "Tags" [ref=e304] [cursor=pointer]:
+                - /url: edit-tags.php?taxonomy=product_tag&post_type=product
+            - listitem [ref=e305]:
+              - link "Attributes" [ref=e306] [cursor=pointer]:
+                - /url: edit.php?post_type=product&page=product_attributes
+            - listitem [ref=e307]:
+              - link "Reviews" [ref=e308] [cursor=pointer]:
+                - /url: edit.php?post_type=product&page=product-reviews
+        - listitem [ref=e309]:
+          - link "Payments 1" [ref=e310] [cursor=pointer]:
+            - /url: admin.php?page=wc-settings&tab=checkout&from=PAYMENTS_MENU_ITEM
+            - generic [ref=e312]:
+              - text: Payments
+              - generic [ref=e313]: "1"
+        - listitem [ref=e314]:
+          - link "Analytics" [ref=e315] [cursor=pointer]:
+            - /url: admin.php?page=wc-admin&path=/analytics/overview
+            - generic [ref=e316]: 
+            - generic [ref=e317]: Analytics
+          - list [ref=e318]:
+            - listitem [ref=e319]:
+              - link "Overview" [ref=e320] [cursor=pointer]:
+                - /url: admin.php?page=wc-admin&path=/analytics/overview
+            - listitem [ref=e321]:
+              - link "Products" [ref=e322] [cursor=pointer]:
+                - /url: admin.php?page=wc-admin&path=/analytics/products
+            - listitem [ref=e323]:
+              - link "Revenue" [ref=e324] [cursor=pointer]:
+                - /url: admin.php?page=wc-admin&path=/analytics/revenue
+            - listitem [ref=e325]:
+              - link "Orders" [ref=e326] [cursor=pointer]:
+                - /url: admin.php?page=wc-admin&path=/analytics/orders
+            - listitem [ref=e327]:
+              - link "Variations" [ref=e328] [cursor=pointer]:
+                - /url: admin.php?page=wc-admin&path=/analytics/variations
+            - listitem [ref=e329]:
+              - link "Categories" [ref=e330] [cursor=pointer]:
+                - /url: admin.php?page=wc-admin&path=/analytics/categories
+            - listitem [ref=e331]:
+              - link "Coupons" [ref=e332] [cursor=pointer]:
+                - /url: admin.php?page=wc-admin&path=/analytics/coupons
+            - listitem [ref=e333]:
+              - link "Taxes" [ref=e334] [cursor=pointer]:
+                - /url: admin.php?page=wc-admin&path=/analytics/taxes
+            - listitem [ref=e335]:
+              - link "Downloads" [ref=e336] [cursor=pointer]:
+                - /url: admin.php?page=wc-admin&path=/analytics/downloads
+            - listitem [ref=e337]:
+              - link "Stock" [ref=e338] [cursor=pointer]:
+                - /url: admin.php?page=wc-admin&path=/analytics/stock
+            - listitem [ref=e339]:
+              - link "Settings" [ref=e340] [cursor=pointer]:
+                - /url: admin.php?page=wc-admin&path=/analytics/settings
+        - listitem [ref=e341]:
+          - link "Marketing" [ref=e342] [cursor=pointer]:
+            - /url: admin.php?page=wc-admin&path=/marketing
+            - generic [ref=e343]: 
+            - generic [ref=e344]: Marketing
+          - list [ref=e345]:
+            - listitem [ref=e346]:
+              - link "Overview" [ref=e347] [cursor=pointer]:
+                - /url: admin.php?page=wc-admin&path=/marketing
+            - listitem [ref=e348]:
+              - link "Coupons" [ref=e349] [cursor=pointer]:
+                - /url: edit.php?post_type=shop_coupon
+        - text: 
+        - listitem [ref=e350]
+        - listitem [ref=e352]:
+          - link "Hello" [ref=e353] [cursor=pointer]:
+            - /url: admin.php?page=hello-elementor
+            - generic [ref=e354]: 
+            - generic [ref=e355]: Hello
+          - list [ref=e356]:
+            - listitem [ref=e357]:
+              - link "Home" [ref=e358] [cursor=pointer]:
+                - /url: admin.php?page=hello-elementor
+            - listitem [ref=e359]:
+              - link "Settings" [ref=e360] [cursor=pointer]:
+                - /url: admin.php?page=hello-elementor-settings
+            - listitem [ref=e361]:
+              - link "Theme Builder" [ref=e362] [cursor=pointer]:
+                - /url: admin.php?page=elementor-app&ver=4.0.9#site-editor
+            - listitem [ref=e363]:
+              - link "AI Site Planner" [ref=e364] [cursor=pointer]:
+                - /url: admin.php?page=hello-elementor-ai-site-planner
+        - listitem [ref=e365]:
+          - link "Appearance" [ref=e366] [cursor=pointer]:
+            - /url: https://wordpress.com/themes/chasingted.com
+            - generic [ref=e367]: 
+            - generic [ref=e368]: Appearance
+          - list [ref=e369]:
+            - listitem [ref=e370]:
+              - link "Themes" [ref=e371] [cursor=pointer]:
+                - /url: https://wordpress.com/themes/chasingted.com
+            - listitem [ref=e372]:
+              - link "Design" [ref=e373] [cursor=pointer]:
+                - /url: site-editor.php
+            - listitem [ref=e374]:
+              - link "Customize" [ref=e375] [cursor=pointer]:
+                - /url: customize.php?return=%2Fwp-admin%2Fplugins.php
+            - listitem [ref=e376]:
+              - link "Widgets" [ref=e377] [cursor=pointer]:
+                - /url: widgets.php
+            - listitem [ref=e378]:
+              - link "Menus" [ref=e379] [cursor=pointer]:
+                - /url: nav-menus.php
+            - listitem [ref=e380]:
+              - link "Fonts" [ref=e381] [cursor=pointer]:
+                - /url: themes.php?page=font-library-wp-admin
+            - listitem [ref=e382]:
+              - link "Theme File Editor" [ref=e383] [cursor=pointer]:
+                - /url: theme-editor.php
+            - listitem [ref=e384]:
+              - link "Additional CSS" [ref=e385] [cursor=pointer]:
+                - /url: customize.php?return=%2Fwp-admin%2Fplugins.php&autofocus%5Bsection%5D=custom_css
+        - listitem [ref=e386]:
+          - link "Plugins 3" [ref=e387] [cursor=pointer]:
+            - /url: https://wordpress.com/plugins/chasingted.com
+            - generic [ref=e388]: 
+            - generic [ref=e389]:
+              - text: Plugins
+              - generic [ref=e390]: "3"
+          - list [ref=e391]:
+            - listitem [ref=e392]:
+              - link "Add Plugin" [ref=e393] [cursor=pointer]:
+                - /url: https://wordpress.com/plugins/chasingted.com
+            - listitem [ref=e394]:
+              - link "Installed Plugins" [active] [ref=e395] [cursor=pointer]:
+                - /url: plugins.php
+            - listitem [ref=e396]:
+              - link "Plugin File Editor" [ref=e397] [cursor=pointer]:
+                - /url: plugin-editor.php
+            - listitem [ref=e398]:
+              - link "Scheduled Updates" [ref=e399] [cursor=pointer]:
+                - /url: https://wordpress.com/plugins/scheduled-updates/chasingted.com
+        - listitem [ref=e400]:
+          - link "Users" [ref=e401] [cursor=pointer]:
+            - /url: https://wordpress.com/people/team/chasingted.com
+            - generic [ref=e402]: 
+            - generic [ref=e403]: Users
+          - list [ref=e404]:
+            - listitem [ref=e405]:
+              - link "All Users" [ref=e406] [cursor=pointer]:
+                - /url: https://wordpress.com/people/team/chasingted.com
+            - listitem [ref=e407]:
+              - link "Add User" [ref=e408] [cursor=pointer]:
+                - /url: user-new.php
+            - listitem [ref=e409]:
+              - link "Profile" [ref=e410] [cursor=pointer]:
+                - /url: profile.php
+        - listitem [ref=e411]:
+          - link "Tools" [ref=e412] [cursor=pointer]:
+            - /url: tools.php
+            - generic [ref=e413]: 
+            - generic [ref=e414]: Tools
+          - list [ref=e415]:
+            - listitem [ref=e416]:
+              - link "Available Tools" [ref=e417] [cursor=pointer]:
+                - /url: tools.php
+            - listitem [ref=e418]:
+              - link "Advertising" [ref=e419] [cursor=pointer]:
+                - /url: tools.php?page=advertising
+            - listitem [ref=e420]:
+              - link "Marketing" [ref=e421] [cursor=pointer]:
+                - /url: tools.php?page=wpcom-marketing-tools
+            - listitem [ref=e422]:
+              - link "Import" [ref=e423] [cursor=pointer]:
+                - /url: import.php
+            - listitem [ref=e424]:
+              - link "Export" [ref=e425] [cursor=pointer]:
+                - /url: export.php
+            - listitem [ref=e426]:
+              - link "Export Media Files" [ref=e427] [cursor=pointer]:
+                - /url: tools.php?page=export-media-files
+            - listitem [ref=e428]:
+              - link "Site Health" [ref=e429] [cursor=pointer]:
+                - /url: site-health.php
+            - listitem [ref=e430]:
+              - link "Export Personal Data" [ref=e431] [cursor=pointer]:
+                - /url: export-personal-data.php
+            - listitem [ref=e432]:
+              - link "Erase Personal Data" [ref=e433] [cursor=pointer]:
+                - /url: erase-personal-data.php
+            - listitem [ref=e434]:
+              - link "Scheduled Actions" [ref=e435] [cursor=pointer]:
+                - /url: tools.php?page=action-scheduler
+            - listitem [ref=e436]:
+              - link "Yoast Redirects" [ref=e437] [cursor=pointer]:
+                - /url: tools.php?page=wpseo_redirects_tools
+            - listitem [ref=e438]:
+              - link "WTE Logs" [ref=e439] [cursor=pointer]:
+                - /url: tools.php?page=wptravelengine-logs
+        - listitem [ref=e440]:
+          - link "Settings" [ref=e441] [cursor=pointer]:
+            - /url: options-general.php
+            - generic [ref=e442]: 
+            - generic [ref=e443]: Settings
+          - list [ref=e444]:
+            - listitem [ref=e445]:
+              - link "General" [ref=e446] [cursor=pointer]:
+                - /url: options-general.php
+            - listitem [ref=e447]:
+              - link "Writing" [ref=e448] [cursor=pointer]:
+                - /url: options-writing.php
+            - listitem [ref=e449]:
+              - link "Reading" [ref=e450] [cursor=pointer]:
+                - /url: options-reading.php
+            - listitem [ref=e451]:
+              - link "Discussion" [ref=e452] [cursor=pointer]:
+                - /url: options-discussion.php
+            - listitem [ref=e453]:
+              - link "Media" [ref=e454] [cursor=pointer]:
+                - /url: options-media.php
+            - listitem [ref=e455]:
+              - link "Permalinks" [ref=e456] [cursor=pointer]:
+                - /url: options-permalink.php
+            - listitem [ref=e457]:
+              - link "Privacy" [ref=e458] [cursor=pointer]:
+                - /url: options-privacy.php
+            - listitem [ref=e459]:
+              - link "Sharing" [ref=e460] [cursor=pointer]:
+                - /url: options-general.php?page=sharing
+            - listitem [ref=e461]:
+              - link "Performance" [ref=e462] [cursor=pointer]:
+                - /url: options-general.php?page=page-optimize
+            - listitem [ref=e463]:
+              - link "Crowdsignal" [ref=e464] [cursor=pointer]:
+                - /url: options-general.php?page=crowdsignal-settings
+            - listitem [ref=e465]:
+              - link "Ratings" [ref=e466] [cursor=pointer]:
+                - /url: options-general.php?page=ratingsettings
+            - listitem [ref=e467]:
+              - link "Connectors" [ref=e468] [cursor=pointer]:
+                - /url: options-general.php?page=options-connectors-wp-admin
+            - listitem [ref=e469]:
+              - link "Cloudflare" [ref=e470] [cursor=pointer]:
+                - /url: options-general.php?page=cloudflare
+            - listitem [ref=e471]:
+              - link "Guidelines" [ref=e472] [cursor=pointer]:
+                - /url: options-general.php?page=guidelines-wp-admin
+        - listitem [ref=e473]
+        - listitem [ref=e475]:
+          - link "Tidio Chat" [ref=e476] [cursor=pointer]:
+            - /url: admin.php?page=tidio-live-chat
+            - generic [ref=e478]: Tidio Chat
+        - listitem [ref=e479]:
+          - link "Yoast SEO 1 notification" [ref=e480] [cursor=pointer]:
+            - /url: admin.php?page=wpseo_dashboard
+            - generic [ref=e482]:
+              - text: Yoast SEO
+              - generic [ref=e483]:
+                - text: "1"
+                - generic [ref=e484]: 1 notification
+          - list [ref=e485]:
+            - listitem [ref=e486]:
+              - link "General" [ref=e487] [cursor=pointer]:
+                - /url: admin.php?page=wpseo_dashboard
+            - listitem [ref=e488]:
+              - link "Settings" [ref=e489] [cursor=pointer]:
+                - /url: admin.php?page=wpseo_page_settings
+            - listitem [ref=e490]:
+              - link "Integrations" [ref=e491] [cursor=pointer]:
+                - /url: admin.php?page=wpseo_integrations
+            - listitem [ref=e492]:
+              - link "Tools" [ref=e493] [cursor=pointer]:
+                - /url: admin.php?page=wpseo_tools
+            - listitem [ref=e494]:
+              - link "Academy" [ref=e495] [cursor=pointer]:
+                - /url: admin.php?page=wpseo_page_academy
+            - listitem [ref=e496]:
+              - link "Plans" [ref=e497] [cursor=pointer]:
+                - /url: admin.php?page=wpseo_licenses
+            - listitem [ref=e498]:
+              - link "Workouts Premium" [ref=e499] [cursor=pointer]:
+                - /url: admin.php?page=wpseo_workouts
+                - text: Workouts
+                - generic [ref=e500]: Premium
+            - listitem [ref=e501]:
+              - link "Redirects Premium" [ref=e502] [cursor=pointer]:
+                - /url: admin.php?page=wpseo_redirects
+                - text: Redirects
+                - generic [ref=e503]: Premium
+            - listitem [ref=e504]:
+              - link "Support" [ref=e505] [cursor=pointer]:
+                - /url: admin.php?page=wpseo_page_support
+            - listitem [ref=e506]:
+              - link "Upgrade" [ref=e507] [cursor=pointer]:
+                - /url: admin.php?page=wpseo_upgrade_sidebar
+                - generic [ref=e509]: Upgrade
+            - listitem [ref=e510]:
+              - link "AI Brand Insights" [ref=e511] [cursor=pointer]:
+                - /url: admin.php?page=wpseo_brand_insights
+                - generic [ref=e513]: AI Brand Insights
+        - listitem [ref=e515]:
+          - link "MC4WP" [ref=e516] [cursor=pointer]:
+            - /url: admin.php?page=mailchimp-for-wp
+            - generic [ref=e518]: MC4WP
+          - list [ref=e519]:
+            - listitem [ref=e520]:
+              - link "Mailchimp" [ref=e521] [cursor=pointer]:
+                - /url: admin.php?page=mailchimp-for-wp
+            - listitem [ref=e522]:
+              - link "Form" [ref=e523] [cursor=pointer]:
+                - /url: admin.php?page=mailchimp-for-wp-forms
+            - listitem [ref=e524]:
+              - link "Integrations" [ref=e525] [cursor=pointer]:
+                - /url: admin.php?page=mailchimp-for-wp-integrations
+            - listitem [ref=e526]:
+              - link "Other" [ref=e527] [cursor=pointer]:
+                - /url: admin.php?page=mailchimp-for-wp-other
+            - listitem [ref=e528]:
+              - link "Add-ons" [ref=e529] [cursor=pointer]:
+                - /url: admin.php?page=mailchimp-for-wp-extensions
+        - listitem [ref=e530]:
+          - link "Instagram Feed 1" [ref=e531] [cursor=pointer]:
+            - /url: admin.php?page=sbi-setup
+            - generic [ref=e532]: 
+            - generic [ref=e533]:
+              - text: Instagram Feed
+              - generic [ref=e534]: "1"
+          - list [ref=e535]:
+            - listitem [ref=e536]:
+              - link "Setup" [ref=e537] [cursor=pointer]:
+                - /url: admin.php?page=sbi-setup
+            - listitem [ref=e538]:
+              - link "All Feeds" [ref=e539] [cursor=pointer]:
+                - /url: admin.php?page=sbi-feed-builder
+            - listitem [ref=e540]:
+              - link "Settings" [ref=e541] [cursor=pointer]:
+                - /url: admin.php?page=sbi-settings
+            - listitem
+            - listitem [ref=e542]:
+              - link "oEmbeds" [ref=e543] [cursor=pointer]:
+                - /url: admin.php?page=sbi-oembeds-manager
+            - listitem [ref=e544]:
+              - link "About Us" [ref=e545] [cursor=pointer]:
+                - /url: admin.php?page=sbi-about-us
+            - listitem
+            - listitem [ref=e546]:
+              - link "Upgrade to Pro" [ref=e547] [cursor=pointer]:
+                - /url: https://smashballoon.com/instagram-feed/instagram-lite-upgrade/?utm_campaign=instagram-free&utm_source=menu-link&utm_medium=upgrade-link&utm_content=UpgradeToPro
+            - listitem [ref=e548]:
+              - link "TikTok Feeds New!" [ref=e549] [cursor=pointer]:
+                - /url: admin.php?page=sbtt
+                - text: TikTok Feeds
+                - generic [ref=e550]: New!
+            - listitem [ref=e551]:
+              - link "Reviews Feed" [ref=e552] [cursor=pointer]:
+                - /url: admin.php?page=sbr
+            - listitem [ref=e553]:
+              - link "Facebook Feed" [ref=e554] [cursor=pointer]:
+                - /url: admin.php?page=cff-builder
+            - listitem [ref=e555]:
+              - link "Twitter Feed" [ref=e556] [cursor=pointer]:
+                - /url: admin.php?page=sb-instagram-feed&tab=more
+            - listitem [ref=e557]:
+              - link "YouTube Feed" [ref=e558] [cursor=pointer]:
+                - /url: admin.php?page=sb-instagram-feed&tab=more
+        - listitem [ref=e559]:
+          - button "Collapse Main menu" [expanded] [ref=e560] [cursor=pointer]:
+            - generic [ref=e562]: Collapse Menu
+    - generic [ref=e563]:
+      - generic [ref=e564]:
+        - navigation "Toolbar":
+          - menu:
+            - group [ref=e565]:
+              - menuitem "WordPress.com" [ref=e566] [cursor=pointer]:
+                - generic [ref=e568]: WordPress.com
+            - group [ref=e569]:
+              - menuitem " Chasingted" [ref=e570] [cursor=pointer]
+            - group [ref=e571]:
+              - menuitem "3 updates available" [ref=e572] [cursor=pointer]:
+                - generic [ref=e574]: "3"
+                - generic [ref=e575]: 3 updates available
+            - group [ref=e576]:
+              - menuitem "⌘K Open command palette" [ref=e577] [cursor=pointer]:
+                - generic [ref=e578]:
+                  - text: ⌘K
+                  - generic [ref=e579]: Open command palette
+            - group [ref=e580]:
+              - menuitem "0 Comments in moderation" [ref=e581] [cursor=pointer]:
+                - generic [ref=e583]: "0"
+                - generic [ref=e584]: 0 Comments in moderation
+            - group [ref=e585]:
+              - menuitem "New" [ref=e586] [cursor=pointer]:
+                - generic [ref=e588]: New
+            - group [ref=e589]:
+              - menuitem "SEO 1 notification" [ref=e590] [cursor=pointer]:
+                - generic [ref=e592]: SEO
+                - generic [ref=e593]:
+                  - text: "1"
+                  - generic [ref=e594]: 1 notification
+              - text: Premium Premium
+            - group [ref=e595]:
+              - menuitem "Stats" [ref=e596] [cursor=pointer]:
+                - img "Stats" [ref=e598]
+            - group [ref=e599]:
+              - menuitem "WP Travel Engine" [ref=e600] [cursor=pointer]:
+                - img [ref=e602]
+                - text: WP Travel Engine
+            - group [ref=e608]:
+              - menuitem "Tidio Chat" [ref=e609] [cursor=pointer]:
+                - generic [ref=e611]: Tidio Chat
+            - group [ref=e612]:
+              - menuitem "Novamira ON" [ref=e613] [cursor=pointer]
+          - menu [ref=e614]:
+            - group [ref=e615]:
+              - menuitem "Reader" [ref=e616] [cursor=pointer]:
+                - generic [ref=e618]: Reader
+            - group [ref=e619]:
+              - menuitem [ref=e620]:
+                - generic "Help Center":
+                  - img [ref=e621]
+            - group [ref=e623]:
+              - menuitem "Notifications" [ref=e624] [cursor=pointer]:
+                - generic [ref=e625]: Notifications
+            - group [ref=e626]:
+              - menuitem "Howdy, Teddy JansenTeddy Jansen's avatar" [ref=e627] [cursor=pointer]:
+                - text: Howdy, Teddy Jansen
+                - img "Teddy Jansen's avatar" [ref=e628]
+      - main [ref=e629]:
+        - generic [ref=e630]:
+          - button "Screen Options" [ref=e633] [cursor=pointer]
+          - generic [ref=e634]:
+            - heading "Plugins" [level=1] [ref=e635]
+            - link "Add Plugin" [ref=e636] [cursor=pointer]:
+              - /url: https://wordpress.com/plugins/chasingted.com
+            - generic [ref=e637]:
+              - paragraph [ref=e638]:
+                - text: You are nearly ready to start creating polls with
+                - strong [ref=e639]: Crowdsignal
+                - text: .
+              - paragraph [ref=e640]:
+                - link "Let's Get Started" [ref=e641] [cursor=pointer]:
+                  - /url: https://chasingted.com/wp-admin/options-general.php?page=crowdsignal-settings#setup
+                - link "Skip Setup" [ref=e642] [cursor=pointer]:
+                  - /url: /wp-admin/plugins.php?crowdsignal_forms_hide_notice=core_setup&_crowdsignal_forms_notice_nonce=1e56515ad2
+            - generic [ref=e643]:
+              - paragraph [ref=e644]:
+                - strong [ref=e645]: Novamira Pro is here.
+                - text: Specializations that combine abilities and skills for page builders (Elementor, Bricks) and content plugins (ACF, JetEngine, Meta Box, Pods, ACPT, ASE), with more on the way, plus memory between sessions.
+                - link "Discover more" [ref=e646] [cursor=pointer]:
+                  - /url: https://www.novamira.ai/pro/?utm_source=plugin&utm_medium=welcome_notice
+              - button "Dismiss this notice." [ref=e647] [cursor=pointer]:
+                - generic [ref=e648]: Dismiss this notice.
+            - paragraph [ref=e650]:
+              - strong [ref=e651]:
+                - text: Crowdsignal features will be unavailable until you link your Crowdsignal.com account. Please visit the
+                - link "plugin settings page" [ref=e652] [cursor=pointer]:
+                  - /url: https://chasingted.com/wp-admin/options-general.php?page=crowdsignal-settings
+                - text: to login.
+            - paragraph [ref=e654]:
+              - link "Register" [ref=e655] [cursor=pointer]:
+                - /url: admin.php?page=mailpoet-settings#premium
+              - text: your copy of the MailPoet Premium plugin to receive access to automatic upgrades and support. Need a license key?
+              - link "Purchase one now." [ref=e656] [cursor=pointer]:
+                - /url: admin.php?page=mailpoet-upgrade
+            - heading "Filter plugins list" [level=2] [ref=e657]
+            - list [ref=e658]:
+              - listitem [ref=e659]:
+                - link "All (23)" [ref=e660] [cursor=pointer]:
+                  - /url: plugins.php?plugin_status=all
+                - text: "|"
+              - listitem [ref=e661]:
+                - link "Active (22)" [ref=e662] [cursor=pointer]:
+                  - /url: plugins.php?plugin_status=active
+                - text: "|"
+              - listitem [ref=e663]:
+                - link "Inactive (1)" [ref=e664] [cursor=pointer]:
+                  - /url: plugins.php?plugin_status=inactive
+                - text: "|"
+              - listitem [ref=e665]:
+                - link "Update Available (3)" [ref=e666] [cursor=pointer]:
+                  - /url: plugins.php?plugin_status=upgrade
+                - text: "|"
+              - listitem [ref=e667]:
+                - link "Auto-updates Enabled (6)" [ref=e668] [cursor=pointer]:
+                  - /url: plugins.php?plugin_status=auto-update-enabled
+                - text: "|"
+              - listitem [ref=e669]:
+                - link "Auto-updates Disabled (17)" [ref=e670] [cursor=pointer]:
+                  - /url: plugins.php?plugin_status=auto-update-disabled
+            - paragraph [ref=e671]:
+              - generic [ref=e672]: Search installed plugins
+              - searchbox "Search installed plugins" [ref=e673]
+            - generic [ref=e674]:
+              - generic [ref=e675]:
+                - generic [ref=e676]:
+                  - generic [ref=e677]: Select bulk action
+                  - combobox "Select bulk action" [ref=e678] [cursor=pointer]:
+                    - option "Bulk actions" [selected]
+                    - option "Activate"
+                    - option "Deactivate"
+                    - option "Update"
+                    - option "Enable Auto-updates"
+                    - option "Disable Auto-updates"
+                  - button "Apply" [ref=e679] [cursor=pointer]
+                - generic [ref=e681]: 23 items
+              - heading "Plugins list" [level=2] [ref=e682]
+              - table [ref=e683]:
+                - rowgroup [ref=e684]:
+                  - row "Select All Plugin Description Automatic Updates" [ref=e685]:
+                    - cell "Select All" [ref=e686]:
+                      - checkbox "Select All" [ref=e687] [cursor=pointer]
+                      - generic [ref=e689]: Select All
+                    - columnheader "Plugin" [ref=e690]
+                    - columnheader "Description" [ref=e691]
+                    - columnheader "Automatic Updates" [ref=e692]
+                - rowgroup [ref=e693]:
+                  - 'row "Select Akismet Anti-spam: Spam Protection Akismet Anti-spam: Spam Protection Settings Used by millions, Akismet is quite possibly the best way in the world to protect your blog from spam. Your site is fully configured and being protected, even while you sleep. Version 5.7 | By Automattic - Anti-spam Team | More information about Akismet Anti-spam: Spam Protection Updates managed by WordPress.com" [ref=e694]':
+                    - 'rowheader "Select Akismet Anti-spam: Spam Protection" [ref=e695]':
+                      - generic [ref=e697]: "Select Akismet Anti-spam: Spam Protection"
+                      - 'checkbox "Select Akismet Anti-spam: Spam Protection" [ref=e698] [cursor=pointer]'
+                    - 'cell "Akismet Anti-spam: Spam Protection Settings" [ref=e699]':
+                      - strong [ref=e700]: "Akismet Anti-spam: Spam Protection"
+                      - link "Settings" [ref=e703] [cursor=pointer]:
+                        - /url: https://chasingted.com/wp-admin/admin.php?page=akismet-key-config
+                    - 'cell "Used by millions, Akismet is quite possibly the best way in the world to protect your blog from spam. Your site is fully configured and being protected, even while you sleep. Version 5.7 | By Automattic - Anti-spam Team | More information about Akismet Anti-spam: Spam Protection" [ref=e704]':
+                      - paragraph [ref=e706]:
+                        - text: Used by millions, Akismet is quite possibly the best way in the world to
+                        - strong [ref=e707]: protect your blog from spam
+                        - text: . Your site is fully configured and being protected, even while you sleep.
+                      - generic [ref=e708]:
+                        - text: Version 5.7 | By
+                        - link "Automattic - Anti-spam Team" [ref=e709] [cursor=pointer]:
+                          - /url: https://automattic.com/wordpress-plugins/
+                        - text: "|"
+                        - 'link "More information about Akismet Anti-spam: Spam Protection" [ref=e710] [cursor=pointer]':
+                          - /url: https://chasingted.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=akismet&TB_iframe=true&width=600&height=550
+                          - text: View details
+                    - cell "Updates managed by WordPress.com" [ref=e711]
+                  - 'row "Akismet Anti-spam: Spam Protection is automatically managed for you." [ref=e712]':
+                    - 'cell "Akismet Anti-spam: Spam Protection is automatically managed for you." [ref=e713]':
+                      - paragraph [ref=e715]: "Akismet Anti-spam: Spam Protection is automatically managed for you."
+                  - row "Select Classic Editor Classic Editor Activate Classic Editor | Delete Classic Editor Enables the WordPress classic editor and the old-style Edit Post screen with TinyMCE, Meta Boxes, etc. Supports the older plugins that extend this screen. Version 1.7.0 | By WordPress Contributors | More information about Classic Editor Updates managed by WordPress.com" [ref=e716]:
+                    - rowheader "Select Classic Editor" [ref=e717]:
+                      - generic [ref=e719]: Select Classic Editor
+                      - checkbox "Select Classic Editor" [ref=e720] [cursor=pointer]
+                    - cell "Classic Editor Activate Classic Editor | Delete Classic Editor" [ref=e721]:
+                      - strong [ref=e722]: Classic Editor
+                      - generic [ref=e723]:
+                        - generic [ref=e724]:
+                          - link "Activate Classic Editor" [ref=e725] [cursor=pointer]:
+                            - /url: plugins.php?action=activate&plugin=classic-editor%2Fclassic-editor.php&plugin_status=all&paged=1&s&_wpnonce=b0f8508e43
+                            - text: Activate
+                          - text: "|"
+                        - link "Delete Classic Editor" [ref=e727] [cursor=pointer]:
+                          - /url: plugins.php?action=delete-selected&checked%5B0%5D=classic-editor%2Fclassic-editor.php&plugin_status=all&paged=1&s&_wpnonce=fbb5750bb9
+                          - text: Delete
+                    - cell "Enables the WordPress classic editor and the old-style Edit Post screen with TinyMCE, Meta Boxes, etc. Supports the older plugins that extend this screen. Version 1.7.0 | By WordPress Contributors | More information about Classic Editor" [ref=e728]:
+                      - paragraph [ref=e730]: Enables the WordPress classic editor and the old-style Edit Post screen with TinyMCE, Meta Boxes, etc. Supports the older plugins that extend this screen.
+                      - generic [ref=e731]:
+                        - text: Version 1.7.0 | By
+                        - link "WordPress Contributors" [ref=e732] [cursor=pointer]:
+                          - /url: https://github.com/WordPress/classic-editor/
+                        - text: "|"
+                        - link "More information about Classic Editor" [ref=e733] [cursor=pointer]:
+                          - /url: https://chasingted.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=classic-editor&TB_iframe=true&width=600&height=550
+                          - text: View details
+                    - cell "Updates managed by WordPress.com" [ref=e734]
+                  - row "Select Cloudflare Cloudflare Deactivate Cloudflare | Settings Cloudflare speeds up and protects your WordPress site. Version 4.14.3 | By Cloudflare, Inc. | More information about Cloudflare Disable auto-updates" [ref=e735]:
+                    - rowheader "Select Cloudflare" [ref=e736]:
+                      - generic [ref=e738]: Select Cloudflare
+                      - checkbox "Select Cloudflare" [ref=e739] [cursor=pointer]
+                    - cell "Cloudflare Deactivate Cloudflare | Settings" [ref=e740]:
+                      - strong [ref=e741]: Cloudflare
+                      - generic [ref=e742]:
+                        - generic [ref=e743]:
+                          - link "Deactivate Cloudflare" [ref=e744] [cursor=pointer]:
+                            - /url: plugins.php?action=deactivate&plugin=cloudflare%2Fcloudflare.php&plugin_status=all&paged=1&s&_wpnonce=fff898faa5
+                            - text: Deactivate
+                          - text: "|"
+                        - link "Settings" [ref=e746] [cursor=pointer]:
+                          - /url: https://chasingted.com/wp-admin/options-general.php?page=cloudflare
+                    - cell "Cloudflare speeds up and protects your WordPress site. Version 4.14.3 | By Cloudflare, Inc. | More information about Cloudflare" [ref=e747]:
+                      - paragraph [ref=e749]: Cloudflare speeds up and protects your WordPress site.
+                      - generic [ref=e750]:
+                        - text: Version 4.14.3 | By Cloudflare, Inc. |
+                        - link "More information about Cloudflare" [ref=e751] [cursor=pointer]:
+                          - /url: https://chasingted.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=cloudflare&TB_iframe=true&width=600&height=550
+                          - text: View details
+                    - cell "Disable auto-updates" [ref=e752]:
+                      - button "Disable auto-updates" [ref=e753] [cursor=pointer]:  Disable auto-updates
+                  - row "Select Crowdsignal Dashboard - Polls, Surveys & more Crowdsignal Dashboard - Polls, Surveys & more Deactivate Crowdsignal Dashboard - Polls, Surveys & more Create and manage Crowdsignal polls and ratings in WordPress Version 3.1.6 | By Automattic, Inc. | More information about Crowdsignal Dashboard - Polls, Surveys & more Updates managed by WordPress.com" [ref=e754]:
+                    - rowheader "Select Crowdsignal Dashboard - Polls, Surveys & more" [ref=e755]:
+                      - generic [ref=e757]: Select Crowdsignal Dashboard - Polls, Surveys & more
+                      - checkbox "Select Crowdsignal Dashboard - Polls, Surveys & more" [ref=e758] [cursor=pointer]
+                    - cell "Crowdsignal Dashboard - Polls, Surveys & more Deactivate Crowdsignal Dashboard - Polls, Surveys & more" [ref=e759]:
+                      - strong [ref=e760]: Crowdsignal Dashboard - Polls, Surveys & more
+                      - link "Deactivate Crowdsignal Dashboard - Polls, Surveys & more" [ref=e763] [cursor=pointer]:
+                        - /url: plugins.php?action=deactivate&plugin=polldaddy%2Fpolldaddy.php&plugin_status=all&paged=1&s&_wpnonce=261fd5d89c
+                        - text: Deactivate
+                    - cell "Create and manage Crowdsignal polls and ratings in WordPress Version 3.1.6 | By Automattic, Inc. | More information about Crowdsignal Dashboard - Polls, Surveys & more" [ref=e764]:
+                      - paragraph [ref=e766]: Create and manage Crowdsignal polls and ratings in WordPress
+                      - generic [ref=e767]:
+                        - text: Version 3.1.6 | By Automattic, Inc. |
+                        - link "More information about Crowdsignal Dashboard - Polls, Surveys & more" [ref=e768] [cursor=pointer]:
+                          - /url: https://chasingted.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=polldaddy&TB_iframe=true&width=600&height=550
+                          - text: View details
+                    - cell "Updates managed by WordPress.com" [ref=e769]
+                  - row "Select Crowdsignal Forms Crowdsignal Forms Settings | Deactivate Crowdsignal Forms Crowdsignal Form Blocks Version 1.8.1 | By Automattic | More information about Crowdsignal Forms Updates managed by WordPress.com" [ref=e770]:
+                    - rowheader "Select Crowdsignal Forms" [ref=e771]:
+                      - generic [ref=e773]: Select Crowdsignal Forms
+                      - checkbox "Select Crowdsignal Forms" [ref=e774] [cursor=pointer]
+                    - cell "Crowdsignal Forms Settings | Deactivate Crowdsignal Forms" [ref=e775]:
+                      - strong [ref=e776]: Crowdsignal Forms
+                      - generic [ref=e777]:
+                        - generic [ref=e778]:
+                          - link "Settings" [ref=e779] [cursor=pointer]:
+                            - /url: https://chasingted.com/wp-admin/options-general.php?page=crowdsignal-settings
+                          - text: "|"
+                        - link "Deactivate Crowdsignal Forms" [ref=e781] [cursor=pointer]:
+                          - /url: plugins.php?action=deactivate&plugin=crowdsignal-forms%2Fcrowdsignal-forms.php&plugin_status=all&paged=1&s&_wpnonce=f47e1c57a2
+                          - text: Deactivate
+                    - cell "Crowdsignal Form Blocks Version 1.8.1 | By Automattic | More information about Crowdsignal Forms" [ref=e782]:
+                      - paragraph [ref=e784]: Crowdsignal Form Blocks
+                      - generic [ref=e785]:
+                        - text: Version 1.8.1 | By
+                        - link "Automattic" [ref=e786] [cursor=pointer]:
+                          - /url: https://automattic.com/
+                        - text: "|"
+                        - link "More information about Crowdsignal Forms" [ref=e787] [cursor=pointer]:
+                          - /url: https://chasingted.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=crowdsignal-forms&TB_iframe=true&width=600&height=550
+                          - text: View details
+                    - cell "Updates managed by WordPress.com" [ref=e788]
+                  - 'row "Select Elementor Elementor Settings | Deactivate You cannot deactivate this plugin as other plugins depend on it. The Elementor Website Builder has it all: drag and drop page builder, Atomic Editor, pixel perfect design, global and reusable style systems, mobile responsive editing, and more. Get started now! Version 4.0.9 | By Elementor.com | More information about Elementor | View Elementor Documentation | View Elementor Video Tutorials Required by: Elementor Pro Note: This plugin cannot be deactivated or deleted until the plugins that require it are deactivated or deleted. Enable auto-updates" [ref=e789]':
+                    - rowheader "Select Elementor" [ref=e790]:
+                      - generic [ref=e792]: Select Elementor
+                      - checkbox "Select Elementor" [disabled] [ref=e793]
+                    - cell "Elementor Settings | Deactivate You cannot deactivate this plugin as other plugins depend on it." [ref=e794]:
+                      - strong [ref=e795]: Elementor
+                      - generic [ref=e796]:
+                        - generic [ref=e797]:
+                          - link "Settings" [ref=e798] [cursor=pointer]:
+                            - /url: https://chasingted.com/wp-admin/admin.php?page=elementor
+                          - text: "|"
+                        - generic [ref=e799]:
+                          - text: Deactivate
+                          - generic [ref=e800]: You cannot deactivate this plugin as other plugins depend on it.
+                    - 'cell "The Elementor Website Builder has it all: drag and drop page builder, Atomic Editor, pixel perfect design, global and reusable style systems, mobile responsive editing, and more. Get started now! Version 4.0.9 | By Elementor.com | More information about Elementor | View Elementor Documentation | View Elementor Video Tutorials Required by: Elementor Pro Note: This plugin cannot be deactivated or deleted until the plugins that require it are deactivated or deleted." [ref=e801]':
+                      - paragraph [ref=e803]: "The Elementor Website Builder has it all: drag and drop page builder, Atomic Editor, pixel perfect design, global and reusable style systems, mobile responsive editing, and more. Get started now!"
+                      - generic [ref=e804]:
+                        - text: Version 4.0.9 | By
+                        - link "Elementor.com" [ref=e805] [cursor=pointer]:
+                          - /url: https://elementor.com/?utm_source=wp-plugins&utm_campaign=author-uri&utm_medium=wp-dash
+                        - text: "|"
+                        - link "More information about Elementor" [ref=e806] [cursor=pointer]:
+                          - /url: https://chasingted.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=elementor&TB_iframe=true&width=600&height=550
+                          - text: View details
+                        - text: "|"
+                        - link "View Elementor Documentation" [ref=e807] [cursor=pointer]:
+                          - /url: https://go.elementor.com/docs-admin-plugins/
+                          - text: Docs & FAQs
+                        - text: "|"
+                        - link "View Elementor Video Tutorials" [ref=e808] [cursor=pointer]:
+                          - /url: https://go.elementor.com/yt-admin-plugins/
+                          - text: Video Tutorials
+                      - generic [ref=e809]:
+                        - paragraph [ref=e810]:
+                          - strong [ref=e811]: "Required by:"
+                          - text: Elementor Pro
+                        - paragraph [ref=e812]: "Note: This plugin cannot be deactivated or deleted until the plugins that require it are deactivated or deleted."
+                    - cell "Enable auto-updates" [ref=e813]:
+                      - button "Enable auto-updates" [ref=e814] [cursor=pointer]:  Enable auto-updates
+                  - row "There is a new version of Elementor available. View Elementor version 4.1.1 details or Update Elementor now.  Heads up, Please backup before upgrade! The latest update includes some substantial changes across different areas of the plugin. We highly recommend you backup your site before upgrading, and make sure you first update in a staging environment  Compatibility Alert - Some of the plugins you’re using have not been tested with the latest version of Elementor (4.1.1). To avoid issues, make sure they are all up to date and compatible before updating Elementor. Plugin Tested up to Elementor version Elementor Pro 4.0.4-ga" [ref=e815]:
+                    - cell "There is a new version of Elementor available. View Elementor version 4.1.1 details or Update Elementor now.  Heads up, Please backup before upgrade! The latest update includes some substantial changes across different areas of the plugin. We highly recommend you backup your site before upgrading, and make sure you first update in a staging environment  Compatibility Alert - Some of the plugins you’re using have not been tested with the latest version of Elementor (4.1.1). To avoid issues, make sure they are all up to date and compatible before updating Elementor. Plugin Tested up to Elementor version Elementor Pro 4.0.4-ga" [ref=e816]:
+                      - generic [ref=e817]:
+                        - paragraph [ref=e818]:
+                          - text: There is a new version of Elementor available.
+                          - link "View Elementor version 4.1.1 details" [ref=e819] [cursor=pointer]:
+                            - /url: https://chasingted.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=elementor&section=changelog&TB_iframe=true&width=600&height=800
+                            - text: View version 4.1.1 details
+                          - text: or
+                          - link "Update Elementor now" [ref=e820] [cursor=pointer]:
+                            - /url: https://chasingted.com/wp-admin/update.php?action=upgrade-plugin&plugin=elementor%2Felementor.php&_wpnonce=223bb8393b
+                            - text: update now
+                          - text: .
+                        - separator [ref=e821]
+                        - generic [ref=e822]:
+                          - generic [ref=e824]: 
+                          - generic [ref=e825]:
+                            - generic [ref=e826]: Heads up, Please backup before upgrade!
+                            - generic [ref=e827]:
+                              - text: The latest update includes some substantial changes across different areas of the plugin. We highly recommend you
+                              - link "backup your site before upgrading" [ref=e828] [cursor=pointer]:
+                                - /url: https://go.elementor.com/wp-dash-update-backup/
+                              - text: ", and make sure you first update in a staging environment"
+                        - separator [ref=e829]
+                        - generic [ref=e830]:
+                          - generic [ref=e832]: 
+                          - generic [ref=e833]:
+                            - generic [ref=e834]:
+                              - strong [ref=e835]: Compatibility Alert
+                              - text: "- Some of the plugins you’re using have not been tested with the latest version of Elementor (4.1.1). To avoid issues, make sure they are all up to date and compatible before updating Elementor."
+                            - table [ref=e836]:
+                              - rowgroup [ref=e837]:
+                                - row "Plugin Tested up to Elementor version" [ref=e838]:
+                                  - columnheader "Plugin" [ref=e839]
+                                  - columnheader "Tested up to Elementor version" [ref=e840]
+                                - row "Elementor Pro 4.0.4-ga" [ref=e841]:
+                                  - cell "Elementor Pro" [ref=e842]
+                                  - cell "4.0.4-ga" [ref=e843]
+                  - 'row "Select Elementor Pro Elementor Pro Deactivate Elementor Pro Elevate your designs and unlock the full power of the Atomic Editor. Gain access to dozens of Pro widgets, Website Templates, Theme Builder, Pop Ups, Forms, reusable Components, and WooCommerce building capabilities. Version 4.0.4 | By Elementor.com | More information about Elementor Pro | Changelog Requires: More information about Elementor Website Builder – more than just a page builder Enable auto-updates" [ref=e844]':
+                    - rowheader "Select Elementor Pro" [ref=e845]:
+                      - generic [ref=e847]: Select Elementor Pro
+                      - checkbox "Select Elementor Pro" [ref=e848] [cursor=pointer]
+                    - cell "Elementor Pro Deactivate Elementor Pro" [ref=e849]:
+                      - strong [ref=e850]: Elementor Pro
+                      - link "Deactivate Elementor Pro" [ref=e853] [cursor=pointer]:
+                        - /url: plugins.php?action=deactivate&plugin=elementor-pro%2Felementor-pro.php&plugin_status=all&paged=1&s&_wpnonce=3f9f5d15ed
+                        - text: Deactivate
+                    - 'cell "Elevate your designs and unlock the full power of the Atomic Editor. Gain access to dozens of Pro widgets, Website Templates, Theme Builder, Pop Ups, Forms, reusable Components, and WooCommerce building capabilities. Version 4.0.4 | By Elementor.com | More information about Elementor Pro | Changelog Requires: More information about Elementor Website Builder – more than just a page builder" [ref=e854]':
+                      - paragraph [ref=e856]: Elevate your designs and unlock the full power of the Atomic Editor. Gain access to dozens of Pro widgets, Website Templates, Theme Builder, Pop Ups, Forms, reusable Components, and WooCommerce building capabilities.
+                      - generic [ref=e857]:
+                        - text: Version 4.0.4 | By
+                        - link "Elementor.com" [ref=e858] [cursor=pointer]:
+                          - /url: https://go.elementor.com/wp-dash-wp-plugins-author-uri/
+                        - text: "|"
+                        - link "More information about Elementor Pro" [ref=e859] [cursor=pointer]:
+                          - /url: https://chasingted.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=elementor-pro&TB_iframe=true&width=600&height=550
+                          - text: View details
+                        - text: "|"
+                        - link "Changelog" [ref=e860] [cursor=pointer]:
+                          - /url: https://go.elementor.com/pro-changelog/
+                      - paragraph [ref=e862]:
+                        - strong [ref=e863]: "Requires:"
+                        - link "More information about Elementor Website Builder – more than just a page builder" [ref=e864] [cursor=pointer]:
+                          - /url: https://chasingted.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=elementor&TB_iframe=true&width=600&height=550
+                          - text: Elementor Website Builder – more than just a page builder
+                    - cell "Enable auto-updates" [ref=e865]:
+                      - button "Enable auto-updates" [ref=e866] [cursor=pointer]:  Enable auto-updates
+                  - row "There is a new version of Elementor Pro available. View Elementor Pro version 4.1.0 details or Update Elementor Pro now.  Heads up, Please backup before upgrade! The latest update includes some substantial changes across different areas of the plugin. We highly recommend you backup your site before upgrading, and make sure you first update in a staging environment" [ref=e867]:
+                    - cell "There is a new version of Elementor Pro available. View Elementor Pro version 4.1.0 details or Update Elementor Pro now.  Heads up, Please backup before upgrade! The latest update includes some substantial changes across different areas of the plugin. We highly recommend you backup your site before upgrading, and make sure you first update in a staging environment" [ref=e868]:
+                      - generic [ref=e869]:
+                        - paragraph [ref=e870]:
+                          - text: There is a new version of Elementor Pro available.
+                          - link "View Elementor Pro version 4.1.0 details" [ref=e871] [cursor=pointer]:
+                            - /url: https://chasingted.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=elementor-pro&section=changelog&TB_iframe=true&width=600&height=800
+                            - text: View version 4.1.0 details
+                          - text: or
+                          - link "Update Elementor Pro now" [ref=e872] [cursor=pointer]:
+                            - /url: https://chasingted.com/wp-admin/update.php?action=upgrade-plugin&plugin=elementor-pro%2Felementor-pro.php&_wpnonce=05f22d0e70
+                            - text: update now
+                          - text: .
+                        - separator [ref=e873]
+                        - generic [ref=e874]:
+                          - generic [ref=e876]: 
+                          - generic [ref=e877]:
+                            - generic [ref=e878]: Heads up, Please backup before upgrade!
+                            - generic [ref=e879]:
+                              - text: The latest update includes some substantial changes across different areas of the plugin. We highly recommend you
+                              - link "backup your site before upgrading" [ref=e880] [cursor=pointer]:
+                                - /url: https://go.elementor.com/wp-dash-update-backup/
+                              - text: ", and make sure you first update in a staging environment"
+                  - row "Select Gravatar Enhanced Gravatar Enhanced Deactivate Gravatar Enhanced Enhanced functionality for Gravatar-ifying your WordPress site. Once you've enabled the plugin, go to the \"Avatars\" section on the Discussion Settings page to get started. Version 0.13.1 | By Automattic | More information about Gravatar Enhanced Updates managed by WordPress.com" [ref=e881]:
+                    - rowheader "Select Gravatar Enhanced" [ref=e882]:
+                      - generic [ref=e884]: Select Gravatar Enhanced
+                      - checkbox "Select Gravatar Enhanced" [ref=e885] [cursor=pointer]
+                    - cell "Gravatar Enhanced Deactivate Gravatar Enhanced" [ref=e886]:
+                      - strong [ref=e887]: Gravatar Enhanced
+                      - link "Deactivate Gravatar Enhanced" [ref=e890] [cursor=pointer]:
+                        - /url: plugins.php?action=deactivate&plugin=gravatar-enhanced%2Fgravatar-enhanced.php&plugin_status=all&paged=1&s&_wpnonce=3a382e941b
+                        - text: Deactivate
+                    - cell "Enhanced functionality for Gravatar-ifying your WordPress site. Once you've enabled the plugin, go to the \"Avatars\" section on the Discussion Settings page to get started. Version 0.13.1 | By Automattic | More information about Gravatar Enhanced" [ref=e891]:
+                      - paragraph [ref=e893]:
+                        - text: Enhanced functionality for Gravatar-ifying your WordPress site. Once you've enabled the plugin, go to the "Avatars" section on the
+                        - link "Discussion Settings page" [ref=e894] [cursor=pointer]:
+                          - /url: options-discussion.php
+                        - text: to get started.
+                      - generic [ref=e895]:
+                        - text: Version 0.13.1 | By Automattic |
+                        - link "More information about Gravatar Enhanced" [ref=e896] [cursor=pointer]:
+                          - /url: https://chasingted.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=gravatar-enhanced&TB_iframe=true&width=600&height=550
+                          - text: View details
+                    - cell "Updates managed by WordPress.com" [ref=e897]
+                  - row "Select Gutenberg Gutenberg Deactivate Gutenberg Printing since 1440. This is the development plugin for the block editor, site editor, and other future WordPress core functionality. Version 23.3.2 | By Gutenberg Team | More information about Gutenberg Updates managed by WordPress.com" [ref=e898]:
+                    - rowheader "Select Gutenberg" [ref=e899]:
+                      - generic [ref=e901]: Select Gutenberg
+                      - checkbox "Select Gutenberg" [ref=e902] [cursor=pointer]
+                    - cell "Gutenberg Deactivate Gutenberg" [ref=e903]:
+                      - strong [ref=e904]: Gutenberg
+                      - link "Deactivate Gutenberg" [ref=e907] [cursor=pointer]:
+                        - /url: plugins.php?action=deactivate&plugin=gutenberg%2Fgutenberg.php&plugin_status=all&paged=1&s&_wpnonce=7a9a959d61
+                        - text: Deactivate
+                    - cell "Printing since 1440. This is the development plugin for the block editor, site editor, and other future WordPress core functionality. Version 23.3.2 | By Gutenberg Team | More information about Gutenberg" [ref=e908]:
+                      - paragraph [ref=e910]: Printing since 1440. This is the development plugin for the block editor, site editor, and other future WordPress core functionality.
+                      - generic [ref=e911]:
+                        - text: Version 23.3.2 | By Gutenberg Team |
+                        - link "More information about Gutenberg" [ref=e912] [cursor=pointer]:
+                          - /url: https://chasingted.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=gutenberg&TB_iframe=true&width=600&height=550
+                          - text: View details
+                    - cell "Updates managed by WordPress.com" [ref=e913]
+                  - row "This plugin was installed by WordPress.com and provides features offered in your plan subscription." [ref=e914]:
+                    - cell "This plugin was installed by WordPress.com and provides features offered in your plan subscription." [ref=e915]:
+                      - paragraph [ref=e917]: This plugin was installed by WordPress.com and provides features offered in your plan subscription.
+                  - row "Select Image Optimizer - Compress, Resize and Optimize Images Image Optimizer - Compress, Resize and Optimize Images Settings | Upgrade | Deactivate Image Optimizer - Compress, Resize and Optimize Images Automatically resize, optimize, and convert images to WebP and AVIF. Compress images in bulk or on upload to boost your WordPress site performance. Version 1.7.4 | By Elementor.com | More information about Image Optimizer - Compress, Resize and Optimize Images | ★ ★ ★ ★ ★ Enable auto-updates" [ref=e918]:
+                    - rowheader "Select Image Optimizer - Compress, Resize and Optimize Images" [ref=e919]:
+                      - generic [ref=e921]: Select Image Optimizer - Compress, Resize and Optimize Images
+                      - checkbox "Select Image Optimizer - Compress, Resize and Optimize Images" [ref=e922] [cursor=pointer]
+                    - cell "Image Optimizer - Compress, Resize and Optimize Images Settings | Upgrade | Deactivate Image Optimizer - Compress, Resize and Optimize Images" [ref=e923]:
+                      - strong [ref=e924]: Image Optimizer - Compress, Resize and Optimize Images
+                      - generic [ref=e925]:
+                        - generic [ref=e926]:
+                          - link "Settings" [ref=e927] [cursor=pointer]:
+                            - /url: https://chasingted.com/wp-admin/admin.php?page=image-optimization-settings
+                          - text: "|"
+                        - generic [ref=e928]:
+                          - link "Upgrade" [ref=e929] [cursor=pointer]:
+                            - /url: https://go.elementor.com/io-plugins-upgrade/?subscription_id=A-S03055837
+                          - text: "|"
+                        - link "Deactivate Image Optimizer - Compress, Resize and Optimize Images" [ref=e931] [cursor=pointer]:
+                          - /url: plugins.php?action=deactivate&plugin=image-optimization%2Fimage-optimization.php&plugin_status=all&paged=1&s&_wpnonce=28c33e21f2
+                          - text: Deactivate
+                    - cell "Automatically resize, optimize, and convert images to WebP and AVIF. Compress images in bulk or on upload to boost your WordPress site performance. Version 1.7.4 | By Elementor.com | More information about Image Optimizer - Compress, Resize and Optimize Images | ★ ★ ★ ★ ★" [ref=e932]:
+                      - paragraph [ref=e934]: Automatically resize, optimize, and convert images to WebP and AVIF. Compress images in bulk or on upload to boost your WordPress site performance.
+                      - generic [ref=e935]:
+                        - text: Version 1.7.4 | By
+                        - link "Elementor.com" [ref=e936] [cursor=pointer]:
+                          - /url: https://go.elementor.com/author-uri-io/
+                        - text: "|"
+                        - link "More information about Image Optimizer - Compress, Resize and Optimize Images" [ref=e937] [cursor=pointer]:
+                          - /url: https://chasingted.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=image-optimization&TB_iframe=true&width=600&height=550
+                          - text: View details
+                        - text: "|"
+                        - link "★ ★ ★ ★ ★" [ref=e938] [cursor=pointer]:
+                          - /url: https://wordpress.org/support/plugin/image-optimization/reviews/#new-post
+                          - generic [ref=e939]: ★
+                          - generic [ref=e940]: ★
+                          - generic [ref=e941]: ★
+                          - generic [ref=e942]: ★
+                          - generic [ref=e943]: ★
+                    - cell "Enable auto-updates" [ref=e944]:
+                      - button "Enable auto-updates" [ref=e945] [cursor=pointer]:  Enable auto-updates
+                  - row "There is a new version of Image Optimizer - Compress, Resize and Optimize Images available. View Image Optimizer - Compress, Resize and Optimize Images version 1.7.5 details or Update Image Optimizer - Compress, Resize and Optimize Images now." [ref=e946]:
+                    - cell "There is a new version of Image Optimizer - Compress, Resize and Optimize Images available. View Image Optimizer - Compress, Resize and Optimize Images version 1.7.5 details or Update Image Optimizer - Compress, Resize and Optimize Images now." [ref=e947]:
+                      - paragraph [ref=e949]:
+                        - text: There is a new version of Image Optimizer - Compress, Resize and Optimize Images available.
+                        - link "View Image Optimizer - Compress, Resize and Optimize Images version 1.7.5 details" [ref=e950] [cursor=pointer]:
+                          - /url: https://chasingted.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=image-optimization&section=changelog&TB_iframe=true&width=600&height=800
+                          - text: View version 1.7.5 details
+                        - text: or
+                        - link "Update Image Optimizer - Compress, Resize and Optimize Images now" [ref=e951] [cursor=pointer]:
+                          - /url: https://chasingted.com/wp-admin/update.php?action=upgrade-plugin&plugin=image-optimization%2Fimage-optimization.php&_wpnonce=33eaecb8fb
+                          - text: update now
+                        - text: .
+                  - row "Select Jetpack Jetpack Settings Security, performance, and marketing tools made by WordPress experts. Jetpack keeps your site protected so you can focus on more important things. By Automattic | More information about Jetpack |      Updates managed by WordPress.com" [ref=e952]:
+                    - rowheader "Select Jetpack" [ref=e953]:
+                      - generic [ref=e955]: Select Jetpack
+                      - checkbox "Select Jetpack" [ref=e956] [cursor=pointer]
+                    - cell "Jetpack Settings" [ref=e957]:
+                      - strong [ref=e958]: Jetpack
+                      - link "Settings" [ref=e961] [cursor=pointer]:
+                        - /url: https://chasingted.com/wp-admin/admin.php?page=jetpack#/settings
+                    - cell "Security, performance, and marketing tools made by WordPress experts. Jetpack keeps your site protected so you can focus on more important things. By Automattic | More information about Jetpack |     " [ref=e962]:
+                      - paragraph [ref=e964]: Security, performance, and marketing tools made by WordPress experts. Jetpack keeps your site protected so you can focus on more important things.
+                      - generic [ref=e965]:
+                        - text: By
+                        - link "Automattic" [ref=e966] [cursor=pointer]:
+                          - /url: https://jetpack.com
+                        - text: "|"
+                        - link "More information about Jetpack" [ref=e967] [cursor=pointer]:
+                          - /url: https://chasingted.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=jetpack&TB_iframe=true&width=600&height=550
+                          - text: View details
+                        - text: "|"
+                        - link "    " [ref=e968] [cursor=pointer]:
+                          - /url: https://jetpack.com/redirect?source=jetpack-plugin-review&site=https://chasingted.com&u=229429862
+                          - generic [ref=e969]: 
+                          - generic [ref=e970]: 
+                          - generic [ref=e971]: 
+                          - generic [ref=e972]: 
+                          - generic [ref=e973]: 
+                    - cell "Updates managed by WordPress.com" [ref=e974]
+                  - row "Jetpack is automatically managed for you." [ref=e975]:
+                    - cell "Jetpack is automatically managed for you." [ref=e976]:
+                      - paragraph [ref=e978]: Jetpack is automatically managed for you.
+                  - row "Select Layout Grid Layout Grid Deactivate Layout Grid Let any blocks align to a global grid Version 1.8.5 | By Automattic | More information about Layout Grid Updates managed by WordPress.com" [ref=e979]:
+                    - rowheader "Select Layout Grid" [ref=e980]:
+                      - generic [ref=e982]: Select Layout Grid
+                      - checkbox "Select Layout Grid" [ref=e983] [cursor=pointer]
+                    - cell "Layout Grid Deactivate Layout Grid" [ref=e984]:
+                      - strong [ref=e985]: Layout Grid
+                      - link "Deactivate Layout Grid" [ref=e988] [cursor=pointer]:
+                        - /url: plugins.php?action=deactivate&plugin=layout-grid%2Findex.php&plugin_status=all&paged=1&s&_wpnonce=3598535972
+                        - text: Deactivate
+                    - cell "Let any blocks align to a global grid Version 1.8.5 | By Automattic | More information about Layout Grid" [ref=e989]:
+                      - paragraph [ref=e991]: Let any blocks align to a global grid
+                      - generic [ref=e992]:
+                        - text: Version 1.8.5 | By
+                        - link "Automattic" [ref=e993] [cursor=pointer]:
+                          - /url: https://automattic.com
+                        - text: "|"
+                        - link "More information about Layout Grid" [ref=e994] [cursor=pointer]:
+                          - /url: https://chasingted.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=layout-grid&TB_iframe=true&width=600&height=550
+                          - text: View details
+                    - cell "Updates managed by WordPress.com" [ref=e995]
+                  - row "This plugin was installed by WordPress.com and provides features offered in your plan subscription." [ref=e996]:
+                    - cell "This plugin was installed by WordPress.com and provides features offered in your plan subscription." [ref=e997]:
+                      - paragraph [ref=e999]: This plugin was installed by WordPress.com and provides features offered in your plan subscription.
+                  - 'row "Select MailPoet MailPoet View MailPoet settings | Deactivate You cannot deactivate this plugin as other plugins depend on it. Create and send newsletters, post notifications and welcome emails from your WordPress. Version 5.28.1 | By MailPoet | More information about MailPoet Required by: MailPoet Premium Note: This plugin cannot be deactivated or deleted until the plugins that require it are deactivated or deleted. Updates managed by WordPress.com" [ref=e1000]':
+                    - rowheader "Select MailPoet" [ref=e1001]:
+                      - generic [ref=e1003]: Select MailPoet
+                      - checkbox "Select MailPoet" [disabled] [ref=e1004]
+                    - cell "MailPoet View MailPoet settings | Deactivate You cannot deactivate this plugin as other plugins depend on it." [ref=e1005]:
+                      - strong [ref=e1006]: MailPoet
+                      - generic [ref=e1007]:
+                        - generic [ref=e1008]:
+                          - link "View MailPoet settings" [ref=e1009] [cursor=pointer]:
+                            - /url: https://chasingted.com/wp-admin/admin.php?page=mailpoet-settings
+                            - text: Settings
+                          - text: "|"
+                        - generic [ref=e1010]:
+                          - text: Deactivate
+                          - generic [ref=e1011]: You cannot deactivate this plugin as other plugins depend on it.
+                    - 'cell "Create and send newsletters, post notifications and welcome emails from your WordPress. Version 5.28.1 | By MailPoet | More information about MailPoet Required by: MailPoet Premium Note: This plugin cannot be deactivated or deleted until the plugins that require it are deactivated or deleted." [ref=e1012]':
+                      - paragraph [ref=e1014]: Create and send newsletters, post notifications and welcome emails from your WordPress.
+                      - generic [ref=e1015]:
+                        - text: Version 5.28.1 | By
+                        - link "MailPoet" [ref=e1016] [cursor=pointer]:
+                          - /url: https://www.mailpoet.com
+                        - text: "|"
+                        - link "More information about MailPoet" [ref=e1017] [cursor=pointer]:
+                          - /url: https://chasingted.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=mailpoet&TB_iframe=true&width=600&height=550
+                          - text: View details
+                      - generic [ref=e1018]:
+                        - paragraph [ref=e1019]:
+                          - strong [ref=e1020]: "Required by:"
+                          - text: MailPoet Premium
+                        - paragraph [ref=e1021]: "Note: This plugin cannot be deactivated or deleted until the plugins that require it are deactivated or deleted."
+                    - cell "Updates managed by WordPress.com" [ref=e1022]
+                  - 'row "Select MailPoet Premium MailPoet Premium View MailPoet settings | Deactivate MailPoet Premium This plugin adds Premium features to the free version of MailPoet and unlocks the subscribers limit. Enjoy! Version 5.28.0 | By MailPoet | More information about MailPoet Premium Requires: More information about MailPoet – Newsletters, Email Marketing, and Automation Updates managed by WordPress.com" [ref=e1023]':
+                    - rowheader "Select MailPoet Premium" [ref=e1024]:
+                      - generic [ref=e1026]: Select MailPoet Premium
+                      - checkbox "Select MailPoet Premium" [ref=e1027] [cursor=pointer]
+                    - cell "MailPoet Premium View MailPoet settings | Deactivate MailPoet Premium" [ref=e1028]:
+                      - strong [ref=e1029]: MailPoet Premium
+                      - generic [ref=e1030]:
+                        - generic [ref=e1031]:
+                          - link "View MailPoet settings" [ref=e1032] [cursor=pointer]:
+                            - /url: https://chasingted.com/wp-admin/admin.php?page=mailpoet-settings
+                            - text: Settings
+                          - text: "|"
+                        - link "Deactivate MailPoet Premium" [ref=e1034] [cursor=pointer]:
+                          - /url: plugins.php?action=deactivate&plugin=mailpoet-premium%2Fmailpoet-premium.php&plugin_status=all&paged=1&s&_wpnonce=a9e2e7786e
+                          - text: Deactivate
+                    - 'cell "This plugin adds Premium features to the free version of MailPoet and unlocks the subscribers limit. Enjoy! Version 5.28.0 | By MailPoet | More information about MailPoet Premium Requires: More information about MailPoet – Newsletters, Email Marketing, and Automation" [ref=e1035]':
+                      - paragraph [ref=e1037]: This plugin adds Premium features to the free version of MailPoet and unlocks the subscribers limit. Enjoy!
+                      - generic [ref=e1038]:
+                        - text: Version 5.28.0 | By
+                        - link "MailPoet" [ref=e1039] [cursor=pointer]:
+                          - /url: https://www.mailpoet.com
+                        - text: "|"
+                        - link "More information about MailPoet Premium" [ref=e1040] [cursor=pointer]:
+                          - /url: https://chasingted.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=mailpoet-premium&TB_iframe=true&width=600&height=550
+                          - text: View details
+                      - paragraph [ref=e1042]:
+                        - strong [ref=e1043]: "Requires:"
+                        - link "More information about MailPoet – Newsletters, Email Marketing, and Automation" [ref=e1044] [cursor=pointer]:
+                          - /url: https://chasingted.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=mailpoet&TB_iframe=true&width=600&height=550
+                          - text: MailPoet – Newsletters, Email Marketing, and Automation
+                    - cell "Updates managed by WordPress.com" [ref=e1045]
+                  - 'row "Select MC4WP: Mailchimp for WordPress MC4WP: Mailchimp for WordPress Settings | Deactivate MC4WP: Mailchimp for WordPress Mailchimp for WordPress by ibericode. Adds various highly effective sign-up methods to your site. Version 4.13.0 | By ibericode | More information about MC4WP: Mailchimp for WordPress | Documentation | Upgrade to Premium Disable auto-updates" [ref=e1046]':
+                    - 'rowheader "Select MC4WP: Mailchimp for WordPress" [ref=e1047]':
+                      - generic [ref=e1049]: "Select MC4WP: Mailchimp for WordPress"
+                      - 'checkbox "Select MC4WP: Mailchimp for WordPress" [ref=e1050] [cursor=pointer]'
+                    - 'cell "MC4WP: Mailchimp for WordPress Settings | Deactivate MC4WP: Mailchimp for WordPress" [ref=e1051]':
+                      - strong [ref=e1052]: "MC4WP: Mailchimp for WordPress"
+                      - generic [ref=e1053]:
+                        - generic [ref=e1054]:
+                          - link "Settings" [ref=e1055] [cursor=pointer]:
+                            - /url: https://chasingted.com/wp-admin/admin.php?page=mailchimp-for-wp
+                          - text: "|"
+                        - 'link "Deactivate MC4WP: Mailchimp for WordPress" [ref=e1057] [cursor=pointer]':
+                          - /url: plugins.php?action=deactivate&plugin=mailchimp-for-wp%2Fmailchimp-for-wp.php&plugin_status=all&paged=1&s&_wpnonce=8a1f938e4b
+                          - text: Deactivate
+                    - 'cell "Mailchimp for WordPress by ibericode. Adds various highly effective sign-up methods to your site. Version 4.13.0 | By ibericode | More information about MC4WP: Mailchimp for WordPress | Documentation | Upgrade to Premium" [ref=e1058]':
+                      - paragraph [ref=e1060]: Mailchimp for WordPress by ibericode. Adds various highly effective sign-up methods to your site.
+                      - generic [ref=e1061]:
+                        - text: Version 4.13.0 | By
+                        - link "ibericode" [ref=e1062] [cursor=pointer]:
+                          - /url: https://www.ibericode.com/
+                        - text: "|"
+                        - 'link "More information about MC4WP: Mailchimp for WordPress" [ref=e1063] [cursor=pointer]':
+                          - /url: https://chasingted.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=mailchimp-for-wp&TB_iframe=true&width=600&height=550
+                          - text: View details
+                        - text: "|"
+                        - link "Documentation" [ref=e1064] [cursor=pointer]:
+                          - /url: https://www.mc4wp.com/kb/#utm_source=wp-plugin&utm_medium=mailchimp-for-wp&utm_campaign=plugins-page
+                        - text: "|"
+                        - link "Upgrade to Premium" [ref=e1065] [cursor=pointer]:
+                          - /url: https://www.mc4wp.com/premium-features/#utm_source=wp-plugin&utm_medium=mailchimp-for-wp&utm_campaign=plugins-upgrade-link
+                    - cell "Disable auto-updates" [ref=e1066]:
+                      - button "Disable auto-updates" [ref=e1067] [cursor=pointer]:  Disable auto-updates
+                  - row "Select Novamira Novamira Deactivate Novamira | Get Pro MCP server that gives AI agents full access to WordPress through PHP execution and filesystem operations. For development and staging environments only. Version 1.6.0 | By Dynamic.ooo | More information about Novamira | Community Disable auto-updates" [ref=e1068]:
+                    - rowheader "Select Novamira" [ref=e1069]:
+                      - generic [ref=e1071]: Select Novamira
+                      - checkbox "Select Novamira" [ref=e1072] [cursor=pointer]
+                    - cell "Novamira Deactivate Novamira | Get Pro" [ref=e1073]:
+                      - strong [ref=e1074]: Novamira
+                      - generic [ref=e1075]:
+                        - generic [ref=e1076]:
+                          - link "Deactivate Novamira" [ref=e1077] [cursor=pointer]:
+                            - /url: plugins.php?action=deactivate&plugin=novamira%2Fnovamira.php&plugin_status=all&paged=1&s&_wpnonce=3bbd530f0f
+                            - text: Deactivate
+                          - text: "|"
+                        - link "Get Pro" [ref=e1079] [cursor=pointer]:
+                          - /url: https://www.novamira.ai/pro/?utm_source=plugin&utm_medium=plugins_row
+                    - cell "MCP server that gives AI agents full access to WordPress through PHP execution and filesystem operations. For development and staging environments only. Version 1.6.0 | By Dynamic.ooo | More information about Novamira | Community" [ref=e1080]:
+                      - paragraph [ref=e1082]: MCP server that gives AI agents full access to WordPress through PHP execution and filesystem operations. For development and staging environments only.
+                      - generic [ref=e1083]:
+                        - text: Version 1.6.0 | By
+                        - link "Dynamic.ooo" [ref=e1084] [cursor=pointer]:
+                          - /url: https://www.novamira.ai
+                        - text: "|"
+                        - link "More information about Novamira" [ref=e1085] [cursor=pointer]:
+                          - /url: https://chasingted.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=novamira&TB_iframe=true&width=600&height=550
+                          - text: View details
+                        - text: "|"
+                        - link "Community" [ref=e1086] [cursor=pointer]:
+                          - /url: https://www.facebook.com/groups/novamira
+                    - cell "Disable auto-updates" [ref=e1087]:
+                      - button "Disable auto-updates" [ref=e1088] [cursor=pointer]:  Disable auto-updates
+                  - row "Select Page Optimize Page Optimize Settings | Deactivate Page Optimize Optimizes JS and CSS for faster page load and render in the browser. Version 0.6.3 | By Automattic | More information about Page Optimize Updates managed by WordPress.com" [ref=e1089]:
+                    - rowheader "Select Page Optimize" [ref=e1090]:
+                      - generic [ref=e1092]: Select Page Optimize
+                      - checkbox "Select Page Optimize" [ref=e1093] [cursor=pointer]
+                    - cell "Page Optimize Settings | Deactivate Page Optimize" [ref=e1094]:
+                      - strong [ref=e1095]: Page Optimize
+                      - generic [ref=e1096]:
+                        - generic [ref=e1097]:
+                          - link "Settings" [ref=e1098] [cursor=pointer]:
+                            - /url: options-general.php?page=page-optimize
+                          - text: "|"
+                        - link "Deactivate Page Optimize" [ref=e1100] [cursor=pointer]:
+                          - /url: plugins.php?action=deactivate&plugin=page-optimize%2Fpage-optimize.php&plugin_status=all&paged=1&s&_wpnonce=8ae2f110ed
+                          - text: Deactivate
+                    - cell "Optimizes JS and CSS for faster page load and render in the browser. Version 0.6.3 | By Automattic | More information about Page Optimize" [ref=e1101]:
+                      - paragraph [ref=e1103]: Optimizes JS and CSS for faster page load and render in the browser.
+                      - generic [ref=e1104]:
+                        - text: Version 0.6.3 | By
+                        - link "Automattic" [ref=e1105] [cursor=pointer]:
+                          - /url: http://automattic.com/
+                        - text: "|"
+                        - link "More information about Page Optimize" [ref=e1106] [cursor=pointer]:
+                          - /url: https://chasingted.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=page-optimize&TB_iframe=true&width=600&height=550
+                          - text: View details
+                    - cell "Updates managed by WordPress.com" [ref=e1107]
+                  - row "This plugin was installed by WordPress.com and provides features offered in your plan subscription." [ref=e1108]:
+                    - cell "This plugin was installed by WordPress.com and provides features offered in your plan subscription." [ref=e1109]:
+                      - paragraph [ref=e1111]: This plugin was installed by WordPress.com and provides features offered in your plan subscription.
+                  - row "Select Site Kit by Google Site Kit by Google Settings | Deactivate Site Kit by Google Site Kit is a one-stop solution for WordPress users to use everything Google has to offer to make them successful on the web. Version 1.180.0 | By Google | More information about Site Kit by Google | Rate Site Kit | Support Enable auto-updates" [ref=e1112]:
+                    - rowheader "Select Site Kit by Google" [ref=e1113]:
+                      - generic [ref=e1115]: Select Site Kit by Google
+                      - checkbox "Select Site Kit by Google" [ref=e1116] [cursor=pointer]
+                    - cell "Site Kit by Google Settings | Deactivate Site Kit by Google" [ref=e1117]:
+                      - strong [ref=e1118]: Site Kit by Google
+                      - generic [ref=e1119]:
+                        - generic [ref=e1120]:
+                          - link "Settings" [ref=e1121] [cursor=pointer]:
+                            - /url: https://chasingted.com/wp-admin/admin.php?page=googlesitekit-settings
+                          - text: "|"
+                        - link "Deactivate Site Kit by Google" [ref=e1123] [cursor=pointer]:
+                          - /url: plugins.php?action=deactivate&plugin=google-site-kit%2Fgoogle-site-kit.php&plugin_status=all&paged=1&s&_wpnonce=69384bc001
+                          - text: Deactivate
+                    - cell "Site Kit is a one-stop solution for WordPress users to use everything Google has to offer to make them successful on the web. Version 1.180.0 | By Google | More information about Site Kit by Google | Rate Site Kit | Support" [ref=e1124]:
+                      - paragraph [ref=e1126]: Site Kit is a one-stop solution for WordPress users to use everything Google has to offer to make them successful on the web.
+                      - generic [ref=e1127]:
+                        - text: Version 1.180.0 | By
+                        - link "Google" [ref=e1128] [cursor=pointer]:
+                          - /url: https://opensource.google.com
+                        - text: "|"
+                        - link "More information about Site Kit by Google" [ref=e1129] [cursor=pointer]:
+                          - /url: https://chasingted.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=google-site-kit&TB_iframe=true&width=600&height=550
+                          - text: View details
+                        - text: "|"
+                        - link "Rate Site Kit" [ref=e1130] [cursor=pointer]:
+                          - /url: https://wordpress.org/support/plugin/google-site-kit/reviews/#new-post
+                        - text: "|"
+                        - link "Support" [ref=e1131] [cursor=pointer]:
+                          - /url: https://wordpress.org/support/plugin/google-site-kit/#new-post
+                    - cell "Enable auto-updates" [ref=e1132]:
+                      - button "Enable auto-updates" [ref=e1133] [cursor=pointer]:  Enable auto-updates
+                  - row "Select Smash Balloon Instagram Feed Smash Balloon Instagram Feed Upgrade to Pro | Settings | Deactivate Smash Balloon Instagram Feed Display beautifully clean, customizable, and responsive Instagram feeds. Version 6.11.0 | By Smash Balloon | More information about Smash Balloon Instagram Feed Disable auto-updates" [ref=e1134]:
+                    - rowheader "Select Smash Balloon Instagram Feed" [ref=e1135]:
+                      - generic [ref=e1137]: Select Smash Balloon Instagram Feed
+                      - checkbox "Select Smash Balloon Instagram Feed" [ref=e1138] [cursor=pointer]
+                    - cell "Smash Balloon Instagram Feed Upgrade to Pro | Settings | Deactivate Smash Balloon Instagram Feed" [ref=e1139]:
+                      - strong [ref=e1140]: Smash Balloon Instagram Feed
+                      - generic [ref=e1141]:
+                        - generic [ref=e1142]:
+                          - link "Upgrade to Pro" [ref=e1143] [cursor=pointer]:
+                            - /url: https://smashballoon.com/instagram-feed/?utm_campaign=instagram-free&utm_source=plugins-page&utm_medium=upgrade-link&utm_content=UpgradeToPro
+                          - text: "|"
+                        - generic [ref=e1144]:
+                          - link "Settings" [ref=e1145] [cursor=pointer]:
+                            - /url: https://chasingted.com/wp-admin/admin.php?page=sbi-settings
+                          - text: "|"
+                        - link "Deactivate Smash Balloon Instagram Feed" [ref=e1147] [cursor=pointer]:
+                          - /url: plugins.php?action=deactivate&plugin=instagram-feed%2Finstagram-feed.php&plugin_status=all&paged=1&s&_wpnonce=0a0968b2e1
+                          - text: Deactivate
+                    - cell "Display beautifully clean, customizable, and responsive Instagram feeds. Version 6.11.0 | By Smash Balloon | More information about Smash Balloon Instagram Feed" [ref=e1148]:
+                      - paragraph [ref=e1150]: Display beautifully clean, customizable, and responsive Instagram feeds.
+                      - generic [ref=e1151]:
+                        - text: Version 6.11.0 | By
+                        - link "Smash Balloon" [ref=e1152] [cursor=pointer]:
+                          - /url: https://smashballoon.com/
+                        - text: "|"
+                        - link "More information about Smash Balloon Instagram Feed" [ref=e1153] [cursor=pointer]:
+                          - /url: https://chasingted.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=instagram-feed&TB_iframe=true&width=600&height=550
+                          - text: View details
+                    - cell "Disable auto-updates" [ref=e1154]:
+                      - button "Disable auto-updates" [ref=e1155] [cursor=pointer]:  Disable auto-updates
+                  - row "Select Tidio Chat Tidio Chat Deactivate Tidio Chat | System Info Tidio Live Chat - live chat boosted with chatbots for your online business. Integrates with your website in less than 20 seconds. Version 7.0.0 | By Tidio LLC | More information about Tidio Chat Disable auto-updates" [ref=e1156]:
+                    - rowheader "Select Tidio Chat" [ref=e1157]:
+                      - generic [ref=e1159]: Select Tidio Chat
+                      - checkbox "Select Tidio Chat" [ref=e1160] [cursor=pointer]
+                    - cell "Tidio Chat Deactivate Tidio Chat | System Info" [ref=e1161]:
+                      - strong [ref=e1162]: Tidio Chat
+                      - generic [ref=e1163]:
+                        - generic [ref=e1164]:
+                          - link "Deactivate Tidio Chat" [ref=e1165] [cursor=pointer]:
+                            - /url: plugins.php?action=deactivate&plugin=tidio-live-chat%2Ftidio-elements.php&plugin_status=all&paged=1&s&_wpnonce=783fbb69af
+                            - text: Deactivate
+                          - text: "|"
+                        - link "System Info" [ref=e1167] [cursor=pointer]:
+                          - /url: https://chasingted.com/wp-admin/admin.php?page=tidio-system-info
+                    - cell "Tidio Live Chat - live chat boosted with chatbots for your online business. Integrates with your website in less than 20 seconds. Version 7.0.0 | By Tidio LLC | More information about Tidio Chat" [ref=e1168]:
+                      - paragraph [ref=e1170]: Tidio Live Chat - live chat boosted with chatbots for your online business. Integrates with your website in less than 20 seconds.
+                      - generic [ref=e1171]:
+                        - text: Version 7.0.0 | By
+                        - link "Tidio LLC" [ref=e1172] [cursor=pointer]:
+                          - /url: http://www.tidio.com
+                        - text: "|"
+                        - link "More information about Tidio Chat" [ref=e1173] [cursor=pointer]:
+                          - /url: https://chasingted.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=tidio-live-chat&TB_iframe=true&width=600&height=550
+                          - text: View details
+                    - cell "Disable auto-updates" [ref=e1174]:
+                      - button "Disable auto-updates" [ref=e1175] [cursor=pointer]:  Disable auto-updates
+                  - row "Select WooCommerce WooCommerce View WooCommerce settings | Deactivate WooCommerce An ecommerce toolkit that helps you sell anything. Beautifully. Version 10.8.1 | By Automattic | More information about WooCommerce | View WooCommerce documentation | View WooCommerce API docs | Visit community forums Updates managed by WordPress.com" [ref=e1176]:
+                    - rowheader "Select WooCommerce" [ref=e1177]:
+                      - generic [ref=e1179]: Select WooCommerce
+                      - checkbox "Select WooCommerce" [ref=e1180] [cursor=pointer]
+                    - cell "WooCommerce View WooCommerce settings | Deactivate WooCommerce" [ref=e1181]:
+                      - strong [ref=e1182]: WooCommerce
+                      - generic [ref=e1183]:
+                        - generic [ref=e1184]:
+                          - link "View WooCommerce settings" [ref=e1185] [cursor=pointer]:
+                            - /url: https://chasingted.com/wp-admin/admin.php?page=wc-settings
+                            - text: Settings
+                          - text: "|"
+                        - link "Deactivate WooCommerce" [ref=e1187] [cursor=pointer]:
+                          - /url: plugins.php?action=deactivate&plugin=woocommerce%2Fwoocommerce.php&plugin_status=all&paged=1&s&_wpnonce=9904b6e8b6
+                          - text: Deactivate
+                    - cell "An ecommerce toolkit that helps you sell anything. Beautifully. Version 10.8.1 | By Automattic | More information about WooCommerce | View WooCommerce documentation | View WooCommerce API docs | Visit community forums" [ref=e1188]:
+                      - paragraph [ref=e1190]: An ecommerce toolkit that helps you sell anything. Beautifully.
+                      - generic [ref=e1191]:
+                        - text: Version 10.8.1 | By
+                        - link "Automattic" [ref=e1192] [cursor=pointer]:
+                          - /url: https://woocommerce.com
+                        - text: "|"
+                        - link "More information about WooCommerce" [ref=e1193] [cursor=pointer]:
+                          - /url: https://chasingted.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=woocommerce&TB_iframe=true&width=600&height=550
+                          - text: View details
+                        - text: "|"
+                        - link "View WooCommerce documentation" [ref=e1194] [cursor=pointer]:
+                          - /url: https://woocommerce.com/documentation/plugins/woocommerce/
+                          - text: Docs
+                        - text: "|"
+                        - link "View WooCommerce API docs" [ref=e1195] [cursor=pointer]:
+                          - /url: https://woocommerce.com/wc-apidocs/
+                          - text: API docs
+                        - text: "|"
+                        - link "Visit community forums" [ref=e1196] [cursor=pointer]:
+                          - /url: https://wordpress.org/support/plugin/woocommerce/
+                          - text: Community support
+                    - cell "Updates managed by WordPress.com" [ref=e1197]
+                  - row "Select WP Travel Engine - Travel and Tour Booking Plugin WP Travel Engine - Travel and Tour Booking Plugin Opt In | Deactivate WP Travel Engine - Travel and Tour Booking Plugin WP Travel Engine is a free travel booking WordPress plugin to create travel and tour packages for tour operators and travel agencies. It is a complete travel management system and includes plenty of useful features. You can create your travel booking website using WP Travel Engine in less than 5 minutes. Version 6.8.0 | By WP Travel Engine | More information about WP Travel Engine - Travel and Tour Booking Plugin Disable auto-updates" [ref=e1198]:
+                    - rowheader "Select WP Travel Engine - Travel and Tour Booking Plugin" [ref=e1199]:
+                      - generic [ref=e1201]: Select WP Travel Engine - Travel and Tour Booking Plugin
+                      - checkbox "Select WP Travel Engine - Travel and Tour Booking Plugin" [ref=e1202] [cursor=pointer]
+                    - cell "WP Travel Engine - Travel and Tour Booking Plugin Opt In | Deactivate WP Travel Engine - Travel and Tour Booking Plugin" [ref=e1203]:
+                      - strong [ref=e1204]: WP Travel Engine - Travel and Tour Booking Plugin
+                      - generic [ref=e1205]:
+                        - generic [ref=e1206]:
+                          - link "Opt In" [ref=e1207] [cursor=pointer]:
+                            - /url: https://chasingted.com/wp-admin/edit.php?post_type=booking&page=wp-travel-engine-onboard
+                          - text: "|"
+                        - link "Deactivate WP Travel Engine - Travel and Tour Booking Plugin" [ref=e1209] [cursor=pointer]:
+                          - /url: plugins.php?action=deactivate&plugin=wp-travel-engine%2Fwp-travel-engine.php&plugin_status=all&paged=1&s&_wpnonce=1126cd3e3a
+                          - text: Deactivate
+                    - cell "WP Travel Engine is a free travel booking WordPress plugin to create travel and tour packages for tour operators and travel agencies. It is a complete travel management system and includes plenty of useful features. You can create your travel booking website using WP Travel Engine in less than 5 minutes. Version 6.8.0 | By WP Travel Engine | More information about WP Travel Engine - Travel and Tour Booking Plugin" [ref=e1210]:
+                      - paragraph [ref=e1212]: WP Travel Engine is a free travel booking WordPress plugin to create travel and tour packages for tour operators and travel agencies. It is a complete travel management system and includes plenty of useful features. You can create your travel booking website using WP Travel Engine in less than 5 minutes.
+                      - generic [ref=e1213]:
+                        - text: Version 6.8.0 | By
+                        - link "WP Travel Engine" [ref=e1214] [cursor=pointer]:
+                          - /url: https://wptravelengine.com/
+                        - text: "|"
+                        - link "More information about WP Travel Engine - Travel and Tour Booking Plugin" [ref=e1215] [cursor=pointer]:
+                          - /url: https://chasingted.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=wp-travel-engine&TB_iframe=true&width=600&height=550
+                          - text: View details
+                    - cell "Disable auto-updates" [ref=e1216]:
+                      - button "Disable auto-updates" [ref=e1217] [cursor=pointer]:  Disable auto-updates
+                  - row "Select Yoast SEO Yoast SEO Get Premium | FAQ | Settings | Deactivate Yoast SEO The first true all-in-one SEO solution for WordPress, including on-page content analysis, XML sitemaps and much more. Version 27.7 | By Team Yoast | More information about Yoast SEO Updates managed by WordPress.com" [ref=e1218]:
+                    - rowheader "Select Yoast SEO" [ref=e1219]:
+                      - generic [ref=e1221]: Select Yoast SEO
+                      - checkbox "Select Yoast SEO" [ref=e1222] [cursor=pointer]
+                    - cell "Yoast SEO Get Premium | FAQ | Settings | Deactivate Yoast SEO" [ref=e1223]:
+                      - strong [ref=e1224]: Yoast SEO
+                      - generic [ref=e1225]:
+                        - generic [ref=e1226]:
+                          - link "Get Premium" [ref=e1227] [cursor=pointer]:
+                            - /url: https://yoa.st/1yb?php_version=8.4&platform=wordpress&platform_version=7.0&software=free&software_version=27.7&days_active=13&user_language=en_US
+                          - text: "|"
+                        - generic [ref=e1228]:
+                          - link "FAQ" [ref=e1229] [cursor=pointer]:
+                            - /url: https://yoa.st/1yc?php_version=8.4&platform=wordpress&platform_version=7.0&software=free&software_version=27.7&days_active=13&user_language=en_US
+                          - text: "|"
+                        - generic [ref=e1230]:
+                          - link "Settings" [ref=e1231] [cursor=pointer]:
+                            - /url: https://chasingted.com/wp-admin/admin.php?page=wpseo_dashboard
+                          - text: "|"
+                        - link "Deactivate Yoast SEO" [ref=e1233] [cursor=pointer]:
+                          - /url: plugins.php?action=deactivate&plugin=wordpress-seo%2Fwp-seo.php&plugin_status=all&paged=1&s&_wpnonce=fe27fa1e36
+                          - text: Deactivate
+                    - cell "The first true all-in-one SEO solution for WordPress, including on-page content analysis, XML sitemaps and much more. Version 27.7 | By Team Yoast | More information about Yoast SEO" [ref=e1234]:
+                      - paragraph [ref=e1236]: The first true all-in-one SEO solution for WordPress, including on-page content analysis, XML sitemaps and much more.
+                      - generic [ref=e1237]:
+                        - text: Version 27.7 | By
+                        - link "Team Yoast" [ref=e1238] [cursor=pointer]:
+                          - /url: https://yoa.st/1uk
+                        - text: "|"
+                        - link "More information about Yoast SEO" [ref=e1239] [cursor=pointer]:
+                          - /url: https://chasingted.com/wp-admin/plugin-install.php?tab=plugin-information&plugin=wordpress-seo&TB_iframe=true&width=600&height=550
+                          - text: View details
+                    - cell "Updates managed by WordPress.com" [ref=e1240]
+                - rowgroup [ref=e1241]:
+                  - row "Select All Plugin Description Automatic Updates" [ref=e1242]:
+                    - cell "Select All" [ref=e1243]:
+                      - checkbox "Select All" [ref=e1244] [cursor=pointer]
+                      - generic [ref=e1246]: Select All
+                    - columnheader "Plugin" [ref=e1247]
+                    - columnheader "Description" [ref=e1248]
+                    - columnheader "Automatic Updates" [ref=e1249]
+              - generic [ref=e1250]:
+                - generic [ref=e1251]:
+                  - generic [ref=e1252]: Select bulk action
+                  - combobox "Select bulk action" [ref=e1253] [cursor=pointer]:
+                    - option "Bulk actions" [selected]
+                    - option "Activate"
+                    - option "Deactivate"
+                    - option "Update"
+                    - option "Enable Auto-updates"
+                    - option "Disable Auto-updates"
+                  - button "Apply" [ref=e1254] [cursor=pointer]
+                - generic [ref=e1256]: 23 items
+    - contentinfo [ref=e1257]:
+      - paragraph
+      - paragraph [ref=e1258]: Version 7.0
+    - text:        
+    - text: 
+  - dialog

@@ -21,7 +21,7 @@ export default async function MessagesPage() {
     <div className="max-w-2xl">
       <p className="text-xs tracking-widest uppercase text-[#3a4a40]/60 mb-1">{booking?.trip_name ?? 'My Trip'}</p>
       <h1 className="font-bold text-3xl uppercase tracking-widest text-[#133425] mb-2">Messages</h1>
-      <p className="text-xs text-[#3a4a40]/60 mb-8">Ask Teddy anything about your expedition.</p>
+      <p className="text-xs text-[#3a4a40]/60 mb-8">Ask the ChasingTed team anything about your expedition.</p>
       {booking ? (
         <MessagesClient messages={messages ?? []} userId={user.id} tripSlug={booking.trip_slug} />
       ) : (

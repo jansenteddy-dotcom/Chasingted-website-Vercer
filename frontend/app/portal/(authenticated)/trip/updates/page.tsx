@@ -22,7 +22,7 @@ export default async function UpdatesPage() {
       {!updates || updates.length === 0 ? (
         <div className="bg-white border border-[#d4c5a0] p-10 text-center">
           <p className="text-sm text-[#3a4a40]">No updates yet.</p>
-          <p className="text-xs text-[#3a4a40]/60 mt-1">Teddy will post news and reminders here.</p>
+          <p className="text-xs text-[#3a4a40]/60 mt-1">ChasingTed will post news and reminders here.</p>
         </div>
       ) : (
         <div className="space-y-4">

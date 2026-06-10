@@ -29,7 +29,7 @@ export default async function DocumentsPage() {
       {!documents || documents.length === 0 ? (
         <div className="bg-white border border-[#d4c5a0] p-10 text-center">
           <p className="text-sm text-[#3a4a40]">No documents uploaded yet.</p>
-          <p className="text-xs text-[#3a4a40]/60 mt-1">Teddy will add documents here as your expedition approaches.</p>
+          <p className="text-xs text-[#3a4a40]/60 mt-1">ChasingTed will add documents here as your expedition approaches.</p>
         </div>
       ) : (
         <div className="space-y-3">
