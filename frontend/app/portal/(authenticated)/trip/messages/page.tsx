@@ -1,6 +1,7 @@
 import { createClient } from '@/lib/supabase/server'
 import { redirect } from 'next/navigation'
 import MessagesClient from '@/app/components/portal/MessagesClient'
+import PortalPageBanner from '@/app/components/portal/PortalPageBanner'
 
 export default async function MessagesPage() {
   const supabase = await createClient()
@@ -18,17 +19,22 @@ export default async function MessagesPage() {
     : { data: [] }
 
   return (
-    <div className="max-w-2xl">
-      <p className="text-xs tracking-widest uppercase text-[#3a4a40]/60 mb-1">{booking?.trip_name ?? 'My Trip'}</p>
-      <h1 className="font-bold text-3xl uppercase tracking-widest text-[#133425] mb-2">Messages</h1>
-      <p className="text-xs text-[#3a4a40]/60 mb-8">Ask the ChasingTed team anything about your expedition.</p>
-      {booking ? (
-        <MessagesClient messages={messages ?? []} userId={user.id} tripSlug={booking.trip_slug} />
-      ) : (
-        <div className="bg-white border border-[#d4c5a0] p-10 text-center">
-          <p className="text-sm text-[#3a4a40]">No active booking found.</p>
-        </div>
-      )}
+    <div>
+      <PortalPageBanner
+        title="Messages"
+        subtitle={booking?.trip_name ?? 'My Trip'}
+        imageUrl="https://images.unsplash.com/photo-1527004013197-933c4bb611b3?auto=format&fit=crop&w=1600&q=80"
+      />
+      <div className="max-w-2xl mx-auto">
+        <p className="text-xs text-[#3a4a40]/60 mb-6">Ask the ChasingTed team anything about your expedition.</p>
+        {booking ? (
+          <MessagesClient messages={messages ?? []} userId={user.id} tripSlug={booking.trip_slug} />
+        ) : (
+          <div className="bg-white border border-[#d4c5a0] p-10 text-center">
+            <p className="text-sm text-[#3a4a40]">No active booking found.</p>
+          </div>
+        )}
+      </div>
     </div>
   )
 }

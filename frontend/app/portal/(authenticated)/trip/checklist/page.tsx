@@ -1,6 +1,7 @@
 import { createClient } from '@/lib/supabase/server'
 import { redirect } from 'next/navigation'
 import ChecklistClient from '@/app/components/portal/ChecklistClient'
+import PortalPageBanner from '@/app/components/portal/PortalPageBanner'
 
 export default async function ChecklistPage() {
   const supabase = await createClient()
@@ -21,10 +22,15 @@ export default async function ChecklistPage() {
   const completedIds = new Set((completions ?? []).map(c => c.checklist_item_id))
 
   return (
-    <div className="max-w-2xl">
-      <p className="text-xs tracking-widest uppercase text-[#3a4a40]/60 mb-1">{booking?.trip_name ?? 'My Trip'}</p>
-      <h1 className="font-bold text-3xl uppercase tracking-widest text-[#133425] mb-8">Pre-Trip Checklist</h1>
-      <ChecklistClient items={items ?? []} completedIds={completedIds} userId={user.id} />
+    <div>
+      <PortalPageBanner
+        title="Pre-Trip Checklist"
+        subtitle={booking?.trip_name ?? 'My Trip'}
+        imageUrl="https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=1600&q=80"
+      />
+      <div className="max-w-2xl mx-auto">
+        <ChecklistClient items={items ?? []} completedIds={completedIds} userId={user.id} />
+      </div>
     </div>
   )
 }

@@ -1,6 +1,7 @@
 import { createClient } from '@/lib/supabase/server'
 import { redirect } from 'next/navigation'
 import GearClient from '@/app/components/portal/GearClient'
+import PortalPageBanner from '@/app/components/portal/PortalPageBanner'
 
 export default async function GearPage() {
   const supabase = await createClient()
@@ -20,7 +21,6 @@ export default async function GearPage() {
 
   const packedIds = new Set((packed ?? []).map(p => p.gear_item_id))
 
-  // Group items by category
   const grouped = (items ?? []).reduce((acc, item) => {
     if (!acc[item.category]) acc[item.category] = []
     acc[item.category].push(item)
@@ -28,10 +28,15 @@ export default async function GearPage() {
   }, {} as Record<string, typeof items>)
 
   return (
-    <div className="max-w-2xl">
-      <p className="text-xs tracking-widest uppercase text-[#3a4a40]/60 mb-1">{booking?.trip_name ?? 'My Trip'}</p>
-      <h1 className="font-bold text-3xl uppercase tracking-widest text-[#133425] mb-8">Gear List</h1>
-      <GearClient grouped={grouped} packedIds={packedIds} userId={user.id} />
+    <div>
+      <PortalPageBanner
+        title="Gear List"
+        subtitle={booking?.trip_name ?? 'My Trip'}
+        imageUrl="https://images.unsplash.com/photo-1554629947-334ff61d85dc?auto=format&fit=crop&w=1600&q=80"
+      />
+      <div className="max-w-2xl mx-auto">
+        <GearClient grouped={grouped} packedIds={packedIds} userId={user.id} />
+      </div>
     </div>
   )
 }

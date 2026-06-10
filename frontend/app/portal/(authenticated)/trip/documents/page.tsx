@@ -1,5 +1,6 @@
 import { createClient } from '@/lib/supabase/server'
 import { redirect } from 'next/navigation'
+import PortalPageBanner from '@/app/components/portal/PortalPageBanner'
 
 function formatBytes(bytes: number | null) {
   if (!bytes) return ''
@@ -22,31 +23,35 @@ export default async function DocumentsPage() {
     : { data: [] }
 
   return (
-    <div className="max-w-2xl">
-      <p className="text-xs tracking-widest uppercase text-[#3a4a40]/60 mb-1">{booking?.trip_name ?? 'My Trip'}</p>
-      <h1 className="font-bold text-3xl uppercase tracking-widest text-[#133425] mb-8">Documents</h1>
-
-      {!documents || documents.length === 0 ? (
-        <div className="bg-white border border-[#d4c5a0] p-10 text-center">
-          <p className="text-sm text-[#3a4a40]">No documents uploaded yet.</p>
-          <p className="text-xs text-[#3a4a40]/60 mt-1">ChasingTed will add documents here as your expedition approaches.</p>
-        </div>
-      ) : (
-        <div className="space-y-3">
-          {documents.map(doc => (
-            <a key={doc.id} href={doc.file_url} target="_blank" rel="noopener noreferrer"
-              className="flex items-center gap-4 bg-white border border-[#d4c5a0] px-5 py-4 hover:border-[#133425] transition-colors group">
-              <div className="text-2xl shrink-0">📄</div>
-              <div className="flex-1 min-w-0">
-                <p className="font-bold text-sm text-[#133425] uppercase tracking-wide group-hover:underline">{doc.title}</p>
-                {doc.description && <p className="text-xs text-[#3a4a40]/70 mt-0.5">{doc.description}</p>}
-                {doc.file_size && <p className="text-xs text-[#3a4a40]/50 mt-0.5">{formatBytes(doc.file_size)}</p>}
-              </div>
-              <span className="text-xs font-bold uppercase tracking-widest text-[#133425] shrink-0">Download →</span>
-            </a>
-          ))}
-        </div>
-      )}
+    <div>
+      <PortalPageBanner
+        title="Documents"
+        subtitle={booking?.trip_name ?? 'My Trip'}
+        imageUrl="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1600&q=80"
+      />
+      <div className="max-w-2xl mx-auto">
+        {!documents || documents.length === 0 ? (
+          <div className="bg-white border border-[#d4c5a0] p-10 text-center">
+            <p className="text-sm text-[#3a4a40]">No documents uploaded yet.</p>
+            <p className="text-xs text-[#3a4a40]/60 mt-1">ChasingTed will add documents here as your expedition approaches.</p>
+          </div>
+        ) : (
+          <div className="space-y-3">
+            {documents.map(doc => (
+              <a key={doc.id} href={doc.file_url} target="_blank" rel="noopener noreferrer"
+                className="flex items-center gap-4 bg-white border border-[#d4c5a0] px-5 py-4 hover:border-[#133425] transition-colors group">
+                <div className="text-2xl shrink-0">📄</div>
+                <div className="flex-1 min-w-0">
+                  <p className="font-bold text-sm text-[#133425] uppercase tracking-wide group-hover:underline">{doc.title}</p>
+                  {doc.description && <p className="text-xs text-[#3a4a40]/70 mt-0.5">{doc.description}</p>}
+                  {doc.file_size && <p className="text-xs text-[#3a4a40]/50 mt-0.5">{formatBytes(doc.file_size)}</p>}
+                </div>
+                <span className="text-xs font-bold uppercase tracking-widest text-[#133425] shrink-0">Download →</span>
+              </a>
+            ))}
+          </div>
+        )}
+      </div>
     </div>
   )
 }

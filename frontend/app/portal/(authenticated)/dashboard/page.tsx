@@ -76,7 +76,7 @@ export default async function DashboardPage() {
   return (
     <div>
       {/* Hero — breaks out of the container's 2rem padding */}
-      <div className="-mx-8 -mt-10 relative overflow-hidden" style={{ height: '380px' }}>
+      <div className="-mx-8 -mt-24 relative overflow-hidden" style={{ height: '380px' }}>
         <div
           className="absolute inset-0 bg-cover bg-center scale-105"
           style={{ backgroundImage: "url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=80')" }}
