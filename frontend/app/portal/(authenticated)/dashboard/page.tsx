@@ -99,7 +99,7 @@ export default async function DashboardPage() {
         </div>
       </div>
 
-      <div className="max-w-3xl pt-4">
+      <div className="max-w-3xl pt-4 mx-auto">
         {booking ? (
           <>
             {/* Trip card */}
@@ -161,13 +161,19 @@ export default async function DashboardPage() {
           <div className="bg-white border border-[#d4c5a0] p-10 text-center">
             <div className="w-16 h-px bg-[#d4c5a0] mx-auto mb-6" />
             <p className="font-bold text-sm uppercase tracking-widest text-[#133425] mb-2">No Expedition Yet</p>
-            <p className="text-sm text-[#3a4a40]/70 mb-4">
+            <p className="text-sm text-[#3a4a40]/70 mb-6">
               Your trip will appear here once ChasingTed confirms your booking.
             </p>
-            <a href="mailto:info@chasingted.com"
-              className="inline-block bg-[#133425] text-[#F5F0E4] font-bold text-xs tracking-widest uppercase px-8 py-3 hover:bg-[#3a4a40] transition-colors">
-              Contact ChasingTed
-            </a>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+              <Link href="/trips"
+                className="inline-block bg-[#f7b500] text-[#133425] font-bold text-xs tracking-widest uppercase px-8 py-3 hover:bg-[#d9a441] transition-colors">
+                Browse Expeditions
+              </Link>
+              <a href="mailto:info@chasingted.com"
+                className="inline-block border border-[#133425] text-[#133425] font-bold text-xs tracking-widest uppercase px-8 py-3 hover:bg-[#133425] hover:text-[#F5F0E4] transition-colors">
+                Contact ChasingTed
+              </a>
+            </div>
           </div>
         )}
       </div>
