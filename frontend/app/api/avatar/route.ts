@@ -17,14 +17,14 @@ export async function POST(req: NextRequest) {
   const admin = createAdminClient()
 
   const { error: uploadError } = await admin.storage
-    .from('avatars')
+    .from('Avatars')
     .upload(path, buffer, { upsert: true, contentType: 'image/jpeg' })
 
   if (uploadError) {
     return NextResponse.json({ error: uploadError.message }, { status: 500 })
   }
 
-  const { data } = admin.storage.from('avatars').getPublicUrl(path)
+  const { data } = admin.storage.from('Avatars').getPublicUrl(path)
   const url = `${data.publicUrl}?t=${Date.now()}`
 
   await admin.from('profiles').update({ avatar_url: url }).eq('id', userId)
