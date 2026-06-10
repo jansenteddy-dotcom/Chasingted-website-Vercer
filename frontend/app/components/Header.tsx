@@ -53,6 +53,16 @@ export default function Header({logoUrl}: Props) {
             </Link>
           ))}
           <Link
+            href="/portal/login"
+            className={`text-xs tracking-widest font-medium transition-colors duration-200 ${
+              pathname?.startsWith('/portal')
+                ? 'text-[#f7b500]'
+                : 'text-[#F5F0E4]/80 hover:text-[#F5F0E4]'
+            }`}
+          >
+            MY TRIP
+          </Link>
+          <Link
             href="/trips"
             className="bg-[#4e6358] text-[#F5F0E4] text-xs font-bold px-5 py-2.5 tracking-widest uppercase hover:bg-[#3a4a40] transition-colors duration-200"
           >
@@ -91,6 +101,15 @@ export default function Header({logoUrl}: Props) {
               {link.label}
             </Link>
           ))}
+          <Link
+            href="/portal/login"
+            onClick={() => setMenuOpen(false)}
+            className={`text-sm tracking-widest uppercase py-1 transition-colors ${
+              pathname?.startsWith('/portal') ? 'text-[#f7b500]' : 'text-[#F5F0E4]/80'
+            }`}
+          >
+            My Trip
+          </Link>
           <Link
             href="/trips"
             onClick={() => setMenuOpen(false)}
