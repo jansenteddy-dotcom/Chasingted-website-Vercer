@@ -33,7 +33,7 @@ export default function Header({logoUrl}: Props) {
   const [menuOpen, setMenuOpen] = useState(false)
   const [dropdownOpen, setDropdownOpen] = useState(false)
   const [user, setUser] = useState<any>(null)
-  const [profile, setProfile] = useState<{ first_name?: string; avatar_url?: string } | null>(null)
+  const [profile, setProfile] = useState<{ first_name?: string; avatar_url?: string; is_admin?: boolean } | null>(null)
   const dropdownRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -52,7 +52,7 @@ export default function Header({logoUrl}: Props) {
 
   async function loadProfile(id: string) {
     const supabase = createClient()
-    const {data} = await supabase.from('profiles').select('first_name, avatar_url').eq('id', id).single()
+    const {data} = await supabase.from('profiles').select('first_name, avatar_url, is_admin').eq('id', id).single()
     if (data) setProfile(data)
   }
 
@@ -153,6 +153,15 @@ export default function Header({logoUrl}: Props) {
                     </Link>
                   ))}
                   <div className="border-t border-[#F5F0E4]/10 mt-1 pt-1">
+                    {profile?.is_admin && (
+                      <Link
+                        href="/admin"
+                        onClick={() => setDropdownOpen(false)}
+                        className="block px-4 py-2 text-xs tracking-widest uppercase text-[#f7b500]/80 hover:text-[#f7b500] hover:bg-[#F5F0E4]/5 transition-colors"
+                      >
+                        Admin Panel
+                      </Link>
+                    )}
                     <button
                       onClick={signOut}
                       className="w-full text-left px-4 py-2 text-xs tracking-widest uppercase text-[#F5F0E4]/40 hover:text-[#F5F0E4]/70 transition-colors"
@@ -219,6 +228,12 @@ export default function Header({logoUrl}: Props) {
                     {label}
                   </Link>
                 ))}
+                {profile?.is_admin && (
+                  <Link href="/admin" onClick={() => setMenuOpen(false)}
+                    className="block text-sm tracking-widest uppercase py-1.5 text-[#f7b500]/80">
+                    Admin Panel
+                  </Link>
+                )}
                 <button onClick={() => { setMenuOpen(false); signOut() }}
                   className="text-sm tracking-widest uppercase py-1.5 text-[#F5F0E4]/40 block mt-1">
                   Sign Out
