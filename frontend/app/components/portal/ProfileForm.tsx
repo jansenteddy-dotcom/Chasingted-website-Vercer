@@ -73,21 +73,19 @@ export default function ProfileForm({ profile, userId }: { profile: Profile | nu
     const file = e.target.files?.[0]
     if (!file) return
     setUploading(true)
+    setError('')
     const compressed = await resizeImage(file)
-    const supabase = createClient()
-    const path = `${userId}.jpg`
-    const { error: uploadError } = await supabase.storage
-      .from('avatars')
-      .upload(path, compressed, { upsert: true, contentType: 'image/jpeg' })
-    if (uploadError) {
-      setError('Photo upload failed. Try again.')
+    const formData = new FormData()
+    formData.append('file', new File([compressed], 'avatar.jpg', { type: 'image/jpeg' }))
+    formData.append('userId', userId)
+    const res = await fetch('/api/avatar', { method: 'POST', body: formData })
+    const data = await res.json()
+    if (!res.ok) {
+      setError(`Photo upload failed: ${data.error ?? 'unknown error'}`)
       setUploading(false)
       return
     }
-    const { data } = supabase.storage.from('avatars').getPublicUrl(`${userId}.jpg`)
-    const url = `${data.publicUrl}?t=${Date.now()}`
-    await supabase.from('profiles').update({ avatar_url: url }).eq('id', userId)
-    setAvatarUrl(url)
+    setAvatarUrl(data.url)
     setUploading(false)
   }
 
