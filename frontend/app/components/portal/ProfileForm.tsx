@@ -52,22 +52,39 @@ export default function ProfileForm({ profile, userId }: { profile: Profile | nu
     setSaved(false)
   }
 
+  async function resizeImage(file: File, maxSize = 400): Promise<Blob> {
+    return new Promise((resolve) => {
+      const img = document.createElement('img')
+      const url = URL.createObjectURL(file)
+      img.onload = () => {
+        const scale = Math.min(1, maxSize / Math.max(img.width, img.height))
+        const canvas = document.createElement('canvas')
+        canvas.width = Math.round(img.width * scale)
+        canvas.height = Math.round(img.height * scale)
+        canvas.getContext('2d')!.drawImage(img, 0, 0, canvas.width, canvas.height)
+        URL.revokeObjectURL(url)
+        canvas.toBlob(blob => resolve(blob!), 'image/jpeg', 0.85)
+      }
+      img.src = url
+    })
+  }
+
   async function handleAvatarChange(e: React.ChangeEvent<HTMLInputElement>) {
     const file = e.target.files?.[0]
     if (!file) return
     setUploading(true)
+    const compressed = await resizeImage(file)
     const supabase = createClient()
-    const ext = file.name.split('.').pop()
-    const path = `${userId}.${ext}`
+    const path = `${userId}.jpg`
     const { error: uploadError } = await supabase.storage
       .from('avatars')
-      .upload(path, file, { upsert: true })
+      .upload(path, compressed, { upsert: true, contentType: 'image/jpeg' })
     if (uploadError) {
       setError('Photo upload failed. Try again.')
       setUploading(false)
       return
     }
-    const { data } = supabase.storage.from('avatars').getPublicUrl(path)
+    const { data } = supabase.storage.from('avatars').getPublicUrl(`${userId}.jpg`)
     const url = `${data.publicUrl}?t=${Date.now()}`
     await supabase.from('profiles').update({ avatar_url: url }).eq('id', userId)
     setAvatarUrl(url)
