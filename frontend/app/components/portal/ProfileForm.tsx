@@ -1,6 +1,7 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useRef } from 'react'
+import Image from 'next/image'
 import { createClient } from '@/lib/supabase/client'
 
 type Profile = {
@@ -19,6 +20,7 @@ type Profile = {
   medical_notes: string | null
   fitness_level: string | null
   bio: string | null
+  avatar_url: string | null
 }
 
 export default function ProfileForm({ profile, userId }: { profile: Profile | null; userId: string }) {
@@ -38,13 +40,38 @@ export default function ProfileForm({ profile, userId }: { profile: Profile | nu
     fitness_level: profile?.fitness_level ?? '',
     bio: profile?.bio ?? '',
   })
+  const [avatarUrl, setAvatarUrl] = useState<string | null>(profile?.avatar_url ?? null)
+  const [uploading, setUploading] = useState(false)
   const [saving, setSaving] = useState(false)
   const [saved, setSaved] = useState(false)
   const [error, setError] = useState('')
+  const fileRef = useRef<HTMLInputElement>(null)
 
   function set(field: string, value: string) {
     setForm(prev => ({ ...prev, [field]: value }))
     setSaved(false)
+  }
+
+  async function handleAvatarChange(e: React.ChangeEvent<HTMLInputElement>) {
+    const file = e.target.files?.[0]
+    if (!file) return
+    setUploading(true)
+    const supabase = createClient()
+    const ext = file.name.split('.').pop()
+    const path = `${userId}.${ext}`
+    const { error: uploadError } = await supabase.storage
+      .from('avatars')
+      .upload(path, file, { upsert: true })
+    if (uploadError) {
+      setError('Photo upload failed. Try again.')
+      setUploading(false)
+      return
+    }
+    const { data } = supabase.storage.from('avatars').getPublicUrl(path)
+    const url = `${data.publicUrl}?t=${Date.now()}`
+    await supabase.from('profiles').update({ avatar_url: url }).eq('id', userId)
+    setAvatarUrl(url)
+    setUploading(false)
   }
 
   async function handleSave(e: React.FormEvent) {
@@ -65,10 +92,38 @@ export default function ProfileForm({ profile, userId }: { profile: Profile | nu
 
   const inputCls = 'w-full border border-[#d4c5a0] bg-white px-3 py-2 text-sm text-[#133425] focus:outline-none focus:border-[#133425]'
   const labelCls = 'block text-xs font-bold uppercase tracking-widest text-[#133425] mb-1'
+  const initials = `${form.first_name.charAt(0)}${form.last_name.charAt(0)}`.toUpperCase() || '?'
 
   return (
     <form onSubmit={handleSave} className="space-y-8">
       {error && <p className="text-red-700 text-xs bg-red-50 border border-red-200 px-3 py-2">{error}</p>}
+
+      {/* Avatar upload */}
+      <div className="flex items-center gap-6">
+        <button type="button" onClick={() => fileRef.current?.click()}
+          className="relative w-20 h-20 rounded-full overflow-hidden bg-[#133425] flex items-center justify-center shrink-0 group cursor-pointer">
+          {avatarUrl ? (
+            <Image src={avatarUrl} alt="Profile photo" fill className="object-cover" unoptimized />
+          ) : (
+            <span className="text-[#F5F0E4] font-bold text-xl">{initials}</span>
+          )}
+          <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </div>
+        </button>
+        <div>
+          <p className="font-bold text-sm text-[#133425]">Profile Photo</p>
+          <p className="text-xs text-[#3a4a40]/60 mt-0.5">Visible to your fellow travelers</p>
+          <button type="button" onClick={() => fileRef.current?.click()} disabled={uploading}
+            className="mt-2 text-xs font-bold uppercase tracking-widest text-[#133425] hover:underline disabled:opacity-50">
+            {uploading ? 'Uploading…' : 'Change photo'}
+          </button>
+        </div>
+        <input ref={fileRef} type="file" accept="image/*" className="hidden" onChange={handleAvatarChange} />
+      </div>
 
       {/* Personal */}
       <section className="bg-white border border-[#d4c5a0] p-6">
@@ -118,10 +173,10 @@ export default function ProfileForm({ profile, userId }: { profile: Profile | nu
       {/* Health */}
       <section className="bg-white border border-[#d4c5a0] p-6">
         <h2 className="font-bold text-xs uppercase tracking-widest text-[#133425] mb-1">Health & Dietary</h2>
-        <p className="text-xs text-[#3a4a40]/60 mb-4">Only visible to Teddy — never shared with other travelers.</p>
+        <p className="text-xs text-[#3a4a40]/60 mb-4">Only visible to the ChasingTed team — never shared with other travelers.</p>
         <div className="space-y-4">
           <div><label className={labelCls}>Dietary Requirements</label><input className={inputCls} value={form.dietary_requirements} onChange={e => set('dietary_requirements', e.target.value)} placeholder="e.g. Vegetarian, gluten-free, nut allergy" /></div>
-          <div><label className={labelCls}>Medical Notes</label><textarea rows={3} className={inputCls} value={form.medical_notes} onChange={e => set('medical_notes', e.target.value)} placeholder="Any conditions, medications or physical limitations Teddy should know about" /></div>
+          <div><label className={labelCls}>Medical Notes</label><textarea rows={3} className={inputCls} value={form.medical_notes} onChange={e => set('medical_notes', e.target.value)} placeholder="Any conditions, medications or physical limitations the ChasingTed team should know about" /></div>
         </div>
       </section>
 
