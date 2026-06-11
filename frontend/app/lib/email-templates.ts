@@ -23,7 +23,7 @@ function buildImageUrl(ref: string | undefined): string {
   const lastDash = stripped.lastIndexOf('-')
   const ext = stripped.slice(lastDash + 1)
   const name = stripped.slice(0, lastDash)
-  return `https://cdn.sanity.io/images/${process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}/${process.env.NEXT_PUBLIC_SANITY_DATASET || 'production'}/${name}.${ext}?w=600&h=260&fit=crop&auto=format`
+  return `https://cdn.sanity.io/images/${process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}/${process.env.NEXT_PUBLIC_SANITY_DATASET || 'production'}/${name}.${ext}?w=600&auto=format&q=85`
 }
 
 function formatDate(d: string) {
@@ -53,7 +53,7 @@ function tripCard(trip: EmailTrip): string {
     <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;border:1px solid #d4c5a0;">
       <tr>
         <td>
-          ${img ? `<a href="https://chasingted.com/trips/${trip.slug}" style="display:block;"><img src="${img}" alt="${trip.title}" width="520" style="display:block;width:100%;height:220px;object-fit:cover;" /></a>` : ''}
+          ${img ? `<a href="https://chasingted.com/trips/${trip.slug}" style="display:block;"><img src="${img}" alt="${trip.title}" width="520" style="display:block;width:100%;height:auto;" /></a>` : ''}
         </td>
       </tr>
       <tr>
@@ -84,7 +84,7 @@ function emailFooter(): string {
   return `
     <tr>
       <td style="background:#133425;padding:28px 40px;text-align:center;">
-        <p style="font-family:Arial,sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#F5F0E4;margin:0 0 8px;">ChasingTed · chasingted.com</p>
+        <p style="font-family:Arial,sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#F5F0E4;margin:0 0 8px;">Chasingted · chasingted.com</p>
         <a href="mailto:info@chasingted.com" style="font-family:Arial,sans-serif;font-size:12px;color:#f7b500;text-decoration:none;">info@chasingted.com</a>
       </td>
     </tr>
@@ -140,7 +140,7 @@ export function waitlistEmailHtml(firstName: string, trips: EmailTrip[]): string
                 <td style="background:#F5F0E4;padding:40px 40px 8px;">
                   <p style="font-family:Georgia,serif;font-size:16px;color:#133425;margin:0 0 20px;">Hi ${firstName},</p>
                   <h1 style="font-family:Georgia,serif;font-size:28px;color:#133425;letter-spacing:2px;text-transform:uppercase;margin:0 0 16px;line-height:1.3;">You're on the list.</h1>
-                  <p style="font-family:Georgia,serif;font-size:15px;color:#3a4a40;line-height:1.8;margin:0 0 12px;">ChasingTed runs small-group expeditions for people who want to go further. We don't do mass tourism — every trip is carefully curated, every group is hand-picked.</p>
+                  <p style="font-family:Georgia,serif;font-size:15px;color:#3a4a40;line-height:1.8;margin:0 0 12px;">Chasingted runs small-group expeditions for people who want to go further. We don't do mass tourism — every trip is carefully curated, every group is hand-picked.</p>
                   <p style="font-family:Georgia,serif;font-size:15px;color:#3a4a40;line-height:1.8;margin:0 0 32px;">We'll reach out personally when we find the right match for you.</p>
                 </td>
               </tr>
