@@ -42,9 +42,15 @@ export async function POST(req: NextRequest) {
     const { Resend } = await import('resend')
     const resend = new Resend(process.env.RESEND_API_KEY)
     const displayName = firstName || 'there'
-    const trips = await fetchUpcomingTrips()
 
-    await Promise.all([
+    let trips: Awaited<ReturnType<typeof fetchUpcomingTrips>> = []
+    try {
+      trips = await fetchUpcomingTrips()
+    } catch (tripErr) {
+      console.error('Failed to fetch trips for email:', tripErr)
+    }
+
+    const [r1, r2] = await Promise.all([
       resend.emails.send({
         from: 'ChasingTed <info@chasingted.com>',
         to: email,
@@ -58,6 +64,8 @@ export async function POST(req: NextRequest) {
         html: `<p>New waitlist signup:</p><p><strong>${firstName ? `${firstName} ${lastName}` : '(no name)'}</strong><br/>${email}</p>`,
       }),
     ])
+    if (r1.error) console.error('Confirmation email error:', r1.error)
+    if (r2.error) console.error('Notification email error:', r2.error)
   } catch (e) {
     console.error('Resend error:', e)
   }
