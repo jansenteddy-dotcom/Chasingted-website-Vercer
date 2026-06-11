@@ -127,7 +127,7 @@ export default function LoginPage() {
                     : 'text-[#3a4a40]/50 hover:text-[#133425]'
                 }`}
               >
-                Sign In
+                Login
               </button>
               <button
                 onClick={() => switchMode('register')}
@@ -137,7 +137,7 @@ export default function LoginPage() {
                     : 'text-[#3a4a40]/50 hover:text-[#133425]'
                 }`}
               >
-                Create Account
+                Create Account & Sign In
               </button>
             </div>
           )}
@@ -222,7 +222,7 @@ export default function LoginPage() {
                 </div>
                 <button type="submit" disabled={loading}
                   className="w-full bg-[#133425] text-[#F5F0E4] font-bold text-xs tracking-widest uppercase py-3 hover:bg-[#3a4a40] transition-colors disabled:opacity-50">
-                  {loading ? 'Creating account…' : 'Create Account'}
+                  {loading ? 'Creating account…' : 'Create Account & Sign In'}
                 </button>
               </form>
             </>
