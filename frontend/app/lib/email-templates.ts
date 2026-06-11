@@ -240,7 +240,8 @@ export function applicationEmailHtml(firstName: string, tripTitle: string, tripS
                     </tr>
                   </table>
 
-                  <p style="font-family:Georgia,serif;font-size:15px;color:#3a4a40;line-height:1.8;margin:0 0 32px;">We review every application personally — not a form letter. Expect a reply within <strong>3–5 days</strong>.</p>
+                  <p style="font-family:Georgia,serif;font-size:15px;color:#3a4a40;line-height:1.8;margin:0 0 20px;">We review every application personally — not a form letter. Expect a reply within <strong>3–5 days</strong>.</p>
+                  <p style="font-family:Georgia,serif;font-size:13px;color:#3a4a40;line-height:1.7;margin:0 0 32px;background:#fff8e6;border-left:3px solid #f7b500;padding:12px 16px;">To make sure our reply reaches you, please add <strong>info@chasingted.com</strong> to your contacts now.</p>
                 </td>
               </tr>
 
