@@ -2,6 +2,7 @@ import {createClient} from '@sanity/client'
 import {notFound} from 'next/navigation'
 import Link from 'next/link'
 import ApplicationReviewClient from '@/app/components/admin/ApplicationReviewClient'
+import ApplicationMessageClient from '@/app/components/admin/ApplicationMessageClient'
 
 const sanity = createClient({
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!,
@@ -61,6 +62,15 @@ export default async function ApplicationDetailPage({params}: {params: Promise<{
       </p>
 
       <ApplicationReviewClient id={app._id} currentStatus={app.status} currentNotes={app.reviewNotes} />
+
+      <div className="mt-4">
+        <ApplicationMessageClient
+          id={app._id}
+          applicantName={`${app.firstName} ${app.lastName}`}
+          applicantEmail={app.email}
+          tripTitle={app.tripTitle || 'the trip'}
+        />
+      </div>
 
       <div className="bg-white border border-gray-200 p-6 mt-6">
         <h2 className="font-bold text-xs uppercase tracking-widest text-gray-400 mb-4">Personal Details</h2>
