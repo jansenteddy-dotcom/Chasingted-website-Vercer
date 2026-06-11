@@ -53,22 +53,25 @@ export async function POST(request: NextRequest) {
       submittedAt: new Date().toISOString(),
     })
 
-    const trips = await fetchUpcomingTrips(body.tripSlug)
-
-    await Promise.all([
-      resend.emails.send({
-        from: 'ChasingTed <info@chasingted.com>',
-        to: email,
-        subject: `Application received — ${body.tripTitle}`,
-        html: applicationEmailHtml(firstName, body.tripTitle, body.tripSlug, trips),
-      }),
-      resend.emails.send({
-        from: 'ChasingTed <info@chasingted.com>',
-        to: 'jansen.teddy@gmail.com',
-        subject: `New application — ${body.tripTitle}`,
-        html: `<p><strong>New application:</strong></p><p><strong>${firstName} ${lastName}</strong> — ${email}<br/>Trip: ${body.tripTitle}<br/>Experience: ${experienceLevel || '—'}<br/>Phone: ${phone || '—'}</p><p><strong>Motivation:</strong><br/>${motivation || '—'}</p>`,
-      }),
-    ])
+    // Send emails in the background — don't block the response
+    fetchUpcomingTrips(body.tripSlug).then((trips) => {
+      Promise.all([
+        resend.emails.send({
+          from: 'ChasingTed <info@chasingted.com>',
+          to: email,
+          subject: `Application received — ${body.tripTitle}`,
+          html: applicationEmailHtml(firstName, body.tripTitle, body.tripSlug, trips),
+        }),
+        resend.emails.send({
+          from: 'ChasingTed <info@chasingted.com>',
+          to: 'jansen.teddy@gmail.com',
+          subject: `New application — ${body.tripTitle}`,
+          html: `<p><strong>New application:</strong></p><p><strong>${firstName} ${lastName}</strong> — ${email}<br/>Trip: ${body.tripTitle}<br/>Experience: ${experienceLevel || '—'}<br/>Phone: ${phone || '—'}</p><p><strong>Motivation:</strong><br/>${motivation || '—'}</p>`,
+        }),
+      ]).catch((emailErr) => {
+        console.error('Email send failed (non-blocking):', emailErr)
+      })
+    })
 
     return NextResponse.json({success: true})
   } catch (err) {
