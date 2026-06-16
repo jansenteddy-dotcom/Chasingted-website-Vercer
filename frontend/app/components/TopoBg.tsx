@@ -1,102 +1,67 @@
+'use client'
+
+import {useEffect, useRef} from 'react'
+
 export default function TopoBg() {
+  const canvasRef = useRef<HTMLCanvasElement>(null)
+
+  useEffect(() => {
+    const canvas = canvasRef.current
+    if (!canvas) return
+    const ctx = canvas.getContext('2d')
+    if (!ctx) return
+
+    const rect = canvas.getBoundingClientRect()
+    const W = canvas.width = rect.width
+    const H = canvas.height = rect.height
+
+    ctx.strokeStyle = 'rgba(245,240,228,0.13)'
+    ctx.lineWidth = 0.9
+    ctx.lineCap = 'round'
+
+    // Flow field: multiple overlapping sine/cosine waves → organic topo look
+    function flowAngle(x: number, y: number): number {
+      const nx = x / W
+      const ny = y / H
+      return (
+        Math.sin(nx * Math.PI * 4.2 + ny * Math.PI * 3.1) * Math.PI +
+        Math.cos(nx * Math.PI * 7.5 - ny * Math.PI * 5.3) * Math.PI * 0.65 +
+        Math.sin(nx * Math.PI * 2.8 + ny * Math.PI * 6.7) * Math.PI * 0.45 +
+        Math.cos(nx * Math.PI * 9.1 - ny * Math.PI * 2.4) * Math.PI * 0.25 +
+        Math.sin(nx * Math.PI * 1.6 - ny * Math.PI * 8.2) * Math.PI * 0.15
+      )
+    }
+
+    const STEP = 2.2
+    const MAX_STEPS = 380
+    const SPACING = Math.max(8, Math.round(W / 90))
+
+    for (let sx = 0; sx < W; sx += SPACING) {
+      for (let sy = 0; sy < H; sy += SPACING) {
+        let x = sx
+        let y = sy
+
+        ctx.beginPath()
+        ctx.moveTo(x, y)
+
+        for (let i = 0; i < MAX_STEPS; i++) {
+          const a = flowAngle(x, y)
+          x += Math.cos(a) * STEP
+          y += Math.sin(a) * STEP
+          if (x < -10 || x > W + 10 || y < -10 || y > H + 10) break
+          ctx.lineTo(x, y)
+        }
+
+        ctx.stroke()
+      }
+    }
+  }, [])
+
   return (
-    <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden>
-      <svg
-        className="absolute w-full h-full"
-        viewBox="0 0 700 340"
-        preserveAspectRatio="xMidYMid slice"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        {/* Peak centred at ~(370, 170) — tight concentric rings like a real topo map */}
-        <g fill="none" strokeLinecap="round" strokeLinejoin="round">
-
-          {/* ── thin base rings ── */}
-          <g stroke="rgba(245,240,228,0.14)" strokeWidth="1.1">
-
-            {/* ring 1 — innermost core */}
-            <path d="M 370,158 C 380,154 392,158 394,168 C 396,178 388,185 376,184 C 364,183 357,176 360,166 C 362,160 366,160 370,158 Z" />
-
-            {/* ring 2 */}
-            <path d="M 368,142 C 386,135 404,141 408,158 C 412,175 402,188 382,190 C 362,192 346,182 346,165 C 346,148 354,147 368,142 Z" />
-
-            {/* ring 3 */}
-            <path d="M 366,124 C 392,114 416,122 422,146 C 428,170 416,188 390,192 C 364,196 340,184 338,162 C 336,140 344,132 366,124 Z" />
-
-            {/* ring 4 */}
-            <path d="M 364,106 C 398,93 428,103 436,134 C 444,165 430,188 398,194 C 366,200 334,186 330,160 C 326,134 334,117 364,106 Z" />
-
-            {/* ring 5 */}
-            <path d="M 362,88 C 404,72 440,84 450,122 C 460,160 444,188 406,196 C 368,204 328,188 322,158 C 316,128 324,102 362,88 Z" />
-
-            {/* ring 6 */}
-            <path d="M 358,68 C 410,48 452,63 464,108 C 476,153 458,188 414,198 C 370,208 322,190 314,156 C 306,122 312,86 358,68 Z" />
-
-            {/* ring 7 */}
-            <path d="M 354,46 C 416,22 466,40 480,93 C 494,146 472,186 422,198 C 372,210 316,192 306,154 C 296,116 302,68 354,46 Z" />
-
-            {/* ring 9 */}
-            <path d="M 346,4 C 422,-26 482,0 500,64 C 518,128 492,180 432,198 C 372,216 304,196 290,152 C 276,108 284,32 346,4 Z" />
-
-            {/* ring 10 — bleeds off edges */}
-            <path d="M 340,-20 C 430,-56 496,-26 518,48 C 540,122 510,178 438,200 C 366,222 292,200 274,150 C 256,100 268,12 340,-20 Z" />
-
-            {/* ring 11 */}
-            <path d="M 332,-48 C 436,-90 508,-54 534,32 C 560,118 526,176 444,202 C 362,228 280,204 258,148 C 236,92 252,-10 332,-48 Z" />
-
-            {/* ring 12 — large, mostly off viewport */}
-            <path d="M 322,-80 C 442,-128 522,-84 552,14 C 582,112 544,174 450,204 C 356,234 266,208 240,146 C 214,84 236,-36 322,-80 Z" />
-
-          </g>
-
-          {/* ── index contours — every 5th ring, slightly bolder ── */}
-          <g stroke="rgba(245,240,228,0.22)" strokeWidth="1.5">
-
-            {/* bold ring A (≈ ring 3) */}
-            <path d="M 366,124 C 392,114 416,122 422,146 C 428,170 416,188 390,192 C 364,196 340,184 338,162 C 336,140 344,132 366,124 Z" />
-
-            {/* bold ring B (≈ ring 6) */}
-            <path d="M 358,68 C 410,48 452,63 464,108 C 476,153 458,188 414,198 C 370,208 322,190 314,156 C 306,122 312,86 358,68 Z" />
-
-            {/* bold ring C (≈ ring 9) */}
-            <path d="M 346,4 C 422,-26 482,0 500,64 C 518,128 492,180 432,198 C 372,216 304,196 290,152 C 276,108 284,32 346,4 Z" />
-
-            {/* bold ring D (outermost visible) */}
-            <path d="M 332,-48 C 436,-90 508,-54 534,32 C 560,118 526,176 444,202 C 362,228 280,204 258,148 C 236,92 252,-10 332,-48 Z" />
-
-          </g>
-
-          {/* ── right-side terrain extending off screen ── */}
-          <g stroke="rgba(245,240,228,0.10)" strokeWidth="1.1">
-            <path d="M 500,64 C 570,40 640,55 700,48" />
-            <path d="M 518,48 C 588,20 660,32 710,22" />
-            <path d="M 534,32 C 600,5 670,15 715,5" />
-            <path d="M 464,108 C 530,88 600,95 700,85" />
-            <path d="M 476,153 C 545,138 618,142 700,130" />
-            <path d="M 480,93 C 548,72 620,78 700,68" />
-          </g>
-
-          {/* ── left-side ridge lines extending off screen ── */}
-          <g stroke="rgba(245,240,228,0.10)" strokeWidth="1.1">
-            <path d="M 274,150 C 200,158 120,148 0,155" />
-            <path d="M 258,148 C 185,158 105,150 0,158" />
-            <path d="M 290,152 C 215,162 130,155 0,162" />
-            <path d="M 306,154 C 228,164 140,158 0,165" />
-            <path d="M 314,156 C 238,166 148,160 0,168" />
-            <path d="M 322,158 C 245,168 155,162 0,170" />
-          </g>
-
-          {/* ── bottom terrain flowing off screen ── */}
-          <g stroke="rgba(245,240,228,0.09)" strokeWidth="1.0">
-            <path d="M 290,152 C 300,220 290,290 295,340" />
-            <path d="M 306,154 C 318,222 310,295 315,340" />
-            <path d="M 322,158 C 336,226 330,298 334,340" />
-            <path d="M 338,162 C 354,232 350,302 352,340" />
-            <path d="M 476,153 C 468,225 472,298 470,340" />
-            <path d="M 464,108 C 458,180 462,252 460,340" />
-          </g>
-
-        </g>
-      </svg>
-    </div>
+    <canvas
+      ref={canvasRef}
+      className="absolute inset-0 w-full h-full pointer-events-none"
+      aria-hidden
+    />
   )
 }
