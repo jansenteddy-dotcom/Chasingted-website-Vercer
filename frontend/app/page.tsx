@@ -5,7 +5,7 @@ import {settingsQuery, allTripsQuery} from '@/sanity/lib/queries'
 import {urlFor} from '@/sanity/lib/utils'
 import TripCard from '@/app/components/TripCard'
 import InstagramSection from '@/app/components/InstagramSection'
-import FallingStars from '@/app/components/FallingStars'
+import TopoBg from '@/app/components/TopoBg'
 import Campfire from '@/app/components/Campfire'
 import SwimmingFish from '@/app/components/SwimmingFish'
 import Motorcycle from '@/app/components/Motorcycle'
@@ -134,7 +134,7 @@ export default async function HomePage() {
 
       {/* ── PILLARS ── */}
       <section className="relative overflow-hidden bg-[#133425] py-16 md:py-20">
-        <FallingStars count={14} />
+        <TopoBg />
         <div className="container text-center relative z-10">
           <h2 className="text-[#F5F0E4] font-bold text-2xl md:text-4xl uppercase tracking-widest mb-12">
             Not a Holiday. An Expedition.
